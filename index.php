@@ -15,9 +15,9 @@ ob_start();
 <div id="fullcolumn">
 	<div class="linkBlock">
 		<div class="link">
-			<a href="/projects/whatsnew.php"><img src="http://dev.eclipse.org/huge_icons/apps/internet-news-reader.png" alt="What's New"/></a>
-			<a class="heading" href="/projects/whatsnew.php">What's New</a>
-			<p class="subText">Stay informed about upcoming events, published builds, notes from the team, etc...</p>
+			<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
+			<a class="heading" href="http://wiki.eclipse.org/Development_Builds">Downloads</a>
+			<p class="subText">Looking for the latest build?<br/>Milestones, Maintenance Builds, and more...</p>
 		</div>
 		<div class="link">
 			<a href="docs"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png" alt="Documentation"/></a>
@@ -25,9 +25,9 @@ ob_start();
 			<p class="subText">Browse through the product documentation, JavaDocs and tutorials...</p>
 		</div>
 		<div class="link">
-			<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
-			<a class="heading" href="http://wiki.eclipse.org/Development_Builds">Downloads</a>
-			<p class="subText">Looking for the latest build? Milestones, Maintenance Builds, and more...</p>
+			<a href="training"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-presentation.png" alt="Training"/></a>
+			<a class="heading" href="training">Training</a>
+			<p class="subText">Stay informed about upcoming events, published builds, notes from the team, etc...</p>
 		</div>
 	</div>
 	<div class="linkBlock">
