@@ -13,6 +13,7 @@ $obj = new C()
 	}	
 }
 
+echo "Running: ";
 $obj->run();
 
 ?>
