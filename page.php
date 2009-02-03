@@ -5,7 +5,9 @@ require_once("includes/BootStrap.php");
 
 class HomePage extends AbstractPage
 {
-	private _constructor()
+	public static $INSTANCE = new self;
+	
+	private function __constructor()
 	{
 		
 	}
