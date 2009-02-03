@@ -22,12 +22,12 @@ ob_start();
 		<div class="link">
 			<a href="docs"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png" alt="Documentation"/></a>
 			<a class="heading" href="docs">Documentation</a>
-			<p class="subText">Browse through the product documentation, JavaDocs and tutorials...</p>
+			<p class="subText">Browse through the product documentation, tutorials, presentations and the JavaDocs...</p>
 		</div>
 		<div class="link">
-			<a href="training"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-presentation.png" alt="Training"/></a>
-			<a class="heading" href="training">Training</a>
-			<p class="subText">Stay informed about upcoming events, published builds, notes from the team, etc...</p>
+			<a href="support"><img src="http://dev.eclipse.org/huge_icons/apps/help-browser.png" alt="Support"/></a>
+			<a class="heading" href="support">Support</a>
+			<p class="subText">Something went wrong or the documentation left some questions? Watch out for help...</p>
 		</div>
 	</div>
 	<div class="linkBlock">
