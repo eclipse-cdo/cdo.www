@@ -34,17 +34,17 @@ ob_start();
 		<div class="link">
 			<a href="http://wiki.eclipse.org"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="CDO Wiki"/></a>
 			<a class="heading" href="http://wiki.eclipse.org">CDO Wiki</a>
-			<p class="subText">Visit the CDO Wiki for information on various product and development topics...</p>
+			<p class="subText">Visit the community pages for information on various product and development topics...</p>
 		</div>
 		<div class="link">
-			<a href="/legal/"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
-			<a class="heading" href="/legal/">Development</a>
+			<a href="/legal"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
+			<a class="heading" href="/legal">Development</a>
 			<p class="subText">Find out more about the CDO project and its development process...</p>
 		</div>
 		<div class="link">
-			<a href="http://bugs.eclipse.org/bugs/"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png" alt="Bugzilla"/></a>
-			<a class="heading" href="http://bugs.eclipse.org/bugs/">Bugzilla</a>
-			<p class="subText">Report, lookup and triage bugs for your projects...</p>
+			<a href="team/team.php"><img src="images/meet_the_team.gif" alt="About Us"/></a>
+			<a class="heading" href="team/team.php">About Us</a>
+			<p class="subText">Meet the team...</p>
 		</div>
 	</div>
 	
