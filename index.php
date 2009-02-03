@@ -15,8 +15,8 @@ ob_start();
 <div id="fullcolumn">
 	<div class="linkBlock">
 		<div class="link">
-			<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
-			<a class="heading" href="http://wiki.eclipse.org/Development_Builds">Downloads</a>
+			<a href="http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
+			<a class="heading" href="http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5">Downloads</a>
 			<p class="subText">Looking for the latest build?<br/>Milestones, Maintenance Builds, and more...</p>
 		</div>
 		<div class="link">
@@ -32,18 +32,18 @@ ob_start();
 	</div>
 	<div class="linkBlock">
 		<div class="link">
-			<a href="http://wiki.eclipse.org"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="CDO Wiki"/></a>
-			<a class="heading" href="http://wiki.eclipse.org">CDO Wiki</a>
+			<a href="http://wiki.eclipse.org/CDO"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="CDO Wiki"/></a>
+			<a class="heading" href="http://wiki.eclipse.org/CDO">CDO Wiki</a>
 			<p class="subText">Visit the community pages for information on various product and development topics...</p>
 		</div>
 		<div class="link">
-			<a href="/legal"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
-			<a class="heading" href="/legal">Development</a>
+			<a href="development"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
+			<a class="heading" href="development">Development</a>
 			<p class="subText">Get the sources and find out more about the CDO project and its development process...</p>
 		</div>
 		<div class="link">
 			<a href="team/team.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="About Us"/></a>
-			<a class="heading" href="http://dev.eclipse.org/huge_icons/apps/system-users.png">About Us</a>
+			<a class="heading" href="team/team.php">About Us</a>
 			<p class="subText">Meet the team and gaze at their activity...</p>
 		</div>
 	</div>
