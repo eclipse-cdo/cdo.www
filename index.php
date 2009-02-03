@@ -13,38 +13,40 @@ ob_start();
 ?>
 
 <div id="midcolumn">
-	<div class="linkBlock">
-		<div class="link">
-			<a href="/projects/whatsnew.php"><img src="http://dev.eclipse.org/huge_icons/apps/internet-news-reader.png" alt="What's New"/></a>
-			<a class="heading" href="/projects/whatsnew.php">What's New</a>
-			<p class="subText">Stay informed about upcoming events, published builds, notes from the team, etc...</p>
+	<div>
+		<div class="linkBlock">
+			<div class="link">
+				<a href="/projects/whatsnew.php"><img src="http://dev.eclipse.org/huge_icons/apps/internet-news-reader.png" alt="What's New"/></a>
+				<a class="heading" href="/projects/whatsnew.php">What's New</a>
+				<p class="subText">Stay informed about upcoming events, published builds, notes from the team, etc...</p>
+			</div>
+			<div class="link">
+				<a href="/projects/dev_process/index-quick.php"><img src="http://dev.eclipse.org/huge_icons/actions/bookmark-new.png" alt="Documentation"/></a>
+				<a class="heading" href="/projects/dev_process/index-quick.php">Documentation</a>
+				<p class="subText">Browse through the product documentation.</p>
+			</div>
+			<div class="link">
+				<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/actions/go-bottom.png" alt="Downloads"/></a>
+				<a class="heading" href="http://wiki.eclipse.org/Development_Builds">Downloads</a>
+				<p class="subText">Looking for the latest build? Milestones, Maintenance Builds, and more.</p>
+			</div>
 		</div>
-		<div class="link">
-			<a href="/projects/dev_process/index-quick.php"><img src="http://dev.eclipse.org/huge_icons/actions/bookmark-new.png" alt="Documentation"/></a>
-			<a class="heading" href="/projects/dev_process/index-quick.php">Documentation</a>
-			<p class="subText">Browse through the product documentation.</p>
-		</div>
-		<div class="link">
-			<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/actions/go-bottom.png" alt="Downloads"/></a>
-			<a class="heading" href="http://wiki.eclipse.org/Development_Builds">Downloads</a>
-			<p class="subText">Looking for the latest build? Milestones, Maintenance Builds, and more.</p>
-		</div>
-	</div>
-	<div class="linkBlock">
-		<div class="link">
-			<a href="http://wiki.eclipse.org"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="CDO Wiki"/></a>
-			<a class="heading" href="http://wiki.eclipse.org">CDO Wiki</a>
-			<p class="subText">Visit the CDO Wiki for information on various product and development topics.</p>
-		</div>
-		<div class="link">
-			<a href="/legal/"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
-			<a class="heading" href="/legal/">Development</a>
-			<p class="subText">Find out more about the CDO project and its development process.</p>
-		</div>
-		<div class="link">
-			<a href="http://bugs.eclipse.org/bugs/"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png" alt="Bugzilla"/></a>
-			<a class="heading" href="http://bugs.eclipse.org/bugs/">Bugzilla</a>
-			<p class="subText">Report, lookup and triage bugs for your projects.</p>
+		<div class="linkBlock">
+			<div class="link">
+				<a href="http://wiki.eclipse.org"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="CDO Wiki"/></a>
+				<a class="heading" href="http://wiki.eclipse.org">CDO Wiki</a>
+				<p class="subText">Visit the CDO Wiki for information on various product and development topics.</p>
+			</div>
+			<div class="link">
+				<a href="/legal/"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
+				<a class="heading" href="/legal/">Development</a>
+				<p class="subText">Find out more about the CDO project and its development process.</p>
+			</div>
+			<div class="link">
+				<a href="http://bugs.eclipse.org/bugs/"><img src="http://dev.eclipse.org/huge_icons/actions/system-search.png" alt="Bugzilla"/></a>
+				<a class="heading" href="http://bugs.eclipse.org/bugs/">Bugzilla</a>
+				<p class="subText">Report, lookup and triage bugs for your projects.</p>
+			</div>
 		</div>
 	</div>
 
