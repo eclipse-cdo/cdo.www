@@ -44,7 +44,7 @@ ob_start();
 		<div class="link">
 			<a href="team/team.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="About Us"/></a>
 			<a class="heading" href="http://dev.eclipse.org/huge_icons/apps/system-users.png">About Us</a>
-			<p class="subText">Meet the team and see their activity...</p>
+			<p class="subText">Meet the team and gaze at their activity...</p>
 		</div>
 	</div>
 	
