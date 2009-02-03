@@ -1,5 +1,6 @@
 <?php
 
+require_once("includes/pages/HomePage.php");
 require_once("includes/BootStrap.php");
 
 
