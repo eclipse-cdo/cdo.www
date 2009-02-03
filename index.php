@@ -27,7 +27,7 @@ ob_start();
 		<div class="link">
 			<a href="support"><img src="http://dev.eclipse.org/huge_icons/apps/help-browser.png" alt="Support"/></a>
 			<a class="heading" href="support">Support</a>
-			<p class="subText">You have problems or questions not answered in the documentation? Here you will be helped...</p>
+			<p class="subText">You have problems or questions not answered in the documentation? Look here for help...</p>
 		</div>
 	</div>
 	<div class="linkBlock">
