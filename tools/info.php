@@ -7,4 +7,3 @@ echo '<tr><td>Self</td><td>' . $_SERVER['PHP_SELF'] . '&nbsp;</td></tr>';
 echo '</table>';
 
 ?>
-
