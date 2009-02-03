@@ -2,7 +2,7 @@
 
 abstract class AbstractPage
 {
-	function generate()
+	function render()
 	{
 		echo 'Class: ' . get_class($this);
 	}
