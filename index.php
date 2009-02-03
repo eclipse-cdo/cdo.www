@@ -17,7 +17,7 @@ ob_start();
 		<div class="link">
 			<a href="http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
 			<a class="heading" href="http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5">Downloads</a>
-			<p class="subText">Looking for the latest build?<br/>Milestones, Maintenance Builds, and more...</p>
+			<p class="subText">Looking for the latest build?<br/>Milestones, maintenance builds, and more...</p>
 		</div>
 		<div class="link">
 			<a href="docs"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png" alt="Documentation"/></a>
