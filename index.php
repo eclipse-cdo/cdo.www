@@ -27,7 +27,7 @@ ob_start();
 		<div class="link">
 			<a href="support"><img src="http://dev.eclipse.org/huge_icons/apps/help-browser.png" alt="Support"/></a>
 			<a class="heading" href="support">Support</a>
-			<p class="subText">Something went wrong or the documentation left some questions? Watch out for help...</p>
+			<p class="subText">Something went wrong or the documentation left you with some questions? Watch out for help...</p>
 		</div>
 	</div>
 	<div class="linkBlock">
@@ -39,19 +39,18 @@ ob_start();
 		<div class="link">
 			<a href="/legal"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
 			<a class="heading" href="/legal">Development</a>
-			<p class="subText">Find out more about the CDO project and its development process...</p>
+			<p class="subText">Get the sources and find out more about the CDO project and its development process...</p>
 		</div>
 		<div class="link">
 			<a href="team/team.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="About Us"/></a>
 			<a class="heading" href="http://dev.eclipse.org/huge_icons/apps/system-users.png">About Us</a>
-			<p class="subText">Meet the team...</p>
+			<p class="subText">Meet the team and see their activity...</p>
 		</div>
 	</div>
 	
 	<div id="midcolumn">
 		<div class="homeitem">
-			<h3><b>Upcoming Reviews</b></h3>
-			<?=$reviewsTable;?>		
+			<h6>What's New</h6>
 		</div>
 	</div>
 
@@ -72,16 +71,12 @@ ob_start();
 					<a href="/newsgroups/">Newsgroups</a>
 				</li>
 				<li>
-					<a href="http://dev.eclipse.org/viewcvs/index.cgi?view=roots"><img src="http://dev.eclipse.org/large_icons/apps/utilities-terminal.png"></a>
-					<a href="http://dev.eclipse.org/viewcvs/index.cgi?view=roots">CVS/SVN Repositories</a>
+					<a href="http://www.ohloh.net/projects/8908?p=CDO"><img src="http://dev.eclipse.org/large_icons/apps/utilities-terminal.png"></a>
+					<a href="http://www.ohloh.net/projects/8908?p=CDO">View Ohloh statistics</a>
 				</li>
 				<li>
 					<a href="http://wiki.eclipse.org/Development_Resources"><img src="http://dev.eclipse.org/large_icons/apps/preferences-desktop-theme.png"/></a>
 					<a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a>
-				</li>
-				<li>
-					<a href="http://www.eclipse.org/projects/committers-emeritus.php"><img src="http://dev.eclipse.org/large_icons/apps/system-users.png"/></a>
-					<a href="http://www.eclipse.org/projects/committers-emeritus.php">Committers Emeritus</a>
 				</li>
 			</ul>
 		</div>
