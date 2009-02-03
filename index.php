@@ -27,14 +27,14 @@ ob_start();
 		<div class="link">
 			<a href="support"><img src="http://dev.eclipse.org/huge_icons/apps/help-browser.png" alt="Support"/></a>
 			<a class="heading" href="support">Support</a>
-			<p class="subText">You have problems or questions not answered in the documentation? Watch out for help...</p>
+			<p class="subText">You have problems or questions not answered in the documentation? Here you will be helped...</p>
 		</div>
 	</div>
 	<div class="linkBlock">
 		<div class="link">
 			<a href="http://wiki.eclipse.org/CDO"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="CDO Wiki"/></a>
 			<a class="heading" href="http://wiki.eclipse.org/CDO">CDO Wiki</a>
-			<p class="subText">Visit the community pages for information on various product and development topics...</p>
+			<p class="subText">Visit the community pages for information about various product and development topics...</p>
 		</div>
 		<div class="link">
 			<a href="development"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
