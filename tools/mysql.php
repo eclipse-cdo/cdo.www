@@ -1,6 +1,5 @@
 <?php
 
-require_once ("../../../includes/buildServer-common.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
@@ -11,6 +10,7 @@ $Menu = new Menu();
 
 include($App->getProjectCommon());
 include($_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/db.php");
+include($_SERVER['DOCUMENT_ROOT'] . "modeling/includes/buildServer-common.php");
 
 ob_start();
 print '<div id="midcolumn">';
