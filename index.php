@@ -20,12 +20,12 @@ ob_start();
 			<p class="subText">Stay informed about upcoming events, published builds, notes from the team, etc...</p>
 		</div>
 		<div class="link">
-			<a href="/projects/dev_process/index-quick.php"><img src="http://dev.eclipse.org/huge_icons/actions/bookmark-new.png" alt="Documentation"/></a>
-			<a class="heading" href="/projects/dev_process/index-quick.php">Documentation</a>
+			<a href="docs"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png" alt="Documentation"/></a>
+			<a class="heading" href="docs">Documentation</a>
 			<p class="subText">Browse through the product documentation, JavaDocs and tutorials...</p>
 		</div>
 		<div class="link">
-			<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/actions/go-bottom.png" alt="Downloads"/></a>
+			<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/status/software-update-available.png" alt="Downloads"/></a>
 			<a class="heading" href="http://wiki.eclipse.org/Development_Builds">Downloads</a>
 			<p class="subText">Looking for the latest build? Milestones, Maintenance Builds, and more...</p>
 		</div>
@@ -42,8 +42,8 @@ ob_start();
 			<p class="subText">Find out more about the CDO project and its development process...</p>
 		</div>
 		<div class="link">
-			<a href="team/team.php"><img src="images/meet_the_team.gif" alt="About Us"/></a>
-			<a class="heading" href="team/team.php">About Us</a>
+			<a href="team/team.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="About Us"/></a>
+			<a class="heading" href="http://dev.eclipse.org/huge_icons/apps/system-users.png">About Us</a>
 			<p class="subText">Meet the team...</p>
 		</div>
 	</div>
