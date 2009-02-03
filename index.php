@@ -25,7 +25,7 @@ ob_start();
 			<p class="subText">Browse through the product documentation, JavaDocs and tutorials...</p>
 		</div>
 		<div class="link">
-			<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/status/software-update-available.png" alt="Downloads"/></a>
+			<a href="http://wiki.eclipse.org/Development_Builds"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
 			<a class="heading" href="http://wiki.eclipse.org/Development_Builds">Downloads</a>
 			<p class="subText">Looking for the latest build? Milestones, Maintenance Builds, and more...</p>
 		</div>
