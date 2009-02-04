@@ -1,8 +1,8 @@
 <?php
 
-$Nav->addCustomNav("About This Project", "/projects/project_summary.php?projectid=" . str_replace("/", ".", $PR), "", 1);
+$Nav->addCustomNav("CDO Model Repository", "..", "", 1);
 
-$Nav->addNavSeparator("CDO", "$rooturl");
+$Nav->addNavSeparator("Documentation", ".");
 $Nav->addCustomNav("Team", "$rooturl/project-info/team.php", "", 1);
 $Nav->addCustomNav("Downloads", "/modeling/emf/downloads/?project=cdo", "", 1);
 

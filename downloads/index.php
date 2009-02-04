@@ -30,8 +30,8 @@ ob_start();
 			<p class="subText">You have problems or questions not answered in the documentation? Look here for help...</p>
 		</div>
 		<div class="link">
-			<a href="http://wiki.eclipse.org/CDO"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="CDO Wiki"/></a>
-			<a class="heading" href="http://wiki.eclipse.org/CDO">CDO Wiki</a>
+			<a href="http://wiki.eclipse.org/CDO"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="Wiki"/></a>
+			<a class="heading" href="http://wiki.eclipse.org/CDO">Wiki</a>
 			<p class="subText">Visit the community pages for information about various product and development topics...</p>
 		</div>
 		<div class="link">
