@@ -40,7 +40,7 @@ print "<h1>Add New Developer</h1>";
 include($includes . "/forms.php");
 
 $form = new Form();
-$committerid = $form->addField(new Text("committerid", "Committer ID:")->setSize(16));
+$committerid = $form->addField(new Text("committerid", "Committer ID:"))->setSize(16);
 $name = $form->addField(new Text("name", "Name:")->setSize(35));
 $email = $form->addField(new Text("email", "EMail:")->setSize(35));
 $role = $form->addField(new Text("role", "Role:")->setSize(100));
