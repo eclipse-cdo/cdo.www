@@ -1,11 +1,9 @@
 <?php
 
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php");
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php");
 
 $App = new App();
-$Nav = new Nav();
 $Menu = new Menu();
 
 include($App->getProjectCommon());
@@ -18,12 +16,16 @@ print '<div id="midcolumn">';
 ########################################################################
 
 $form = new Form();
-$form->addField(new Text("fname", "First name:", "Eike"));
-$form->addField(new Text("lname", "Last name:", "Stepper"));
-$form->addField(new Text("street", "Street:", "Here"));
-$form->addField(new Text("city", "City:", "Berlin"));
+$fname = $form->addField(new Text("fname", "First name:", "Eike"));
+$lname = $form->addField(new Text("lname", "Last name:", "Stepper"));
+$street = $form->addField(new Text("street", "Street:", "Here"));
+$city = $form->addField(new Text("city", "City:", "Berlin"));
 $form->addField(new Button("submit", "Submit"));
 $form->render();
+if ($form->isFinished())
+{
+	echo $fname->getValue() . " " . $lname->getValue() . ", " . $street->getValue() . ", " . $city->getValue();
+}
 
 ########################################################################
 print '</div>';
@@ -33,5 +35,5 @@ ob_end_clean();
 $pageKeywords= "";
 $pageAuthor= "Eike Stepper";
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="http://' . ($isBuildServer ? $_SERVER["SERVER_NAME"] : "www.eclipse.org") . '/modeling/includes/downloads.css"/>' . "\n");
-$App->generatePage($theme, $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
+$App->generatePage($theme, $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
 ?>
