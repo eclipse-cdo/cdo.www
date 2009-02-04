@@ -1,5 +1,6 @@
 <?php
 
+$navIconURL = "";
 $Nav->addNavSeparator("Development", ".");
 $Nav->addCustomNav("Update Manager", "#updates", "", 1);
 $Nav->addCustomNav("Version 1.0", "#version1", "", 1);
