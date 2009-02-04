@@ -10,11 +10,11 @@ for($i = 0; $i < $Nav->getLinkCount(); $i++)
 	{
 		if($Link->getTarget() == "__SEPARATOR")
 		{
-			print '<li class="separator">' . $Link->getText() . '</li>';
+			print '<li class="separatorNolink">' . $Link->getText() . '</li>';
 		}
 		else
 		{
-			print '<li class="nolink">' . $Link->getText() . '</li>';
+			print '<li>' . $Link->getText() . '</li>';
 		}
 	}
 	elseif (stripos($Link->getURL(), 'project_summary.php') !== FALSE)
