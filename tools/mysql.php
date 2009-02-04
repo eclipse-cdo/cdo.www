@@ -10,7 +10,7 @@ $Menu = new Menu();
 
 include($App->getProjectCommon());
 include($_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/db.php");
-include($_SERVER['DOCUMENT_ROOT'] . "modeling/includes/buildServer-common.php");
+include($_SERVER['DOCUMENT_ROOT'] . "/modeling/includes/buildServer-common.php");
 
 ob_start();
 print '<div id="midcolumn">';
