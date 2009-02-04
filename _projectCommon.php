@@ -35,15 +35,6 @@ $App->AddExtraHtmlHeader('<!--[if IE 6]> <link rel="stylesheet" type="text/css" 
 // $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
 // addGoogleAnalyticsTrackingCodeToHeader();
 
-function includeOptional($file)
-{
-	if (file_exists($file))
-	{
-	include($file);
-	} 
-}
-
-
 function formatDate($date)
 {
 	if (is_string($date)) $date = strtotime($date);

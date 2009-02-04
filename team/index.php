@@ -23,9 +23,9 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.p
 require_once($_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/db.php");
 
 include($App->getProjectCommon());
-includeOptional($root . "/nav_inc1.php");
-includeOptional("nav_inc.php");
-includeOptional($root . "/nav_inc2.php");
+include($root . "/nav_inc1.php");
+include("nav_inc.php");
+include($root . "/nav_inc2.php");
 
 $pageTitle 		= "CDO Model Repository - Team";
 $pageKeywords	= "eclipse cdo model repository modeling emf team";
