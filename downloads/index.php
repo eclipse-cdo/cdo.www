@@ -1,13 +1,13 @@
 <?php
 
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
-if (false)
+if (true)
 {
 	class MyApp extends App
 	{
 		function getNavPath($_theme)
 		{
-			return $_SERVER["DOCUMENT_ROOT"] . "/cdo/includes/nav.php";
+			return $_SERVER["DOCUMENT_ROOT"] . "/cdo/includes/my_nav.php";
 		}
 	}
 
