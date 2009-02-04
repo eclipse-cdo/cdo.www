@@ -44,7 +44,7 @@ if ($result && mysql_num_rows($result) > 0)
 	print '<p><table border="0" width="100%">' . "\n";
 	while ($row = mysql_fetch_row($result))
 	{
-		print '<tr><td width="25%" height="130" align="center" valign="top">' .
+		print '<tr><td width="20%" height="130" align="center" valign="top">' .
 		($row[1] && (preg_match("#https+://#", $row[1]) || is_file($_SERVER['DOCUMENT_ROOT'] . $row[1])) ?
 				'<img border="0" src="' . $row[1] . '" style="" height="120"/>' : '<img border="0" src="/modeling/images/team/eclipseface.png"/>') .
 				'</td><td align="left" valign="top">' . 
