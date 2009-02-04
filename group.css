@@ -2,6 +2,14 @@ body {
 	text-align:center;
 }
 
+#leftcol {
+	margin-top:-20px;
+}
+
+.groupIcon {
+	margin-left:50px;
+}
+
 #leftnav li.separator {
 	margin-top:20px;
 }

@@ -5,7 +5,7 @@ print '<div id="leftcol">';
 global $navIconURL;
 if ($navIconURL != "")
 {
-	print '<img id="groupIcon" src="' . $navIconURL . '" alt="This Page"/>';	
+	print '<img class="groupIcon" src="' . $navIconURL . '" alt="This Page"/>';	
 }
 
 print '<ul id="leftnav">';
