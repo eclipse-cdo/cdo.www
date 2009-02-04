@@ -23,7 +23,7 @@ require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); $Nav = new Nav();
 include($App->getProjectCommon());
 include($root . "/nav_inc1.php");
-include("nav_inc.php");
+if (file_exists("nav_inc.php")) include("nav_inc.php");
 include($root . "/nav_inc2.php");
 
 $pageTitle 		= "CDO Model Repository - Downloads";

@@ -24,7 +24,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/db.php");
 
 include($App->getProjectCommon());
 include($root . "/nav_inc1.php");
-include("nav_inc.php");
+if (file_exists("nav_inc.php")) include("nav_inc.php");
 include($root . "/nav_inc2.php");
 
 $pageTitle 		= "CDO Model Repository - Team";
