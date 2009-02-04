@@ -7,7 +7,8 @@ if (true)
 	{
 		function getNavPath($_theme)
 		{
-			return $_SERVER["DOCUMENT_ROOT"] . "/cdo/includes/my_nav.php";
+			global $includes;
+			return $includes . "/my_nav.php";
 		}
 	}
 
@@ -38,14 +39,14 @@ print '<div id="midcolumn">';
 include($includes . "/forms.php");
 
 $form = new Form();
-committerid = $form->addField(new Text("committerid", "Committer ID:"));
-name = $form->addField(new Text("name", "Name:"));
-email = $form->addField(new Text("email", "EMail:"));
-role = $form->addField(new Text("role", "Role:"));
-company = $form->addField(new Text("company", "Company:"));
-location = $form->addField(new Text("location", "Location:"));
-website = $form->addField(new Text("website", "Website:"));
-photoURL = $form->addField(new Text("photoURL", "Photo URL:"));
+$committerid = $form->addField(new Text("committerid", "Committer ID:"));
+$name = $form->addField(new Text("name", "Name:"));
+$email = $form->addField(new Text("email", "EMail:"));
+$role = $form->addField(new Text("role", "Role:"));
+$company = $form->addField(new Text("company", "Company:"));
+$location = $form->addField(new Text("location", "Location:"));
+$website = $form->addField(new Text("website", "Website:"));
+$photoURL = $form->addField(new Text("photoURL", "Photo URL:"));
 
 $form->addField(new Button("submit", "Submit"));
 $form->render();

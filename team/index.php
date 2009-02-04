@@ -74,10 +74,10 @@ if ($result && mysql_num_rows($result) > 0)
 
 if ($email_all)
 {
-	print '<a href="mailto:' . $email_all . '?subject=[CDO] "><img border="0" src="' . $projectPath . '/images/email_all.gif"/> Email the team</a> (Consider using the newsgroup first!)';
+	print '<a href="mailto:' . $email_all . '?subject=[CDO] "><img border="0" src="' . $projectPath . '/images/email_all.gif"/> Email the team</a> (Consider using the newsgroup first!)<br/>';
 }
 
-print '<a href="addmember.php"><img border="0" src="' . $projectPath . '/images/plus.gif"/> Add new developer</a>';
+print '<a href="addmember.php"><img border="0" src="' . $projectPath . '/images/plus.gif"/> Add new developer</a><br/>';
 
 ########################################################################
 print '</div>';
