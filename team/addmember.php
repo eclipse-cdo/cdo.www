@@ -36,6 +36,7 @@ ob_start();
 print '<div id="midcolumn">';
 ########################################################################
 
+print "<h1>Add new developer</h1>";
 include($includes . "/forms.php");
 
 $form = new Form();
