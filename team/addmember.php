@@ -41,9 +41,9 @@ include($includes . "/forms.php");
 
 $form = new Form();
 $committerid = $form->addField(new Text("committerid", "Committer ID:"))->setSize(16);
+$role = $form->addField(new Text("role", "Role:"))->setSize(100);
 $name = $form->addField(new Text("name", "Name:"))->setSize(35);
 $email = $form->addField(new Text("email", "EMail:"))->setSize(35);
-$role = $form->addField(new Text("role", "Role:"))->setSize(100);
 $company = $form->addField(new Text("company", "Company:"))->setSize(35);
 $location = $form->addField(new Text("location", "Location:"))->setSize(35);
 $website = $form->addField(new Text("website", "Website:"))->setSize(50);
