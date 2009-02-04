@@ -53,8 +53,8 @@ if ($result && mysql_num_rows($result) > 0)
 	($row[4] ? $row[4] . "<br/>" : "") .
 		'<br/>' . "\n" .
 	($row[5] ? "<i>" . $row[5] . "</i><br/>" : "") .
-	($row[7] ? '<a href="mailto:' . $row[7] . '?subject=[CDO] "><img border="0" src="' . $root . '/images/email.gif" alt="EMail"/></a>&nbsp;' : "") .
-	($row[6] ? '<a href="' . $row[6] . '" target="_blank"><img border="0" src="' . $root . '/images/website.gif" alt="WebSite"/></a>&nbsp;' : "") .
+	($row[7] ? '<a href="mailto:' . $row[7] . '?subject=[CDO] "><img border="0" src="' . $projectPath . '/images/email.gif" alt="EMail"/></a>&nbsp;' : "") .
+	($row[6] ? '<a href="' . $row[6] . '" target="_blank"><img border="0" src="' . $projectPath . '/images/website.gif" alt="WebSite"/></a>&nbsp;' : "") .
 			'</td></tr>' . "\n";
 	print "</table>\n";
 
