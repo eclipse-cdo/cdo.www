@@ -31,9 +31,7 @@ $pageAuthor		= "Eike Stepper";
 
 ob_start();
 ?>
-<div id="midcolumn">
-<?include("../placeholder.html")?>
-</div>
+<div id="midcolumn"><?include("../placeholder.html")?></div>
 
 <?php
 

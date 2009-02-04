@@ -52,35 +52,35 @@ ob_start();
 <!--			<h6>What's New</h6>-->
 <!--		</div>-->
 <!--	</div>-->
-<!---->
-<!--	<div id="rightcolumn">-->
-<!--		<div class="sideitem">-->
-<!--			<h6>Related Links</h6>-->
-<!--			<ul class="relatedLinks">-->
-<!--				<li>-->
-<!--					<a href="http://portal.eclipse.org/"><img src="http://dev.eclipse.org/large_icons/apps/preferences-system-network-proxy.png"/></a>-->
-<!--					<a href="http://portal.eclipse.org/">MyFoundation Portal</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a href="/mail/"><img src="http://dev.eclipse.org/large_icons/actions/mail-reply-all.png"/></a>-->
-<!--					<a href="/mail/">Mailing Lists</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a href="/newsgroups/"><img src="http://dev.eclipse.org/large_icons/apps/internet-news-reader.png"/></a>-->
-<!--					<a href="/newsgroups/">Newsgroups</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a href="http://www.ohloh.net/projects/8908?p=CDO"><img src="http://dev.eclipse.org/large_icons/apps/utilities-terminal.png"></a>-->
-<!--					<a href="http://www.ohloh.net/projects/8908?p=CDO">View Ohloh statistics</a>-->
-<!--				</li>-->
-<!--				<li>-->
-<!--					<a href="http://wiki.eclipse.org/Development_Resources"><img src="http://dev.eclipse.org/large_icons/apps/preferences-desktop-theme.png"/></a>-->
-<!--					<a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a>-->
-<!--				</li>-->
-<!--			</ul>-->
-<!--		</div>-->
-<!--	</div>-->
-<!--</div>-->
+
+	<div id="rightcolumn">
+		<div class="sideitem">
+			<h6>Related Links</h6>
+			<ul class="relatedLinks">
+				<li>
+					<a href="http://portal.eclipse.org/"><img src="http://dev.eclipse.org/large_icons/apps/preferences-system-network-proxy.png"/></a>
+					<a href="http://portal.eclipse.org/">MyFoundation Portal</a>
+				</li>
+				<li>
+					<a href="/mail/"><img src="http://dev.eclipse.org/large_icons/actions/mail-reply-all.png"/></a>
+					<a href="/mail/">Mailing Lists</a>
+				</li>
+				<li>
+					<a href="/newsgroups/"><img src="http://dev.eclipse.org/large_icons/apps/internet-news-reader.png"/></a>
+					<a href="/newsgroups/">Newsgroups</a>
+				</li>
+				<li>
+					<a href="http://www.ohloh.net/projects/8908?p=CDO"><img src="http://dev.eclipse.org/large_icons/apps/utilities-terminal.png"></a>
+					<a href="http://www.ohloh.net/projects/8908?p=CDO">View Ohloh statistics</a>
+				</li>
+				<li>
+					<a href="http://wiki.eclipse.org/Development_Resources"><img src="http://dev.eclipse.org/large_icons/apps/preferences-desktop-theme.png"/></a>
+					<a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 
 <?php
 
