@@ -1,6 +1,6 @@
 <?php
 
-$navIconURL = "http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png";
+$navIconURL = "http://dev.eclipse.org/huge_icons/categories/applications-internet.png";
 $Nav->addNavSeparator("Community", ".");
 $Nav->addCustomNav("Update Manager", "#updates", "", 1);
 $Nav->addCustomNav("Version 1.0", "#version1", "", 1);

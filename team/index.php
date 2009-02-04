@@ -54,7 +54,7 @@ presentations and the JavaDocs...</p>
 documentation? Look here for help...</p>
 </div>
 <div class="link"><a href="http://wiki.eclipse.org/CDO"><img
-	src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png"
+	src="http://dev.eclipse.org/huge_icons/categories/applications-internet.png"
 	alt="Wiki" /></a> <a class="heading" href="http://wiki.eclipse.org/CDO">Wiki</a>
 <p class="subText">Visit the community pages for information about
 various product and development topics...</p>

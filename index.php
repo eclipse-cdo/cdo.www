@@ -31,7 +31,7 @@ ob_start();
 	</div>
 	<div class="linkBlock">
 		<div class="link">
-			<a href="community"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="Community"/></a>
+			<a href="community"><img src="http://dev.eclipse.org/huge_icons/categories/applications-internet.png" alt="Community"/></a>
 			<a class="heading" href="community">Community</a>
 			<p class="subText">Visit the community pages for information about various product and development topics...</p>
 		</div>
@@ -41,7 +41,7 @@ ob_start();
 			<p class="subText">Get the sources and find out more about the CDO project and its development process...</p>
 		</div>
 		<div class="link">
-			<a href="team/team.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="About Us"/></a>
+			<a href="team/team.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="Team"/></a>
 			<a class="heading" href="team/team.php">Team</a>
 			<p class="subText">About us and our activity...</p>
 		</div>
