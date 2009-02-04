@@ -37,7 +37,7 @@ print '<div id="midcolumn">';
 
 $email_all = null;
 $result = wmysql_query("SELECT CommitterID, PhotoURL, Name, Company, Location, Role, Website, EMail " .
-	"FROM developers WHERE Role LIKE '%$comp%' ORDER BY did");
+	"FROM developers WHERE Role LIKE '%cdo%' ORDER BY did");
 
 if ($result && mysql_num_rows($result) > 0)
 {

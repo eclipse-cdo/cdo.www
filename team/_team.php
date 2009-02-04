@@ -37,9 +37,9 @@ if ($result && mysql_num_rows($result) > 0)
 		($row[4] ? $row[4] . "<br/>" : "") .
 		'<br/>' . "\n" .
 		($row[5] ? "<i>" . $row[5] . "</i><br/>" : "") .
-		($row[7] ? '<a href="mailto:' . $row[7] . '?subject=[CDO] "><img border="0" src="/modeling/emf/cdo/images/email.gif" alt="EMail"/></a>&nbsp;' : "") .
-		($row[6] ? '<a href="' . $row[6] . '" target="_blank"><img border="0" src="/modeling/emf/cdo/images/website.gif" alt="WebSite"/></a>&nbsp;' : "") .
-		($row[0] ? '<a href="statistics.php?committerid=' .$row[0] . '"><img border="0" src="/modeling/emf/cdo/images/statistics.gif" alt="Statistics"/></a>&nbsp;' : "") .
+		($row[7] ? '<a href="mailto:' . $row[7] . '?subject=[CDO] "><img border="0" "' . $root . '/images/images/email.gif" alt="EMail"/></a>&nbsp;' : "") .
+		($row[6] ? '<a href="' . $row[6] . '" target="_blank"><img border="0" "' . $root . '/images/images/website.gif" alt="WebSite"/></a>&nbsp;' : "") .
+		($row[0] ? '<a href="statistics.php?committerid=' .$row[0] . '"><img border="0" "' . $root . '/images/images/statistics.gif" alt="Statistics"/></a>&nbsp;' : "") .
 			'</td></tr>' . "\n";
 
 		if ($row[7])
@@ -58,7 +58,7 @@ if ($result && mysql_num_rows($result) > 0)
 
 if ($email_all)
 {
-	print '<a href="mailto:' . $email_all . '?subject=[CDO] "><img border="0" src="/modeling/emf/cdo/images/email_all.gif" alt="EMail All"/></a>';
+	print '<a href="mailto:' . $email_all . '?subject=[CDO] "><img border="0" "' . $root . '/images/images/email_all.gif" alt="EMail All"/></a>';
 }
 
 ########################################################################

@@ -40,7 +40,7 @@ if ($result && mysql_num_rows($result) > 0)
 {
 	$row = mysql_fetch_row($result);
 	$author = $row[0];
-	$pageTitle = $projectName . ' Statistics For ' . $row[2];
+	$pageTitle = 'Statistics For ' . $row[2];
 
 	print '<h1>' . $pageTitle . '</h1>';
 	print '<p><table border="0" width="100%">' . "\n";

@@ -35,4 +35,18 @@ $App->AddExtraHtmlHeader('<!--[if IE 6]> <link rel="stylesheet" type="text/css" 
 // $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
 // addGoogleAnalyticsTrackingCodeToHeader();
 
+function formatDate($date)
+{
+	if (is_string($date)) $date = strtotime($date);
+	return date("Y-m-d", $date);
+}
+
+function daysBetween($from, $until)
+{
+	if (is_string($from)) $from = strtotime($from);
+	if (is_string($until)) $until = strtotime($until);
+	$offset = floor($until / 86400) - floor($from / 86400) + 1; 
+	return $offset;
+}
+
 ?>

@@ -41,8 +41,8 @@ ob_start();
 			<p class="subText">Get the sources and find out more about the CDO project and its development process...</p>
 		</div>
 		<div class="link">
-			<a href="team/team.php"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="Team"/></a>
-			<a class="heading" href="team/team.php">Team</a>
+			<a href="team"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="Team"/></a>
+			<a class="heading" href="team">Team</a>
 			<p class="subText">About us and our activity...</p>
 		</div>
 	</div>
