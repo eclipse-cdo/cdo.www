@@ -55,13 +55,13 @@ if ($form->isFinished())
 	print "<p>";
 	print "INSERT INTO developers (committerid, name, email, role, company, location, website, photoURL) VALUES (";
 	print "'" . $committerid->getValue() . "', ";
-	print "'" . name->getValue() . "', ";
-	print "'" . email->getValue() . "', ";
-	print "'" . role->getValue() . "', ";
-	print "'" . company->getValue() . "', ";
-	print "'" . location->getValue() . "', ";
-	print "'" . website->getValue() . "', ";
-	print "'" . website->photoURL() . "')";
+	print "'" . $name->getValue() . "', ";
+	print "'" . $email->getValue() . "', ";
+	print "'" . $role->getValue() . "', ";
+	print "'" . $company->getValue() . "', ";
+	print "'" . $location->getValue() . "', ";
+	print "'" . $website->getValue() . "', ";
+	print "'" . $photoURL->getValue() . "')";
 	print "</p>\n";
 }
 
