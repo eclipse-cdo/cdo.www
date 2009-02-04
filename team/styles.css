@@ -1,0 +1,87 @@
+body {
+	text-align:center;
+}
+
+#leftnav li.separator {
+	margin-top:20px;
+}
+
+#leftnav li.separatorNolink {
+	margin-top:20px;
+	padding-top:5px;
+	margin-left:0;
+	padding:5px 0;
+	list-style-image:none;	
+	border-top:1px dotted #d4d4dd;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#midcolumn {
+	margin-top:-36px;
+	margin-right:0px;
+	margin-bottom:0px;
+	margin-left:-20px;
+	padding-top:50px;
+	padding-right:53px;
+	padding-bottom:0px;
+	padding-left:30px;
+	width:710px !important;
+	background: url('background.jpg') top left repeat-x;
+}
+
+#infoDiv {
+	margin-top:80px;
+	margin-left:45px;
+	width:300px;
+	text-align:left;
+	font-size:14px;
+	float:left;
+}
+
+.linkBlock {
+	margin-top:20px;
+	margin-bottom:20px;
+	margin-left:20px;
+	float:left;
+	width:460px;
+}
+
+.link img {
+	position:relative;
+	top:-20px;
+	float:left;	
+	padding:5px;
+} 
+
+.link {
+	clear:both;
+	padding:20px;
+}
+
+.link p.heading {
+	font-size:16px;
+}
+
+.link p.subText {
+	font-size:12px;
+}
+
+li p.heading {
+	font-size:120%;	
+	margin-bottom:5px;
+	margin-top:5px;
+	text-align:left;
+}
+
+li p.subText {
+	margin-top:0px;
+	font-size:80%;	
+	text-align:left;
+	font-weight:normal;
+}
+
+.relatedLinks li {
+	list-style-image:none !important;	
+}
+
