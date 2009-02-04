@@ -4,6 +4,8 @@ class Form
 {
 	private $method;
 	private $fields = array();
+	private $submitted = false;
+	private $finished = false;
 
 	function __construct($method = "POST")
 	{
@@ -29,12 +31,11 @@ class Form
 
 	function render()
 	{
-		$submitted = false;
 		foreach ($this->fields as $field)
 		{
 			if ($field->load())
 			{
-				$submitted = true;
+				$this->submitted = true;
 			}
 		}
 
@@ -47,9 +48,31 @@ class Form
 
 		print "</table>\n";
 		print "</form>\n";
+
+		if ($this->submitted)
+		{
+			$this->finished = true;
+			foreach ($this->fields as $field)
+			{
+				if ($field->getError() != NULL)
+				{
+					$this->finished = false;
+				}
+			}
+		}
 	}
 
-	function renderField(Field $field)
+	function isSubmitted()
+	{
+		return $this->submitted;
+	}
+
+	function isFinished()
+	{
+		return $this->finished && $this->isSubmitted();
+	}
+
+	protected function renderField(Field $field)
 	{
 		print "<tr>";
 		$field->render();
@@ -145,20 +168,41 @@ abstract class Field
 
 	function render()
 	{
+		//		if ($this->error != NULL && $this->form->isSubmitted())
+		//		{
+		//			print '<td></td><td>';
+		//			$this->renderError();
+		//			print "</td></tr>\n";
+		//			print "<tr>";
+		//		}
+
 		print "<td>";
 		$this->renderLabel();
 		print "</td>";
 
 		print "<td>";
 		$this->renderValue();
+		if ($this->error != NULL && $this->form->isSubmitted())
+		{
+			print '&nbsp;';
+			$this->renderError();
+		}
+
 		print "</td>";
+	}
+
+	function renderError()
+	{
+		print '<b><font color="#FF0000">';
+		print $this->error;
+		print "</font></b>";
 	}
 
 	function renderLabel()
 	{
-		if ($this->error != NULL)
+		if ($this->error != NULL && $this->form->isSubmitted())
 		{
-			print '<color="red">' . $this->label . '</color>';
+			print '<b><font color="#FF0000">' . $this->label . '</font></b>';
 		}
 		else
 		{
@@ -214,6 +258,16 @@ class Text extends Field
 	{
 		$this->size = $size;
 		return $this;
+	}
+
+	function validate($value)
+	{
+		if ($value == "Eike")
+		{
+			return "'Eike' is not allowed";
+		}
+			
+		return parent::validate($value);
 	}
 
 	function renderValue()
