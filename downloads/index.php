@@ -2,20 +2,21 @@
 
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php"); $App = new App();
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); $Menu = new Menu();
+require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); $Nav = new Nav();
 include($App->getProjectCommon());
+include("nav_inc.php");
 
-$pageTitle 		= "CDO Model Repository";
-$pageKeywords	= "eclipse cdo model repository modeling emf";
+$pageTitle 		= "CDO Model Repository - Downloads";
+$pageKeywords	= "eclipse cdo model repository modeling emf downloads";
 $pageAuthor		= "Eike Stepper";
 
 ob_start();
 ?>
-
-<div id="fullcolumn">
+<div id="midcolumn">
 	<div class="linkBlock">
 		<div class="link">
-			<a href="downloads"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
-			<a class="heading" href="downloads">Downloads</a>
+			<a href="http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
+			<a class="heading" href="http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5">Downloads</a>
 			<p class="subText">Looking for the latest build?<br/>Milestones, maintenance builds, and more...</p>
 		</div>
 		<div class="link">
@@ -28,8 +29,6 @@ ob_start();
 			<a class="heading" href="support">Support</a>
 			<p class="subText">You have problems or questions not answered in the documentation? Look here for help...</p>
 		</div>
-	</div>
-	<div class="linkBlock">
 		<div class="link">
 			<a href="http://wiki.eclipse.org/CDO"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="CDO Wiki"/></a>
 			<a class="heading" href="http://wiki.eclipse.org/CDO">CDO Wiki</a>
@@ -46,40 +45,6 @@ ob_start();
 			<p class="subText">Meet the team and gaze at their activity...</p>
 		</div>
 	</div>
-	
-	<div id="midcolumn">
-		<div class="homeitem">
-			<h6>What's New</h6>
-		</div>
-	</div>
-
-	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>Related Links</h6>
-			<ul class="relatedLinks">
-				<li>
-					<a href="http://portal.eclipse.org/"><img src="http://dev.eclipse.org/large_icons/apps/preferences-system-network-proxy.png"/></a>
-					<a href="http://portal.eclipse.org/">MyFoundation Portal</a>
-				</li>
-				<li>
-					<a href="/mail/"><img src="http://dev.eclipse.org/large_icons/actions/mail-reply-all.png"/></a>
-					<a href="/mail/">Mailing Lists</a>
-				</li>
-				<li>
-					<a href="/newsgroups/"><img src="http://dev.eclipse.org/large_icons/apps/internet-news-reader.png"/></a>
-					<a href="/newsgroups/">Newsgroups</a>
-				</li>
-				<li>
-					<a href="http://www.ohloh.net/projects/8908?p=CDO"><img src="http://dev.eclipse.org/large_icons/apps/utilities-terminal.png"></a>
-					<a href="http://www.ohloh.net/projects/8908?p=CDO">View Ohloh statistics</a>
-				</li>
-				<li>
-					<a href="http://wiki.eclipse.org/Development_Resources"><img src="http://dev.eclipse.org/large_icons/apps/preferences-desktop-theme.png"/></a>
-					<a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a>
-				</li>
-			</ul>
-		</div>
-	</div>
 </div>
 
 <?php
@@ -90,6 +55,6 @@ $html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
 # Generate the web page
 $App->Promotion = TRUE;
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />');	
-$App->generatePage("Nova", $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
+$App->generatePage("Nova", $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 
 ?>
