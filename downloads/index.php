@@ -12,6 +12,7 @@ if (true)
 	}
 
 	$App = new MyApp();
+	$navIconURL = "huhu";
 }
 else
 {
@@ -80,6 +81,7 @@ $html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
 
 # Generate the web page
 $App->Promotion = TRUE;
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="../styles.css" media="screen" />');
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />');
 $App->generatePage("Nova", $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
 

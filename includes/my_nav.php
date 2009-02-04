@@ -1,8 +1,14 @@
 <?php
 
 print '<div id="leftcol">';
-print '<ul id="leftnav">';
 
+global $navIconURL;
+if ($navIconURL != "")
+{
+	print '<img id="groupIcon" src="' . $navIconURL . '" alt="This Page"/>';	
+}
+
+print '<ul id="leftnav">';
 for($i = 0; $i < $Nav->getLinkCount(); $i++)
 {
 	$Link = $Nav->getLinkAt($i);
