@@ -31,8 +31,8 @@ ob_start();
 	</div>
 	<div class="linkBlock">
 		<div class="link">
-			<a href="http://wiki.eclipse.org/CDO"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="Wiki"/></a>
-			<a class="heading" href="http://wiki.eclipse.org/CDO">Wiki</a>
+			<a href="community"><img src="http://dev.eclipse.org/huge_icons/apps/accessories-text-editor.png" alt="Community"/></a>
+			<a class="heading" href="community">Community</a>
 			<p class="subText">Visit the community pages for information about various product and development topics...</p>
 		</div>
 		<div class="link">
