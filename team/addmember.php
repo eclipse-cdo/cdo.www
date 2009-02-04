@@ -48,8 +48,8 @@ $company = $form->addField(new Text("company", "Company:"))->setSize(35);
 $location = $form->addField(new Text("location", "Location:"))->setSize(35);
 $website = $form->addField(new Text("website", "Website:"))->setSize(50);
 $photoURL = $form->addField(new Text("photoURL", "Photo URL:"))->setSize(50);
-
 $form->addField(new Button("submit", "Submit"));
+
 $form->render();
 if ($form->isFinished())
 {
