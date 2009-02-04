@@ -1,7 +1,7 @@
 <?php
 
 $LF = "\n";
-
+$debug = isset($_GET["debug"]);
 $root = $_SERVER['DOCUMENT_ROOT'];
 $server = $_SERVER["SERVER_NAME"];
 if ($server == "emft.eclipse.org")

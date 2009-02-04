@@ -19,8 +19,8 @@ ob_start();
 			<p class="subText">Looking for the latest build?<br/>Milestones, maintenance builds, and more...</p>
 		</div>
 		<div class="link">
-			<a href="docs"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png" alt="Documentation"/></a>
-			<a class="heading" href="docs">Documentation</a>
+			<a href="documentation"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png" alt="Documentation"/></a>
+			<a class="heading" href="documentation">Documentation</a>
 			<p class="subText">Browse through the product documentation, tutorials, presentations and the JavaDocs...</p>
 		</div>
 		<div class="link">
