@@ -32,7 +32,7 @@ $pageAuthor		= "Eike Stepper";
 ob_start();
 ?>
 <div id="midcolumn">
-<div class="linkBlock">
+<?include("../placeholder.html")?>
 </div>
 
 <?php
