@@ -21,7 +21,9 @@ else
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); $Menu = new Menu();
 require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); $Nav = new Nav();
 include($App->getProjectCommon());
+include($root . "/nav_inc1.php");
 include("nav_inc.php");
+include($root . "/nav_inc2.php");
 
 $pageTitle 		= "CDO Model Repository - Downloads";
 $pageKeywords	= "eclipse cdo model repository modeling emf downloads";

@@ -2,20 +2,21 @@
 
 $LF = "\n";
 $debug = isset($_GET["debug"]);
-$root = $_SERVER['DOCUMENT_ROOT'];
+$docRoot = $_SERVER['DOCUMENT_ROOT'];
 $server = $_SERVER["SERVER_NAME"];
 if ($server == "emft.eclipse.org")
 {
 	// Test server
-	$home = "/modeling/emf/cdo/test/includes";
+	$projectPath = "/modeling/emf/cdo/test";
 }
 else
 {
 	// Production server
-	$home = "/cdo/includes";
+	$projectPath = "/cdo";
 }
 
-$includes = $root . $home;
+$root = $docRoot . $projectPath;
+$includes = $root . "/includes";
 
 if (isset ($_GET["skin"]) && preg_match("/^(Blue|EclipseStandard|Industrial|Lazarus|Miasma|Modern|OldStyle|Phoenix|PhoenixTest|PlainText|Nova)$/", $_GET["skin"], $regs))
 {
