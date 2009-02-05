@@ -25,6 +25,7 @@ if ($form->isFinished())
 	print "</tt></b></td></tr></table>\n";
 }
 
+include "sqlForms.php";
 print '</div>';
 
 ########################################################################

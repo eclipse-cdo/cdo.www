@@ -3,8 +3,7 @@
 
 require_once "$docRoot/modeling/includes/db.php";
 
-//$pageTitle 		= "";
-//$pageKeywords	= "";
+$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
