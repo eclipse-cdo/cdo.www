@@ -25,7 +25,8 @@ $form->addField(new Button("submit", "Submit"));
 $form->render();
 if ($form->isFinished())
 {
-	print "<p>";
+	print "<p><br/</p>\n";
+	print "<table border=\"1\"><tr><td><b><tt>";
 	print "INSERT INTO developers (committerid, name, email, role, company, location, website, photoURL) VALUES (";
 	print "'" . $committerid->getValue() . "', ";
 	print "'" . $name->getValue() . "', ";
@@ -35,7 +36,7 @@ if ($form->isFinished())
 	print "'" . $location->getValue() . "', ";
 	print "'" . $website->getValue() . "', ";
 	print "'" . $photoURL->getValue() . "');";
-	print "</p>\n";
+	print "</tt></b></td></tr></table>\n";
 }
 
 print '</div>';

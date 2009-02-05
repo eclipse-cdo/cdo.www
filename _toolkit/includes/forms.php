@@ -4,6 +4,7 @@ class Form
 {
 	private $method;
 	private $fields = array();
+	private $fieldsByName = array();
 	private $submitted = false;
 	private $finished = false;
 
@@ -17,6 +18,16 @@ class Form
 		return $this->method;
 	}
 
+	function getField($name)
+	{
+		return $this->fieldsByName($name);
+	}
+
+	function getValue($name)
+	{
+		return $this->getField($name)->getValue();
+	}
+
 	function getFields()
 	{
 		return $this->fields;
@@ -26,6 +37,7 @@ class Form
 	{
 		$field->setForm($this);
 		$this->fields[count($this->fields)] = $field;
+		$this->fieldsByName[$field->getName()] = $field;
 		return $field;
 	}
 
