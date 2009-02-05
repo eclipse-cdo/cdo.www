@@ -20,7 +20,7 @@ class Form
 
 	function getField($name)
 	{
-		return $this->fieldsByName($name);
+		return $this->fieldsByName[$name];
 	}
 
 	function getValue($name)
