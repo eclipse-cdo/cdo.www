@@ -1,7 +1,7 @@
-<?php
+<?php $rootPath = "."; include "_root.php";
 
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php"); $App = new App();
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); $Menu = new Menu();
+require_once $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php"; $App = new App();
+require_once $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"; $Menu = new Menu();
 include($App->getProjectCommon());
 
 $pageTitle 		= "CDO Model Repository";
@@ -89,7 +89,7 @@ $html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
 
 # Generate the web page
 $App->Promotion = TRUE;
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />');	
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="_root.css" media="screen" />');	
 $App->generatePage("Nova", $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
 
 ?>
