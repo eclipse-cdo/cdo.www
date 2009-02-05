@@ -45,10 +45,10 @@ class CustomApp extends App
 }
 
 $App = new CustomApp();
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/home/content/nova.css"/>');
-$App->AddExtraHtmlHeader('<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="/home/content/ie6_nova.css" media="screen"/> <![endif]-->');
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $relativeProjectPath . '/_projectStyles.css" media="screen"/>');	
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="_styles.css" media="screen"/>');	
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/home/content/nova.css"/>' . "\n\t");
+$App->AddExtraHtmlHeader('<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="/home/content/ie6_nova.css" media="screen"/> <![endif]-->' . "\n\t");
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $relativeProjectPath . '/_projectStyles.css" media="screen"/>' . "\n\t");	
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="_styles.css" media="screen"/>' . "\n\t");	
 $App->Promotion = TRUE; # set true to enable current eclipse.org site-wide promo
 //addGoogleAnalyticsTrackingCodeToHeader();
 

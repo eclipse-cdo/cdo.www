@@ -10,7 +10,7 @@ $html = ob_get_clean();
 $html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
 
 $appTitle = $projectTitle . (isset($areaTitle) ? " - $areaTitle" . (isset($pageTitle) ? " - $pageTitle" : "") : "");
-$appKeywords = "$projectKeywords $areaKeywords $pageKeywords";
+$appKeywords = "$projectTitle $projectKeywords $areaTitle $areaKeywords $pageTitle $pageKeywords";
 
 # Generate the web page
 $App->Promotion = TRUE;

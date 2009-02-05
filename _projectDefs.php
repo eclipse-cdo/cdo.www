@@ -5,7 +5,7 @@
 $projectTitle = "CDO Model Repository";
 
 # Keywords of the root
-$projectKeywords	= "eclipse cdo model repository modeling emf";
+$projectKeywords	= "Eclipse Modeling EMF";
 
 ########################################################################
 ?>

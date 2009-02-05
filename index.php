@@ -1,14 +1,11 @@
-<?php $rootPath = "."; include "_root.php";
+<?php $relativeProjectPath = "."; include "_projectDefs.php"; include "_projectHeader.php";
+########################################################################
 
-require_once $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php"; $App = new App();
-require_once $_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"; $Menu = new Menu();
-include($App->getProjectCommon());
-
-$pageTitle 		= "CDO Model Repository";
-$pageKeywords	= "eclipse cdo model repository modeling emf";
+$Nav = NULL;
+$pageTitle 		= "";
+$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-ob_start();
 ?>
 
 <div id="fullcolumn">
@@ -83,13 +80,5 @@ ob_start();
 </div>
 
 <?php
-
-$html = ob_get_clean(); 
-$html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
-
-# Generate the web page
-$App->Promotion = TRUE;
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="_root.css" media="screen" />');	
-$App->generatePage("Nova", $Menu, NULL, $pageAuthor, $pageKeywords, $pageTitle, $html);
-
-?>
+########################################################################
+include "_projectFooter.php"; ?>

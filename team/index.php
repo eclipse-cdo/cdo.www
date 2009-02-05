@@ -1,40 +1,13 @@
-<?php
-
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
-if (true)
-{
-	class MyApp extends App
-	{
-		function getNavPath($_theme)
-		{
-			return $_SERVER["DOCUMENT_ROOT"] . "/cdo/includes/my_nav.php";
-		}
-	}
-
-	$App = new MyApp();
-}
-else
-{
-	$App = new App();
-}
-
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); $Menu = new Menu();
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); $Nav = new Nav();
-require_once($_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/db.php");
-
-include($App->getProjectCommon());
-include($root . "/nav_inc1.php");
-include("nav_inc.php");
-include($root . "/nav_inc2.php");
-
-$pageTitle 		= "CDO Model Repository - Team";
-$pageKeywords	= "eclipse cdo model repository modeling emf team";
-$pageAuthor		= "Eike Stepper";
-
-ob_start();
-print '<div id="midcolumn">';
+<?php include "_defs.php";  include "_header.php";
 ########################################################################
 
+require_once "$docRoot/modeling/includes/db.php";
+
+//$pageTitle 		= "";
+//$pageKeywords	= "";
+$pageAuthor		= "Eike Stepper";
+
+print '<div id="midcolumn">';
 $email_all = null;
 $result = wmysql_query("SELECT CommitterID, PhotoURL, Name, Company, Location, Role, Website, EMail " .
 	"FROM developers WHERE Role LIKE '%cdo%' ORDER BY did");
@@ -78,17 +51,7 @@ if ($email_all)
 }
 
 print '<a href="addmember.php"><img border="0" src="' . $projectPath . '/images/plus.gif"/> Add New Developer</a><br/>';
-
-########################################################################
 print '</div>';
 
-$html = ob_get_clean();
-$html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
-
-# Generate the web page
-$App->Promotion = TRUE;
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="../group.css" media="screen" />');
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />');
-$App->generatePage("Nova", $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
-
-?>
+########################################################################
+include "_footer.php"; ?>
