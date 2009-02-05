@@ -18,6 +18,19 @@ class Form
 		return $this->method;
 	}
 
+	function addField($field)
+	{
+		$field->setForm($this);
+		$this->fields[count($this->fields)] = $field;
+		$this->fieldsByName[$field->getName()] = $field;
+		return $field;
+	}
+
+	function getFields()
+	{
+		return $this->fields;
+	}
+
 	function getField($name)
 	{
 		return $this->fieldsByName[$name];
@@ -28,17 +41,32 @@ class Form
 		return $this->getField($name)->getValue();
 	}
 
-	function getFields()
+	function getValues($skipButtons = true)
 	{
-		return $this->fields;
+		$result = array();
+		foreach ($this->fields as $field)
+		{
+			if (!($skipButtons && $field instanceof Button))
+			{
+				$result[count($result)] = $field->getValue();
+			}
+		}
+
+		return $result;
 	}
 
-	function addField($field)
+	function getNames($skipButtons = true)
 	{
-		$field->setForm($this);
-		$this->fields[count($this->fields)] = $field;
-		$this->fieldsByName[$field->getName()] = $field;
-		return $field;
+		$result = array();
+		foreach ($this->fields as $field)
+		{
+			if (!($skipButtons && $field instanceof Button))
+			{
+				$result[count($result)] = $field->getName();
+			}
+		}
+
+		return $result;
 	}
 
 	function render()
@@ -102,10 +130,10 @@ abstract class Field
 	private $value;
 	private $error;
 
-	function __construct($name, $label, $defaultValue = NULL)
+	function __construct($name, $label = NULL, $defaultValue = NULL)
 	{
 		$this->name = $name;
-		$this->label = $label;
+		$this->label = $label == NULL ? $name : $label;
 		$this->defaultValue = $defaultValue;
 	}
 
@@ -228,7 +256,7 @@ abstract class Field
 
 class Button extends Field
 {
-	function __construct($name, $label)
+	function __construct($name, $label = NULL)
 	{
 		parent::__construct($name, $label);
 	}
@@ -256,7 +284,7 @@ class Text extends Field
 	private $size;
 	private $maxlen;
 
-	function __construct($name, $label, $defaultValue = NULL)
+	function __construct($name, $label = NULL, $defaultValue = NULL)
 	{
 		parent::__construct($name, $label, $defaultValue);
 	}
