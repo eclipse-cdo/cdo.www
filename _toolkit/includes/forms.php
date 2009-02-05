@@ -300,6 +300,22 @@ class Text extends Field
 		return $this;
 	}
 
+	function getMaxLen()
+	{
+		return $this->maxlen;
+	}
+
+	function setMaxLen($maxlen)
+	{
+		$this->maxlen = $maxlen;
+		if (!isset($this->size))
+		{
+			$this->size = ($maxlen > 100 ? 100 : $maxlen);
+		}
+
+		return $this;
+	}
+
 	function validate($value)
 	{
 		if ($value == "Eike")

@@ -11,16 +11,16 @@ print '<div id="midcolumn">';
 print "<h1>$pageTitle</h1>";
 
 $form = new Form();
-$form->addField(new Text("committerid"))->setSize(16);
-$form->addField(new Text("role"))->setSize(100);
-$form->addField(new Text("name"))->setSize(35);
-$form->addField(new Text("email"))->setSize(35);
-$form->addField(new Text("company"))->setSize(35);
-$form->addField(new Text("location"))->setSize(35);
-$form->addField(new Text("website"))->setSize(50);
-$form->addField(new Text("photoURL"))->setSize(50);
-$form->addField(new Button("submit", "Generate"));
+$form->addField(new Text("committerid"))->setMaxLen(16);
+$form->addField(new Text("role"))->setMaxLen(70);
+$form->addField(new Text("name"))->setMaxLen(70);
+$form->addField(new Text("email"))->setMaxLen(70);
+$form->addField(new Text("company"))->setMaxLen(255);
+$form->addField(new Text("location"))->setMaxLen(255);
+$form->addField(new Text("website"))->setMaxLen(255);
+$form->addField(new Text("photoURL"))->setMaxLen(255);
 
+$form->addField(new Button("submit", "Generate"));
 $form->render();
 if ($form->isFinished())
 {
