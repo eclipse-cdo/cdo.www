@@ -50,7 +50,7 @@ if ($email_all)
 	print '<a href="mailto:' . $email_all . '?subject=[CDO] "><img border="0" src="' . $relativeProjectPath . '/images/email_all.gif"/> EMail The Team</a> (Consider using the <a href="../support/#newsgroup">newsgroup</a> first!)<br/>';
 }
 
-print '<a href="addmember.php"><img border="0" src="' . $relativeProjectPath . '/images/plus.gif"/> Add New Developer</a><br/>';
+print '<a href="addDeveloper.php"><img border="0" src="' . $relativeProjectPath . '/images/plus.gif"/> Add New Developer</a><br/>';
 print '</div>';
 
 ########################################################################

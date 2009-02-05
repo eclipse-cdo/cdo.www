@@ -1,43 +1,15 @@
-<?php
-
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/app.class.php");
-if (true)
-{
-	class MyApp extends App
-	{
-		function getNavPath($_theme)
-		{
-			global $includes;
-			return $includes . "/my_nav.php";
-		}
-	}
-
-	$App = new MyApp();
-}
-else
-{
-	$App = new App();
-}
-
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/menu.class.php"); $Menu = new Menu();
-require_once($_SERVER['DOCUMENT_ROOT'] . "/eclipse.org-common/system/nav.class.php"); $Nav = new Nav();
-require_once($_SERVER["DOCUMENT_ROOT"] . "/modeling/includes/db.php");
-
-include($App->getProjectCommon());
-include($root . "/nav_inc1.php");
-include("nav_inc.php");
-include($root . "/nav_inc2.php");
-
-$pageTitle 		= "CDO Model Repository - Add Team Member";
-$pageKeywords	= "eclipse cdo model repository modeling emf team member";
-$pageAuthor		= "Eike Stepper";
-
-ob_start();
-print '<div id="midcolumn">';
+<?php include "_defs.php";  include "_header.php";
 ########################################################################
 
-print "<h1>Add New Developer</h1>";
-include($includes . "/forms.php");
+//require_once "$docRoot/modeling/includes/db.php";
+require_once "$toolkitRoot/includes/forms.php");
+
+$pageTitle 		= "Add New Developer";
+$pageKeywords	= "";
+$pageAuthor		= "Eike Stepper";
+
+print '<div id="midcolumn">';
+print "<h1>$pageTitle</h1>";
 
 $form = new Form();
 $committerid = $form->addField(new Text("committerid", "Committer ID:"))->setSize(16);
@@ -66,16 +38,7 @@ if ($form->isFinished())
 	print "</p>\n";
 }
 
-########################################################################
 print '</div>';
 
-$html = ob_get_clean();
-$html = mb_convert_encoding($html, "HTML-ENTITIES", "auto");
-
-# Generate the web page
-$App->Promotion = TRUE;
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="../group.css" media="screen" />');
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="styles.css" media="screen" />');
-$App->generatePage("Nova", $Menu, $Nav, $pageAuthor, $pageKeywords, $pageTitle, $html);
-
-?>
+########################################################################
+include "_footer.php"; ?>
