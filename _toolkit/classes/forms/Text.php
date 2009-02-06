@@ -49,7 +49,9 @@ class Text extends Field
 
 	function renderValue()
 	{
-		print '<input type="text" value="' . $this->getValue() . '" name="' . $this->getName() . '" size="/' . $this->getSize() . '"/>';
+		print '<input type="text" value="' . $this->getValue() . '" name="' . $this->getName() . '" size="/' . $this->getSize() . '"';
+		$this->renderHandlers();
+		print '/>';
 	}
 }
 

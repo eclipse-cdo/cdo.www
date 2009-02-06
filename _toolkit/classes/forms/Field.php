@@ -7,6 +7,7 @@ abstract class Field
 	private $label;
 	private $defaultValue;
 	private $value;
+	private $handlers = array();
 	private $error;
 
 	function __construct($name, $label = NULL, $defaultValue = NULL)
@@ -18,10 +19,9 @@ abstract class Field
 
 	function load()
 	{
-		if (isset($_POST[$this->name]))
+		if (isset($_REQUEST[$this->name]))
 		{
-			// TODO Consider form method!
-			$this->setValue($_POST[$this->name]);
+			$this->setValue($_REQUEST[$this->name]);
 		}
 		else
 		{
@@ -80,6 +80,22 @@ abstract class Field
 		return this;
 	}
 
+	function getHandlers()
+	{
+		return $this->handlers;
+	}
+	
+	function on($event, $js)
+	{
+		if (strpos($event, "on") === 0)
+		{
+			$event = substr($event, 2);
+		}
+		
+		$this->handlers[$event] = $js;
+		return $this;	
+	}
+	
 	function validate($value)
 	{
 		return NULL;
@@ -130,6 +146,18 @@ abstract class Field
 	}
 
 	abstract function renderValue();
+
+	protected function renderHandlers()
+	{
+		$events = array_keys($this->handlers);
+		asort($events);
+		
+		foreach ($events as $event)
+		{
+			$handler = $this->handlers[$event];
+			print " on$event=\"$handler\"";
+		}
+	}
 }
 
 ?>

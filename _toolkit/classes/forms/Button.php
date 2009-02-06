@@ -20,7 +20,9 @@ class Button extends Field
 
 	function renderValue()
 	{
-		print '<input type="submit" value="' . $this->getLabel() . '" name="' . $this->getName() . '"/>';
+		print '<input type="submit" value="' . $this->getLabel() . '" name="' . $this->getName() . '"';
+		$this->renderHandlers();
+		print '/>';
 	}
 }
 

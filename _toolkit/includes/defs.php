@@ -4,9 +4,10 @@ require_once "$toolkitRoot/classes/autoload.php";
 
 $LF = "\n";
 $debug = isset($_GET["debug"]);
-$docRoot = $_SERVER["DOCUMENT_ROOT"];
 $serverName = $_SERVER["SERVER_NAME"];
-
+$docRoot = $_SERVER["DOCUMENT_ROOT"];
+$pageFile = $_SERVER["PHP_SELF"];
+$pageRoot = "";
 
 if (isset ($_GET["skin"]) && preg_match("/^(Blue|EclipseStandard|Industrial|Lazarus|Miasma|Modern|OldStyle|Phoenix|PhoenixTest|PlainText|Nova)$/", $_GET["skin"], $regs))
 {

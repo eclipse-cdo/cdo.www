@@ -19,6 +19,12 @@ print "\n";
 print '<div id="midcolumn">';
 print '<div class="center">';
 
+$form = new Form();
+$form->setTarget("PHP_REFERENCE");
+$fname = $form->addField(new Text("func", "Function name:"))->on("change", "form.action = 'http://www.php.net/' + func.value");
+$form->addField(new Button("submit", "Submit"));
+$form->render();
+
 foreach ($lines as $line)
 {
 	if (isset($copyToOutput))

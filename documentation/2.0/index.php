@@ -1,4 +1,4 @@
-<?php include "_defs.php";  include "_header.php"; 
+<?php $relativeProjectPath = "../.."; include "../_defs.php";  include "../_header.php"; 
 ########################################################################
 
 //$pageTitle 		= "";
@@ -11,4 +11,4 @@ include "$node.html";
 print '</div>';
 
 ########################################################################
-include "_footer.php"; ?>
+include "../_footer.php"; ?>

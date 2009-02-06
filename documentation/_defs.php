@@ -1,4 +1,4 @@
-<?php $relativeProjectPath = ".."; require_once "$relativeProjectPath/_projectDefs.php";
+<?php require_once "$relativeProjectPath/_projectDefs.php";
 ########################################################################
 
 # Display name of this area

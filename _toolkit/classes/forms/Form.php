@@ -2,20 +2,39 @@
 
 class Form
 {
+	private $action;
 	private $method;
+	private $target;
 	private $fields = array();
 	private $fieldsByName = array();
 	private $submitted = false;
 	private $finished = false;
 
-	function __construct($method = "POST")
+	function __construct($action = NULL, $method = "POST")
 	{
+		$this->action = $action;
 		$this->method = $method;
+	}
+
+	function getAction()
+	{
+		return $this->action;
 	}
 
 	function getMethod()
 	{
 		return $this->method;
+	}
+
+	function getTarget()
+	{
+		return $this->target;
+	}
+
+	function setTarget($target)
+	{
+		$this->target = $target;
+		return $this;
 	}
 
 	function addField($field)
@@ -79,8 +98,12 @@ class Form
 			}
 		}
 
-		print "<form method=\"$this->method\">\n";
-		print "<table border=\"0\">\n";
+		$action = $this->action == NULL ? "" : " action=\"$this->action\"";
+		$method = $this->method == NULL ? "" : " method=\"$this->method\"";
+		$target = $this->target == NULL ? "" : " target=\"$this->target\"";
+		
+		print "<form$action$method$target>\n";
+		print "<table>\n";
 		foreach ($this->fields as $field)
 		{
 			$this->renderField($field);
