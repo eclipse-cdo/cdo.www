@@ -47,8 +47,23 @@ $pageAuthor		= "Eike Stepper";
 
 	<div id="midcolumn">
 		<div class="sideitem">
-			<h6><a href="/<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;<a href="/<?=$PR?>/news-whatsnew.php">What's New</a></h6>
-			<?php getNews(4, "whatsnew"); ?>
+			<h6><a href="<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;<a href="/<?=$PR?>/news-whatsnew.php">What's New</a></h6>
+			<?php
+				$xml = file_get_contents("$projectRoot/feeds/news.xml");
+				getNews(8, "whatsnew", $xml);
+			?>
+		</div>
+		<div class="sideitem">
+			<h6><a href="<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;<a href="/<?=$PR?>/news-whatsnew.php">Upcoming Events</a></h6>
+			<?php
+				getNews(4, "bleedingedge", $xml);
+			?>
+		</div>
+		<div class="sideitem">
+			<h6><a href="<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;<a href="/<?=$PR?>/news-whatsnew.php">Docs</a></h6>
+			<?php
+				getNews(4, "docs", $xml);
+			?>
 		</div>
 	</div>
 
