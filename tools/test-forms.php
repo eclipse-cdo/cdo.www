@@ -1,4 +1,4 @@
-<?php include "_defs.php";  include "_header.php";
+<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php"; 
 ########################################################################
 
 //$pageTitle 		= "Downloads";
@@ -22,4 +22,4 @@ if ($form->isFinished())
 print '</div>';
 
 ########################################################################
-include "_footer.php"; ?>
+include "$areaRoot/_footer.php"; ?>

@@ -1,4 +1,4 @@
-<?php include "_defs.php";  include "_header.php";
+<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php"; 
 ########################################################################
 
 //$pageTitle 		= "Downloads";
@@ -46,4 +46,4 @@ print '</div>';
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="phpinfo.css" media="screen"/>' . "\n\t");
 
 ########################################################################
-include "_footer.php"; ?>
+include "$areaRoot/_footer.php"; ?>

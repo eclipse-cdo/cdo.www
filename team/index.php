@@ -1,4 +1,4 @@
-<?php include "_defs.php";  include "_header.php";
+<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php"; 
 ########################################################################
 
 require_once "$docRoot/modeling/includes/db.php";
@@ -26,9 +26,9 @@ if ($result && mysql_num_rows($result) > 0)
 		($row[4] ? $row[4] . "<br/>" : "") .
 		'<br/>' . "\n" .
 		($row[5] ? "<i>" . $row[5] . "</i><br/>" : "") .
-		($row[7] ? '<a href="mailto:' . $row[7] . '?subject=[CDO] "><img border="0" src="' . $relativeProjectPath . '/images/email.gif" alt="EMail"/></a>&nbsp;' : "") .
-		($row[6] ? '<a href="' . $row[6] . '" target="_blank"><img border="0" src="' . $relativeProjectPath . '/images/website.gif" alt="WebSite"/></a>&nbsp;' : "") .
-		($row[0] ? '<a href="statistics.php?committerid=' .$row[0] . '"><img border="0" src="' . $relativeProjectPath . '/images/statistics.gif" alt="Statistics"/></a>&nbsp;' : "") .
+		($row[7] ? '<a href="mailto:' . $row[7] . '?subject=[CDO] "><img border="0" src="' . $projectPath . '/images/email.gif" alt="EMail"/></a>&nbsp;' : "") .
+		($row[6] ? '<a href="' . $row[6] . '" target="_blank"><img border="0" src="' . $projectPath . '/images/website.gif" alt="WebSite"/></a>&nbsp;' : "") .
+		($row[0] ? '<a href="statistics.php?committerid=' .$row[0] . '"><img border="0" src="' . $projectPath . '/images/statistics.gif" alt="Statistics"/></a>&nbsp;' : "") .
 			'</td></tr>' . "\n";
 
 		if ($row[7])
@@ -47,11 +47,11 @@ if ($result && mysql_num_rows($result) > 0)
 
 if ($email_all)
 {
-	print '<a href="mailto:' . $email_all . '?subject=[CDO] "><img border="0" src="' . $relativeProjectPath . '/images/email_all.gif"/> EMail The Team</a> (Consider using the <a href="../support/#newsgroup">newsgroup</a> first!)<br/>';
+	print '<a href="mailto:' . $email_all . '?subject=[CDO] "><img border="0" src="' . $projectPath . '/images/email_all.gif"/> EMail The Team</a> (Consider using the <a href="../support/#newsgroup">newsgroup</a> first!)<br/>';
 }
 
 include "sqlForms.php";
 print '</div>';
 
 ########################################################################
-include "_footer.php"; ?>
+include "$areaRoot/_footer.php"; ?>

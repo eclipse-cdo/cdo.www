@@ -1,4 +1,4 @@
-<?php $relativeProjectPath = ".."; include "_defs.php";  include "_header.php"; 
+<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php"; 
 ########################################################################
 
 //$pageTitle 		= "";
@@ -6,8 +6,8 @@
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-include "$relativeProjectPath/tools/placeholder.html";
+include "$projectRoot/tools/placeholder.html";
 print '</div>';
 
 ########################################################################
-include "_footer.php"; ?>
+include "$areaRoot/_footer.php"; ?>

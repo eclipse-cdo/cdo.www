@@ -1,4 +1,4 @@
-<?php $relativeProjectPath = "."; include "_projectDefs.php"; include "_projectHeader.php";
+<?php require_once "_projectDefs.php"; include "_projectHeader.php";
 ########################################################################
 
 $Nav = NULL;
@@ -83,6 +83,7 @@ $pageAuthor		= "Eike Stepper";
 			</ul>
 		</div>
 	</div>
+
 </div>
 
 <?php
