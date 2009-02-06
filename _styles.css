@@ -1,7 +1,29 @@
-#novaContent{
+#novaContent {
+	padding-top: 60px;
 	background: #FFF url('background.jpg') top left repeat-x;
 }
 
 #fullcolumn {
-	padding-top:50px;	
+	padding-top: 50px;
+}
+
+#midcolumn {
+	width: 673px;
+	margin-top: 0px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 20px;
+}
+
+a.heading {
+	font-size: 18px;
+}
+
+p.subText {
+	font-style: italic;
+	color: #575757;
 }

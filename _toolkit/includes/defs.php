@@ -150,7 +150,7 @@ $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/home/con
 $App->AddExtraHtmlHeader('<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="/home/content/ie6_nova.css" media="screen"/> <![endif]-->' . "\n\t");
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $projectPath . '/_projectStyles.css" media="screen"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/_styles.css" media="screen"/>' . "\n\t");
-if ($pagePath != $areaPath)
+if ($pageFolderPath != $areaPath)
 {
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/_styles.css" media="screen"/>' . "\n\t");
 }

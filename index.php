@@ -8,7 +8,6 @@ $pageAuthor		= "Eike Stepper";
 
 ?>
 
-<div id="fullcolumn">
 	<div class="linkBlock">
 		<div class="link">
 			<a href="downloads"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
@@ -26,6 +25,7 @@ $pageAuthor		= "Eike Stepper";
 			<p class="subText">You have problems or questions not answered in the documentation? Look here for help...</p>
 		</div>
 	</div>
+
 	<div class="linkBlock">
 		<div class="link">
 			<a href="community"><img src="http://dev.eclipse.org/huge_icons/categories/applications-internet.png" alt="Community"/></a>
@@ -43,12 +43,14 @@ $pageAuthor		= "Eike Stepper";
 			<p class="subText">About us and our activity...</p>
 		</div>
 	</div>
-	
-<!--	<div id="midcolumn">-->
-<!--		<div class="homeitem">-->
-<!--			<h6>What's New</h6>-->
-<!--		</div>-->
-<!--	</div>-->
+
+
+	<div id="midcolumn">
+		<div class="sideitem">
+			<h6><a href="/<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;<a href="/<?=$PR?>/news-whatsnew.php">What's New</a></h6>
+			<?php getNews(4, "whatsnew"); ?>
+		</div>
+	</div>
 
 	<div id="rightcolumn">
 		<div class="sideitem">
@@ -84,7 +86,6 @@ $pageAuthor		= "Eike Stepper";
 		</div>
 	</div>
 
-</div>
 
 <?php
 ########################################################################

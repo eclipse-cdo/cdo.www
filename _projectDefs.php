@@ -11,5 +11,9 @@ $projectKeywords	= "Eclipse Modeling Framework EMF";
 $mysqlProject = "org.eclipse.emf";
 $mysqlComponent = "org.eclipse.emf.cdo";
 
+# Used by various modeling includes
+$PR = "modeling/emf/cdo";
+require_once "$docRoot/modeling/includes/scripts.php";
+
 ########################################################################
 ?>
