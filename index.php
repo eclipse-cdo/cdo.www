@@ -74,6 +74,12 @@ $pageAuthor		= "Eike Stepper";
 					<a href="http://wiki.eclipse.org/Development_Resources"><img src="http://dev.eclipse.org/large_icons/apps/preferences-desktop-theme.png"/></a>
 					<a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a>
 				</li>
+				<?if ($serverName=="localhost") {?>
+				<li>
+					<a href="http://wiki.eclipse.org/Development_Resources"><img src="http://dev.eclipse.org/large_icons/apps/preferences-desktop-theme.png"/></a>
+					<a href="tools">Committer Tools</a>
+				</li>
+				<?}?>
 			</ul>
 		</div>
 	</div>

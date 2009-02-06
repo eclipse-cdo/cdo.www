@@ -1,5 +1,7 @@
 <?php
 
+require_once "$toolkitRoot/classes/autoload.php";
+
 $LF = "\n";
 $debug = isset($_GET["debug"]);
 $docRoot = $_SERVER["DOCUMENT_ROOT"];

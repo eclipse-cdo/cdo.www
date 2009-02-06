@@ -2,11 +2,14 @@
 	background: url('background.jpg') top left repeat-x;
 }
 
+#midcolumn ul,#midcolumn ol {
+	margin-top: 7px;
+	margin-left: 20px;
+}
+
 #midcolumn li {
-	font-size: 12px;
-	margin-left: 10px;
-	list-style-position: outside;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	list-style-image:
 		url('/eclipse.org-common/themes/Nova/images/homeitemBulletIE.gif');
-	line-height: 14px;
 }

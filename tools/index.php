@@ -1,12 +1,9 @@
 <?php include "_defs.php";  include "_header.php";
 ########################################################################
 
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="phpinfo.css" media="screen"/>' . "\n\t");
-
 //$pageTitle 		= "Downloads";
 //$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
-
 
 phpinfo();
 $info = ob_get_clean();
@@ -39,6 +36,8 @@ foreach ($lines as $line)
 
 print '</div>';
 print '</div>';
+
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="phpinfo.css" media="screen"/>' . "\n\t");
 
 ########################################################################
 include "_footer.php"; ?>
