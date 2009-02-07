@@ -1,27 +1,48 @@
 <?php $areaRelative = ".."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
-$pageTitle 		= "2.0 Preview";
-$pageKeywords	= "preview development integration interim";
+$pageTitle 		= "Reference 2.0";
+$pageKeywords	= "reference preview development integration interim";
 $pageAuthor		= "Eike Stepper";
+
+$ditaSrc = "org.eclipse.emf/org.eclipse.emf.cdo/doc/org.eclipse.emf.cdo.doc/dita/src";
 
 print '<div id="midcolumn">';
 
 $node = isset($_REQUEST["node"]) ? $_REQUEST["node"] : "index";
+$mode = isset($_REQUEST["mode"]) ? $_REQUEST["mode"] : "view";
+$branch = isset($_REQUEST["branch"]) ? $_REQUEST["branch"] : "HEAD";
+
+$Nav->addNavSeparator("This Node", "");
+$Nav->addCustomNav("<b>View</b>", $mode == "view" ? "" : "$pageFolder?node=$node", "", 1);
+$Nav->addCustomNav("<b>Source</b>", $mode == "source" ? "" : "$pageFolder?node=$node&mode=source", "", 1);
+$Nav->addCustomNav("<b>History</b>", $mode == "history" ? "" : "$pageFolder?node=$node&mode=history", "", 1);
+
 $ext =  ($node == "index" ? "ditamap" : "xml");
+$file = "$ditaSrc/$node.$ext";
+$url = "$viewcvsURL/$file?root=$viewcvsRoot&pathrev=$branch";
 
-$viewcvs = "http://dev.eclipse.org/viewcvs/index.cgi";
-$dita = "org.eclipse.emf/org.eclipse.emf.cdo/doc/org.eclipse.emf.cdo.doc/dita/src";
-$repository = "Modeling_Project";
+switch ($mode)
+{
+	case "view":
+		include "$node.html";
+		break;
 
-$viewcvsRev1 = "1.4";
-$viewcvsRev2 = "1.2";
+	case "source":
+		$html = file_get_contents("$url&view=markup");
+		preg_match('/<div id="vc_markup">(.+)<\/div>\s*<div id="midcolumn">/is', $html, $matches);
+		print $matches[1];
+		break;
 
-$query = "root=$repository&view=diff&r1=$viewcvsRev1&r2=$viewcvsRev2&diff_format=h";
-$url = "$viewcvs/$dita/$node.$ext?$query";
-echo "$url<br/>";
+	case "history":
+		$html = file_get_contents("$url&view=log");
+		preg_match('/<table class="auto">(.+)<\/form>/is', $html, $matches);
+		$html = str_replace('"' . $viewcvsPath, '"' . $viewcvsURL, $matches[1]);
+		print '<h6 class="homeitem"><a href="' . $pageFolder . '?node=' . $node . '&mode=source">' . $file . '</a></h6><hr/>' . "\n";
+		print '<table class="auto">' . $html . '</form>';
+		break;
+}
 
-include "$node.html";
 print '</div>';
 
 ########################################################################
