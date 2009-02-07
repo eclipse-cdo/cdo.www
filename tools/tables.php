@@ -107,7 +107,7 @@ function query($sql)
 			return wmysql_query($sql);
 
 		case "bugzilla":
-			return bugzilla_sql($sql);
+			return $App->bugzilla_sql($sql);
 
 		default:
 			return $App->sql($sql, $dbname);
