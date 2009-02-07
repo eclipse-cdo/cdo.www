@@ -1,4 +1,4 @@
-<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php"; 
+<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
 require_once "$docRoot/modeling/includes/db.php";
@@ -99,14 +99,19 @@ function getParameter($name, $defvalue)
 
 function query($sql)
 {
-	$dbname = getParameter("dbname", "modeling");
-	if ($dbname == "modeling")
-	{
-		return wmysql_query($sql);
-	}
-
 	global $App;
-	return $App->sql($sql, $dbname);
+	$dbname = getParameter("dbname", "modeling");
+	switch ($dbname)
+	{
+		case "modeling":
+			return wmysql_query($sql);
+
+		case "bugzilla":
+			return bugzilla_sql($sql);
+
+		default:
+			return $App->sql($sql, $dbname);
+	}
 }
 
 ########################################################################
