@@ -1,5 +1,4 @@
 Options +FollowSymlinks
 
 RewriteEngine On
-RewriteBase /cdo/documentation/2.0
 RewriteRule ^(.*)(\.html)(.*)$ index.php?node=$1$3 [QSA]
