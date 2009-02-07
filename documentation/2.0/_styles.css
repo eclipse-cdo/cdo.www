@@ -13,3 +13,7 @@
 	list-style-image:
 		url('/eclipse.org-common/themes/Nova/images/homeitemBulletIE.gif');
 }
+
+.familylinks,.relconcepts {
+	margin-top: 20px;
+}
