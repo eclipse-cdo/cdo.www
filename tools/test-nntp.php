@@ -7,30 +7,16 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-$newsgroup = imap_open("{news.eclipse.org:119/nntp}eclipse.tools.emf", "exquisitus", "flinder19");
-//echo "<h1>Postfächer</h1>\n";
-//$folders = imap_listmailbox($newsgroup, "{imap.example.org:143}", "*");
-//
-//if ($folders == false) {
-//    echo "Abruf fehlgeschlagen<br />\n";
-//} else {
-//    foreach ($folders as $val) {
-//        echo $val . "<br />\n";
-//    }
-//}
-echo "Messages: " . imap_num_msg($newsgroup);
-//echo "<h1>Nachrichten in INBOX</h1>\n";
-//$headers = imap_headers($newsgroup);
-//
-//if ($headers == false) {
-//    echo "Abruf fehlgeschlagen<br />\n";
-//} else {
-//    foreach ($headers as $val) {
-//        echo $val . "<br />\n";
-//    }
-//}
-
-imap_close($newsgroup);
+if (function_exists("imap_open"))
+{
+	$newsgroup = imap_open("{news.eclipse.org:119/nntp}eclipse.tools.emf", "exquisitus", "flinder19");
+	echo "Messages: " . imap_num_msg($newsgroup);
+	imap_close($newsgroup);
+}
+else
+{
+	echo "No NNTP support available.";
+}
 
 print '</div>';
 
