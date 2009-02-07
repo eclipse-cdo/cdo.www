@@ -3,4 +3,4 @@
 
 
 ########################################################################
-include "$relativeProjectPath/_projectFooter.php"; ?>
+include "$relativeProjectPath/_projectCommon/footer.php"; ?>

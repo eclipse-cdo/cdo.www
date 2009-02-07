@@ -3,4 +3,4 @@
 
 
 ########################################################################
-include "$projectRoot/_projectFooter.php"; ?>
+include "$projectRoot/_projectCommon/footer.php"; ?>

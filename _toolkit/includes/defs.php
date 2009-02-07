@@ -148,7 +148,7 @@ class CustomApp extends App
 $App = new CustomApp();
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/home/content/nova.css"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<!--[if IE 6]> <link rel="stylesheet" type="text/css" href="/home/content/ie6_nova.css" media="screen"/> <![endif]-->' . "\n\t");
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $projectPath . '/_projectStyles.css" media="screen"/>' . "\n\t");
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $projectPath . '/_projectCommon/styles.css" media="screen"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/_styles.css" media="screen"/>' . "\n\t");
 if ($pageFolderPath != $areaPath)
 {

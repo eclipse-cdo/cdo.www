@@ -1,4 +1,4 @@
-<?php include "$relativeProjectPath/_projectHeader.php";
+<?php include "$relativeProjectPath/_projectCommon/header.php";
 ########################################################################
 
 $navIconURL = "http://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png";

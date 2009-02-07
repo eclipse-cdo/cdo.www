@@ -1,4 +1,4 @@
-<?php require_once "_projectDefs.php"; include "_projectHeader.php";
+<?php require_once "_projectCommon/defs.php"; include "_projectCommon/header.php";
 ########################################################################
 
 $Nav = NULL;
@@ -107,4 +107,4 @@ $pageAuthor		= "Eike Stepper";
 
 <?php
 ########################################################################
-include "_projectFooter.php"; ?>
+include "_projectCommon/footer.php"; ?>

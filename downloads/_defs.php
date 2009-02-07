@@ -1,4 +1,4 @@
-<?php $projectRelative = ".."; require_once "$areaRelative/$projectRelative/_projectDefs.php";
+<?php $projectRelative = ".."; require_once "$areaRelative/$projectRelative/_projectCommon/defs.php";
 ########################################################################
 
 # Display name of this area
