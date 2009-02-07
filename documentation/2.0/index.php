@@ -8,7 +8,8 @@ $pageAuthor		= "Eike Stepper";
 print '<div id="midcolumn">';
 
 require_once "$projectRoot/includes/dita.php";
-printDita($viewcvsRoot, "org.eclipse.emf/org.eclipse.emf.cdo/doc/org.eclipse.emf.cdo.doc/dita/src");
+printDita($viewcvsRoot, "org.eclipse.emf/org.eclipse.emf.cdo/doc/org.eclipse.emf.cdo.doc/dita/src",
+	"Reference 2.0");
 
 print '</div>';
 

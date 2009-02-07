@@ -1,16 +1,19 @@
 <?php
 
-function printDita($viewcvsRoot, $ditaSrc)
+function printDita($viewcvsRoot, $ditaSrc, $navTitle = NULL)
 {
 	$node = isset($_REQUEST["node"]) ? $_REQUEST["node"] : "index";
 	$mode = isset($_REQUEST["mode"]) ? $_REQUEST["mode"] : "view";
 	$branch = isset($_REQUEST["branch"]) ? $_REQUEST["branch"] : "HEAD";
 
 	global $Nav, $pageFolder;
-	$Nav->addNavSeparator("This Node", "");
-	$Nav->addCustomNav("<b>View</b>", $mode == "view" ? "" : "$pageFolder?node=$node", "", 1);
-	$Nav->addCustomNav("<b>Source</b>", $mode == "source" ? "" : "$pageFolder?node=$node&mode=source", "", 1);
-	$Nav->addCustomNav("<b>History</b>", $mode == "history" ? "" : "$pageFolder?node=$node&mode=history", "", 1);
+	if ($navTitle)
+	{
+		$Nav->addNavSeparator($navTitle, "");
+		$Nav->addCustomNav("<b>View</b>", $mode == "view" ? "" : "$pageFolder?node=$node", "", 1);
+		$Nav->addCustomNav("<b>Source</b>", $mode == "source" ? "" : "$pageFolder?node=$node&mode=source", "", 1);
+		$Nav->addCustomNav("<b>History</b>", $mode == "history" ? "" : "$pageFolder?node=$node&mode=history", "", 1);
+	}
 
 	$ext =  ($node == "index" ? "ditamap" : "xml");
 	$file = "$ditaSrc/$node.$ext";

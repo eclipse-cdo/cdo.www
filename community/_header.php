@@ -2,7 +2,7 @@
 ########################################################################
 
 $navIconURL = "http://dev.eclipse.org/huge_icons/categories/applications-internet.png";
-$Nav->addNavSeparator($areaTitle, "$areaPath/");
+$Nav->addNavSeparator($areaTitle, "");
 $Nav->addCustomNav("Wiki", "$areaPath/#wiki", "", 1);
 
 ########################################################################
