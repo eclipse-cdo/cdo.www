@@ -2,9 +2,8 @@
 ########################################################################
 
 $navIconURL = "http://dev.eclipse.org/huge_icons/emblems/emblem-system.png";
-$Nav->addNavSeparator($areaTitle, "");
+$Nav->addNavSeparator($areaTitle, "$areaPath/tools");
 $Nav->addCustomNav("Tables", "$areaPath/tables.php", "", 1);
-$Nav->addCustomNav("Test Forms", "$areaPath/test-forms.php", "", 1);
 
 $Nav->addNavSeparator("Test Scripts", "");
 $testRoot = "$areaRoot/test";
