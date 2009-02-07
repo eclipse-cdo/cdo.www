@@ -1,7 +1,7 @@
-<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php"; 
+<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
-require_once "$projectRoot/includes/printDownloads.php";
+require_once "$projectRoot/includes/downloads.php";
 
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/modeling/includes/common.css"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/modeling/includes/downloads.css"/>' . "\n\t");

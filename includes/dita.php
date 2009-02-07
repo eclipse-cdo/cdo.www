@@ -3,16 +3,26 @@
 function printDita($viewcvsRoot, $ditaSrc, $navTitle = NULL)
 {
 	$node = isset($_REQUEST["node"]) ? $_REQUEST["node"] : "index";
+	if (strpos($node, "../") === 0)
+	{
+		$node = substr($node, 3);
+	}
+
 	$mode = isset($_REQUEST["mode"]) ? $_REQUEST["mode"] : "view";
 	$branch = isset($_REQUEST["branch"]) ? $_REQUEST["branch"] : "HEAD";
+
+	//	echo $_SERVER['PHP_SELF']."<br/>";
+	//	echo $_SERVER['QUERY_STRING']."<br/>";
+	//	echo "$node<br/>";
+	//	echo "$mode<br/>";
 
 	global $Nav, $pageFolder;
 	if ($navTitle)
 	{
 		$Nav->addNavSeparator($navTitle, "");
-		$Nav->addCustomNav("<b>View</b>", $mode == "view" ? "" : "$pageFolder?node=$node", "", 1);
-		$Nav->addCustomNav("<b>Source</b>", $mode == "source" ? "" : "$pageFolder?node=$node&mode=source", "", 1);
-		$Nav->addCustomNav("<b>History</b>", $mode == "history" ? "" : "$pageFolder?node=$node&mode=history", "", 1);
+		$Nav->addCustomNav("<b>View</b>", $mode == "view" ? "" : "$pagePath?mode=view", "", 1);
+		$Nav->addCustomNav("<b>Source</b>", $mode == "source" ? "" : "$pagePath?mode=source", "", 1);
+		$Nav->addCustomNav("<b>History</b>", $mode == "history" ? "" : "$pagePath?mode=history", "", 1);
 	}
 
 	$ext =  ($node == "index" ? "ditamap" : "xml");
@@ -24,7 +34,7 @@ function printDita($viewcvsRoot, $ditaSrc, $navTitle = NULL)
 	switch ($mode)
 	{
 		case "view":
-			include "$node.html";
+			include "$node.xml";
 			break;
 
 		case "source":
