@@ -1,0 +1,15 @@
+#midcolumn ul,#midcolumn ol {
+	margin-top: 7px;
+	margin-left: 20px;
+}
+
+#midcolumn li {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	list-style-image:
+		url('/eclipse.org-common/themes/Nova/images/homeitemBulletIE.gif');
+}
+
+.familylinks,.relconcepts {
+	margin-top: 20px;
+}
