@@ -10,10 +10,10 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 	$branch = isset($_REQUEST["branch"]) ? $_REQUEST["branch"] : "HEAD";
 
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/dita.css" media="screen"/>' . "\n\t");
-	if ($topic == "index")
-	{
-		$App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="text/javascript"/>' . "\n\t");
-	}
+	//	if ($topic == "index")
+	//	{
+	//		$App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="text/javascript"></script>' . "\n\t");
+	//	}
 
 	if ($Nav != NULL && $navTitle != NULL)
 	{
