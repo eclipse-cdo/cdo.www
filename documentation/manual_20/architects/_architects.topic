@@ -1,0 +1,33 @@
+<!-- Generated: February 10, 2009, 03:59 PM --><a name="architect_s_guide"><!-- --></a>
+
+
+	<h1 class="topictitle1">Architect's Guide</h1>
+
+	
+	
+	
+	<div><p>Certainly an overview page.</p>
+
+		<div class="section"><h2 class="sectiontitle">A certain aspect of this topic</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+		<div class="section"><h2 class="sectiontitle">Another aspect of this topic</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+	</div>
+
+<div>
+<ul class="ullinks">
+<li class="ulchildlink"><strong><a href="?topic=architects/choosing_a_runtime_environment">Choosing a Runtime Environment</a></strong><br />
+Explains how to do something.</li>
+</ul>
+</div>
+

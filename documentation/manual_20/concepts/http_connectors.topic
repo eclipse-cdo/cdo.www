@@ -1,0 +1,37 @@
+<!-- Generated: February 10, 2009, 03:59 PM --><a name="http_connectors"><!-- --></a>
+
+
+	<h1 class="topictitle1">HTTP Connectors</h1>
+
+	
+	
+	
+	<div><p>Represents some real concept.</p>
+
+		<div class="section"><h2 class="sectiontitle">A certain aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+		<div class="section"><h2 class="sectiontitle">Another aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+	</div>
+
+<div>
+<ul class="ullinks">
+<li class="ulchildlink"><strong><a href="?topic=concepts/http_connector_factories">HTTP Connector Factories</a></strong><br />
+Represents some real concept.</li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=concepts/http_transport" title="Represents some real concept.">HTTP Transport</a></div>
+</div>
+</div>
+

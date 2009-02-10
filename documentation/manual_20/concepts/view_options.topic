@@ -1,0 +1,45 @@
+<!-- Generated: February 10, 2009, 03:59 PM --><a name="view_options"><!-- --></a>
+
+
+	<h1 class="topictitle1">View Options</h1>
+
+	
+	
+	
+	<div><p>Represents some real concept.</p>
+
+		<div class="section"><h2 class="sectiontitle">A certain aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+		<div class="section"><h2 class="sectiontitle">Another aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+	</div>
+
+<div>
+<ul class="ullinks">
+<li class="ulchildlink"><strong><a href="?topic=concepts/object_invalidation_notifications">Object Invalidation Notifications</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/change_subscription_policies">Change Subscription Policies</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/revision_prefetching_policy">Revision Prefetching Policy</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/strong_reference_policy">Strong Reference Policy</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/cache_reference_type">Cache Reference Type</a></strong><br />
+Represents some real concept.</li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=concepts/views" title="Represents some real concept.">Views</a></div>
+</div>
+</div>
+

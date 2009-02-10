@@ -2,6 +2,7 @@
 
 class Form
 {
+	private $name;
 	private $action;
 	private $method;
 	private $target;
@@ -10,10 +11,16 @@ class Form
 	private $submitted = false;
 	private $finished = false;
 
-	function __construct($action = NULL, $method = "POST")
+	function __construct($name = NULL, $action = NULL, $method = "POST")
 	{
+		$this->name = $name;
 		$this->action = $action;
 		$this->method = $method;
+	}
+
+	function getName()
+	{
+		return $this->action;
 	}
 
 	function getAction()
@@ -98,11 +105,12 @@ class Form
 			}
 		}
 
+		$name = $this->name == NULL ? "" : " name=\"$this->name\"";
 		$action = $this->action == NULL ? "" : " action=\"$this->action\"";
 		$method = $this->method == NULL ? "" : " method=\"$this->method\"";
 		$target = $this->target == NULL ? "" : " target=\"$this->target\"";
-		
-		print "<form$action$method$target>\n";
+
+		print "<form$name$action$method$target>\n";
 		print "<table>\n";
 		foreach ($this->fields as $field)
 		{

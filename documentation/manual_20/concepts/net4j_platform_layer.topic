@@ -1,0 +1,47 @@
+<!-- Generated: February 10, 2009, 03:59 PM --><a name="net4j_platform_layer"><!-- --></a>
+
+
+	<h1 class="topictitle1">Net4j Platform Layer</h1>
+
+	
+	
+	
+	<div><p>Represents some real concept.</p>
+
+		<div class="section"><h2 class="sectiontitle">A certain aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+		<div class="section"><h2 class="sectiontitle">Another aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+	</div>
+
+<div>
+<ul class="ullinks">
+<li class="ulchildlink"><strong><a href="?topic=concepts/platform">Platform</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/bundles">Bundles</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/preferences">Preferences</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/progress_monitoring">Progress Monitoring</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/runtime_logging">Runtime Logging</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/debug_tracing">Debug Tracing</a></strong><br />
+Represents some real concept.</li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=concepts/net4j_signalling_platform" title="Represents some real concept.">Net4j Signalling Platform</a></div>
+</div>
+</div>
+
