@@ -1,0 +1,39 @@
+<!-- Generated: February 10, 2009, 04:24 PM --><a name="runtime_logging"><!-- --></a>
+
+
+	<h1 class="topictitle1">Runtime Logging</h1>
+
+	
+	
+	
+	<div><p>Represents some real concept.</p>
+
+		<div class="section"><h2 class="sectiontitle">A certain aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+		<div class="section"><h2 class="sectiontitle">Another aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+	</div>
+
+<div>
+<ul class="ullinks">
+<li class="ulchildlink"><strong><a href="?topic=concepts/loggers">Loggers</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/log_handlers">Log Handlers</a></strong><br />
+Represents some real concept.</li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=concepts/net4j_platform_layer" title="Represents some real concept.">Net4j Platform Layer</a></div>
+</div>
+</div>
+

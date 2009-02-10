@@ -1,0 +1,41 @@
+<!-- Generated: February 10, 2009, 04:24 PM --><a name="net4j_registries"><!-- --></a>
+
+
+	<h1 class="topictitle1">Net4j Registries</h1>
+
+	
+	
+	
+	<div><p>Represents some real concept.</p>
+
+		<div class="section"><h2 class="sectiontitle">A certain aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+		<div class="section"><h2 class="sectiontitle">Another aspect of this concept</h2>
+			
+			<p>A tool box contains many compartments for organizing tools and hardware. Keep the tool box handy for all sorts of jobs around the
+				house.</p>
+
+		</div>
+
+	</div>
+
+<div>
+<ul class="ullinks">
+<li class="ulchildlink"><strong><a href="?topic=concepts/transactional_net4j_registries">Transactional Net4j Registries</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/net4j_map_registries">Net4j Map Registries</a></strong><br />
+Represents some real concept.</li>
+<li class="ulchildlink"><strong><a href="?topic=concepts/net4j_delegating_registries">Net4j Delegating Registries</a></strong><br />
+Represents some real concept.</li>
+</ul>
+
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=concepts/net4j_utilities" title="Represents some real concept.">Net4j Utilities</a></div>
+</div>
+</div>
+
