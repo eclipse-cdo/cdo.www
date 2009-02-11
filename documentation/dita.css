@@ -1,6 +1,16 @@
+#breadcrumbs {
+	text-align: left;
+	margin-bottom: -17px;
+}
+
+#breadcrumbs a {
+	font-weight: normal;
+}
+
 #toolbar {
 	text-align: right;
 	border-bottom: 1px solid #D4D4DD;
+	
 }
 
 #midcolumn {
