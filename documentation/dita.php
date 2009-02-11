@@ -16,8 +16,8 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 	print "<div id=\"toolbar\">\n";
 	if ($topic == "index" && $mode == "view")
 	{
-		print "<a href=\"javascript:setVisibleAll(true)\"><img src=\"$areaPath/images/expandAll.gif\" alt=\"Expand All\"/></a>\n";
-		print "<a href=\"javascript:setVisibleAll(false)\"><img src=\"$areaPath/images/collapseAll.gif\"/></a>\n";
+		print "<a href=\"javascript:setVisibleAll(true)\" title=\"Expand All\"><img src=\"$areaPath/images/expandAll.gif\"/></a>\n";
+		print "<a href=\"javascript:setVisibleAll(false)\" title=\"Collapse All\"><img src=\"$areaPath/images/collapseAll.gif\"/></a>\n";
 	}
 	else
 	{
@@ -26,9 +26,9 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 	}
 
 	print "&nbsp;<img src=\"$areaPath/images/vr.gif\"/>&nbsp;\n";
-	print "<a href=\"$pagePath?topic=$topic\"><img src=\"$areaPath/images/view.gif\"/></a>\n";
-	print "<a href=\"$pagePath?topic=$topic&mode=source\"><img src=\"$areaPath/images/source.gif\"/></a>\n";
-	print "<a href=\"$pagePath?topic=$topic&mode=history\"><img src=\"$areaPath/images/history.gif\"/></a>\n";
+	print "<a href=\"$pagePath?topic=$topic\" title=\"View\"><img src=\"$areaPath/images/view.gif\"/></a>\n";
+	print "<a href=\"$pagePath?topic=$topic&mode=source\" title=\"Source\"><img src=\"$areaPath/images/source.gif\"/></a>\n";
+	print "<a href=\"$pagePath?topic=$topic&mode=history\" title=\"History\"><img src=\"$areaPath/images/history.gif\"/></a>\n";
 	print "</div>\n";
 	print "<hr/><br/>\n";
 
