@@ -1,5 +1,5 @@
 #midcolumn ul,#midcolumn ol {
-	margin-left: 5px;
+	margin-left: 11px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
@@ -7,6 +7,8 @@
 #midcolumn li {
 	padding-top: 4px;
 	padding-bottom: 0px;
+	list-style-type: none;
+	list-style-image: none;
 	/* list-style-image:
 		url('/eclipse.org-common/themes/Nova/images/homeitemBulletIE.gif'); */
 }

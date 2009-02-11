@@ -23,7 +23,8 @@ if (isset($_GET["table"]))
 
 		print '<table border="1"><tr>' ."\n";
 		print "<th>&nbsp;</th>\n";
-		for ($index = 0; $index < mysql_num_fields($result); $index++) {
+		for ($index = 0; $index < mysql_num_fields($result); $index++)
+		{
 			print "<th>" . mysql_field_name($result, $index) . "</th>\n";
 		}
 
@@ -35,7 +36,8 @@ if (isset($_GET["table"]))
 		{
 			print "<tr>\n";
 			print "<td>" . $offset++ . "</td>\n";
-			for ($index = 0; $index < mysql_num_fields($result); $index++) {
+			for ($index = 0; $index < mysql_num_fields($result); $index++)
+			{
 				print "<td>" . $row[$index] . "</td>\n";
 			}
 
