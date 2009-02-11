@@ -1,6 +1,6 @@
 <?php
 
-function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Modes")
+function printDita($viewcvsRoot, $ditaSrc, $topicsFolder)
 {
 	global $App, $Nav;
 	global $areaPath, $pageFolder, $pagePath;
@@ -16,7 +16,7 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 	print "<div id=\"breadcrumbs\">\n";
 	if ($topic != "index")
 	{
-		$stack = array("<a href=\"$pagePath\" title=\"Table of Contents\"><img src=\"$areaPath/images/home.gif\"/></a>\n");
+		$stack = array("<a href=\"$pagePath\" title=\"Table of Contents\">TOC</a>");
 		$lines = file("$topicsFolder/index.topic");
 		foreach ($lines as $line)
 		{
@@ -27,9 +27,7 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 
 			if (!strpos($line, "</li>") && preg_match('/<li><a href="\?topic=([^"]+)">([^<]+)<\/a>/', $line, $matches))
 			{
-				$href = $matches[1];
-				$title = $matches[2];
-				array_push($stack, '<a href="?topic=' . $matches[1] . '">' . $matches[2] . '</a>' . "\n");
+				array_push($stack, '<a href="?topic=' . $matches[1] . '">' . $matches[2] . '</a>');
 			}
 			else if (strpos($line, "</ul>") === 0)
 			{
@@ -37,17 +35,22 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 			}
 		}
 
-		print implode("| ", $stack) ;
+		print implode("<img src=\"/eclipse.org-common/themes/Nova/images/separator.png\"/>", $stack) ;
 	}
-	else if ($mode == "view")
+	else
 	{
-		print "<a href=\"javascript:setVisibleAll(true)\" title=\"Expand All\"><img src=\"$areaPath/images/expandAll.gif\"/></a>\n";
-		print "<a href=\"javascript:setVisibleAll(false)\" title=\"Collapse All\"><img src=\"$areaPath/images/collapseAll.gif\"/></a>\n";
+		print "&nbsp;\n";
 	}
-
 
 	print "</div>\n";
 	print "<div id=\"toolbar\">\n";
+	if ($topic == "index" && $mode == "view")
+	{
+		print "<a href=\"javascript:setVisibleAll(true)\" title=\"Expand All\"><img src=\"$areaPath/images/expandAll.gif\"/></a>\n";
+		print "<a href=\"javascript:setVisibleAll(false)\" title=\"Collapse All\"><img src=\"$areaPath/images/collapseAll.gif\"/></a>\n";
+		print "&nbsp;<img src=\"$areaPath/images/vr.gif\"/>&nbsp;\n";
+	}
+
 	print "<a href=\"$pagePath?topic=$topic\" title=\"View\"><img src=\"$areaPath/images/view" . ($mode == "view" ? "Active" : "") . ".gif\"/></a>\n";
 	print "<a href=\"$pagePath?topic=$topic&mode=source\" title=\"Source\"><img src=\"$areaPath/images/source" . ($mode == "source" ? "Active" : "") . ".gif\"/></a>\n";
 	print "<a href=\"$pagePath?topic=$topic&mode=history\" title=\"History\"><img src=\"$areaPath/images/history" . ($mode == "history" ? "Active" : "") . ".gif\"/></a>\n";
@@ -72,6 +75,8 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 														 '<li><img src="' . $areaPath . '/images/empty.gif"/>&nbsp;' .
 														 '<img src="' . $areaPath . '/images/topic.gif"/>&nbsp;' .
 														 '<a href="\\1">\\2</a>', $html);
+
+				print "<h1 class=\"topictitle1\">Table of Contents</h1>\n";
 				$html = "<div id=\"toc\">$html</div\n";
 			}
 
@@ -79,13 +84,13 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 			break;
 
 		case "source":
-		$html = file_get_contents("$url&view=markup");
+			$html = file_get_contents("$url&view=markup");
 			preg_match('/<div id="vc_markup">(.+)<\/div>\s*<div id="midcolumn">/is', $html, $matches);
 			print $matches[1];
 			break;
 
 		case "history":
-		$html = file_get_contents("$url&view=log");
+			$html = file_get_contents("$url&view=log");
 			preg_match('/<table class="auto">(.+)<\/form>/is', $html, $matches);
 			$html = str_replace('"' . $viewcvsPath, '"' . $viewcvsURL, $matches[1]);
 			print '<h6 class="homeitem"><a href="' . $pageFolder . '?topic=' . $topic . '&mode=source">' . $file . '</a></h6><hr/>' . "\n";
