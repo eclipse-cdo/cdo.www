@@ -17,16 +17,15 @@
 	color: #0D3656;
 }
 
-#midcolumn ul,#midcolumn ol {
+#toc ul,#toc ol {
 	margin-left: 11px;
 	padding-top: 0px;
 	padding-bottom: 0px;
 }
 
-#midcolumn li {
+#toc li {
 	padding-top: 4px;
 	padding-bottom: 0px;
-	list-style-type: none;
 	list-style-image: none;
 }
 

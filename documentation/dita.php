@@ -72,19 +72,20 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 														 '<li><img src="' . $areaPath . '/images/empty.gif"/>&nbsp;' .
 														 '<img src="' . $areaPath . '/images/topic.gif"/>&nbsp;' .
 														 '<a href="\\1">\\2</a>', $html);
+				$html = "<div id=\"toc\">$html</div\n";
 			}
 
-			print "<div id=\"toc\">$html</div\n";
+			print $html;
 			break;
 
 		case "source":
-			$html = file_get_contents("$url&view=markup");
+		$html = file_get_contents("$url&view=markup");
 			preg_match('/<div id="vc_markup">(.+)<\/div>\s*<div id="midcolumn">/is', $html, $matches);
 			print $matches[1];
 			break;
 
 		case "history":
-			$html = file_get_contents("$url&view=log");
+		$html = file_get_contents("$url&view=log");
 			preg_match('/<table class="auto">(.+)<\/form>/is', $html, $matches);
 			$html = str_replace('"' . $viewcvsPath, '"' . $viewcvsURL, $matches[1]);
 			print '<h6 class="homeitem"><a href="' . $pageFolder . '?topic=' . $topic . '&mode=source">' . $file . '</a></h6><hr/>' . "\n";
