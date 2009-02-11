@@ -1,3 +1,12 @@
+#toolbar {
+	text-align: right;
+	border-bottom: 1px solid #D4D4DD;
+}
+
+#midcolumn {
+	color: #0D3656;
+}
+
 #midcolumn ul,#midcolumn ol {
 	margin-left: 11px;
 	padding-top: 0px;
@@ -11,10 +20,6 @@
 	list-style-image: none;
 	/* list-style-image:
 		url('/eclipse.org-common/themes/Nova/images/homeitemBulletIE.gif'); */
-}
-
-#toolbar {
-	text-align: right;
 }
 
 .familylinks,.relconcepts {
