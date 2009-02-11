@@ -13,9 +13,10 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/dita.css" media="screen"/>' . "\n\t");
 	$App->AddExtraHtmlHeader('<script src="' . $areaPath . '/dita.js" type="text/javascript"></script>' . "\n\t");
 
+	print "<div id=\"breadcrumbs\">\n";
 	if ($topic != "index")
 	{
-		$stack = array();
+		$stack = array("<a href=\"$pagePath\" title=\"Table of Contents\"><img src=\"$areaPath/images/home.gif\"/></a>\n");
 		$lines = file("$topicsFolder/index.topic");
 		foreach ($lines as $line)
 		{
@@ -36,17 +37,17 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 			}
 		}
 
-		print "<div id=\"breadcrumbs\">" . implode("| ", $stack) . "</div>\n";
+		print implode("| ", $stack) ;
 	}
-
-	print "<div id=\"toolbar\">\n";
-	if ($topic == "index" && $mode == "view")
+	else if ($mode == "view")
 	{
 		print "<a href=\"javascript:setVisibleAll(true)\" title=\"Expand All\"><img src=\"$areaPath/images/expandAll.gif\"/></a>\n";
 		print "<a href=\"javascript:setVisibleAll(false)\" title=\"Collapse All\"><img src=\"$areaPath/images/collapseAll.gif\"/></a>\n";
-		print "&nbsp;<img src=\"$areaPath/images/vr.gif\"/>&nbsp;\n";
 	}
 
+
+	print "</div>\n";
+	print "<div id=\"toolbar\">\n";
 	print "<a href=\"$pagePath?topic=$topic\" title=\"View\"><img src=\"$areaPath/images/view" . ($mode == "view" ? "Active" : "") . ".gif\"/></a>\n";
 	print "<a href=\"$pagePath?topic=$topic&mode=source\" title=\"Source\"><img src=\"$areaPath/images/source" . ($mode == "source" ? "Active" : "") . ".gif\"/></a>\n";
 	print "<a href=\"$pagePath?topic=$topic&mode=history\" title=\"History\"><img src=\"$areaPath/images/history" . ($mode == "history" ? "Active" : "") . ".gif\"/></a>\n";
@@ -73,7 +74,7 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 														 '<a href="\\1">\\2</a>', $html);
 			}
 
-			print $html;
+			print "<div id=\"toc\">$html</div\n";
 			break;
 
 		case "source":
