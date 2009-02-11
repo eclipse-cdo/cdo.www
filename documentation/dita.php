@@ -32,13 +32,13 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 	print "</div>\n";
 	print "<hr/><br/>\n";
 
-	if ($Nav != NULL && $navTitle != NULL)
-	{
-		$Nav->addNavSeparator($navTitle, "");
-		$Nav->addCustomNav("<b>View</b>", $mode == "view" ? "" : "$pagePath?topic=$topic", "", 1);
-		$Nav->addCustomNav("<b>Source</b>", $mode == "source" ? "" : "$pagePath?topic=$topic&mode=source", "", 1);
-		$Nav->addCustomNav("<b>History</b>", $mode == "history" ? "" : "$pagePath?topic=$topic&mode=history", "", 1);
-	}
+//	if ($Nav != NULL && $navTitle != NULL)
+//	{
+//		$Nav->addNavSeparator($navTitle, "");
+//		$Nav->addCustomNav("<b>View</b>", $mode == "view" ? "" : "$pagePath?topic=$topic", "", 1);
+//		$Nav->addCustomNav("<b>Source</b>", $mode == "source" ? "" : "$pagePath?topic=$topic&mode=source", "", 1);
+//		$Nav->addCustomNav("<b>History</b>", $mode == "history" ? "" : "$pagePath?topic=$topic&mode=history", "", 1);
+//	}
 
 	$ext =  ($topic == "index" ? "ditamap" : "dita");
 	$file = "$ditaSrc/$topic.$ext";
