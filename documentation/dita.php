@@ -13,6 +13,32 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/dita.css" media="screen"/>' . "\n\t");
 	$App->AddExtraHtmlHeader('<script src="' . $areaPath . '/dita.js" type="text/javascript"></script>' . "\n\t");
 
+	if ($topic != "index")
+	{
+		$stack = array();
+		$lines = file("$topicsFolder/index.topic");
+		foreach ($lines as $line)
+		{
+			if (strpos($line, $topic) != FALSE)
+			{
+				break;
+			}
+
+			if (!strpos($line, "</li>") && preg_match('/<li><a href="\?topic=([^"]+)">([^<]+)<\/a>/', $line, $matches))
+			{
+				$href = $matches[1];
+				$title = $matches[2];
+				array_push($stack, '<a href="?topic=' . $matches[1] . '">' . $matches[2] . '</a>' . "\n");
+			}
+			else if (strpos($line, "</ul>") === 0)
+			{
+				array_pop($stack);
+			}
+		}
+
+		print "<div id=\"breadcrumbs\">" . implode("| ", $stack) . "</div>\n";
+	}
+
 	print "<div id=\"toolbar\">\n";
 	if ($topic == "index" && $mode == "view")
 	{
@@ -20,25 +46,12 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 		print "<a href=\"javascript:setVisibleAll(false)\" title=\"Collapse All\"><img src=\"$areaPath/images/collapseAll.gif\"/></a>\n";
 		print "&nbsp;<img src=\"$areaPath/images/vr.gif\"/>&nbsp;\n";
 	}
-	//	else
-	//	{
-	//		print "<img src=\"$areaPath/images/expandAllDisabled.gif\" alt=\"Expand All\"/>\n";
-	//		print "<img src=\"$areaPath/images/collapseAllDisabled.gif\"/>\n";
-	//	}
 
 	print "<a href=\"$pagePath?topic=$topic\" title=\"View\"><img src=\"$areaPath/images/view" . ($mode == "view" ? "Active" : "") . ".gif\"/></a>\n";
 	print "<a href=\"$pagePath?topic=$topic&mode=source\" title=\"Source\"><img src=\"$areaPath/images/source" . ($mode == "source" ? "Active" : "") . ".gif\"/></a>\n";
 	print "<a href=\"$pagePath?topic=$topic&mode=history\" title=\"History\"><img src=\"$areaPath/images/history" . ($mode == "history" ? "Active" : "") . ".gif\"/></a>\n";
 	print "</div>\n";
 	print "<br/>\n";
-
-	//	if ($Nav != NULL && $navTitle != NULL)
-	//	{
-	//		$Nav->addNavSeparator($navTitle, "");
-	//		$Nav->addCustomNav("<b>View</b>", $mode == "view" ? "" : "$pagePath?topic=$topic", "", 1);
-	//		$Nav->addCustomNav("<b>Source</b>", $mode == "source" ? "" : "$pagePath?topic=$topic&mode=source", "", 1);
-	//		$Nav->addCustomNav("<b>History</b>", $mode == "history" ? "" : "$pagePath?topic=$topic&mode=history", "", 1);
-	//	}
 
 	$ext =  ($topic == "index" ? "ditamap" : "dita");
 	$file = "$ditaSrc/$topic.$ext";
