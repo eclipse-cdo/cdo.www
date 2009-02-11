@@ -1,5 +1,4 @@
 #ditatitle {
-	color: #C3C3C3;
 	font-size: 32px;
 	margin-left: -1px;
 	margin-bottom: 10px;
@@ -8,12 +7,10 @@
 #breadcrumbs {
 	text-align: left;
 	margin-bottom: -17px;
-	color: #C3C3C3;
 }
 
 #breadcrumbs a {
 	font-weight: bold;
-	color: #C3C3C3;
 }
 
 #toolbar {
