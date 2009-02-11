@@ -11,11 +11,21 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 	$branch = isset($_REQUEST["branch"]) ? $_REQUEST["branch"] : "HEAD";
 
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/dita.css" media="screen"/>' . "\n\t");
-	if ($topic == "index")
+	$App->AddExtraHtmlHeader('<script src="' . $areaPath . '/dita.js" type="text/javascript"></script>' . "\n\t");
+
+	print "<div id=\"toolbar\">\n";
+	//	if ($topic == "index" && $mode == "view")
 	{
-		$App->AddExtraHtmlHeader('<script src="' . $areaPath . '/dita.js" type="text/javascript"></script>' . "\n\t");
+		print "<a href=\"javascript:setVisibleAll(true)\"><img src=\"$areaPath/images/expandAll.gif\" alt=\"Expand All\"/></a>\n";
+		print "<a href=\"javascript:setVisibleAll(false)\"><img src=\"$areaPath/images/collapseAll.gif\"/></a>\n";
+		print "&nbsp;<img src=\"$areaPath/images/vr.gif\"/>&nbsp;\n";
 	}
 
+	print "<a href=\"$pagePath?topic=$topic\"><img src=\"$areaPath/images/view.gif\"/></a>\n";
+	print "<a href=\"$pagePath?topic=$topic&mode=source\"><img src=\"$areaPath/images/source.gif\"/></a>\n";
+	print "<a href=\"$pagePath?topic=$topic&mode=history\"><img src=\"$areaPath/images/history.gif\"/></a>\n";
+	print "</div>\n";
+	print "<hr/><br/>\n";
 
 	if ($Nav != NULL && $navTitle != NULL)
 	{
@@ -36,7 +46,7 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder, $navTitle = "Page Mode
 			if ($topic == "index")
 			{
 				$html = preg_replace('/<li><a href="([^"]+)">([^<]+)<\/a>(\s*)<ul id="([^"]+)">/i',
-														 '<li><a href="javascript:toggle(' . "'\\4'" . ')"><img id="\\4_IMG" src="' . $areaPath . '/images/plus.gif"/></a>&nbsp;' .
+														 '<li><a href="javascript:toggle(' . "'\\4'" . ')"><img id="\\4_IMG" src="' . $areaPath . '/images/expand.gif"/></a>&nbsp;' .
 														 '<img src="' . $areaPath . '/images/book.gif"/>&nbsp;' .
 														 '<a href="\\1">\\2</a>\\3<ul id="\\4" class="withchildren" style="display: none;">', $html);
 				$html = preg_replace('/<li><a href="([^"]+)">([^<]+)<\/a>/i',

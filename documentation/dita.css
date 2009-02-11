@@ -13,6 +13,10 @@
 		url('/eclipse.org-common/themes/Nova/images/homeitemBulletIE.gif'); */
 }
 
+#toolbar {
+	text-align: right;
+}
+
 .familylinks,.relconcepts {
 	margin-top: 20px;
 }
