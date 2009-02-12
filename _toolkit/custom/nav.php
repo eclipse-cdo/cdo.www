@@ -5,14 +5,14 @@ print '<div id="leftcol">';
 global $navIconURL;
 if ($navIconURL != "")
 {
-	print '<img class="groupIcon" src="' . $navIconURL . '" alt="This Page"/>';	
+	print '<img class="areaIcon" src="' . $navIconURL . '"/>';
 }
 
 print '<ul id="leftnav">';
-for($i = 0; $i < $Nav->getLinkCount(); $i++)
+for ($i = 0; $i < $Nav->getLinkCount(); $i++)
 {
 	$Link = $Nav->getLinkAt($i);
-	if( $Link->getURL() == "" )
+	if ($Link->getURL() == "")
 	{
 		if($Link->getTarget() == "__SEPARATOR")
 		{
@@ -29,16 +29,17 @@ for($i = 0; $i < $Nav->getLinkCount(); $i++)
 	}
 	else
 	{
-		if($Link->getTarget() == "__SEPARATOR")
+		if ($Link->getTarget() == "__SEPARATOR")
 		{
 			print '<li class="separator"><a class="separator" href="' . $Link->getURL() . '">' . $Link->getText() . '<img src="/eclipse.org-common/themes/Nova/images/separator.png" /></a></li>';
 		}
 		else
 		{
-			print '<li><a href="' . $Link->getURL() . '">' . $Link->getText() . '</a></li>';
+			global $pagePath;
+			$selected = (strpos($pagePath, $Link->getURL()) === 0) ? ' class="selected"' : '';
+			print '<li' . $selected . '><a href="' . $Link->getURL() . '">' . $Link->getText() . '</a></li>';
 		}
 	}
-
 }
 
 print '</ul>';

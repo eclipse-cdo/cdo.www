@@ -27,7 +27,7 @@ body {
 	padding-top: -6px;
 }
 
-.groupIcon {
+.areaIcon {
 	margin-left: 50px;
 }
 
@@ -45,6 +45,11 @@ body {
 	font-size: 12px;
 	font-weight: bold;
 	color: #575757;
+}
+
+#leftnav li.selected {
+	list-style-image:
+		url(/eclipse.org-common/themes/Nova/images/leftNavSelected.png);
 }
 
 #infoDiv {

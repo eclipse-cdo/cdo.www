@@ -2,7 +2,6 @@
 
 function printDita($topicsFolder, $ditaSrc = NULL)
 {
-	global $App, $Nav;
 	global $areaPath, $pageFolder, $pagePath;
 	global $viewcvsURL, $viewcvsPath, $viewcvsRoot;
 
@@ -10,8 +9,12 @@ function printDita($topicsFolder, $ditaSrc = NULL)
 	$mode = isset($_REQUEST["mode"]) && $ditaSrc != NULL ? $_REQUEST["mode"] : "view";
 	$branch = isset($_REQUEST["branch"]) && $ditaSrc != NULL ? $_REQUEST["branch"] : "HEAD";
 
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/dita.css" media="screen"/>' . "\n\t");
-	$App->AddExtraHtmlHeader('<script src="' . $areaPath . '/dita.js" type="text/javascript"></script>' . "\n\t");
+	global $App;
+	if ($App != NULL)
+	{
+		$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/dita.css" media="screen"/>' . "\n\t");
+		$App->AddExtraHtmlHeader('<script src="' . $areaPath . '/dita.js" type="text/javascript"></script>' . "\n\t");
+	}
 
 	print "<div id=\"breadcrumbs\">\n";
 	if ($topic != "index")
