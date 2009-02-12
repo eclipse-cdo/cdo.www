@@ -1,0 +1,44 @@
+<!-- Generated: February 12, 2009, 09:40 PM --><a name="dbstore_reference"><!-- --></a>
+
+
+	<h1 class="topictitle1">DBStore Reference</h1>
+
+	
+	
+	
+	<div><p>Reference information for something.</p>
+
+		<table summary="" cellspacing="0" cellpadding="4" border="1" class="simpletableborder">
+			<tr>
+<th valign="bottom" align="left" id="N10040">Type</th>
+<th valign="bottom" align="left" id="N10046">Value</th>
+<th valign="bottom" align="left" id="N1004C">Description</th>
+</tr>
+			<tr>
+<td valign="top" headers="N10040">Type1</td>
+<td valign="top" headers="N10046">Value1</td>
+<td valign="top" headers="N1004C">Description1</td>
+</tr>
+
+			<tr>
+<td valign="top" headers="N10040">Type2</td>
+<td valign="top" headers="N10046">Value2</td>
+<td valign="top" headers="N1004C">Description2</td>
+</tr>
+
+			<tr>
+<td valign="top" headers="N10040">Type3</td>
+<td valign="top" headers="N10046">Value3</td>
+<td valign="top" headers="N1004C">Description3</td>
+</tr>
+
+		</table>
+
+	</div>
+
+<div>
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=references/server_configuration_reference" title="Reference information for something.">Server Configuration Reference</a></div>
+</div>
+</div>
+

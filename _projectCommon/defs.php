@@ -11,6 +11,11 @@ $projectKeywords	= "Eclipse Modeling Framework EMF";
 $mysqlProject = "org.eclipse.emf";
 $mysqlComponent = "org.eclipse.emf.cdo";
 
+# Wiki infrastructure
+$wikiEclipseURL = "http://wiki.eclipse.org";
+$wikiPageSuffix = "CDO";
+
+# CVS infrastructure
 $devEclipseURL = "http://dev.eclipse.org";
 $viewcvsPath = "/viewcvs/index.cgi";
 $viewcvsURL = $devEclipseURL . $viewcvsPath;
