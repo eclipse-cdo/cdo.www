@@ -1,14 +1,14 @@
 <?php
 
-function printDita($viewcvsRoot, $ditaSrc, $topicsFolder)
+function printDita($topicsFolder, $ditaSrc = NULL)
 {
 	global $App, $Nav;
 	global $areaPath, $pageFolder, $pagePath;
-	global $viewcvsURL, $viewcvsPath;
+	global $viewcvsURL, $viewcvsPath, $viewcvsRoot;
 
 	$topic = isset($_REQUEST["topic"]) ? $_REQUEST["topic"] : "index";
-	$mode = isset($_REQUEST["mode"]) ? $_REQUEST["mode"] : "view";
-	$branch = isset($_REQUEST["branch"]) ? $_REQUEST["branch"] : "HEAD";
+	$mode = isset($_REQUEST["mode"]) && $ditaSrc != NULL ? $_REQUEST["mode"] : "view";
+	$branch = isset($_REQUEST["branch"]) && $ditaSrc != NULL ? $_REQUEST["branch"] : "HEAD";
 
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $areaPath . '/dita.css" media="screen"/>' . "\n\t");
 	$App->AddExtraHtmlHeader('<script src="' . $areaPath . '/dita.js" type="text/javascript"></script>' . "\n\t");
@@ -48,12 +48,19 @@ function printDita($viewcvsRoot, $ditaSrc, $topicsFolder)
 	{
 		print "<a href=\"javascript:setVisibleAll(true)\" title=\"Expand All\"><img src=\"$areaPath/images/expandAll.gif\"/></a>\n";
 		print "<a href=\"javascript:setVisibleAll(false)\" title=\"Collapse All\"><img src=\"$areaPath/images/collapseAll.gif\"/></a>\n";
-		print "&nbsp;<img src=\"$areaPath/images/vr.gif\"/>&nbsp;\n";
+		if ($ditaSrc != NULL)
+		{
+			print "&nbsp;<img src=\"$areaPath/images/vr.gif\"/>&nbsp;\n";
+		}
 	}
 
-	print "<a href=\"$pagePath?topic=$topic\" title=\"View\"><img src=\"$areaPath/images/view" . ($mode == "view" ? "Active" : "") . ".gif\"/></a>\n";
-	print "<a href=\"$pagePath?topic=$topic&mode=source\" title=\"Source\"><img src=\"$areaPath/images/source" . ($mode == "source" ? "Active" : "") . ".gif\"/></a>\n";
-	print "<a href=\"$pagePath?topic=$topic&mode=history\" title=\"History\"><img src=\"$areaPath/images/history" . ($mode == "history" ? "Active" : "") . ".gif\"/></a>\n";
+	if ($ditaSrc != NULL)
+	{
+		print "<a href=\"$pagePath?topic=$topic\" title=\"View\"><img src=\"$areaPath/images/view" . ($mode == "view" ? "Active" : "") . ".gif\"/></a>\n";
+		print "<a href=\"$pagePath?topic=$topic&mode=source\" title=\"Source\"><img src=\"$areaPath/images/source" . ($mode == "source" ? "Active" : "") . ".gif\"/></a>\n";
+		print "<a href=\"$pagePath?topic=$topic&mode=history\" title=\"History\"><img src=\"$areaPath/images/history" . ($mode == "history" ? "Active" : "") . ".gif\"/></a>\n";
+	}
+
 	print "</div>\n";
 	print "<br/>\n";
 

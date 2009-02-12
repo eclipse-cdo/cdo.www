@@ -9,7 +9,7 @@ print '<div id="midcolumn">';
 
 require_once "dita.php";
 print "<h1 id=\"ditatitle\">Manual 2.0</h1>\n";
-printDita($viewcvsRoot, "org.eclipse.emf/org.eclipse.emf.cdo/doc/org.eclipse.emf.cdo.doc/src", "manual_20", "Manual 2.0");
+printDita("manual_20", "org.eclipse.emf/org.eclipse.emf.cdo/doc/org.eclipse.emf.cdo.doc/src");
 
 print '</div>';
 
