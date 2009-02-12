@@ -5,12 +5,11 @@ $pageTitle 		= "Manual 2.0";
 $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-print '<div id="midcolumn">';
-
 require_once "dita.php";
+
+print '<div id="midcolumn">';
 print "<h1 id=\"ditatitle\">Manual 2.0</h1>\n";
 printDita("manual_20", "org.eclipse.emf/org.eclipse.emf.cdo/doc/org.eclipse.emf.cdo.doc/src");
-
 print '</div>';
 
 ########################################################################
