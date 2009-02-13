@@ -12,7 +12,7 @@ print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
 printPresentation("Webinar_2009_01/CDO_Webinar_2009_01",
 									"Scale, Share and Store your Models with CDO 2.0",
-									"Slides of the Eclipse Live <a href=\"http://live.eclipse.org/node/635\">webinar</a>.",
+									"Slides of the Eclipse Live webinar.",
 									"January 2009");
 
 printPresentation("DemoCampBerlin_2008/CDO@DemoCamp_08",
@@ -25,7 +25,7 @@ printPresentation("EclipseSummit_2008/CDO@ESE08",
 									"Long talk: An update, code snippets with the new API...",
 									"November 2008");
 
-printPresentation("https://sap.emea.pgiconnect.com/p27383431",
+printPresentation("https://sap.emea.pgiconnect.com/p27383431|Webinar Recording",
 									"CDO 2.0 Webinar for SAP",
 									"Slides, live presentation, discussion...",
 									"November 2008",
@@ -65,7 +65,15 @@ function printPresentation($basePath, $title, $subtitle, $month, $lang = "Englis
 
 	if (strpos($basePath, "http") === 0)
 	{
-		print "<a href=\"$basePath\"><img class=\"icon\" src=\"http.gif\"/></a>&nbsp;\n";
+		$split = explode("|", $basePath);
+		$href = $split[0];
+		$tooltip = "External Link";
+		if (count($split) > 1)
+		{
+			$tooltip = $split[1];
+		}
+
+		print "<a href=\"$href\" title=\"" . $tooltip . "\" target=\"_window\"><img class=\"icon\" src=\"http.gif\"/></a>&nbsp;\n";
 	}
 	else
 	{
@@ -73,14 +81,28 @@ function printPresentation($basePath, $title, $subtitle, $month, $lang = "Englis
 		$types = array(
 		array("pdf", "Adobe Acrobat Document (.pdf)"),
 		array("pptx", "Microsoft Office PowerPoint-Presentation (.pptx)"),
-		array("ppt", "Microsoft Office PowerPoint 97-2003-Presentation (.ppt)"));
+		array("ppt", "Microsoft Office PowerPoint 97-2003-Presentation (.ppt)"),
+		array("http", "External Link"));
 
 		foreach ($types as $type)
 		{
-			$file = $basePath . "." . $type[0];
-			if (file_exists("$pageRoot/$file"))
+			$href = $basePath . "." . $type[0];
+			$tooltip = $type[1];
+			$file = "$pageRoot/$href";
+			if (file_exists($file))
 			{
-				print "<a href=\"$file\" title=\"" . $type[1] . "\"><img class=\"icon\" src=\"" . $type[0] . ".gif\"/></a>&nbsp;\n";
+				if ($type[0] == "http")
+				{
+					$content = file_get_contents($file);
+					$split = explode("|", $content);
+					$href = $split[0];
+					if (count($split) > 1)
+					{
+						$tooltip = $split[1];
+					}
+				}
+
+				print "<a href=\"$href\" title=\"" . $tooltip . "\"><img class=\"icon\" src=\"" . $type[0] . ".gif\"/></a>&nbsp;\n";
 			}
 		}
 	}

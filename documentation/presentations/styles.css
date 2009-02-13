@@ -25,13 +25,14 @@
 }
 
 .iconcol {
-	vertical-align: top;
+	text-align: right; vertical-align : top;
 	padding: 5px;
-	width: 200px;
+	vertical-align: top; padding : 5px;
+	width: 250px;
 }
 
 .infocol {
 	vertical-align: top;
 	margin-top: -58px;
-	margin-left: 200px;
+	margin-left: 270px;
 }
