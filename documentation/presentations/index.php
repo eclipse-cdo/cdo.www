@@ -8,7 +8,7 @@ $pageAuthor		= "Eike Stepper";
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
 
 print '<div id="midcolumn">' . "\n";
-print '<h1>Presentations</h1>' . "\n";
+print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
 printPresentation("Webinar_2009_01/CDO_Webinar_2009_01",
 									"Scale, Share and Store your Models with CDO 2.0",
@@ -24,6 +24,12 @@ printPresentation("EclipseSummit_2008/CDO@ESE08",
 									"CDO 2.0 at the Eclipse Summit Europe 2008",
 									"Long talk: An update, code snippets with the new API...",
 									"November 2008");
+
+printPresentation("https://sap.emea.pgiconnect.com/p27383431",
+									"CDO 2.0 Webinar for SAP",
+									"Slides, live presentation, discussion...",
+									"November 2008",
+									"German");
 
 printPresentation("Bombardier_2008/CDO_Preview_Bombardier_2008",
 									"CDO 2.0 Preview for Bombardier",
@@ -54,21 +60,28 @@ print '</div>' . "\n";
 
 function printPresentation($basePath, $title, $subtitle, $month, $lang = "English")
 {
-	global $pageRoot;
-	$types = array(
-	array("pdf", "Adobe Acrobat Document (.pdf)"),
-	array("pptx", "Microsoft Office PowerPoint-Presentation (.pptx)"),
-	array("ppt", "Microsoft Office PowerPoint 97-2003-Presentation (.ppt)"));
-
 	print "<div class=\"titlerow\"><h6>$title</h6></div>\n";
 	print "<div class=\"detailrow\"><div class=\"iconcol\">\n";
 
-	foreach ($types as $type)
+	if (strpos($basePath, "http") === 0)
 	{
-		$file = $basePath . "." . $type[0];
-		if (file_exists("$pageRoot/$file"))
+		print "<a href=\"$basePath\"><img class=\"icon\" src=\"http.gif\"/></a>&nbsp;\n";
+	}
+	else
+	{
+		global $pageRoot;
+		$types = array(
+		array("pdf", "Adobe Acrobat Document (.pdf)"),
+		array("pptx", "Microsoft Office PowerPoint-Presentation (.pptx)"),
+		array("ppt", "Microsoft Office PowerPoint 97-2003-Presentation (.ppt)"));
+
+		foreach ($types as $type)
 		{
-			print "<a href=\"$file\" title=\"" . $type[1] . "\"><img class=\"icon\" src=\"" . $type[0] . ".gif\"/></a>&nbsp;\n";
+			$file = $basePath . "." . $type[0];
+			if (file_exists("$pageRoot/$file"))
+			{
+				print "<a href=\"$file\" title=\"" . $type[1] . "\"><img class=\"icon\" src=\"" . $type[0] . ".gif\"/></a>&nbsp;\n";
+			}
 		}
 	}
 
