@@ -1,7 +1,7 @@
-<!-- Generated: February 12, 2009, 09:40 PM --><a name="api_reference"><!-- --></a>
+<!-- Generated: February 13, 2009, 08:27 AM --><a name="api_reference"><!-- --></a>
 
 
-	<h1 class="topictitle1">API Reference</h1>
+	<h1 class="topictitle1">JavaDocs</h1>
 
 	
 	
@@ -38,12 +38,14 @@
 
 <div>
 <ul class="ullinks">
+<li class="ulchildlink"><strong><a href="?topic=references/extension_point_reference">CDO Extension Points</a></strong><br />
+Reference information for something.</li>
 <li class="ulchildlink"><strong><a href="?topic=references/see_xxx_for_build_automation">See XXX for build automation</a></strong><br />
 Reference information for something.</li>
 </ul>
 
 <div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=references/_references" title="Certainly an overview page.">Reference</a></div>
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=references/_references" title="Certainly an overview page.">References</a></div>
 </div>
 </div>
 

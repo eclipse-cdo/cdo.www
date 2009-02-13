@@ -1,4 +1,4 @@
-<!-- Generated: February 12, 2009, 09:40 PM -->
+<!-- Generated: February 13, 2009, 08:27 AM -->
 <ul>
 <li><a href="?topic=about_this_manual">About</a></li>
 <li><a href="?topic=conventions_for_this_manual">Conventions</a></li>
@@ -866,23 +866,23 @@
 <li><a href="?topic=users/using_the_team_provider">Using the Team Provider</a></li>
 </ul>
 </li>
-<li><a href="?topic=references/_references">Reference</a>
+<li><a href="?topic=references/_references">References</a>
 <ul id="#N1184B">
-<li><a href="?topic=references/server_configuration_reference">Server Configuration Reference</a>
+<li><a href="?topic=references/api_reference">JavaDocs</a>
 <ul id="#N1185A">
-<li><a href="?topic=references/memstore_reference">MEMStore Reference</a></li>
-<li><a href="?topic=references/dbstore_reference">DBStore Reference</a></li>
-<li><a href="?topic=references/hibernatestore_reference">HibernateStore Reference</a></li>
-<li><a href="?topic=references/objectivitystore_reference">ObjectivityStore Reference</a></li>
-</ul>
-</li>
-<li><a href="?topic=references/extension_point_reference">Extension Point Reference</a>
-<ul id="#N118A5">
+<li><a href="?topic=references/extension_point_reference">Extension Points</a>
+<ul id="#N11869">
 <li><a href="?topic=references/see_org_eclipse_platform_doc_isv_for_build_automation">See org.eclipse.platform.doc.isv for build automation</a></li>
+<li><a href="?topic=references/server_configuration_reference">Server Configuration</a>
+<ul id="#N11887">
+<li><a href="?topic=references/memstore_reference">MEMStore</a></li>
+<li><a href="?topic=references/dbstore_reference">DBStore</a></li>
+<li><a href="?topic=references/hibernatestore_reference">HibernateStore</a></li>
+<li><a href="?topic=references/objectivitystore_reference">ObjectivityStore</a></li>
 </ul>
 </li>
-<li><a href="?topic=references/api_reference">API Reference</a>
-<ul id="#N118C3">
+</ul>
+</li>
 <li><a href="?topic=references/see_xxx_for_build_automation">See XXX for build automation</a></li>
 </ul>
 </li>

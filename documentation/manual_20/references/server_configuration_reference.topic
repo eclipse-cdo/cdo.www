@@ -1,7 +1,7 @@
-<!-- Generated: February 12, 2009, 09:40 PM --><a name="server_configuration_reference"><!-- --></a>
+<!-- Generated: February 13, 2009, 08:27 AM --><a name="server_configuration_reference"><!-- --></a>
 
 
-	<h1 class="topictitle1">Server Configuration Reference</h1>
+	<h1 class="topictitle1">CDO Server Configuration</h1>
 
 	
 	
@@ -38,18 +38,18 @@
 
 <div>
 <ul class="ullinks">
-<li class="ulchildlink"><strong><a href="?topic=references/memstore_reference">MEMStore Reference</a></strong><br />
+<li class="ulchildlink"><strong><a href="?topic=references/memstore_reference">MEMStore Configuration</a></strong><br />
 Reference information for something.</li>
 <li class="ulchildlink"><strong><a href="?topic=references/dbstore_reference">DBStore Reference</a></strong><br />
 Reference information for something.</li>
-<li class="ulchildlink"><strong><a href="?topic=references/hibernatestore_reference">HibernateStore Reference</a></strong><br />
+<li class="ulchildlink"><strong><a href="?topic=references/hibernatestore_reference">HibernateStore Configuration</a></strong><br />
 Reference information for something.</li>
-<li class="ulchildlink"><strong><a href="?topic=references/objectivitystore_reference">ObjectivityStore Reference</a></strong><br />
+<li class="ulchildlink"><strong><a href="?topic=references/objectivitystore_reference">ObjectivityStore Configuration</a></strong><br />
 Reference information for something.</li>
 </ul>
 
 <div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=references/_references" title="Certainly an overview page.">Reference</a></div>
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=references/extension_point_reference" title="Reference information for something.">CDO Extension Points</a></div>
 </div>
 </div>
 

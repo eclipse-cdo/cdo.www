@@ -1,7 +1,7 @@
-<!-- Generated: February 12, 2009, 09:40 PM --><a name="extension_point_reference"><!-- --></a>
+<!-- Generated: February 13, 2009, 08:27 AM --><a name="extension_point_reference"><!-- --></a>
 
 
-	<h1 class="topictitle1">Extension Point Reference</h1>
+	<h1 class="topictitle1">CDO Extension Points</h1>
 
 	
 	
@@ -40,10 +40,12 @@
 <ul class="ullinks">
 <li class="ulchildlink"><strong><a href="?topic=references/see_org_eclipse_platform_doc_isv_for_build_automation">See org.eclipse.platform.doc.isv for build automation</a></strong><br />
 Reference information for something.</li>
+<li class="ulchildlink"><strong><a href="?topic=references/server_configuration_reference">CDO Server Configuration</a></strong><br />
+Reference information for something.</li>
 </ul>
 
 <div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=references/_references" title="Certainly an overview page.">Reference</a></div>
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=references/api_reference" title="Reference information for something.">JavaDocs</a></div>
 </div>
 </div>
 
