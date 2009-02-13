@@ -871,14 +871,14 @@
 <li><a href="?topic=references/extension_point_reference">Extension Points</a>
 <ul id="#N1185F">
 <li><a href="?topic=references/see_org_eclipse_platform_doc_isv_for_build_automation">See org.eclipse.platform.doc.isv for build automation</a></li>
+</ul>
+</li>
 <li><a href="?topic=references/server_configuration_reference">Server Configuration</a>
 <ul id="#N1187D">
 <li><a href="?topic=references/memstore_reference">MEMStore</a></li>
 <li><a href="?topic=references/dbstore_reference">DBStore</a></li>
 <li><a href="?topic=references/hibernatestore_reference">HibernateStore</a></li>
 <li><a href="?topic=references/objectivitystore_reference">ObjectivityStore</a></li>
-</ul>
-</li>
 </ul>
 </li>
 <li><a href="?topic=references/other_reference_information">Other Reference Information</a>

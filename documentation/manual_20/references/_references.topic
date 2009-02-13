@@ -28,6 +28,8 @@
 <ul class="ullinks">
 <li class="ulchildlink"><strong><a href="?topic=references/extension_point_reference">CDO Extension Points</a></strong><br />
 Reference information for something.</li>
+<li class="ulchildlink"><strong><a href="?topic=references/server_configuration_reference">CDO Server Configuration</a></strong><br />
+Reference information for something.</li>
 <li class="ulchildlink"><strong><a href="?topic=references/other_reference_information">Other Reference Information</a></strong><br />
 Reference information for something.</li>
 </ul>

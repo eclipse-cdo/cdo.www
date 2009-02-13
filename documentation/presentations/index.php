@@ -5,8 +5,16 @@ $pageTitle 		= "Presentations";
 //$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-print '<div id="midcolumn">';
+function printPresentation($basePath, $title, $subtitle, $month, $lang = "english")
+{
+	print "<h6 class=\"homeitem\">$title\n";
+}
 
+print '<div id="midcolumn">';
+printPresentation("Bombardier_2008/CDO_Preview_Bombardier_2008",
+									"CDO 2.0 Preview for Bombardier",
+									"",
+									"October 2008");
 print '</div>';
 
 ########################################################################
