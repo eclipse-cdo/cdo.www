@@ -24,7 +24,7 @@ printPresentation("DemoCampBerlin_2008/CDO@DemoCamp_08",
 
 printPresentation("https://www.gpublication.com/eclipse/#requestedContent=contentID://EclipseConferences/ESE2008/48|Slides at gPublication",
 									"Datacentric RCP Applications (ESE 2008)",
-									"Long talk: Data binding with JFace and EMF, CDO with security... ",
+									"Long talk: Data binding with JFace and EMF, CDO with security...",
 									"Tom Schindl",
 									"November 2008");
 
