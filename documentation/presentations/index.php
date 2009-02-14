@@ -22,6 +22,12 @@ printPresentation("DemoCampBerlin_2008/CDO@DemoCamp_08",
 									"Eike Stepper",
 									"November 2008");
 
+printPresentation("https://www.gpublication.com/eclipse/#requestedContent=contentID://EclipseConferences/ESE2008/48|Slides at gPublication",
+									"Datacentric RCP Applications (ESE 2008)",
+									"Long talk: Data binding with JFace and EMF, CDO with security... ",
+									"Tom Schindl",
+									"November 2008");
+
 printPresentation("EclipseSummit_2008/CDO@ESE08",
 									"CDO 2.0 at the Eclipse Summit Europe 2008",
 									"Long talk: An update, code snippets with the new API...",
