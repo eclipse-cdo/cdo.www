@@ -26,6 +26,8 @@
 
 <div>
 <ul class="ullinks">
+<li class="ulchildlink"><strong><a href="?topic=javadocs/overview-summary">CDO Model Repository Javadocs</a></strong><br />
+File created to avoid PDE warnings. The actual content is created during the build.</li>
 <li class="ulchildlink"><strong><a href="?topic=references/extension_point_reference">CDO Extension Points</a></strong><br />
 Reference information for something.</li>
 <li class="ulchildlink"><strong><a href="?topic=references/server_configuration_reference">CDO Server Configuration</a></strong><br />

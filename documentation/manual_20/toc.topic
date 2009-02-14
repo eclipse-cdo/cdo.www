@@ -1,9 +1,9 @@
 <!-- Generated -->
 <ul>
-<li><a href="?topic=about_this_manual">About</a></li>
-<li><a href="?topic=conventions_for_this_manual">Conventions</a></li>
-<li><a href="?topic=overview_of_cdo">Overview</a></li>
-<li><a href="?topic=what_s_new">What's New</a></li>
+<li><a href="?topic=collateral/about_this_manual">About</a></li>
+<li><a href="?topic=collateral/conventions_for_this_manual">Conventions</a></li>
+<li><a href="?topic=collateral/overview_of_cdo">Overview</a></li>
+<li><a href="?topic=collateral/what_s_new">What's New</a></li>
 <li><a href="?topic=concepts/_concepts">Concepts</a>
 <ul id="#N1004E">
 <li><a href="?topic=concepts/applications">Applications</a>
@@ -868,13 +868,14 @@
 </li>
 <li><a href="?topic=references/_references">References</a>
 <ul id="#N1184B">
+<li><a href="?topic=javadocs/overview-summary">Javadocs</a></li>
 <li><a href="?topic=references/extension_point_reference">Extension Points</a>
-<ul id="#N1185F">
+<ul id="#N11869">
 <li><a href="?topic=references/see_org_eclipse_platform_doc_isv_for_build_automation">See org.eclipse.platform.doc.isv for build automation</a></li>
 </ul>
 </li>
 <li><a href="?topic=references/server_configuration_reference">Server Configuration</a>
-<ul id="#N1187D">
+<ul id="#N11887">
 <li><a href="?topic=references/memstore_reference">MEMStore</a></li>
 <li><a href="?topic=references/dbstore_reference">DBStore</a></li>
 <li><a href="?topic=references/hibernatestore_reference">HibernateStore</a></li>
@@ -882,13 +883,13 @@
 </ul>
 </li>
 <li><a href="?topic=references/other_reference_information">Other Reference Information</a>
-<ul id="#N118C8">
+<ul id="#N118D2">
 <li><a href="?topic=references/cdo_state_machine">CDO State Machine</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=glossary">Glossary</a></li>
-<li><a href="?topic=register">Index</a></li>
-<li><a href="?topic=legal_information">Legal</a></li>
+<li><a href="?topic=collateral/glossary">Glossary</a></li>
+<li><a href="?topic=collateral/register">Index</a></li>
+<li><a href="?topic=collateral/legal_information">Legal</a></li>
 </ul>
