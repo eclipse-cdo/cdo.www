@@ -12,7 +12,7 @@ print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
 printPresentation("Webinar_2009_01/CDO_Webinar_2009_01",
 									"Scale, Share and Store your Models with CDO 2.0",
-									"Slides of the Eclipse Live webinar.",
+									"Webinar for Eclipse Live.",
 									"Ed Merks and Eike Stepper",
 									"January 2009");
 
