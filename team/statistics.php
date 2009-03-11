@@ -114,7 +114,7 @@ if ($result && mysql_num_rows($result) > 0)
 
 		print '<h1>&nbsp;</h1>';
 		print '<div class="homeitem">';
-		print '<h1>Committed In ' . $rows . ' ' . $projectName . ($rows == 1 ? ' Bugzilla' : ' Bugzillas') . ' (Only <a href="commits.php?committerid='. $_GET["committerid"] . '&branch=HEAD">HEAD</a>)</h1>';
+		print '<h1>Committed In ' . $rows . ' ' . $projectName . ($rows == 1 ? ' Bugzilla' : ' Bugzillas') . '</h1>';
 		print '<p><table border="1" width="100%" align="right">' . "\n";
 		print '<tr>' .
 				'<td align="left"><b>Bugzilla</b></td>' .
@@ -130,7 +130,7 @@ if ($result && mysql_num_rows($result) > 0)
 			$lpf = $sum / $bug[3];
 
 			print '<tr>' .
-					'<td align="left"><a href="' . $bugurl . '/' . $bug[0] . '" target="_blank">' . $bug[0] . '</a></td>' .
+					'<td align="left"><a href="https://bugs.eclipse.org/' . $bug[0] . '" target="_blank">' . $bug[0] . '</a></td>' .
 					'<td>' . $bug[4] . '</td>' .
 					'<td>' . $bug[3] . '</td>' .
 					'<td>' . $sum . '</td>' .
