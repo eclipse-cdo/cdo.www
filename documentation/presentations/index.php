@@ -18,7 +18,7 @@ printPresentation("EclipseCon_2009/CDO_EclipseCon_2009",
 
 printPresentation("http://www.eclipsecon.org/2009/sessions?id=446",
 									"RCP Demo with CDO and Riena authentication (EclipseCon 2009)",
-									"Mixing Eclipse Technologies to create Enterprise Ready Database-RCP-Frontends",
+									"Create Enterprise Ready Database-RCP-Frontends",
 									"Tom Schindl",
 									"March 2009");
 
