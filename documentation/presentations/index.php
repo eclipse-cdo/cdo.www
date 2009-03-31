@@ -16,6 +16,12 @@ printPresentation("EclipseCon_2009/CDO_EclipseCon_2009",
 									"Eike Stepper",
 									"March 2009");
 
+printPresentation("http://www.eclipsecon.org/2009/sessions?id=446",
+									"RCP Demo with CDO and Riena authentication (EclipseCon 2009)",
+									"Mixing Eclipse Technologies to create Enterprise Ready Database-RCP-Frontends",
+									"Tom Schindl",
+									"March 2009");
+
 printPresentation("Webinar_2009_01/CDO_Webinar_2009_01",
 									"Scale, Share and Store your Models with CDO 2.0",
 									"Webinar for Eclipse Live.",
