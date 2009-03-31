@@ -60,13 +60,13 @@ printPresentation("Bombardier_2008/CDO_Preview_Bombardier_2008",
 									"October 2008");
 
 printPresentation("NASA_2008/CDO@NASA",
-									"CDO for the NASA Ames Research Center",
+									"CDO for the NASA Ames Research Center and JPL",
 									"Long talk at the annual Ensemble Conference",
 									"Eike Stepper",
 									"August 2008");
 
 printPresentation("NASA_2008/Net4j@NASA",
-									"Net4j for the NASA Ames Research Center",
+									"Net4j for the NASA Ames Research Center and JPL",
 									"Short talk at the annual Ensemble Conference",
 									"Eike Stepper",
 									"August 2008");
