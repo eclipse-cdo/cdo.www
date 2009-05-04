@@ -27,7 +27,7 @@
 <div>
 <ul class="ullinks">
 <li class="ulchildlink"><strong><a href="?topic=concepts/object_identity">Object Identity</a></strong><br />
-Represents some real concept.</li>
+CDOIDs are technical identifiers for CDOObjects.</li>
 <li class="ulchildlink"><strong><a href="?topic=concepts/object_state">Object State</a></strong><br />
 Represents some real concept.</li>
 <li class="ulchildlink"><strong><a href="?topic=concepts/external_references">External References</a></strong><br />

@@ -1,895 +1,895 @@
 <!-- Generated -->
 <ul>
-<li><a href="?topic=collateral/about_this_manual">About</a></li>
-<li><a href="?topic=collateral/conventions_for_this_manual">Conventions</a></li>
-<li><a href="?topic=collateral/overview_of_cdo">Overview</a></li>
-<li><a href="?topic=collateral/what_s_new">What's New</a></li>
-<li><a href="?topic=concepts/_concepts">Concepts</a>
-<ul id="#N1004E">
-<li><a href="?topic=concepts/applications">Applications</a>
-<ul id="#N1005D">
-<li><a href="?topic=concepts/runtime_environments">Runtime Environments</a>
-<ul id="#N1006C">
-<li><a href="?topic=concepts/java_runtime_environments">Java</a>
-<ul id="#N1007B">
-<li><a href="?topic=concepts/java_standard_edition">JSE</a></li>
-<li><a href="?topic=concepts/java_enterprise_edition">JEE</a>
-<ul id="#N10099">
-<li><a href="?topic=concepts/web_container">Web Container</a></li>
-<li><a href="?topic=concepts/ejb_container">EJB Container</a></li>
+<li><a href="?topic=collateral/about_this_manual.html">About</a></li>
+<li><a href="?topic=collateral/conventions_for_this_manual.html">Conventions</a></li>
+<li><a href="?topic=collateral/overview_of_cdo.html">Overview</a></li>
+<li><a href="?topic=collateral/what_s_new.html">What's New</a></li>
+<li><a href="?topic=concepts/_concepts.html">Concepts</a>
+<ul id="#N10056">
+<li><a href="?topic=concepts/applications.html">Applications</a>
+<ul id="#N10067">
+<li><a href="?topic=concepts/runtime_environments.html">Runtime Environments</a>
+<ul id="#N10078">
+<li><a href="?topic=concepts/java_runtime_environments.html">Java</a>
+<ul id="#N10089">
+<li><a href="?topic=concepts/java_standard_edition.html">JSE</a></li>
+<li><a href="?topic=concepts/java_enterprise_edition.html">JEE</a>
+<ul id="#N100AB">
+<li><a href="?topic=concepts/web_container.html">Web Container</a></li>
+<li><a href="?topic=concepts/ejb_container.html">EJB Container</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/osgi">OSGi</a></li>
-<li><a href="?topic=concepts/eclipse">Eclipse</a>
-<ul id="#N100D5">
-<li><a href="?topic=concepts/eclipse_rich_client_platform">RCP</a></li>
-<li><a href="?topic=concepts/headless_eclipse_environment">Headless</a></li>
+<li><a href="?topic=concepts/osgi.html">OSGi</a></li>
+<li><a href="?topic=concepts/eclipse.html">Eclipse</a>
+<ul id="#N100EF">
+<li><a href="?topic=concepts/eclipse_rich_client_platform.html">RCP</a></li>
+<li><a href="?topic=concepts/headless_eclipse_environment.html">Headless</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/models">Models</a>
-<ul id="#N10102">
-<li><a href="?topic=concepts/packages">Packages</a>
-<ul id="#N10111">
-<li><a href="?topic=concepts/generated_packages">Generated Packages</a>
-<ul id="#N10120">
-<li><a href="?topic=concepts/native_packages">Native Packages</a></li>
-<li><a href="?topic=concepts/legacy_packages">Legacy Packages</a></li>
+<li><a href="?topic=concepts/models.html">Models</a>
+<ul id="#N10122">
+<li><a href="?topic=concepts/packages.html">Packages</a>
+<ul id="#N10133">
+<li><a href="?topic=concepts/generated_packages.html">Generated Packages</a>
+<ul id="#N10144">
+<li><a href="?topic=concepts/native_packages.html">Native Packages</a></li>
+<li><a href="?topic=concepts/legacy_packages.html">Legacy Packages</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/dynamic_packages">Dynamic Packages</a></li>
-<li><a href="?topic=concepts/package_registries">Package Registries</a>
-<ul id="#N1015C">
-<li><a href="?topic=concepts/package_namespace_uris">Namespace URIs</a></li>
-<li><a href="?topic=concepts/global_package_registry">Global Package Registry</a></li>
-<li><a href="?topic=concepts/delegating_package_registries">Delegating Package Registries</a></li>
+<li><a href="?topic=concepts/dynamic_packages.html">Dynamic Packages</a></li>
+<li><a href="?topic=concepts/package_registries.html">Package Registries</a>
+<ul id="#N10188">
+<li><a href="?topic=concepts/package_namespace_uris.html">Namespace URIs</a></li>
+<li><a href="?topic=concepts/global_package_registry.html">Global Package Registry</a></li>
+<li><a href="?topic=concepts/delegating_package_registries.html">Delegating Package Registries</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/package_modularity">Modularity</a>
-<ul id="#N10198">
-<li><a href="?topic=concepts/nested_packages">Nested Packages</a></li>
-<li><a href="?topic=concepts/referenced_packages">Referenced Packages</a></li>
+<li><a href="?topic=concepts/package_modularity.html">Modularity</a>
+<ul id="#N101CC">
+<li><a href="?topic=concepts/nested_packages.html">Nested Packages</a></li>
+<li><a href="?topic=concepts/referenced_packages.html">Referenced Packages</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/model_reflection">Model Reflection</a></li>
+<li><a href="?topic=concepts/model_reflection.html">Model Reflection</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/classes">Classes</a>
-<ul id="#N101D4">
-<li><a href="?topic=concepts/abstract_classes">Abstract Classes</a></li>
-<li><a href="?topic=concepts/interfaces">Interfaces</a></li>
-<li><a href="?topic=concepts/inheritance">Inheritance</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/features">Features</a>
+<li><a href="?topic=concepts/classes.html">Classes</a>
 <ul id="#N10210">
-<li><a href="?topic=concepts/attributes">Attributes</a>
-<ul id="#N1021F">
-<li><a href="?topic=concepts/data_types">Data Types</a></li>
-<li><a href="?topic=concepts/enumerations">Enumerations</a></li>
+<li><a href="?topic=concepts/abstract_classes.html">Abstract Classes</a></li>
+<li><a href="?topic=concepts/interfaces.html">Interfaces</a></li>
+<li><a href="?topic=concepts/inheritance.html">Inheritance</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/references">References</a>
-<ul id="#N1024C">
-<li><a href="?topic=concepts/containment_references">Containment References</a></li>
-<li><a href="?topic=concepts/cross_references">Cross References</a></li>
+<li><a href="?topic=concepts/features.html">Features</a>
+<ul id="#N10254">
+<li><a href="?topic=concepts/attributes.html">Attributes</a>
+<ul id="#N10265">
+<li><a href="?topic=concepts/data_types.html">Data Types</a></li>
+<li><a href="?topic=concepts/enumerations.html">Enumerations</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/unsettable_features">Unsettable Features</a></li>
-<li><a href="?topic=concepts/many_valued_features">Many-Valued Features</a></li>
-<li><a href="?topic=concepts/feature_maps">Feature Maps</a></li>
-<li><a href="?topic=concepts/operations">Operations</a>
-<ul id="#N102A6">
-<li><a href="?topic=concepts/parameters">Parameters</a></li>
-<li><a href="?topic=concepts/exceptions">Exceptions</a></li>
+<li><a href="?topic=concepts/references.html">References</a>
+<ul id="#N10298">
+<li><a href="?topic=concepts/containment_references.html">Containment References</a></li>
+<li><a href="?topic=concepts/cross_references.html">Cross References</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="?topic=concepts/annotations">Annotations</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/model_instances">Instances</a>
-<ul id="#N102E2">
-<li><a href="?topic=concepts/objects">Objects</a>
-<ul id="#N102F1">
-<li><a href="?topic=concepts/object_identity">Object Identity</a>
-<ul id="#N10300">
-<li><a href="?topic=concepts/cdoid_factories">CDOID Factories</a></li>
-<li><a href="?topic=concepts/cdoid_class_loaders">CDOID Class Loaders</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/object_state">Object State</a>
-<ul id="#N1032D">
-<li><a href="?topic=concepts/transient_objects">Transient Objects</a></li>
-<li><a href="?topic=concepts/new_objects">New Objects</a></li>
-<li><a href="?topic=concepts/clean_objects">Clean Objects</a></li>
-<li><a href="?topic=concepts/dirty_objects">Dirty Objects</a></li>
-<li><a href="?topic=concepts/proxy_objects">Proxy Objects</a></li>
-<li><a href="?topic=concepts/conflict_objects">Conflict Objects</a></li>
-<li><a href="?topic=concepts/invalid_objects">Invalid Objects</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/external_references">External References</a></li>
-<li><a href="?topic=concepts/change_notification">Change Notification</a>
-<ul id="#N103B4">
-<li><a href="?topic=concepts/emf_adapters">Adapters</a>
-<ul id="#N103C3">
-<li><a href="?topic=concepts/cdo_adapter">CDO Adapter</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/cdo_invalidation_notification">CDO Invalidation Notification</a></li>
-<li><a href="?topic=concepts/cdo_delta_notification">CDO Delta Notification</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/generic_introspection">Generic Introspection</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/cdo_resources">CDO Resources</a>
-<ul id="#N1040E">
-<li><a href="?topic=concepts/cdo_resource_folders">CDO Resource Folders</a></li>
-<li><a href="?topic=concepts/cdo_root_resource">CDO Root Resource</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/revisions">Revisions</a>
-<ul id="#N1043B">
-<li><a href="?topic=concepts/revision_identity">Revision Identity</a>
-<ul id="#N1044A">
-<li><a href="?topic=concepts/version_of_a_revision">Version</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/revision_validity">Revision Validity</a>
-<ul id="#N10468">
-<li><a href="?topic=concepts/creation_time_of_a_revision">Creation Time</a></li>
-<li><a href="?topic=concepts/revision_time_of_a_revision">Revision Time</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/revision_data">Revision Data</a>
-<ul id="#N10495">
-<li><a href="?topic=concepts/attribute_values_of_a_revision">Attribute Values</a></li>
-<li><a href="?topic=concepts/reference_values_of_a_revision">Reference Values</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/revision_deltas">Revision Deltas</a></li>
+<li><a href="?topic=concepts/unsettable_features.html">Unsettable Features</a></li>
+<li><a href="?topic=concepts/many_valued_features.html">Many-Valued Features</a></li>
+<li><a href="?topic=concepts/feature_maps.html">Feature Maps</a></li>
+<li><a href="?topic=concepts/operations.html">Operations</a>
+<ul id="#N102FE">
+<li><a href="?topic=concepts/parameters.html">Parameters</a></li>
+<li><a href="?topic=concepts/exceptions.html">Exceptions</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/technical_infrastructure">Technical Infrastructure</a>
-<ul id="#N104D1">
-<li><a href="?topic=concepts/common_infrastructure">Common Infrastructure</a>
-<ul id="#N104E0">
-<li><a href="?topic=concepts/revision_manager">Revision Manager</a>
-<ul id="#N104EF">
-<li><a href="?topic=concepts/revision_caches">Revision Caches</a>
-<ul id="#N104FE">
-<li><a href="?topic=concepts/memory_sensitive_cache">Memory Sensitive Cache</a></li>
-<li><a href="?topic=concepts/lru_cache">LRU Cache</a></li>
-<li><a href="?topic=concepts/two_level_cache">Two Level Cache</a></li>
+<li><a href="?topic=concepts/annotations.html">Annotations</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/model_instances.html">Instances</a>
+<ul id="#N10342">
+<li><a href="?topic=concepts/objects.html">Objects</a>
+<ul id="#N10353">
+<li><a href="?topic=concepts/object_identity.html">Object Identity</a>
+<ul id="#N10364">
+<li><a href="?topic=concepts/cdoid_factories.html">CDOID Factories</a></li>
+<li><a href="?topic=concepts/cdoid_class_loaders.html">CDOID Class Loaders</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/object_state.html">Object State</a>
+<ul id="#N10397">
+<li><a href="?topic=concepts/transient_objects.html">Transient Objects</a></li>
+<li><a href="?topic=concepts/new_objects.html">New Objects</a></li>
+<li><a href="?topic=concepts/clean_objects.html">Clean Objects</a></li>
+<li><a href="?topic=concepts/dirty_objects.html">Dirty Objects</a></li>
+<li><a href="?topic=concepts/proxy_objects.html">Proxy Objects</a></li>
+<li><a href="?topic=concepts/conflict_objects.html">Conflict Objects</a></li>
+<li><a href="?topic=concepts/invalid_objects.html">Invalid Objects</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/external_references.html">External References</a></li>
+<li><a href="?topic=concepts/change_notification.html">Change Notification</a>
+<ul id="#N10430">
+<li><a href="?topic=concepts/emf_adapters.html">Adapters</a>
+<ul id="#N10441">
+<li><a href="?topic=concepts/cdo_adapter.html">CDO Adapter</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/cdo_invalidation_notification.html">CDO Invalidation Notification</a></li>
+<li><a href="?topic=concepts/cdo_delta_notification.html">CDO Delta Notification</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/generic_introspection.html">Generic Introspection</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/cdo_resources.html">CDO Resources</a>
+<ul id="#N10496">
+<li><a href="?topic=concepts/cdo_resource_folders.html">CDO Resource Folders</a></li>
+<li><a href="?topic=concepts/cdo_root_resource.html">CDO Root Resource</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/revisions.html">Revisions</a>
+<ul id="#N104C9">
+<li><a href="?topic=concepts/revision_identity.html">Revision Identity</a>
+<ul id="#N104DA">
+<li><a href="?topic=concepts/version_of_a_revision.html">Version</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/revision_validity.html">Revision Validity</a>
+<ul id="#N104FC">
+<li><a href="?topic=concepts/creation_time_of_a_revision.html">Creation Time</a></li>
+<li><a href="?topic=concepts/revision_time_of_a_revision.html">Revision Time</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/revision_data.html">Revision Data</a>
+<ul id="#N1052F">
+<li><a href="?topic=concepts/attribute_values_of_a_revision.html">Attribute Values</a></li>
+<li><a href="?topic=concepts/reference_values_of_a_revision.html">Reference Values</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/revision_deltas.html">Revision Deltas</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/package_manager">Package Manager</a>
-<ul id="#N1053A">
-<li><a href="?topic=concepts/cdo_packages">Packages</a></li>
-<li><a href="?topic=concepts/package_proxies">Package Proxies</a></li>
+<li><a href="?topic=concepts/technical_infrastructure.html">Technical Infrastructure</a>
+<ul id="#N10573">
+<li><a href="?topic=concepts/common_infrastructure.html">Common Infrastructure</a>
+<ul id="#N10584">
+<li><a href="?topic=concepts/revision_manager.html">Revision Manager</a>
+<ul id="#N10595">
+<li><a href="?topic=concepts/revision_caches.html">Revision Caches</a>
+<ul id="#N105A6">
+<li><a href="?topic=concepts/memory_sensitive_cache.html">Memory Sensitive Cache</a></li>
+<li><a href="?topic=concepts/lru_cache.html">LRU Cache</a></li>
+<li><a href="?topic=concepts/two_level_cache.html">Two Level Cache</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/client_side">Client-Side</a>
-<ul id="#N10567">
-<li><a href="?topic=concepts/sessions">Sessions</a>
-<ul id="#N10576">
-<li><a href="?topic=concepts/session_configurations">Session Configurations</a></li>
-<li><a href="?topic=concepts/session_options">Session Options</a>
-<ul id="#N10594">
-<li><a href="?topic=concepts/passive_updates">Passive Updates</a></li>
-<li><a href="?topic=concepts/collection_loading">Collection Loading</a></li>
-<li><a href="?topic=concepts/revision_factory">Revision Factory</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/session_events">Session Events</a>
-<ul id="#N105D0">
-<li><a href="?topic=concepts/session_invalidation_event">Session Invalidation Event</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/repository_information">Repository Information</a></li>
-<li><a href="?topic=concepts/session_package_manager">Package Manager</a></li>
-<li><a href="?topic=concepts/session_revision_manager">Revision Manager</a>
-<ul id="#N1060C">
-<li><a href="?topic=concepts/session_revision_loading">Revision Loading</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/commit_info_manager">Commit Info Manager</a>
-<ul id="#N1062A">
-<li><a href="?topic=concepts/commit_infos">Commit Infos</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/remote_session_manager">Remote Session Manager</a>
-<ul id="#N10648">
-<li><a href="?topic=concepts/remote_session_infos">Remote Session Infos</a></li>
+<li><a href="?topic=concepts/package_manager.html">Package Manager</a>
+<ul id="#N105EA">
+<li><a href="?topic=concepts/cdo_packages.html">Packages</a></li>
+<li><a href="?topic=concepts/package_proxies.html">Package Proxies</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/views">Views</a>
-<ul id="#N10666">
-<li><a href="?topic=concepts/view_options">View Options</a>
-<ul id="#N10675">
-<li><a href="?topic=concepts/object_invalidation_notifications">Object Invalidation Notifications</a></li>
-<li><a href="?topic=concepts/change_subscription_policies">Change Subscription Policies</a></li>
-<li><a href="?topic=concepts/revision_prefetching_policy">Revision Prefetching Policy</a></li>
-<li><a href="?topic=concepts/strong_reference_policy">Strong Reference Policy</a></li>
-<li><a href="?topic=concepts/cache_reference_type">Cache Reference Type</a></li>
+<li><a href="?topic=concepts/client_side.html">Client-Side</a>
+<ul id="#N1061D">
+<li><a href="?topic=concepts/sessions.html">Sessions</a>
+<ul id="#N1062E">
+<li><a href="?topic=concepts/session_configurations.html">Session Configurations</a></li>
+<li><a href="?topic=concepts/session_options.html">Session Options</a>
+<ul id="#N10650">
+<li><a href="?topic=concepts/passive_updates.html">Passive Updates</a></li>
+<li><a href="?topic=concepts/collection_loading.html">Collection Loading</a></li>
+<li><a href="?topic=concepts/revision_factory.html">Revision Factory</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/view_events">View Events</a>
-<ul id="#N106CF">
-<li><a href="?topic=concepts/view_invalidation_event">View Invalidation Event</a></li>
-<li><a href="?topic=concepts/resource_set_event">Resource Set Event</a></li>
+<li><a href="?topic=concepts/session_events.html">Session Events</a>
+<ul id="#N10694">
+<li><a href="?topic=concepts/session_invalidation_event.html">Session Invalidation Event</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/view_providers">View Providers</a>
-<ul id="#N106FC">
-<li><a href="?topic=concepts/managed_container_view_provider">Managed Container View Provider</a></li>
-<li><a href="?topic=concepts/plugin_container_provider">Plugin Container Provider</a></li>
-<li><a href="?topic=concepts/view_provider_registry">View Provider Registry</a></li>
+<li><a href="?topic=concepts/repository_information.html">Repository Information</a></li>
+<li><a href="?topic=concepts/session_package_manager.html">Package Manager</a></li>
+<li><a href="?topic=concepts/session_revision_manager.html">Revision Manager</a>
+<ul id="#N106D8">
+<li><a href="?topic=concepts/session_revision_loading.html">Revision Loading</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/audit_views">Audit Views</a>
-<ul id="#N10738">
-<li><a href="?topic=concepts/audit_time">Audit Time</a></li>
+<li><a href="?topic=concepts/commit_info_manager.html">Commit Info Manager</a>
+<ul id="#N106FA">
+<li><a href="?topic=concepts/commit_infos.html">Commit Infos</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="?topic=concepts/queries">Queries</a>
-<ul id="#N10756">
-<li><a href="?topic=concepts/query_infos">Query Infos</a>
-<ul id="#N10765">
-<li><a href="?topic=concepts/query_language">Query Language</a></li>
-<li><a href="?topic=concepts/query_string">Query String</a></li>
-<li><a href="?topic=concepts/query_parameters">Query Parameters</a></li>
-<li><a href="?topic=concepts/result_size_limitation">Result Size Limitation</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/query_execution">Query Execution</a>
-<ul id="#N107B0">
-<li><a href="?topic=concepts/synchronous_results">Synchronous Results</a></li>
-<li><a href="?topic=concepts/asynchronous_results">Asynchronous Results</a></li>
+<li><a href="?topic=concepts/remote_session_manager.html">Remote Session Manager</a>
+<ul id="#N1071C">
+<li><a href="?topic=concepts/remote_session_infos.html">Remote Session Infos</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/transactions">Transactions</a>
-<ul id="#N107DD">
-<li><a href="?topic=concepts/transaction_options">Transaction Options</a>
-<ul id="#N107EC">
-<li><a href="?topic=concepts/conflict_resolvers">Conflict Resolvers</a></li>
-<li><a href="?topic=concepts/auto_lock_releasing">Auto Lock Releasing</a></li>
+<li><a href="?topic=concepts/views.html">Views</a>
+<ul id="#N1073E">
+<li><a href="?topic=concepts/view_options.html">View Options</a>
+<ul id="#N1074F">
+<li><a href="?topic=concepts/object_invalidation_notifications.html">Object Invalidation Notifications</a></li>
+<li><a href="?topic=concepts/change_subscription_policies.html">Change Subscription Policies</a></li>
+<li><a href="?topic=concepts/revision_prefetching_policy.html">Revision Prefetching Policy</a></li>
+<li><a href="?topic=concepts/strong_reference_policy.html">Strong Reference Policy</a></li>
+<li><a href="?topic=concepts/cache_reference_type.html">Cache Reference Type</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/transaction_handlers">Transaction Handlers</a>
-<ul id="#N10819">
-<li><a href="?topic=concepts/auto_attacher">Auto Attacher</a></li>
+<li><a href="?topic=concepts/view_events.html">View Events</a>
+<ul id="#N107B5">
+<li><a href="?topic=concepts/view_invalidation_event.html">View Invalidation Event</a></li>
+<li><a href="?topic=concepts/resource_set_event.html">Resource Set Event</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/transaction_events">Transaction Events</a>
-<ul id="#N10837">
-<li><a href="?topic=concepts/transaction_started_event">Started Event</a></li>
-<li><a href="?topic=concepts/transaction_finished_event">Finished Event</a></li>
-<li><a href="?topic=concepts/transaction_conflict_event">Conflict Event</a></li>
+<li><a href="?topic=concepts/view_providers.html">View Providers</a>
+<ul id="#N107E8">
+<li><a href="?topic=concepts/managed_container_view_provider.html">Managed Container View Provider</a></li>
+<li><a href="?topic=concepts/plugin_container_provider.html">Plugin Container Provider</a></li>
+<li><a href="?topic=concepts/view_provider_registry.html">View Provider Registry</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/save_points">Save Points</a></li>
-<li><a href="?topic=concepts/distributed_transactions">Distributed Transactions</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/resource_sets">Resource Sets</a>
-<ul id="#N10891">
-<li><a href="?topic=concepts/resource_factories">Resource Factories</a></li>
-<li><a href="?topic=concepts/uri_converters">URI Converters</a></li>
-<li><a href="?topic=concepts/view_sets">View Sets</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="?topic=concepts/server_side">Server-Side</a>
-<ul id="#N108CD">
-<li><a href="?topic=concepts/repository">Repository</a>
-<ul id="#N108DC">
-<li><a href="?topic=concepts/repository_package_manager">Package Manager</a></li>
-<li><a href="?topic=concepts/repository_revision_manager">Revision Manager</a>
-<ul id="#N108FA">
-<li><a href="?topic=concepts/repository_revision_loading">Revision Loading</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/session_manager">Session Manager</a>
-<ul id="#N10918">
-<li><a href="?topic=concepts/repository_sessions">Repository Sessions</a></li>
-<li><a href="?topic=concepts/repository_views">Views</a>
-<ul id="#N10936">
-<li><a href="?topic=concepts/repository_audits">Audits</a></li>
-<li><a href="?topic=concepts/repository_transactions">Transactions</a></li>
+<li><a href="?topic=concepts/audit_views.html">Audit Views</a>
+<ul id="#N1082C">
+<li><a href="?topic=concepts/audit_time.html">Audit Time</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/lock_manager">Lock Manager</a></li>
-<li><a href="?topic=concepts/commit_manager">Commit Manager</a></li>
-<li><a href="?topic=concepts/notification_manager">Notification Manager</a></li>
-<li><a href="?topic=concepts/query_manager">Query Manager</a></li>
-<li><a href="?topic=concepts/query_handlers">Query Handlers</a>
-<ul id="#N1099F">
-<li><a href="?topic=concepts/query_handler_provider">Query Handler Provider</a></li>
+<li><a href="?topic=concepts/queries.html">Queries</a>
+<ul id="#N1084E">
+<li><a href="?topic=concepts/query_infos.html">Query Infos</a>
+<ul id="#N1085F">
+<li><a href="?topic=concepts/query_language.html">Query Language</a></li>
+<li><a href="?topic=concepts/query_string.html">Query String</a></li>
+<li><a href="?topic=concepts/query_parameters.html">Query Parameters</a></li>
+<li><a href="?topic=concepts/result_size_limitation.html">Result Size Limitation</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/access_handlers">Access Handlers</a>
-<ul id="#N109BD">
-<li><a href="?topic=concepts/read_access_handlers">Read Access Handlers</a></li>
-<li><a href="?topic=concepts/write_access_handlers">Write Access Handlers</a></li>
+<li><a href="?topic=concepts/query_execution.html">Query Execution</a>
+<ul id="#N108B4">
+<li><a href="?topic=concepts/synchronous_results.html">Synchronous Results</a></li>
+<li><a href="?topic=concepts/asynchronous_results.html">Asynchronous Results</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/store">Store</a></li>
+<li><a href="?topic=concepts/transactions.html">Transactions</a>
+<ul id="#N108E7">
+<li><a href="?topic=concepts/transaction_options.html">Transaction Options</a>
+<ul id="#N108F8">
+<li><a href="?topic=concepts/conflict_resolvers.html">Conflict Resolvers</a></li>
+<li><a href="?topic=concepts/auto_lock_releasing.html">Auto Lock Releasing</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/net4j_signalling_platform">Net4j</a>
-<ul id="#N109F9">
-<li><a href="?topic=concepts/net4j_utilities">Utilities</a>
+<li><a href="?topic=concepts/transaction_handlers.html">Transaction Handlers</a>
+<ul id="#N1092B">
+<li><a href="?topic=concepts/auto_attacher.html">Auto Attacher</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/transaction_events.html">Transaction Events</a>
+<ul id="#N1094D">
+<li><a href="?topic=concepts/transaction_started_event.html">Started Event</a></li>
+<li><a href="?topic=concepts/transaction_finished_event.html">Finished Event</a></li>
+<li><a href="?topic=concepts/transaction_conflict_event.html">Conflict Event</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/save_points.html">Save Points</a></li>
+<li><a href="?topic=concepts/distributed_transactions.html">Distributed Transactions</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/resource_sets.html">Resource Sets</a>
+<ul id="#N109B3">
+<li><a href="?topic=concepts/resource_factories.html">Resource Factories</a></li>
+<li><a href="?topic=concepts/uri_converters.html">URI Converters</a></li>
+<li><a href="?topic=concepts/view_sets.html">View Sets</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="?topic=concepts/server_side.html">Server-Side</a>
+<ul id="#N109F7">
+<li><a href="?topic=concepts/repository.html">Repository</a>
 <ul id="#N10A08">
-<li><a href="?topic=concepts/adapters">Adapters</a></li>
-<li><a href="?topic=concepts/net4j_events">Events</a>
-<ul id="#N10A26">
-<li><a href="?topic=concepts/net4j_notifiers">Notifiers</a>
-<ul id="#N10A35">
-<li><a href="?topic=concepts/asynchronous_delivery">Asynchronous Delivery</a></li>
+<li><a href="?topic=concepts/repository_package_manager.html">Package Manager</a></li>
+<li><a href="?topic=concepts/repository_revision_manager.html">Revision Manager</a>
+<ul id="#N10A2A">
+<li><a href="?topic=concepts/repository_revision_loading.html">Revision Loading</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/net4j_listeners">Listeners</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/net4j_factories">Factories</a>
-<ul id="#N10A62">
-<li><a href="?topic=concepts/net4j_factory_keys">Factory Keys</a></li>
-<li><a href="?topic=concepts/net4j_factory_descriptors">Factory Descriptors</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/net4j_containers">Containers</a>
-<ul id="#N10A8F">
-<li><a href="?topic=concepts/net4j_container_deltas">Container Deltas</a></li>
-<li><a href="?topic=concepts/modifiable_net4j_containers">Modifiable Containers</a></li>
-<li><a href="?topic=concepts/managed_net4j_containers">Managed Containers</a>
-<ul id="#N10ABC">
-<li><a href="?topic=concepts/element_factory_registry">Element Factory Registry</a></li>
-<li><a href="?topic=concepts/element_post_processors">Element Post Processors</a></li>
-<li><a href="?topic=concepts/container_persistence">Container Persistence</a></li>
-<li><a href="?topic=concepts/plugin_container">Plugin Container</a></li>
+<li><a href="?topic=concepts/session_manager.html">Session Manager</a>
+<ul id="#N10A4C">
+<li><a href="?topic=concepts/repository_sessions.html">Repository Sessions</a></li>
+<li><a href="?topic=concepts/repository_views.html">Views</a>
+<ul id="#N10A6E">
+<li><a href="?topic=concepts/repository_audits.html">Audits</a></li>
+<li><a href="?topic=concepts/repository_transactions.html">Transactions</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/net4j_registries">Registries</a>
+<li><a href="?topic=concepts/lock_manager.html">Lock Manager</a></li>
+<li><a href="?topic=concepts/commit_manager.html">Commit Manager</a></li>
+<li><a href="?topic=concepts/notification_manager.html">Notification Manager</a></li>
+<li><a href="?topic=concepts/query_manager.html">Query Manager</a></li>
+<li><a href="?topic=concepts/query_handlers.html">Query Handlers</a>
+<ul id="#N10AE5">
+<li><a href="?topic=concepts/query_handler_provider.html">Query Handler Provider</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/access_handlers.html">Access Handlers</a>
 <ul id="#N10B07">
-<li><a href="?topic=concepts/transactional_net4j_registries">Transactional Registries</a>
-<ul id="#N10B16">
-<li><a href="?topic=concepts/auto_commit_for_net4j_registries">Auto Commit</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/net4j_map_registries">Map Registries</a></li>
-<li><a href="?topic=concepts/net4j_delegating_registries">Delegating Registries</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/state_machines">State Machines</a>
-<ul id="#N10B52">
-<li><a href="?topic=concepts/state_machine_states">States</a></li>
-<li><a href="?topic=concepts/state_machine_events">Events</a></li>
-<li><a href="?topic=concepts/state_machine_transitions">Transitions</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/concurrency_support">Concurrency Support</a>
-<ul id="#N10B8E">
-<li><a href="?topic=concepts/executors">Executors</a>
-<ul id="#N10B9D">
-<li><a href="?topic=concepts/thread_pools">Thread Pools</a></li>
-<li><a href="?topic=concepts/workers">Workers</a>
-<ul id="#N10BBB">
-<li><a href="?topic=concepts/queue_workers">Queue Workers</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/one_pending_executor">One Pending Executor</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/work_serializers">Work Serializers</a>
-<ul id="#N10BE8">
-<li><a href="?topic=concepts/synchronous_work_serializer">Synchronous</a></li>
-<li><a href="?topic=concepts/asynchronous_work_serializer">Asynchronous</a></li>
-<li><a href="?topic=concepts/completion_work_serializer">Completion</a></li>
-<li><a href="?topic=concepts/queue_worker_work_serializer">Queue Worker</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/synchronizers">Synchronizers</a>
-<ul id="#N10C33">
-<li><a href="?topic=concepts/result_synchronizer">Result Synchronizer</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/correlators">Correlators</a>
-<ul id="#N10C51">
-<li><a href="?topic=concepts/synchronizing_correlator">Synchronizing Correlator</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/counters">Counters</a>
-<ul id="#N10C6F">
-<li><a href="?topic=concepts/non_blocking_int_counter">Non-Blocking Int</a></li>
-<li><a href="?topic=concepts/non_blocking_long_counter">Non-Blocking Long</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/schedulers">Schedulers</a>
-<ul id="#N10C9C">
-<li><a href="?topic=concepts/round_robin_list">Round Robin List</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/locks">Locks</a>
-<ul id="#N10CBA">
-<li><a href="?topic=concepts/read_write_lock">Read Write Lock</a></li>
-<li><a href="?topic=concepts/read_write_lock_manager">Read Write Lock Manager</a></li>
+<li><a href="?topic=concepts/read_access_handlers.html">Read Access Handlers</a></li>
+<li><a href="?topic=concepts/write_access_handlers.html">Write Access Handlers</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/lifecycle_management">Lifecycle Management</a>
-<ul id="#N10CE7">
-<li><a href="?topic=concepts/lifecycle_states">Lifecycle States</a>
-<ul id="#N10CF6">
-<li><a href="?topic=concepts/lifecycle_introspection">Lifecycle Introspection</a></li>
+<li><a href="?topic=concepts/store.html">Store</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/lifecycle_events">Lifecycle Events</a></li>
-<li><a href="?topic=concepts/lifecycle_exceptions">Lifecycle Exceptions</a></li>
+<li><a href="?topic=concepts/net4j_signalling_platform.html">Net4j</a>
+<ul id="#N10B4B">
+<li><a href="?topic=concepts/net4j_utilities.html">Utilities</a>
+<ul id="#N10B5C">
+<li><a href="?topic=concepts/adapters.html">Adapters</a></li>
+<li><a href="?topic=concepts/net4j_events.html">Events</a>
+<ul id="#N10B7E">
+<li><a href="?topic=concepts/net4j_notifiers.html">Notifiers</a>
+<ul id="#N10B8F">
+<li><a href="?topic=concepts/asynchronous_delivery.html">Asynchronous Delivery</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/memory_management">Memory Management</a>
-<ul id="#N10D32">
-<li><a href="?topic=concepts/keyed_references">Keyed References</a></li>
-<li><a href="?topic=concepts/reference_types">Reference Types</a>
-<ul id="#N10D50">
-<li><a href="?topic=concepts/strong_references">Strong References</a></li>
-<li><a href="?topic=concepts/soft_references">Soft References</a></li>
-<li><a href="?topic=concepts/weak_references">Weak References</a></li>
-<li><a href="?topic=concepts/phantom_references">Phantom References</a></li>
+<li><a href="?topic=concepts/net4j_listeners.html">Listeners</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/reference_queues">Reference Queues</a>
-<ul id="#N10D9B">
-<li><a href="?topic=concepts/reference_queue_workers">Reference Queue Workers</a></li>
+<li><a href="?topic=concepts/net4j_factories.html">Factories</a>
+<ul id="#N10BC2">
+<li><a href="?topic=concepts/net4j_factory_keys.html">Factory Keys</a></li>
+<li><a href="?topic=concepts/net4j_factory_descriptors.html">Factory Descriptors</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/reference_value_maps">Reference Value Maps</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/security">Security</a>
-<ul id="#N10DC8">
-<li><a href="?topic=concepts/credentials">Credentials</a>
-<ul id="#N10DD7">
-<li><a href="?topic=concepts/password_credentials">Password Credentials</a></li>
-<li><a href="?topic=concepts/credentials_providers">Credentials Providers</a>
-<ul id="#N10DF5">
-<li><a href="?topic=concepts/password_credentials_provider">Password</a></li>
-<li><a href="?topic=concepts/interactive_credentials_provider">Interactive</a></li>
+<li><a href="?topic=concepts/net4j_containers.html">Containers</a>
+<ul id="#N10BF5">
+<li><a href="?topic=concepts/net4j_container_deltas.html">Container Deltas</a></li>
+<li><a href="?topic=concepts/modifiable_net4j_containers.html">Modifiable Containers</a></li>
+<li><a href="?topic=concepts/managed_net4j_containers.html">Managed Containers</a>
+<ul id="#N10C28">
+<li><a href="?topic=concepts/element_factory_registry.html">Element Factory Registry</a></li>
+<li><a href="?topic=concepts/element_post_processors.html">Element Post Processors</a></li>
+<li><a href="?topic=concepts/container_persistence.html">Container Persistence</a></li>
+<li><a href="?topic=concepts/plugin_container.html">Plugin Container</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/negotiation">Negotiation</a>
-<ul id="#N10E22">
-<li><a href="?topic=concepts/negotiation_contexts">Negotiation Contexts</a></li>
-<li><a href="?topic=concepts/negotiation_exceptions">Negotiation Exceptions</a></li>
-<li><a href="?topic=concepts/negotiator_factories">Negotiator Factories</a></li>
-<li><a href="?topic=concepts/challenge_response_negotiation">Challenge Response Negotiation</a>
-<ul id="#N10E5E">
-<li><a href="?topic=concepts/challenge_negotiators">Challenge Negotiators</a></li>
-<li><a href="?topic=concepts/response_negotiators">Response Negotiators</a></li>
+<li><a href="?topic=concepts/net4j_registries.html">Registries</a>
+<ul id="#N10C7D">
+<li><a href="?topic=concepts/transactional_net4j_registries.html">Transactional Registries</a>
+<ul id="#N10C8E">
+<li><a href="?topic=concepts/auto_commit_for_net4j_registries.html">Auto Commit</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/net4j_map_registries.html">Map Registries</a></li>
+<li><a href="?topic=concepts/net4j_delegating_registries.html">Delegating Registries</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/state_machines.html">State Machines</a>
+<ul id="#N10CD2">
+<li><a href="?topic=concepts/state_machine_states.html">States</a></li>
+<li><a href="?topic=concepts/state_machine_events.html">Events</a></li>
+<li><a href="?topic=concepts/state_machine_transitions.html">Transitions</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/concurrency_support.html">Concurrency Support</a>
+<ul id="#N10D16">
+<li><a href="?topic=concepts/executors.html">Executors</a>
+<ul id="#N10D27">
+<li><a href="?topic=concepts/thread_pools.html">Thread Pools</a></li>
+<li><a href="?topic=concepts/workers.html">Workers</a>
+<ul id="#N10D49">
+<li><a href="?topic=concepts/queue_workers.html">Queue Workers</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/one_pending_executor.html">One Pending Executor</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/work_serializers.html">Work Serializers</a>
+<ul id="#N10D7C">
+<li><a href="?topic=concepts/synchronous_work_serializer.html">Synchronous</a></li>
+<li><a href="?topic=concepts/asynchronous_work_serializer.html">Asynchronous</a></li>
+<li><a href="?topic=concepts/completion_work_serializer.html">Completion</a></li>
+<li><a href="?topic=concepts/queue_worker_work_serializer.html">Queue Worker</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/synchronizers.html">Synchronizers</a>
+<ul id="#N10DD1">
+<li><a href="?topic=concepts/result_synchronizer.html">Result Synchronizer</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/correlators.html">Correlators</a>
+<ul id="#N10DF3">
+<li><a href="?topic=concepts/synchronizing_correlator.html">Synchronizing Correlator</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/counters.html">Counters</a>
+<ul id="#N10E15">
+<li><a href="?topic=concepts/non_blocking_int_counter.html">Non-Blocking Int</a></li>
+<li><a href="?topic=concepts/non_blocking_long_counter.html">Non-Blocking Long</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/schedulers.html">Schedulers</a>
+<ul id="#N10E48">
+<li><a href="?topic=concepts/round_robin_list.html">Round Robin List</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/locks.html">Locks</a>
+<ul id="#N10E6A">
+<li><a href="?topic=concepts/read_write_lock.html">Read Write Lock</a></li>
+<li><a href="?topic=concepts/read_write_lock_manager.html">Read Write Lock Manager</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/user_managers">User Managers</a>
-<ul id="#N10E8B">
-<li><a href="?topic=concepts/file_user_managers">File User Managers</a></li>
+<li><a href="?topic=concepts/lifecycle_management.html">Lifecycle Management</a>
+<ul id="#N10E9D">
+<li><a href="?topic=concepts/lifecycle_states.html">Lifecycle States</a>
+<ul id="#N10EAE">
+<li><a href="?topic=concepts/lifecycle_introspection.html">Lifecycle Introspection</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/randomizers">Randomizers</a>
-<ul id="#N10EA9">
-<li><a href="?topic=concepts/randomizer_factories">Randomizer Factories</a></li>
+<li><a href="?topic=concepts/lifecycle_events.html">Lifecycle Events</a></li>
+<li><a href="?topic=concepts/lifecycle_exceptions.html">Lifecycle Exceptions</a></li>
 </ul>
 </li>
+<li><a href="?topic=concepts/memory_management.html">Memory Management</a>
+<ul id="#N10EF2">
+<li><a href="?topic=concepts/keyed_references.html">Keyed References</a></li>
+<li><a href="?topic=concepts/reference_types.html">Reference Types</a>
+<ul id="#N10F14">
+<li><a href="?topic=concepts/strong_references.html">Strong References</a></li>
+<li><a href="?topic=concepts/soft_references.html">Soft References</a></li>
+<li><a href="?topic=concepts/weak_references.html">Weak References</a></li>
+<li><a href="?topic=concepts/phantom_references.html">Phantom References</a></li>
 </ul>
 </li>
+<li><a href="?topic=concepts/reference_queues.html">Reference Queues</a>
+<ul id="#N10F69">
+<li><a href="?topic=concepts/reference_queue_workers.html">Reference Queue Workers</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/net4j_platform_layer">Platform Layer</a>
-<ul id="#N10EC7">
-<li><a href="?topic=concepts/platform">Platform</a>
-<ul id="#N10ED6">
-<li><a href="?topic=concepts/osgi_platform">OSGi Platform</a>
-<ul id="#N10EE5">
-<li><a href="?topic=concepts/osgi_activator">OSGi Activator</a></li>
-<li><a href="?topic=concepts/osgi_application">OSGi Application</a></li>
+<li><a href="?topic=concepts/reference_value_maps.html">Reference Value Maps</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/standalone_platform">Standalone Platform</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/bundles">Bundles</a>
-<ul id="#N10F21">
-<li><a href="?topic=concepts/configuration_properties">Configuration Properties</a></li>
-<li><a href="?topic=concepts/debug_support">Debug Support</a></li>
-<li><a href="?topic=concepts/translation_support">Translation Support</a></li>
-<li><a href="?topic=concepts/bundle_context">Bundle Context</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/preferences">Preferences</a>
-<ul id="#N10F6C">
-<li><a href="?topic=concepts/preference_types">Preference Types</a></li>
-<li><a href="?topic=concepts/preference_events">Preference Events</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/progress_monitoring">Progress Monitoring</a>
-<ul id="#N10F99">
-<li><a href="?topic=concepts/root_monitors">Root Monitors</a>
-<ul id="#N10FA8">
-<li><a href="?topic=concepts/eclipse_monitoring_bridge">Eclipse Monitoring Bridge</a></li>
-<li><a href="?topic=concepts/timeout_monitors">Timeout Monitors</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/nested_monitors">Nested Monitors</a></li>
-<li><a href="?topic=concepts/delegating_monitors">Delegating Monitors</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/runtime_logging">Runtime Logging</a>
-<ul id="#N10FF3">
-<li><a href="?topic=concepts/loggers">Loggers</a></li>
-<li><a href="?topic=concepts/log_handlers">Log Handlers</a>
-<ul id="#N11011">
-<li><a href="?topic=concepts/print_log_handler">Print Log Handler</a></li>
-<li><a href="?topic=concepts/osgi_logging_bridge">OSGi Logging Bridge</a></li>
-<li><a href="?topic=concepts/eclipse_logging_bridge">Eclipse Logging Bridge</a></li>
+<li><a href="?topic=concepts/security.html">Security</a>
+<ul id="#N10F9C">
+<li><a href="?topic=concepts/credentials.html">Credentials</a>
+<ul id="#N10FAD">
+<li><a href="?topic=concepts/password_credentials.html">Password Credentials</a></li>
+<li><a href="?topic=concepts/credentials_providers.html">Credentials Providers</a>
+<ul id="#N10FCF">
+<li><a href="?topic=concepts/password_credentials_provider.html">Password</a></li>
+<li><a href="?topic=concepts/interactive_credentials_provider.html">Interactive</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/debug_tracing">Debug Tracing</a>
-<ul id="#N1104D">
-<li><a href="?topic=concepts/tracers">Tracers</a>
-<ul id="#N1105C">
-<li><a href="?topic=concepts/context_tracers">Context Tracers</a></li>
-<li><a href="?topic=concepts/performance_tracers">Performance Tracers</a></li>
+<li><a href="?topic=concepts/negotiation.html">Negotiation</a>
+<ul id="#N11002">
+<li><a href="?topic=concepts/negotiation_contexts.html">Negotiation Contexts</a></li>
+<li><a href="?topic=concepts/negotiation_exceptions.html">Negotiation Exceptions</a></li>
+<li><a href="?topic=concepts/negotiator_factories.html">Negotiator Factories</a></li>
+<li><a href="?topic=concepts/challenge_response_negotiation.html">Challenge Response Negotiation</a>
+<ul id="#N11046">
+<li><a href="?topic=concepts/challenge_negotiators.html">Challenge Negotiators</a></li>
+<li><a href="?topic=concepts/response_negotiators.html">Response Negotiators</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/trace_handler_events">Trace Handler Events</a></li>
-<li><a href="?topic=concepts/trace_handlers">Trace Handlers</a>
-<ul id="#N11098">
-<li><a href="?topic=concepts/print_trace_handler">Print Trace Handler</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/remote_tracing">Remote Tracing</a>
-<ul id="#N110B6">
-<li><a href="?topic=concepts/remote_trace_handler">Remote Trace Handler</a></li>
-<li><a href="?topic=concepts/remote_trace_server">Remote Trace Server</a></li>
-<li><a href="?topic=concepts/remote_trace_agent">Remote Trace Agent</a></li>
+<li><a href="?topic=concepts/user_managers.html">User Managers</a>
+<ul id="#N11079">
+<li><a href="?topic=concepts/file_user_managers.html">File User Managers</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/randomizers.html">Randomizers</a>
+<ul id="#N1109B">
+<li><a href="?topic=concepts/randomizer_factories.html">Randomizer Factories</a></li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/net4j_transport_layer">Transport Layer</a>
-<ul id="#N110F2">
-<li><a href="?topic=concepts/buffers">Buffers</a>
-<ul id="#N11101">
-<li><a href="?topic=concepts/buffer_providers">Buffer Providers</a>
-<ul id="#N11110">
-<li><a href="?topic=concepts/buffer_factories">Buffer Factories</a></li>
-<li><a href="?topic=concepts/buffer_pools">Buffer Pools</a></li>
+<li><a href="?topic=concepts/net4j_platform_layer.html">Platform Layer</a>
+<ul id="#N110BD">
+<li><a href="?topic=concepts/platform.html">Platform</a>
+<ul id="#N110CE">
+<li><a href="?topic=concepts/osgi_platform.html">OSGi Platform</a>
+<ul id="#N110DF">
+<li><a href="?topic=concepts/osgi_activator.html">OSGi Activator</a></li>
+<li><a href="?topic=concepts/osgi_application.html">OSGi Application</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/buffer_handlers">Buffer Handlers</a></li>
-<li><a href="?topic=concepts/buffer_streams">Buffer Streams</a>
-<ul id="#N1114C">
-<li><a href="?topic=concepts/buffer_output_streams">Buffer Output Streams</a></li>
-<li><a href="?topic=concepts/buffer_input_streams">Buffer Input Streams</a></li>
+<li><a href="?topic=concepts/standalone_platform.html">Standalone Platform</a></li>
 </ul>
 </li>
+<li><a href="?topic=concepts/bundles.html">Bundles</a>
+<ul id="#N11123">
+<li><a href="?topic=concepts/configuration_properties.html">Configuration Properties</a></li>
+<li><a href="?topic=concepts/debug_support.html">Debug Support</a></li>
+<li><a href="?topic=concepts/translation_support.html">Translation Support</a></li>
+<li><a href="?topic=concepts/bundle_context.html">Bundle Context</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/virtual_channels">Virtual Channels</a>
-<ul id="#N11179">
-<li><a href="?topic=concepts/receive_handlers">Receive Handlers</a></li>
-<li><a href="?topic=concepts/channel_multiplexers">Channel Multiplexers</a></li>
-<li><a href="?topic=concepts/channel_streams">Channel Streams</a>
-<ul id="#N111A6">
-<li><a href="?topic=concepts/channel_output_streams">Channel Output Streams</a></li>
-<li><a href="?topic=concepts/channel_input_streams">Channel Input Streams</a></li>
+<li><a href="?topic=concepts/preferences.html">Preferences</a>
+<ul id="#N11178">
+<li><a href="?topic=concepts/preference_types.html">Preference Types</a></li>
+<li><a href="?topic=concepts/preference_events.html">Preference Events</a></li>
 </ul>
 </li>
+<li><a href="?topic=concepts/progress_monitoring.html">Progress Monitoring</a>
+<ul id="#N111AB">
+<li><a href="?topic=concepts/root_monitors.html">Root Monitors</a>
+<ul id="#N111BC">
+<li><a href="?topic=concepts/eclipse_monitoring_bridge.html">Eclipse Monitoring Bridge</a></li>
+<li><a href="?topic=concepts/timeout_monitors.html">Timeout Monitors</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/physical_connections">Physical Connections</a>
-<ul id="#N111D3">
-<li><a href="?topic=concepts/acceptors">Acceptors</a>
-<ul id="#N111E2">
-<li><a href="?topic=concepts/acceptor_configuration">Acceptor Configuration</a>
-<ul id="#N111F1">
-<li><a href="?topic=concepts/acceptor_executor_service">__SHORT_TITLE__</a></li>
-<li><a href="?topic=concepts/acceptor_buffer_provider">Buffer Provider</a></li>
-<li><a href="?topic=concepts/acceptor_protocol_factory_registry">Protocol Factory Registry</a></li>
-<li><a href="?topic=concepts/acceptor_negotiator">Negotiator</a></li>
+<li><a href="?topic=concepts/nested_monitors.html">Nested Monitors</a></li>
+<li><a href="?topic=concepts/delegating_monitors.html">Delegating Monitors</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/acceptor_factories">Acceptor Factories</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/connectors">Connectors</a>
-<ul id="#N1124B">
-<li><a href="?topic=concepts/connector_configuration">Connector Configuration</a>
-<ul id="#N1125A">
-<li><a href="?topic=concepts/connector_executor_service">Executor Service</a></li>
-<li><a href="?topic=concepts/connector_buffer_provider">Buffer Provider</a></li>
-<li><a href="?topic=concepts/connector_protocol_factory_registry">Protocol Factory Registry</a></li>
-<li><a href="?topic=concepts/connector_negotiator">Negotiator</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/connector_factories">Connector Factories</a></li>
+<li><a href="?topic=concepts/runtime_logging.html">Runtime Logging</a>
+<ul id="#N11211">
+<li><a href="?topic=concepts/loggers.html">Loggers</a></li>
+<li><a href="?topic=concepts/log_handlers.html">Log Handlers</a>
+<ul id="#N11233">
+<li><a href="?topic=concepts/print_log_handler.html">Print Log Handler</a></li>
+<li><a href="?topic=concepts/osgi_logging_bridge.html">OSGi Logging Bridge</a></li>
+<li><a href="?topic=concepts/eclipse_logging_bridge.html">Eclipse Logging Bridge</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/transport_implementations">Transport Implementations</a>
-<ul id="#N112B4">
-<li><a href="?topic=concepts/tcp_transport">TCP Transport</a>
-<ul id="#N112C3">
-<li><a href="?topic=concepts/tcp_acceptors">TCP Acceptors</a>
-<ul id="#N112D2">
-<li><a href="?topic=concepts/tcp_acceptor_factories">TCP Acceptor Factories</a></li>
+<li><a href="?topic=concepts/debug_tracing.html">Debug Tracing</a>
+<ul id="#N11277">
+<li><a href="?topic=concepts/tracers.html">Tracers</a>
+<ul id="#N11288">
+<li><a href="?topic=concepts/context_tracers.html">Context Tracers</a></li>
+<li><a href="?topic=concepts/performance_tracers.html">Performance Tracers</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/tcp_connectors">TCP Connectors</a>
-<ul id="#N112F0">
-<li><a href="?topic=concepts/tcp_connector_factories">TCP Connector Factories</a></li>
+<li><a href="?topic=concepts/trace_handler_events.html">Trace Handler Events</a></li>
+<li><a href="?topic=concepts/trace_handlers.html">Trace Handlers</a>
+<ul id="#N112CC">
+<li><a href="?topic=concepts/print_trace_handler.html">Print Trace Handler</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/tcp_selectors">TCP Selectors</a>
-<ul id="#N1130E">
-<li><a href="?topic=concepts/tcp_selector_factories">TCP Selector Factories</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="?topic=concepts/http_transport">HTTP Transport</a>
-<ul id="#N1132C">
-<li><a href="?topic=concepts/http_acceptors">HTTP Acceptors</a>
-<ul id="#N1133B">
-<li><a href="?topic=concepts/http_acceptor_factories">HTTP Acceptor Factories</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/http_connectors">HTTP Connectors</a>
-<ul id="#N11359">
-<li><a href="?topic=concepts/http_connector_factories">HTTP Connector Factories</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/http_channels">HTTP Channels</a></li>
-<li><a href="?topic=concepts/http_servlet">HTTP Servlet</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/jvm_transport">JVM Transport</a>
-<ul id="#N11395">
-<li><a href="?topic=concepts/jvm_acceptors">JVM Acceptors</a>
-<ul id="#N113A4">
-<li><a href="?topic=concepts/jvm_acceptor_factories">JVM Acceptor Factories</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/jvm_connectors">JVM Connectors</a>
-<ul id="#N113C2">
-<li><a href="?topic=concepts/jvmconnector_factories">JVMConnector Factories</a></li>
+<li><a href="?topic=concepts/remote_tracing.html">Remote Tracing</a>
+<ul id="#N112EE">
+<li><a href="?topic=concepts/remote_trace_handler.html">Remote Trace Handler</a></li>
+<li><a href="?topic=concepts/remote_trace_server.html">Remote Trace Server</a></li>
+<li><a href="?topic=concepts/remote_trace_agent.html">Remote Trace Agent</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/custom_transports">Custom Transports</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/net4j_transport_layer.html">Transport Layer</a>
+<ul id="#N11332">
+<li><a href="?topic=concepts/buffers.html">Buffers</a>
+<ul id="#N11343">
+<li><a href="?topic=concepts/buffer_providers.html">Buffer Providers</a>
+<ul id="#N11354">
+<li><a href="?topic=concepts/buffer_factories.html">Buffer Factories</a></li>
+<li><a href="?topic=concepts/buffer_pools.html">Buffer Pools</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/buffer_handlers.html">Buffer Handlers</a></li>
+<li><a href="?topic=concepts/buffer_streams.html">Buffer Streams</a>
+<ul id="#N11398">
+<li><a href="?topic=concepts/buffer_output_streams.html">Buffer Output Streams</a></li>
+<li><a href="?topic=concepts/buffer_input_streams.html">Buffer Input Streams</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/net4j_application_layer">Application Layer</a>
-<ul id="#N113EF">
-<li><a href="?topic=concepts/signals">Signals</a>
+<li><a href="?topic=concepts/virtual_channels.html">Virtual Channels</a>
+<ul id="#N113CB">
+<li><a href="?topic=concepts/receive_handlers.html">Receive Handlers</a></li>
+<li><a href="?topic=concepts/channel_multiplexers.html">Channel Multiplexers</a></li>
+<li><a href="?topic=concepts/channel_streams.html">Channel Streams</a>
 <ul id="#N113FE">
-<li><a href="?topic=concepts/requests">Requests</a>
-<ul id="#N1140D">
-<li><a href="?topic=concepts/requests_with_confirmation">Requests with Confirmation</a></li>
-<li><a href="?topic=concepts/requests_with_monitoring">Requests with Monitoring</a></li>
-</ul>
-</li>
-<li><a href="?topic=concepts/indications">Indications</a>
-<ul id="#N1143A">
-<li><a href="?topic=concepts/indications_with_response">Indications with Response</a></li>
-<li><a href="?topic=concepts/indications_with_monitoring">Indications with Monitoring</a></li>
+<li><a href="?topic=concepts/channel_output_streams.html">Channel Output Streams</a></li>
+<li><a href="?topic=concepts/channel_input_streams.html">Channel Input Streams</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=concepts/signal_streams">Signal Streams</a>
-<ul id="#N11467">
-<li><a href="?topic=concepts/signal_input_stream">Signal Input Stream</a></li>
-<li><a href="?topic=concepts/signal_output_stream">Signal Output Stream</a></li>
+<li><a href="?topic=concepts/physical_connections.html">Physical Connections</a>
+<ul id="#N11431">
+<li><a href="?topic=concepts/acceptors.html">Acceptors</a>
+<ul id="#N11442">
+<li><a href="?topic=concepts/acceptor_configuration.html">Acceptor Configuration</a>
+<ul id="#N11453">
+<li><a href="?topic=concepts/acceptor_executor_service.html">__SHORT_TITLE__</a></li>
+<li><a href="?topic=concepts/acceptor_buffer_provider.html">Buffer Provider</a></li>
+<li><a href="?topic=concepts/acceptor_protocol_factory_registry.html">Protocol Factory Registry</a></li>
+<li><a href="?topic=concepts/acceptor_negotiator.html">Negotiator</a></li>
 </ul>
 </li>
-<li><a href="?topic=concepts/signal_protocols">Signal Protocols</a>
-<ul id="#N11494">
-<li><a href="?topic=concepts/fail_over_strategies">Fail-Over Strategies</a></li>
-<li><a href="?topic=concepts/protocol_factories">Protocol Factories</a></li>
+<li><a href="?topic=concepts/acceptor_factories.html">Acceptor Factories</a></li>
 </ul>
 </li>
+<li><a href="?topic=concepts/connectors.html">Connectors</a>
+<ul id="#N114B9">
+<li><a href="?topic=concepts/connector_configuration.html">Connector Configuration</a>
+<ul id="#N114CA">
+<li><a href="?topic=concepts/connector_executor_service.html">Executor Service</a></li>
+<li><a href="?topic=concepts/connector_buffer_provider.html">Buffer Provider</a></li>
+<li><a href="?topic=concepts/connector_protocol_factory_registry.html">Protocol Factory Registry</a></li>
+<li><a href="?topic=concepts/connector_negotiator.html">Negotiator</a></li>
 </ul>
 </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><a href="?topic=architects/_architects">Architect's Guide</a>
-<ul id="#N114C2">
-<li><a href="?topic=architects/choosing_a_runtime_environment">Choosing a Runtime Environment</a></li>
-</ul>
-</li>
-<li><a href="?topic=programmers/_programmers">Programmer's Guide</a>
-<ul id="#N114E1">
-<li><a href="?topic=programmers/developing_a_rich_client_application">Developing a Rich Client Application</a></li>
-</ul>
-</li>
-<li><a href="?topic=extenders/_extenders">Extender's Guide</a>
-<ul id="#N11500">
-<li><a href="?topic=extenders/developing_custom_stores">Developing Custom Stores</a></li>
-</ul>
-</li>
-<li><a href="?topic=operators/_operators">Operator's Guide</a>
-<ul id="#N1151F">
-<li><a href="?topic=operators/configuring_a_repository">Configuring a Repository</a>
-<ul id="#N1152E">
-<li><a href="?topic=operators/choosing_a_back_end_adapter">Choosing a Back-End Adapter</a></li>
-</ul>
-</li>
-<li><a href="?topic=operators/configuring_remote_access">Configuring Remote Access</a>
-<ul id="#N1154C">
-<li><a href="?topic=operators/setting_up_security">Setting Up Security</a></li>
-</ul>
-</li>
-<li><a href="?topic=operators/starting_a_server">Starting a Server</a></li>
-<li><a href="?topic=operators/stopping_a_server">Stopping a Server</a></li>
-</ul>
-</li>
-<li><a href="?topic=users/_users">User's Guide</a>
-<ul id="#N11589">
-<li><a href="?topic=users/using_the_sessions_view">Using the Sessions View</a>
-<ul id="#N11598">
-<li><a href="?topic=users/working_with_sessions">Working with Sessions</a>
-<ul id="#N115A7">
-<li><a href="?topic=users/connecting_to_repositories">Connecting to Repositories</a></li>
-<li><a href="?topic=users/managing_packages">Managing Packages</a>
-<ul id="#N115C5">
-<li><a href="?topic=users/registering_new_packages">Registering New Packages</a>
-<ul id="#N115D4">
-<li><a href="?topic=users/using_generated_packages">Using Generated Packages</a>
-<ul id="#N115E3">
-<li><a href="?topic=users/using_native_packages">Native Packages</a></li>
-<li><a href="?topic=users/using_legacy_packages">Legacy Packages</a></li>
-</ul>
-</li>
-<li><a href="?topic=users/using_dynamic_packages">Using Dynamic Packages</a>
-<ul id="#N11610">
-<li><a href="?topic=users/loading_packages_from_the_workspace">Loading Packages from the Workspace</a></li>
-<li><a href="?topic=users/loading_packages_from_the_file_system">Loading Packages from the File System</a></li>
-<li><a href="?topic=users/loading_packages_from_other_sources">Loading Packages from other Sources</a></li>
+<li><a href="?topic=concepts/connector_factories.html">Connector Factories</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=users/browsing_registered_packages">Browsing Registered Packages</a></li>
-<li><a href="?topic=users/deregistering_packages">Deregistering Packages</a></li>
+<li><a href="?topic=concepts/transport_implementations.html">Transport Implementations</a>
+<ul id="#N11530">
+<li><a href="?topic=concepts/tcp_transport.html">TCP Transport</a>
+<ul id="#N11541">
+<li><a href="?topic=concepts/tcp_acceptors.html">TCP Acceptors</a>
+<ul id="#N11552">
+<li><a href="?topic=concepts/tcp_acceptor_factories.html">TCP Acceptor Factories</a></li>
 </ul>
 </li>
-<li><a href="?topic=users/controlling_passive_updates">Controlling Passive Updates</a>
-<ul id="#N1166A">
-<li><a href="?topic=users/disabling_passive_updates">Disabling Passive Updates</a></li>
-<li><a href="?topic=users/synchronizing_a_session_manually">Synchronizing a Session Manually</a></li>
-<li><a href="?topic=users/enabling_passive_updates">Enabling Passive Updates</a></li>
+<li><a href="?topic=concepts/tcp_connectors.html">TCP Connectors</a>
+<ul id="#N11574">
+<li><a href="?topic=concepts/tcp_connector_factories.html">TCP Connector Factories</a></li>
 </ul>
 </li>
-<li><a href="?topic=users/closing_sessions">Closing Sessions</a></li>
-</ul>
-</li>
-<li><a href="?topic=users/working_with_views">Working with Views</a>
-<ul id="#N116B5">
-<li><a href="?topic=users/opening_read_only_views">Opening Read-Only Views</a></li>
-<li><a href="?topic=users/changing_view_options">Changing View Options</a></li>
-<li><a href="?topic=users/opening_audit_views">Opening Audit Views</a></li>
-<li><a href="?topic=users/changing_the_audit_time">Changing the Audit Time</a></li>
-<li><a href="?topic=users/closing_views">Closing Views</a></li>
-<li><a href="?topic=users/opening_an_editor_for_a_view">Opening an Editor for a View</a></li>
-</ul>
-</li>
-<li><a href="?topic=users/working_with_transactions">Working with Transactions</a>
-<ul id="#N1171E">
-<li><a href="?topic=users/opening_transactions">Opening Transactions</a></li>
-<li><a href="?topic=users/committing_transactions">Committing Transactions</a></li>
-<li><a href="?topic=users/rolling_back_transactions">Rolling Back Transactions</a></li>
-<li><a href="?topic=users/closing_transactions">Closing Transactions</a></li>
-<li><a href="?topic=users/opening_an_editor_for_a_transaction">Opening an Editor for a Transaction</a></li>
-</ul>
-</li>
-<li><a href="?topic=users/working_with_resources">Working with Resources</a>
-<ul id="#N11778">
-<li><a href="?topic=users/creating_new_resources">Creating New Resources</a></li>
-<li><a href="?topic=users/loading_existing_resources">Loading Existing Resources</a></li>
-<li><a href="?topic=users/importing_resources">Importing Resources</a>
-<ul id="#N117A5">
-<li><a href="?topic=users/importing_multiple_resources">Importing Multiple Resources</a></li>
-</ul>
-</li>
-<li><a href="?topic=users/exporting_resources">Exporting Resources</a>
-<ul id="#N117C3">
-<li><a href="?topic=users/exporting_multiple_resources">Exporting Multiple Resources</a></li>
-</ul>
-</li>
-<li><a href="?topic=users/opening_an_editor_for_a_resource">Opening an Editor for a Resource</a></li>
+<li><a href="?topic=concepts/tcp_selectors.html">TCP Selectors</a>
+<ul id="#N11596">
+<li><a href="?topic=concepts/tcp_selector_factories.html">TCP Selector Factories</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=users/using_the_generic_editor">Using the Generic Editor</a>
-<ul id="#N117F0">
-<li><a href="?topic=users/loading_resources">Loading Resources</a></li>
+<li><a href="?topic=concepts/http_transport.html">HTTP Transport</a>
+<ul id="#N115B8">
+<li><a href="?topic=concepts/http_acceptors.html">HTTP Acceptors</a>
+<ul id="#N115C9">
+<li><a href="?topic=concepts/http_acceptor_factories.html">HTTP Acceptor Factories</a></li>
 </ul>
 </li>
-<li><a href="?topic=users/using_the_watch_list">Using the Watch List</a></li>
-<li><a href="?topic=users/using_the_commit_history">Using the Commit History</a></li>
-<li><a href="?topic=users/using_the_efs_integration">Using the EFS Integration</a></li>
-<li><a href="?topic=users/using_the_team_provider">Using the Team Provider</a></li>
+<li><a href="?topic=concepts/http_connectors.html">HTTP Connectors</a>
+<ul id="#N115EB">
+<li><a href="?topic=concepts/http_connector_factories.html">HTTP Connector Factories</a></li>
 </ul>
 </li>
-<li><a href="?topic=references/_references">References</a>
-<ul id="#N1184B">
-<li><a href="?topic=javadocs/overview-summary">Javadocs</a></li>
-<li><a href="?topic=references/extension_point_reference">Extension Points</a>
-<ul id="#N11869">
-<li><a href="?topic=references/see_org_eclipse_platform_doc_isv_for_build_automation">See org.eclipse.platform.doc.isv for build automation</a></li>
+<li><a href="?topic=concepts/http_channels.html">HTTP Channels</a></li>
+<li><a href="?topic=concepts/http_servlet.html">HTTP Servlet</a></li>
 </ul>
 </li>
-<li><a href="?topic=references/server_configuration_reference">Server Configuration</a>
+<li><a href="?topic=concepts/jvm_transport.html">JVM Transport</a>
+<ul id="#N1162F">
+<li><a href="?topic=concepts/jvm_acceptors.html">JVM Acceptors</a>
+<ul id="#N11640">
+<li><a href="?topic=concepts/jvm_acceptor_factories.html">JVM Acceptor Factories</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/jvm_connectors.html">JVM Connectors</a>
+<ul id="#N11662">
+<li><a href="?topic=concepts/jvmconnector_factories.html">JVMConnector Factories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="?topic=concepts/custom_transports.html">Custom Transports</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="?topic=concepts/net4j_application_layer.html">Application Layer</a>
+<ul id="#N11695">
+<li><a href="?topic=concepts/signals.html">Signals</a>
+<ul id="#N116A6">
+<li><a href="?topic=concepts/requests.html">Requests</a>
+<ul id="#N116B7">
+<li><a href="?topic=concepts/requests_with_confirmation.html">Requests with Confirmation</a></li>
+<li><a href="?topic=concepts/requests_with_monitoring.html">Requests with Monitoring</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/indications.html">Indications</a>
+<ul id="#N116EA">
+<li><a href="?topic=concepts/indications_with_response.html">Indications with Response</a></li>
+<li><a href="?topic=concepts/indications_with_monitoring.html">Indications with Monitoring</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="?topic=concepts/signal_streams.html">Signal Streams</a>
+<ul id="#N1171D">
+<li><a href="?topic=concepts/signal_input_stream.html">Signal Input Stream</a></li>
+<li><a href="?topic=concepts/signal_output_stream.html">Signal Output Stream</a></li>
+</ul>
+</li>
+<li><a href="?topic=concepts/signal_protocols.html">Signal Protocols</a>
+<ul id="#N11750">
+<li><a href="?topic=concepts/fail_over_strategies.html">Fail-Over Strategies</a></li>
+<li><a href="?topic=concepts/protocol_factories.html">Protocol Factories</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="?topic=architects/_architects.html">Architect's Guide</a>
+<ul id="#N11784">
+<li><a href="?topic=architects/choosing_a_runtime_environment.html">Choosing a Runtime Environment</a></li>
+</ul>
+</li>
+<li><a href="?topic=programmers/_programmers.html">Programmer's Guide</a>
+<ul id="#N117A7">
+<li><a href="?topic=programmers/developing_a_rich_client_application.html">Developing a Rich Client Application</a></li>
+</ul>
+</li>
+<li><a href="?topic=extenders/_extenders.html">Extender's Guide</a>
+<ul id="#N117CA">
+<li><a href="?topic=extenders/developing_custom_stores.html">Developing Custom Stores</a></li>
+</ul>
+</li>
+<li><a href="?topic=operators/_operators.html">Operator's Guide</a>
+<ul id="#N117ED">
+<li><a href="?topic=operators/configuring_a_repository.html">Configuring a Repository</a>
+<ul id="#N117FE">
+<li><a href="?topic=operators/choosing_a_back_end_adapter.html">Choosing a Back-End Adapter</a></li>
+</ul>
+</li>
+<li><a href="?topic=operators/configuring_remote_access.html">Configuring Remote Access</a>
+<ul id="#N11820">
+<li><a href="?topic=operators/setting_up_security.html">Setting Up Security</a></li>
+</ul>
+</li>
+<li><a href="?topic=operators/starting_a_server.html">Starting a Server</a></li>
+<li><a href="?topic=operators/stopping_a_server.html">Stopping a Server</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/_users.html">User's Guide</a>
+<ul id="#N11865">
+<li><a href="?topic=users/using_the_sessions_view.html">Using the Sessions View</a>
+<ul id="#N11876">
+<li><a href="?topic=users/working_with_sessions.html">Working with Sessions</a>
 <ul id="#N11887">
-<li><a href="?topic=references/memstore_reference">MEMStore</a></li>
-<li><a href="?topic=references/dbstore_reference">DBStore</a></li>
-<li><a href="?topic=references/hibernatestore_reference">HibernateStore</a></li>
-<li><a href="?topic=references/objectivitystore_reference">ObjectivityStore</a></li>
+<li><a href="?topic=users/connecting_to_repositories.html">Connecting to Repositories</a></li>
+<li><a href="?topic=users/managing_packages.html">Managing Packages</a>
+<ul id="#N118A9">
+<li><a href="?topic=users/registering_new_packages.html">Registering New Packages</a>
+<ul id="#N118BA">
+<li><a href="?topic=users/using_generated_packages.html">Using Generated Packages</a>
+<ul id="#N118CB">
+<li><a href="?topic=users/using_native_packages.html">Native Packages</a></li>
+<li><a href="?topic=users/using_legacy_packages.html">Legacy Packages</a></li>
 </ul>
 </li>
-<li><a href="?topic=references/other_reference_information">Other Reference Information</a>
-<ul id="#N118D2">
-<li><a href="?topic=references/cdo_state_machine">CDO State Machine</a></li>
+<li><a href="?topic=users/using_dynamic_packages.html">Using Dynamic Packages</a>
+<ul id="#N118FE">
+<li><a href="?topic=users/loading_packages_from_the_workspace.html">Loading Packages from the Workspace</a></li>
+<li><a href="?topic=users/loading_packages_from_the_file_system.html">Loading Packages from the File System</a></li>
+<li><a href="?topic=users/loading_packages_from_other_sources.html">Loading Packages from other Sources</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="?topic=collateral/glossary">Glossary</a></li>
-<li><a href="?topic=collateral/register">Index</a></li>
-<li><a href="?topic=collateral/legal_information">Legal</a></li>
+<li><a href="?topic=users/browsing_registered_packages.html">Browsing Registered Packages</a></li>
+<li><a href="?topic=users/deregistering_packages.html">Deregistering Packages</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/controlling_passive_updates.html">Controlling Passive Updates</a>
+<ul id="#N11964">
+<li><a href="?topic=users/disabling_passive_updates.html">Disabling Passive Updates</a></li>
+<li><a href="?topic=users/synchronizing_a_session_manually.html">Synchronizing a Session Manually</a></li>
+<li><a href="?topic=users/enabling_passive_updates.html">Enabling Passive Updates</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/closing_sessions.html">Closing Sessions</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/working_with_views.html">Working with Views</a>
+<ul id="#N119B9">
+<li><a href="?topic=users/opening_read_only_views.html">Opening Read-Only Views</a></li>
+<li><a href="?topic=users/changing_view_options.html">Changing View Options</a></li>
+<li><a href="?topic=users/opening_audit_views.html">Opening Audit Views</a></li>
+<li><a href="?topic=users/changing_the_audit_time.html">Changing the Audit Time</a></li>
+<li><a href="?topic=users/closing_views.html">Closing Views</a></li>
+<li><a href="?topic=users/opening_an_editor_for_a_view.html">Opening an Editor for a View</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/working_with_transactions.html">Working with Transactions</a>
+<ul id="#N11A30">
+<li><a href="?topic=users/opening_transactions.html">Opening Transactions</a></li>
+<li><a href="?topic=users/committing_transactions.html">Committing Transactions</a></li>
+<li><a href="?topic=users/rolling_back_transactions.html">Rolling Back Transactions</a></li>
+<li><a href="?topic=users/closing_transactions.html">Closing Transactions</a></li>
+<li><a href="?topic=users/opening_an_editor_for_a_transaction.html">Opening an Editor for a Transaction</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/working_with_resources.html">Working with Resources</a>
+<ul id="#N11A96">
+<li><a href="?topic=users/creating_new_resources.html">Creating New Resources</a></li>
+<li><a href="?topic=users/loading_existing_resources.html">Loading Existing Resources</a></li>
+<li><a href="?topic=users/importing_resources.html">Importing Resources</a>
+<ul id="#N11AC9">
+<li><a href="?topic=users/importing_multiple_resources.html">Importing Multiple Resources</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/exporting_resources.html">Exporting Resources</a>
+<ul id="#N11AEB">
+<li><a href="?topic=users/exporting_multiple_resources.html">Exporting Multiple Resources</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/opening_an_editor_for_a_resource.html">Opening an Editor for a Resource</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="?topic=users/using_the_generic_editor.html">Using the Generic Editor</a>
+<ul id="#N11B1E">
+<li><a href="?topic=users/loading_resources.html">Loading Resources</a></li>
+</ul>
+</li>
+<li><a href="?topic=users/using_the_watch_list.html">Using the Watch List</a></li>
+<li><a href="?topic=users/using_the_commit_history.html">Using the Commit History</a></li>
+<li><a href="?topic=users/using_the_efs_integration.html">Using the EFS Integration</a></li>
+<li><a href="?topic=users/using_the_team_provider.html">Using the Team Provider</a></li>
+</ul>
+</li>
+<li><a href="?topic=references/_references.html">References</a>
+<ul id="#N11B85">
+<li><a href="?topic=javadocs/overview-summary.html">Javadocs</a></li>
+<li><a href="?topic=references/extension_point_reference.html">Extension Points</a>
+<ul id="#N11BA7">
+<li><a href="?topic=references/see_org_eclipse_platform_doc_isv_for_build_automation.html">See org.eclipse.platform.doc.isv for build automation</a></li>
+</ul>
+</li>
+<li><a href="?topic=references/server_configuration_reference.html">Server Configuration</a>
+<ul id="#N11BC9">
+<li><a href="?topic=references/memstore_reference.html">MEMStore</a></li>
+<li><a href="?topic=references/dbstore_reference.html">DBStore</a></li>
+<li><a href="?topic=references/hibernatestore_reference.html">HibernateStore</a></li>
+<li><a href="?topic=references/objectivitystore_reference.html">ObjectivityStore</a></li>
+</ul>
+</li>
+<li><a href="?topic=references/other_reference_information.html">Other Reference Information</a>
+<ul id="#N11C1E">
+<li><a href="?topic=references/cdo_state_machine.html">CDO State Machine</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="?topic=collateral/glossary.html">Glossary</a></li>
+<li><a href="?topic=collateral/register.html">Index</a></li>
+<li><a href="?topic=collateral/legal_information.html">Legal</a></li>
 </ul>

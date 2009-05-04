@@ -1,48 +1,90 @@
 <!-- Generated --><a name="developing_custom_stores"><!-- --></a>
 
 
-	<h1 class="topictitle1">Developing Custom Stores</h1>
+  <h1 class="topictitle1">Developing Custom Stores</h1>
 
-	
-	
-	
-	<div><p>Explains how to do something.</p>
+  
+  
+  <div><p>Explains how to integrate arbitrary data storage back-ends with the CDO model repository framework.</p>
 
-		<div class="section">
-			<p>Once every 6000 kilometers or three months, change the oil in your car. This will help keep the engine in good condition. </p>
+    <div class="section">
+      <p>The CDO model repository framework does not make many assumptions on the type of data storage back-end used to store  models and object graphs. A CDO repository communicates with a concrete back-end through an implementation of the IStore interface. By providing a custom store a repository can either <em>talk</em> to new back-end types or talk <em>differently</em> to already supportedback-end types.</p>
 
-			<p>To change the oil:</p>
+      <p>To develop a custom store:</p>
 
-		</div>
+    </div>
 
-		<ol>
-			<li>
-				<span>Remove the old oil filter.</span>
-			</li>
+    <ol>
+      <li>
+        <span>Choose an appropriate base class.</span>
+        <ul>
+          <li>Extend LongIDStore if your objects are to be identified by long integer values. In this case your new objects will automatically be assigned an ID instance of the class CDOIDLongImpl with increasing values (starting with 1).</li>
 
-			<li>
-				<span>Drain the old oil.</span>
-			</li>
+          <li>Extend the Store class if you want to control the way your objects are to be identified. You can provide your own implementation of the CDOIDObject interface and you need to provide an object factory, a library descriptor and a library provider. See LongIDStore for an example. Keep in mind that the actual values of CDOIDs must not change at any time after the object entered state NEW!</li>
 
-			<li>
-				<span>Install a new oil filter and gasket.</span>
-			</li>
+        </ul>
 
-			<li>
-				<span>Add new oil to the engine.</span>
-			</li>
+      </li>
 
-			<li>
-				<span>Check the air filter and replace or clean it.</span>
-			</li>
+      <li>
+        <span>Support certain repository capabilities.</span>
+        <ul>
+          <li>Define the change formats supported in the processing of commit operations. ChangeFormat.REVISION indicates that your store is able process object changes as snapshots taken after the modification (called a revision). ChangeFormat.DELTA indicates that your store is able process object changes as a set of deltas that represent the modification itself. If both are supported the repository may decide which format to use.</li>
 
-			<li>
-				<span>Top up the windshield washer fluid.</span>
-			</li>
+          <li>Define the revision temporality supported by the store. RevisionTemporality.NONE indicates that the store can deal with the repository auditing configuration switched off, i.e. old revisions are not preserved and can not be restored. RevisionTemporality.AUDITING indicates that the store can deal with repositories configured for auditing, i.e. old revisions (or deltas to restore them) are preserved and can be restored at any later time. It's possible to support only one or both modes.</li>
 
-		</ol>
+          <li>Define the revision parallelism supported by the store. Currently the framework only supports RevisionParallelism.NONE. In the future the framework may also support RevisionParallelism.BRANCHING.</li>
 
-	</div>
+        </ul>
+
+      </li>
+
+      <li>
+        <span>Manage some store system properties.</span>
+        <ul>
+          <li>Provide the creation time of the repository. Eventually the repository will ask for the creation time. Hence your store must save the time of the <strong>first</strong> succesful activation somewhere and later provide it through getCreationTime().</li>
+
+          <li>Answer if the current process is the first one for a given repository instance in a back-end. True indicates that the creation time has been saved and false indicates that it has been loaded.</li>
+
+          <li>You also need to load and save the latest CDOID values for objects and meta objects to be able to create new IDs for new objects later.</li>
+
+        </ul>
+
+      </li>
+
+      <li>
+        <span>Provide read/write access the back-end.</span>
+        <ul>
+          <li>Read/write access to the back-end is provided through your implementation of the IStoreAccessor interface. If your store extends the LongIDStore your store accessors must also extend LongIDStoreAccessor, StoreAccessor otherwise.</li>
+
+          <li>Instances of your store accessor are created in the createReader() and createWriter() methods of your store implementation. Readers <strong>can be</strong> bound to ISessions. Writers <strong>can be</strong> bound to ITransactions.</li>
+
+          <li>Store accessor instances can take part in store accessor pooling. Return an instance of StoreAccessorPool from the getReaderPool() method and/or the getWriterPool() method of your store implementation. Returning null indicates that no pooling takes place.</li>
+
+          <li>Store accessors usually open and maintain some sort of physical <em>connection</em> to the particular back-end instance. For this purpose the lifecycle methods doActivate(), doDeactivate(), doPassivate() and doUnpassivate() can be used.</li>
+
+        </ul>
+
+        <ol type="a">
+          <li>
+            <span>Manage persistence of model elements</span>
+          </li>
+
+          <li>
+            <span>Manage persistence of objects</span>
+          </li>
+
+          <li>
+            <span>Support partial collection loading</span>
+          </li>
+
+        </ol>
+
+      </li>
+
+    </ol>
+
+  </div>
 
 <div>
 <div class="familylinks">

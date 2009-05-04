@@ -27,7 +27,7 @@
 <div>
 <ul class="ullinks">
 <li class="ulchildlink"><strong><a href="?topic=extenders/developing_custom_stores">Developing Custom Stores</a></strong><br />
-Explains how to do something.</li>
+Explains how to integrate arbitrary data storage back-ends with the CDO model repository framework.</li>
 </ul>
 </div>
 
