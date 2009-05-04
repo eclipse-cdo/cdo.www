@@ -1,3 +1,11 @@
 #midcolumn {
 	background: url('background.jpg') top left repeat-x;
 }
+
+b {
+  font-weight:bold;
+}
+
+em {
+  font-style:italic;
+}
