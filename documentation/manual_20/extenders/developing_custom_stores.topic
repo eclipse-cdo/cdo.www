@@ -119,7 +119,7 @@
       </li>
 
       <li>
-        <span>Support for browsing the resource / folder structure</span>
+        <span>Support browsing the resource / folder structure</span>
         <ul>
           <li>This non-optional feature is implemented in the queryResources() method of the store accessor. A QueryResourcesContext is passed by the framework which can be used to get the query values and to push the query results into.</li>
 
@@ -150,7 +150,7 @@
 
   <div>
 <div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=extenders/_extenders" title="Explains how to extend the CDO Model Repositoy framework.">Extender's Guide</a></div>
+<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=extenders/_extenders" title="Explains how to extend the CDO Model Repositoy framework.">CDO Extender's Guide</a></div>
 </div>
 <div class="relinfo"><strong>Related concepts</strong><br />
 <div><a href="?topic=concepts/queries" title="Represents some real concept.">Queries</a></div>
