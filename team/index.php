@@ -1,4 +1,4 @@
-<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php"; 
+<?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
 require_once "$docRoot/modeling/includes/db.php";
@@ -20,7 +20,7 @@ if ($result && mysql_num_rows($result) > 0)
 		print '<tr><td width="20%" height="130" align="center" valign="top">' .
 		($row[1] && (preg_match("#https+://#", $row[1]) || is_file($_SERVER['DOCUMENT_ROOT'] . $row[1])) ?
 				'<img border="0" src="' . $row[1] . '" style="" height="120"/>' : '<img border="0" src="/modeling/images/team/eclipseface.png"/>') .
-				'</td><td align="left" valign="top">' . 
+				'</td><td align="left" valign="top">' .
 		($row[2] ? "<b>" . $row[2] . "</b><br/>" : "") .
 		($row[3] ? $row[3] . "<br/>" : "") .
 		($row[4] ? $row[4] . "<br/>" : "") .
@@ -31,6 +31,7 @@ if ($result && mysql_num_rows($result) > 0)
 		($row[0] ? '<a href="statistics.php?committerid=' .$row[0] . '"><img border="0" src="' . $projectPath . '/images/statistics.gif" alt="Statistics"/></a>&nbsp;' : "") .
 			'</td></tr>' . "\n";
 
+		/*
 		if ($row[7])
 		{
 			if ($email_all != null)
@@ -40,15 +41,18 @@ if ($result && mysql_num_rows($result) > 0)
 
 			$email_all .= $row[7];
 		}
+		*/
 	}
 
 	print "</table><br/><br/>\n";
 }
 
+/*
 if ($email_all)
 {
 	print '<a href="mailto:' . $email_all . '?subject=[CDO] "><img border="0" src="' . $projectPath . '/images/email_all.gif"/> EMail The Team</a> (Consider using the <a href="../support/#newsgroup">newsgroup</a> first!)<br/>';
 }
+*/
 
 include "sqlForms.php";
 print '</div>';
