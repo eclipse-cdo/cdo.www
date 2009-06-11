@@ -10,6 +10,12 @@ $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $page
 print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
+printPresentation("DemoCampBerlin_2009/Net4j-Presentation",
+									"The Net4j Signalling Platform - Developing Pluggable Client/Server Applications",
+									"Short talk, examples and demo",
+									"Eike Stepper",
+									"June 2009");
+
 printPresentation("EclipseCon_2009/CDO_EclipseCon_2009",
 									"Scale, Share and Store your Models with CDO 2.0 (EclipseCon 2009)",
 									"Long talk: <b>New slides</b>",
