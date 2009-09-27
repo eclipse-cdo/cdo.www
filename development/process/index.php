@@ -77,6 +77,13 @@ $stateReleased,
 $stateClosed,
 );
 
+print "<table>\n";
+foreach ($states as $state)
+{
+	$state->render();
+}
+print "</table>\n";
+
 class State
 {
 	public $name;
