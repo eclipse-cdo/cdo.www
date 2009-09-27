@@ -1,7 +1,7 @@
 <?php $areaRelative = ".."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
-$pageTitle 		= "CDO Bugzilla Process";
+$pageTitle 		= "Bugzilla Process";
 //$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
