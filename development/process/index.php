@@ -101,7 +101,7 @@ class State
 	function render()
 	{
 		print '<tr>' . "\n";
-		print '  <td colspan="3"><br><br><br><br><hr><br></td>' . "\n";
+		print '  <td colspan="3"><br><br><br><hr><br><br></td>' . "\n";
 		print '</tr>' . "\n";
 		print '<tr>' . "\n";
 		print '  <td colspan="3"><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></td>' . "\n";
@@ -127,9 +127,9 @@ class Transition
 	function render($current)
 	{
 		print '<tr>' . "\n";
+		print '  <td width="450"><a href="#' . $current->name . '"><img src="images/' . $current->name . '.png"/></a><img src="images/transition.png"/><a href="#' . $this->result->name . '"><img src="images/' . $this->result->name . '.png"/></a></td>' . "\n";
+		print '  <td width="400" valign="top"><br><b>' . $this->name . '</b></td>' . "\n";
 		print '  <td width="0"/>' . "\n";
-		print '  <td width="250"><img src="images/' . $current->name . '.png"/><img src="images/transition.png"/><a href="#' . $this->result->name . '"><img src="images/transition.png"/><img src="images/' . $this->result->name . '.png"/></a></td>' . "\n";
-		print '  <td width="500"><b>' . $this->name . '</b></td>' . "\n";
 		print '<tr>' . "\n";
 	}
 }
