@@ -121,7 +121,7 @@ class Transition
 
 	function render()
 	{
-		print '<tr><td><img src="images/transition.png"/><img src="images/' . $this->result->name . '.png" href="#' . $this->result->name . '"/></td><td>' . $this->name . '</td></tr>' . "\n";
+		print '<tr><td>' . $this->name . '</td><td><img src="images/transition.png"/><img src="images/' . $this->result->name . '.png" href="#' . $this->result->name . '"/></td></tr>' . "\n";
 	}
 }
 
