@@ -8,9 +8,6 @@ $pageAuthor		= "Eike Stepper";
 print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">' . $pageTitle . '</h1>' . "\n";
 
-print '<p><img src="CDO-Process.png" usemap="#CDOProcess"></p>' . "\n";
-include "$pageRoot/CDO-Process.imagemap";
-
 $fieldState = "State";
 $fieldFeedback = "Feedback";
 $fieldResolution = "Resolution";
@@ -77,6 +74,8 @@ $stateReleased,
 $stateClosed,
 );
 
+print '<p><img src="CDO-Process.png" usemap="#CDOProcess"></p>' . "\n";
+include "$pageRoot/CDO-Process.imagemap";
 print "<table>\n";
 foreach ($states as $state)
 {
