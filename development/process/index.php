@@ -109,11 +109,6 @@ class State
 		{
 			$transition->render();
 		}
-
-//		print '<tr><td/><td/></tr>' . "\n";
-//		print '<tr><td/><td/></tr>' . "\n";
-//		print '<tr><td/><td/></tr>' . "\n";
-//		print '<tr><td/><td/></tr>' . "\n";
 	}
 }
 
