@@ -108,7 +108,7 @@ class State
 		print '</tr>' . "\n";
 		foreach ($this->transitions as $transition)
 		{
-			$transition->render();
+			$transition->render($this);
 		}
 	}
 }
@@ -124,11 +124,11 @@ class Transition
 		$this->result = $result;
 	}
 
-	function render()
+	function render($current)
 	{
 		print '<tr>' . "\n";
-		print '  <td width="70"/>' . "\n";
-		print '  <td width="250"><a href="#' . $this->result->name . '"><img src="images/transition.png"/><img src="images/' . $this->result->name . '.png"/></a></td>' . "\n";
+		print '  <td width="0"/>' . "\n";
+		print '  <td width="250"><img src="images/' . $current->name . '.png"/><img src="images/transition.png"/><a href="#' . $this->result->name . '"><img src="images/transition.png"/><img src="images/' . $this->result->name . '.png"/></a></td>' . "\n";
 		print '  <td width="500"><b>' . $this->name . '</b></td>' . "\n";
 		print '<tr>' . "\n";
 	}
