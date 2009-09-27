@@ -132,8 +132,8 @@ class Transition
 	{
 		print '<tr>' . "\n";
 		print '  <td/>' . "\n";
-		print '  <td><b>' . $this->name . '</b></td>' . "\n";
 		print '  <td><a href="#' . $this->result->name . '"><img src="images/transition.png"/><img src="images/' . $this->result->name . '.png"/></a></td>' . "\n";
+		print '  <td><b>' . $this->name . '</b></td>' . "\n";
 		print '<tr>' . "\n";
 	}
 }
