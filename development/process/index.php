@@ -101,7 +101,7 @@ class State
 	function render()
 	{
 		print '<tr>' . "\n";
-		print '  <td colspan="3"><br><br><br><br><br><hr></td>' . "\n";
+		print '  <td colspan="3"><br><br><br><br><hr><br></td>' . "\n";
 		print '</tr>' . "\n";
 		print '<tr>' . "\n";
 		print '  <td colspan="3"><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></td>' . "\n";
