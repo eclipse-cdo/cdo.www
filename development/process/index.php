@@ -100,7 +100,10 @@ class State
 
 	function render()
 	{
-		print '<tr><td><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></td><td/></tr>' . "\n";
+		print '<tr>' . "\n";
+		print '  <td><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></td>' . "\n";
+		print '  <td/>' . "\n";
+		print '</tr>' . "\n";
 		foreach ($this->transitions as $transition)
 		{
 			$transition->render();
@@ -121,7 +124,10 @@ class Transition
 
 	function render()
 	{
-		print '<tr><td>' . $this->name . '</td><td><img src="images/transition.png"/><img src="images/' . $this->result->name . '.png" href="#' . $this->result->name . '"/></td></tr>' . "\n";
+		print '<tr>' . "\n";
+		print '  <td>' . $this->name . '</td>' . "\n";
+		print '  <td><img src="images/transition.png"/><img src="images/' . $this->result->name . '.png" href="#' . $this->result->name . '"/></td>' . "\n";
+		print '<tr>' . "\n";
 	}
 }
 
