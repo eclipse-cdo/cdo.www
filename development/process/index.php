@@ -101,7 +101,7 @@ class State
 	function render()
 	{
 		print '<tr>' . "\n";
-		print '  <td><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></td>' . "\n";
+		print '  <td><p/><p/><p/><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></td>' . "\n";
 		print '  <td/>' . "\n";
 		print '  <td/>' . "\n";
 		print '</tr>' . "\n";
@@ -110,10 +110,10 @@ class State
 			$transition->render();
 		}
 
-		print '<tr><td/><td/></tr>' . "\n";
-		print '<tr><td/><td/></tr>' . "\n";
-		print '<tr><td/><td/></tr>' . "\n";
-		print '<tr><td/><td/></tr>' . "\n";
+//		print '<tr><td/><td/></tr>' . "\n";
+//		print '<tr><td/><td/></tr>' . "\n";
+//		print '<tr><td/><td/></tr>' . "\n";
+//		print '<tr><td/><td/></tr>' . "\n";
 	}
 }
 
