@@ -1,4 +1,4 @@
-<map id="CDO-Process" name="CDO-Process">
+<map name="CDOProcess">
 	<area shape="circle" alt="" title="" coords="263,13,13" href="#start"  />
 	<area shape="rect" alt="" title="" coords="1,60,136,114" href="#feedback-n"  />
 	<area shape="rect" alt="" title="" coords="195,60,331,115" href="#new"  />
