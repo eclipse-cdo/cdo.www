@@ -101,9 +101,11 @@ class State
 	function render()
 	{
 		print '<tr>' . "\n";
-		print '  <td colspan="3"><br><br><br><br><br><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/>' . "\n";
+		print '  <td colspan="3"><hr></td>' . "\n";
 		print '</tr>' . "\n";
-		//		print '<tr><td>111111</td><td>222222</td><td>333333</td></tr>' . "\n";
+		print '<tr>' . "\n";
+		print '  <td colspan="3"><br><br><br><br><br><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></td>' . "\n";
+		print '</tr>' . "\n";
 		foreach ($this->transitions as $transition)
 		{
 			$transition->render();
