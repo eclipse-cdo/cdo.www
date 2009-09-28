@@ -109,11 +109,11 @@ $stateReviewed->addTransition("Resolve as FIXED", $stateFixed)
 ->addAction("Status", "<b>RESOLVED</b>")
 ->addAction("Resolution", "<b>FIXED</b>")
 ->addAction("Target&nbsp;Milestone", "M1..M7 or RC1..RC5 (for helios+),<br>SR1..SR2 (for galileo+)")
-->addAction("Comment", "Committed to [branch name]");
+->addAction("Comment", "&quot;Committed to [branch name]&quot;");
 
 $stateFixed->addTransition("Release", $stateReleased)
 ->addAction("Status", "<b>RESOLVED</b>")
-->addAction("Comment", "Fix available in [build-ID]");
+->addAction("Comment", "&quot;Fix available in [build-ID]&quot;");
 
 $stateReleased->addTransition("Close", $stateClosed)
 ->addAction("Status", "<b>CLOSED</b>");
