@@ -8,9 +8,11 @@ $pageAuthor		= "Eike Stepper";
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
 
 print '<div id="midcolumn">' . "\n";
+print '<p><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=3.0&bug_severity=enhancement" target="Bugzilla">Request new feature</a></p>' . "\n";
 print '<h1 id="pagetitle">' . $pageTitle . '</h1>' . "\n";
 print "<p>(Work in progress)</p>\n";
 
+require_once 'process.php';
 $process = new Process("CDO-Process");
 
 $stateStart = $process->addState("start", "263,13,13", "circle");
@@ -31,14 +33,13 @@ $stateReleased =	$process->addState("released", "435,488,571,543");
 $stateClosed =	$process->addState("closed", "645,488,782,542");
 
 $t1 = $stateStart->addTransition("Submit new bugzilla", $stateNew);
-$t1->addAction("<b>Product</b> = EMF");
-$t1->addAction("<b>Component</b> = CDO");
-$t1->addAction("<b>Description</b> = ");
+$t1->addAction("Product", "EMF");
+$t1->addAction("Component", "CDO");
+$t1->addAction("Summary", "Short description of the bugzilla.");
+$t1->addAction("Description", "Exhaustive description of the observed misbehaviour (for bugs) or the desired functionality (for features).");
 
 $t2 = $stateNew->addTransition("Get feedback from reporter", $stateFeedbackN);
-$t2->addAction("<b>Product</b> = EMF");
-$t2->addAction("<b>Component</b> = CDO");
-$t2->addAction("<b>Description</b> = ");
+$t2->addAction("Keywords", "needinfo+");
 
 $stateNew->addTransition("Confirm", $stateTriaged);
 $stateNew->addTransition("Resolve as DUPLICATE", $stateDuplicate);
@@ -64,129 +65,6 @@ $stateFixed->addTransition("Release", $stateReleased);
 $stateReleased->addTransition("Close", $stateClosed);
 
 $process->render();
-
-
-class Process
-{
-	public $name;
-	public $description;
-	public $states = array();
-
-	function __construct($name, $description="")
-	{
-		$this->name = $name;
-		$this->description = $description;
-	}
-
-	function  addState($name, $coords=NULL, $shape="rect")
-	{
-		return $this->states[count($this->states)] = new State($name, $coords, $shape);
-	}
-
-	function render()
-	{
-		print '<p><img src="' . $this->name . '.png" usemap="#' . $this->name . '"></p>' . "\n";
-		print '<map name="' . $this->name . '">' . "\n";
-		foreach ($this->states as $state)
-		{
-			print '  <area shape="' . $state->shape . '" coords="' . $state->coords . '" href="#' . $state->name . '"  />' . "\n";
-		}
-
-		print '</map>' . "\n";
-		print "<br><br><br>\n";
-		foreach ($this->states as $state)
-		{
-			$state->render();
-		}
-	}
-}
-
-class State
-{
-	public $name;
-	public $shape;
-	public $coords;
-	public $description;
-	public $transitions = array();
-
-	function __construct($name, $coords=NULL, $shape="rect")
-	{
-		$this->name = $name;
-		$this->coords = $coords;
-		$this->shape = $shape;
-	}
-
-	function addTransition($name, $result)
-	{
-		return $this->transitions[count($this->transitions)] = new Transition($name, $result);
-	}
-
-	function render()
-	{
-		//		print '<div><a name="' . $this->name . '"/></div>' . "\n";
-		print '<div class="box" id="' . $this->name . '">' . "\n";
-		print '  <table class="state"><tr>' . "\n";
-		print '    <td class="statename" valign="top" width="190"><img src="images/' . $this->name . '.png"/></td>' . "\n";
-		print '    <td class="statedesc" valign="top">' . $this->description . '</td>' . "\n";
-		print '  </tr></table>' . "\n";
-		print '  <div class="transitions">' . "\n";
-
-		foreach ($this->transitions as $transition)
-		{
-			$transition->render($this);
-		}
-
-		print '  </div>' . "\n";
-		print '</div>' . "\n";
-	}
-}
-
-class Transition
-{
-	public $name;
-	public $result;
-	public $description;
-	public $actions = array();
-
-	function __construct($name, $result, $description="")
-	{
-		$this->name = $name;
-		$this->result = $result;
-		$this->description = $description;
-	}
-
-	function addAction($action)
-	{
-		return $this->actions[count($this->actions)] = $action;
-	}
-
-	function render($current)
-	{
-		print '    <table class="trans"><tr>' . "\n";
-		print '      <td class="transpic" valign="top" width="380">' . "\n";
-		print '        <a href="#' . $current->name . '"><img src="images/' . $current->name . '.png"/></a>';
-		print ($current->name == "start") ? '<img src="images/line.png"/>' : "";
-		print '<img src="images/transition.png"/>';
-		print '<a href="#' . $this->result->name . '"><img src="images/' . $this->result->name . '.png"/></a>' . "\n";
-		print '      </td>' . "\n";
-		print '      <td valign="top">' . "\n";
-		print '        <h3 class="transname">' . $this->name . '</h3>' . "\n";
-		if ($this->description != "")
-		{
-			print '        <p class="transdesc">' . $this->description . '</p>' . "\n";
-		}
-
-		print '        <ul>' . "\n";
-		foreach ($this->actions as $action)
-		{
-			print '          <li>' . "$action\n";
-		}
-
-		print '        </ul>' . "\n";
-		print '      </td>' . "\n";
-		print '    </tr></table>' . "\n";
-	}
-}
 
 
 ########################################################################
