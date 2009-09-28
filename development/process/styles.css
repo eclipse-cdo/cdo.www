@@ -1,0 +1,17 @@
+#pagetitle {
+	color: #0D3656;
+	font-size: 32px;
+	margin-bottom: 10px;
+}
+
+.box {
+	background-color: #EEEEEE;
+	border: 1px solid;
+	padding: 10px;
+	margin-bottom: 36px;
+}
+
+.statedesc {
+	margin-top: -50px;
+	margin-left: 200px;
+}

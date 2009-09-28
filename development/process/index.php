@@ -5,6 +5,8 @@ $pageTitle 		= "Bugzilla Process";
 //$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
+
 print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">' . $pageTitle . '</h1>' . "\n";
 
@@ -76,21 +78,24 @@ $stateClosed,
 
 print '<p><img src="CDO-Process.png" usemap="#CDOProcess"></p>' . "\n";
 include "$pageRoot/CDO-Process.imagemap";
-print "<table>\n";
+print "<br><br><br><h1 id=\"pagetitle\">States and Transitions</h1>\n";
+
 foreach ($states as $state)
 {
 	$state->render();
 }
-print "</table>\n";
+
 
 class State
 {
 	public $name;
+	public $description;
 	public $transitions = array();
 
-	function __construct($name)
+	function __construct($name, $description="")
 	{
 		$this->name = $name;
+		$this->description = $description;
 	}
 
 	function addTransition($name, $result)
@@ -100,16 +105,18 @@ class State
 
 	function render()
 	{
-		print '<tr>' . "\n";
-		print '  <td colspan="3"><br><br><br><hr><br><br></td>' . "\n";
-		print '</tr>' . "\n";
-		print '<tr>' . "\n";
-		print '  <td colspan="3"><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></td>' . "\n";
-		print '</tr>' . "\n";
+		print '<div class="box">' . "\n";
+		print '  <div class="state">' . "\n";
+		print '    <div class="statename"><a name="' . $this->name . '"/><img src="images/' . $this->name . '.png"/></div>' . "\n";
+		print '    <div class="statedesc">Bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla.</div>' . "\n";
+		print '  </div>' . "\n";
+
 		foreach ($this->transitions as $transition)
 		{
 			$transition->render($this);
 		}
+
+		print '</div>' . "\n";
 	}
 }
 
@@ -117,20 +124,27 @@ class Transition
 {
 	public $name;
 	public $result;
+	public $description;
 
-	function __construct($name, $result)
+	function __construct($name, $result, $description="")
 	{
 		$this->name = $name;
 		$this->result = $result;
+		$this->description = $description;
 	}
 
 	function render($current)
 	{
-		print '<tr>' . "\n";
-		print '  <td width="450"><a href="#' . $current->name . '"><img src="images/' . $current->name . '.png"/></a><img src="images/transition.png"/><a href="#' . $this->result->name . '"><img src="images/' . $this->result->name . '.png"/></a></td>' . "\n";
-		print '  <td width="400" valign="top"><br><b>' . $this->name . '</b></td>' . "\n";
-		print '  <td width="0"/>' . "\n";
-		print '<tr>' . "\n";
+		print '  <div class="trans">' . "\n";
+		print '    <div class="transpic">' . "\n";
+		print '      <a href="#' . $current->name . '"><img src="images/' . $current->name . '.png"/></a>';
+		print ($current->name == "start") ? '<img src="images/line.png"/>' : "";
+		print '<img src="images/transition.png"/>';
+		print '<a href="#' . $this->result->name . '"><img src="images/' . $this->result->name . '.png"/></a>' . "\n";
+		print '    </div>' . "\n";
+		print '    <div class="transname">' . $this->name . '</div>' . "\n";
+		print '    <div class="transdesc">' . $this->description . '</div>' . "\n";
+		print '  </div>' . "\n";
 	}
 }
 
