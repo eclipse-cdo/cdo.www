@@ -24,16 +24,4 @@
 
 	</div>
 
-<div>
-<ul class="ullinks">
-<li class="ulchildlink"><strong><a href="?topic=concepts/query_infos">Query Infos</a></strong><br />
-Represents some real concept.</li>
-<li class="ulchildlink"><strong><a href="?topic=concepts/query_execution">Query Execution</a></strong><br />
-Represents some real concept.</li>
-</ul>
-
-<div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=concepts/client_side" title="Represents some real concept.">Client-Side</a></div>
-</div>
-</div>
 

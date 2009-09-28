@@ -59,16 +59,4 @@
 
   </div>
 
-<div>
-<ul class="ullinks">
-<li class="ulchildlink"><strong><a href="?topic=concepts/cdoid_factories">CDOID Factories</a></strong><br />
-Represents some real concept.</li>
-<li class="ulchildlink"><strong><a href="?topic=concepts/cdoid_class_loaders">CDOID Class Loaders</a></strong><br />
-Represents some real concept.</li>
-</ul>
-
-<div class="familylinks">
-<div class="parentlink"><strong>Parent topic:</strong> <a href="?topic=concepts/objects" title="Represents some real concept.">Objects</a></div>
-</div>
-</div>
 
