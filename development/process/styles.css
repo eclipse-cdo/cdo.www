@@ -6,12 +6,11 @@
 
 .box {
 	background-color: #EEEEEE;
-	border: 1px solid;
+	border: 1px solid #AAAAAA;
 	padding: 10px;
 	margin-bottom: 36px;
 }
 
-.statedesc {
-	margin-top: -50px;
-	margin-left: 200px;
+.trans {
+	padding-top: 20px;
 }
