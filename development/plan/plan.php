@@ -20,8 +20,6 @@ function printPlan($url)
 			if (strpos($line, '</div><p><a href="#toc">Table of Contents</a></p></div>') !== false)
 			{
 				print "$line\n";
-//				print "</div>\n";
-//				print "</div>\n";
 				break;
 			}
 		}
