@@ -33,89 +33,90 @@ $stateReleased =	$process->addState("released", "435,488,571,543");
 $stateClosed =	$process->addState("closed", "645,488,782,542");
 
 $stateStart->addTransition("Submit new bugzilla", $stateNew)
-->addAction("Product", "EMF")
-->addAction("Component", "CDO")
+->addAction("Product", "<b>EMF</b>")
+->addAction("Component", "<b>CDO</b>")
+->addAction("Version", "<b>3.0</b> for features or bugs in HEAD,<br><b>2.0</b> for bugs in maintenance.")
 ->addAction("Summary", "Short description of the bugzilla.")
 ->addAction("Description", "Exhaustive description of the observed misbehaviour (for bugs) or the desired functionality (for features).");
 
 $stateNew->addTransition("Get feedback from reporter", $stateFeedbackN)
-->addAction("Keywords", "needinfo+");
+->addAction("Keywords", "<b>needinfo+</b>");
 
 $stateNew->addTransition("Confirm", $stateTriaged)
 ->addAction("QA Contact", "User ID of the reviewer.")
-->addAction("Flags", "One of galileo+, helios+");
+->addAction("Flags", "One of <b>galileo+</b> or <b>helios+</b> to indicate where the changes are supposed to be applied. Is not really related to <b>Version</b>!");
 
 $stateNew->addTransition("Resolve as DUPLICATE", $stateDuplicate)
-->addAction("Status", "RESOLVED")
-->addAction("Resolution", "DUPLICATE")
+->addAction("Status", "<b>RESOLVED</b>")
+->addAction("Resolution", "<b>DUPLICATE</b>")
 ->addAction("Bug ID", "ID of the existing bugzilla.");
 
 $stateNew->addTransition("Resolve as WORKS", $stateWorks)
-->addAction("Status", "RESOLVED")
-->addAction("Resolution", "WORKSFORME");
+->addAction("Status", "<b>RESOLVED</b>")
+->addAction("Resolution", "<b>WORKSFORME</b>");
 
 $stateNew->addTransition("Resolve as NOTECLIPSE", $stateNotEclipse)
-->addAction("Status", "RESOLVED")
-->addAction("Resolution", "NOT_ECLIPSE");
+->addAction("Status", "<b>RESOLVED</b>")
+->addAction("Resolution", "<b>NOT_ECLIPSE</b>");
 
 $stateFeedbackN->addTransition("Return to team", $stateNew)
-->addAction("Keywords", "needinfo-");
+->addAction("Keywords", "<b>needinfo-</b>");
 
 $stateDuplicate->addTransition("Close", $stateClosed)
-->addAction("Status", "CLOSED");
+->addAction("Status", "<b>CLOSED</b>");
 
 $stateWorks->addTransition("Close", $stateClosed)
-->addAction("Status", "CLOSED");
+->addAction("Status", "<b>CLOSED</b>");
 
 $stateNotEclipse->addTransition("Close", $stateClosed)
-->addAction("Status", "CLOSED");
+->addAction("Status", "<b>CLOSED</b>");
 
 $stateTriaged->addTransition("Get feedback from reporter", $stateFeedbackT)
-->addAction("Keywords", "needinfo+");
+->addAction("Keywords", "<b>needinfo+</b>");
 
 $stateTriaged->addTransition("Start development", $stateDevelop)
-->addAction("Status", "ASSIGNED");
+->addAction("Status", "<b>ASSIGNED</b>");
 
 $stateFeedbackT->addTransition("Return to team", $stateTriaged)
-->addAction("Keywords", "needinfo-");
+->addAction("Keywords", "<b>needinfo-</b>");
 
 $stateDevelop->addTransition("Get feedback from reporter", $stateFeedbackD)
-->addAction("Keywords", "needinfo+");
+->addAction("Keywords", "<b>needinfo+</b>");
 
 $stateDevelop->addTransition("Stop development", $stateTriaged)
-->addAction("Status", "NEW");
+->addAction("Status", "<b>NEW</b>");
 
 $stateDevelop->addTransition("Request review", $stateReview)
-->addAction("Flags", "review?")
+->addAction("Flags", "<b>review?</b>")
 ->addAction("Reviewer", "The value of the QA Contact.");
 
 $stateFeedbackD->addTransition("Return to team", $stateDevelop)
-->addAction("Keywords", "needinfo-");
+->addAction("Keywords", "<b>needinfo-</b>");
 
 $stateReview->addTransition("Get feedback from reporter", $stateFeedbackR)
-->addAction("Keywords", "needinfo+");
+->addAction("Keywords", "<b>needinfo+</b>");
 
 $stateReview->addTransition("Reject changes", $stateDevelop)
-->addAction("Flags", "review-");
+->addAction("Flags", "<b>review-</b>");
 
 $stateReview->addTransition("Approve changes", $stateReviewed)
-->addAction("Flags", "review+");
+->addAction("Flags", "<b>review+</b>");
 
 $stateFeedbackR->addTransition("Return to team", $stateReview)
-->addAction("Keywords", "needinfo-");
+->addAction("Keywords", "<b>needinfo-</b>");
 
 $stateReviewed->addTransition("Resolve as FIXED", $stateFixed)
-->addAction("Status", "RESOLVED")
-->addAction("Resolution", "FIXED")
+->addAction("Status", "<b>RESOLVED</b>")
+->addAction("Resolution", "<b>FIXED</b>")
 ->addAction("Target Milestone", "M1..M7 or RC1..RC5 (for helios+),<br>SR1..SR2 (for galileo+)")
 ->addAction("Comment", "Committed to [branch name]");
 
 $stateFixed->addTransition("Release", $stateReleased)
-->addAction("Status", "RESOLVED")
+->addAction("Status", "<b>RESOLVED</b>")
 ->addAction("Comment", "Fix available in [build-ID]");
 
 $stateReleased->addTransition("Close", $stateClosed)
-->addAction("Status", "CLOSED");
+->addAction("Status", "<b>CLOSED</b>");
 
 $process->render();
 
