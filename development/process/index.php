@@ -32,21 +32,37 @@ $stateFixed =	$process->addState("fixed", "435,391,572,445");
 $stateReleased =	$process->addState("released", "435,488,571,543");
 $stateClosed =	$process->addState("closed", "645,488,782,542");
 
-$t1 = $stateStart->addTransition("Submit new bugzilla", $stateNew);
-$t1->addAction("Product", "EMF");
-$t1->addAction("Component", "CDO");
-$t1->addAction("Summary", "Short description of the bugzilla.");
-$t1->addAction("Description", "Exhaustive description of the observed misbehaviour (for bugs) or the desired functionality (for features).");
+$stateStart->addTransition("Submit new bugzilla", $stateNew)
+->addAction("Product", "EMF")
+->addAction("Component", "CDO")
+->addAction("Summary", "Short description of the bugzilla.")
+->addAction("Description", "Exhaustive description of the observed misbehaviour (for bugs) or the desired functionality (for features).");
 
-$t2 = $stateNew->addTransition("Get feedback from reporter", $stateFeedbackN);
-$t2->addAction("Keywords", "needinfo+");
+$stateNew->addTransition("Get feedback from reporter", $stateFeedbackN)
+->addAction("Keywords", "needinfo+");
 
-$stateNew->addTransition("Confirm", $stateTriaged);
-$stateNew->addTransition("Resolve as DUPLICATE", $stateDuplicate);
-$stateNew->addTransition("Resolve as WORKS", $stateWorks);
-$stateNew->addTransition("Resolve as NOTECLIPSE", $stateNotEclipse);
-$stateFeedbackN->addTransition("Return to team", $stateNew);
-$stateDuplicate->addTransition("Close", $stateClosed);
+$stateNew->addTransition("Confirm", $stateTriaged)
+->addAction("Status", "ASSIGNED");
+
+$stateNew->addTransition("Resolve as DUPLICATE", $stateDuplicate)
+->addAction("Status", "RESOLVED")
+->addAction("Resolution", "DUPLICATE")
+->addAction("Bug ID", "ID of the existing bugzilla.");
+
+$stateNew->addTransition("Resolve as WORKS", $stateWorks)
+->addAction("Status", "RESOLVED")
+->addAction("Resolution", "WORKSFORME");
+
+$stateNew->addTransition("Resolve as NOTECLIPSE", $stateNotEclipse)
+->addAction("Status", "RESOLVED")
+->addAction("Resolution", "NOT_ECLIPSE");
+
+$stateFeedbackN->addTransition("Return to team", $stateNew)
+->addAction("Keywords", "needinfo-");
+
+$stateDuplicate->addTransition("Close", $stateClosed)
+->addAction("Status", "CLOSED");
+
 $stateWorks->addTransition("Close", $stateClosed);
 $stateNotEclipse->addTransition("Close", $stateClosed);
 $stateTriaged->addTransition("Get feedback from reporter", $stateFeedbackT);

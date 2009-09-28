@@ -92,7 +92,8 @@ class Transition
 
 	function addAction($field, $description="")
 	{
-		return $this->actions[count($this->actions)] = new Action($field, $description);
+		$this->actions[count($this->actions)] = new Action($field, $description);
+		return $this;
 	}
 
 	function render($current)
