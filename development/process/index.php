@@ -9,6 +9,7 @@ $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $page
 
 print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">' . $pageTitle . '</h1>' . "\n";
+print "<p>(Work in progress)</p>\n";
 
 $process = new Process("CDO-Process");
 

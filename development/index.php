@@ -6,6 +6,7 @@
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
+print "<br><br><br><br><br><br><br><br><br>\n";
 //include "$projectRoot/tools/placeholder.html";
 print '</div>';
 
