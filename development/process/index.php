@@ -1,6 +1,8 @@
 <?php $areaRelative = ".."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
+require_once "process.php";
+
 $pageTitle 		= "Bugzilla Process";
 //$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
@@ -8,11 +10,9 @@ $pageAuthor		= "Eike Stepper";
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
 
 print '<div id="midcolumn">' . "\n";
-print '<p><a href="https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=3.0&bug_severity=enhancement" target="Bugzilla">Request new feature</a></p>' . "\n";
 print '<h1 id="pagetitle">' . $pageTitle . '</h1>' . "\n";
 print "<p>(Work in progress)</p>\n";
 
-require_once 'process.php';
 $process = new Process("CDO-Process");
 
 $stateStart = $process->addState("start", "263,13,13", "circle");
@@ -33,6 +33,7 @@ $stateReleased =	$process->addState("released", "435,488,571,543");
 $stateClosed =	$process->addState("closed", "645,488,782,542");
 
 $stateStart->addTransition("Submit new bugzilla", $stateNew)
+->addAction("Quick&nbsp;Links", "<a href=\"https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=2.0&bug_severity=normal&short_desc=[XYZ]+NullPointerException+in+CDOObjectImpl.cdoState()&comment=Build-ID:\" target=\"Bugzilla\">Report a problem</a>,<br><a href=\"https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=3.0&bug_severity=enhancement&short_desc=[XYZ]+Provide+particular+functionality\" target=\"Bugzilla\">Request a new feature</a>")
 ->addAction("Product", "<b>EMF</b>")
 ->addAction("Component", "<b>CDO</b>")
 ->addAction("Version", "<b>3.0</b> for features or bugs in HEAD,<br><b>2.0</b> for bugs in maintenance.")

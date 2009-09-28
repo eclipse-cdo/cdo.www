@@ -60,10 +60,10 @@ class State
 	{
 		//		print '<div><a name="' . $this->name . '"/></div>' . "\n";
 		print '<div class="box" id="' . $this->name . '">' . "\n";
-		print '  <table class="state"><tr>' . "\n";
-		print '    <td class="statename" valign="top" width="190"><img src="images/' . $this->name . '.png"/></td>' . "\n";
-		print '    <td class="statedesc" valign="top">' . $this->description . '</td>' . "\n";
-		print '  </tr></table>' . "\n";
+		//		print '  <table class="state"><tr>' . "\n";
+		//		print '    <td class="statename" valign="top" width="190"><img src="images/' . $this->name . '.png"/></td>' . "\n";
+		//		print '    <td class="statedesc" valign="top">' . $this->description . '</td>' . "\n";
+		//		print '  </tr></table>' . "\n";
 		print '  <div class="transitions">' . "\n";
 
 		foreach ($this->transitions as $transition)
