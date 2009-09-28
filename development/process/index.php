@@ -42,7 +42,8 @@ $stateNew->addTransition("Get feedback from reporter", $stateFeedbackN)
 ->addAction("Keywords", "needinfo+");
 
 $stateNew->addTransition("Confirm", $stateTriaged)
-->addAction("Status", "ASSIGNED");
+->addAction("QA Contact", "User ID of the reviewer.")
+->addAction("Flags", "One of galileo+, helios+");
 
 $stateNew->addTransition("Resolve as DUPLICATE", $stateDuplicate)
 ->addAction("Status", "RESOLVED")
@@ -63,22 +64,58 @@ $stateFeedbackN->addTransition("Return to team", $stateNew)
 $stateDuplicate->addTransition("Close", $stateClosed)
 ->addAction("Status", "CLOSED");
 
-$stateWorks->addTransition("Close", $stateClosed);
-$stateNotEclipse->addTransition("Close", $stateClosed);
-$stateTriaged->addTransition("Get feedback from reporter", $stateFeedbackT);
-$stateTriaged->addTransition("Start development", $stateDevelop);
-$stateFeedbackT->addTransition("Return to team", $stateTriaged);
-$stateDevelop->addTransition("Get feedback from reporter", $stateFeedbackD);
-$stateDevelop->addTransition("Stop development", $stateTriaged);
-$stateDevelop->addTransition("Request review", $stateReview);
-$stateFeedbackD->addTransition("Return to team", $stateDevelop);
-$stateReview->addTransition("Get feedback from reporter", $stateFeedbackR);
-$stateReview->addTransition("Reject changes", $stateDevelop);
-$stateReview->addTransition("Approve changes", $stateReviewed);
-$stateFeedbackR->addTransition("Return to team", $stateReview);
-$stateReviewed->addTransition("Resolve as FIXED", $stateFixed);
-$stateFixed->addTransition("Release", $stateReleased);
-$stateReleased->addTransition("Close", $stateClosed);
+$stateWorks->addTransition("Close", $stateClosed)
+->addAction("Status", "CLOSED");
+
+$stateNotEclipse->addTransition("Close", $stateClosed)
+->addAction("Status", "CLOSED");
+
+$stateTriaged->addTransition("Get feedback from reporter", $stateFeedbackT)
+->addAction("Keywords", "needinfo+");
+
+$stateTriaged->addTransition("Start development", $stateDevelop)
+->addAction("Status", "ASSIGNED");
+
+$stateFeedbackT->addTransition("Return to team", $stateTriaged)
+->addAction("Keywords", "needinfo-");
+
+$stateDevelop->addTransition("Get feedback from reporter", $stateFeedbackD)
+->addAction("Keywords", "needinfo+");
+
+$stateDevelop->addTransition("Stop development", $stateTriaged)
+->addAction("Status", "NEW");
+
+$stateDevelop->addTransition("Request review", $stateReview)
+->addAction("Flags", "review?")
+->addAction("Reviewer", "The value of the QA Contact.");
+
+$stateFeedbackD->addTransition("Return to team", $stateDevelop)
+->addAction("Keywords", "needinfo-");
+
+$stateReview->addTransition("Get feedback from reporter", $stateFeedbackR)
+->addAction("Keywords", "needinfo+");
+
+$stateReview->addTransition("Reject changes", $stateDevelop)
+->addAction("Flags", "review-");
+
+$stateReview->addTransition("Approve changes", $stateReviewed)
+->addAction("Flags", "review+");
+
+$stateFeedbackR->addTransition("Return to team", $stateReview)
+->addAction("Keywords", "needinfo-");
+
+$stateReviewed->addTransition("Resolve as FIXED", $stateFixed)
+->addAction("Status", "RESOLVED")
+->addAction("Resolution", "FIXED")
+->addAction("Target Milestone", "M1..M7 or RC1..RC5 (for helios+),<br>SR1..SR2 (for galileo+)")
+->addAction("Comment", "Committed to [branch name]");
+
+$stateFixed->addTransition("Release", $stateReleased)
+->addAction("Status", "RESOLVED")
+->addAction("Comment", "Fix available in [build-ID]");
+
+$stateReleased->addTransition("Close", $stateClosed)
+->addAction("Status", "CLOSED");
 
 $process->render();
 

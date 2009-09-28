@@ -4,6 +4,10 @@
 	margin-bottom: 10px;
 }
 
+.diagram {
+	margin-left: -30px;
+}
+
 .box {
 	background-color: #EEEEEE;
 	border: 1px solid #AAAAAA;
@@ -11,6 +15,19 @@
 	margin-bottom: 36px;
 }
 
+.state {
+	margin-bottom: 10px;
+}
+
+.transitions {
+	margin-bottom: 0px;
+}
+
 .trans {
 	padding-top: 20px;
+	margin-bottom: 0px;
+}
+
+.actions {
+	margin-bottom: 0px;
 }

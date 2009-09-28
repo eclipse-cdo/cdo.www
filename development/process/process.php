@@ -20,7 +20,7 @@ class Process
 
 	function render()
 	{
-		print '<p><img src="' . $this->name . '.png" usemap="#' . $this->name . '"></p>' . "\n";
+		print '<p><img class="diagram" id="' . $this->name . '" src="' . $this->name . '.png" usemap="#' . $this->name . '"></p>' . "\n";
 		print '<map name="' . $this->name . '">' . "\n";
 		foreach ($this->states as $state)
 		{
@@ -99,7 +99,7 @@ class Transition
 	function render($current)
 	{
 		print '    <table class="trans"><tr>' . "\n";
-		print '      <td class="transpic" valign="top" width="380">' . "\n";
+		print '      <td class="transpic" valign="top" width="370">' . "\n";
 		print '        <a href="#' . $current->name . '"><img src="images/' . $current->name . '.png"/></a>';
 		print ($current->name == "start") ? '<img src="images/line.png"/>' : "";
 		print '<img src="images/transition.png"/>';
@@ -112,7 +112,7 @@ class Transition
 			print '        <p class="transdesc">' . $this->description . '</p>' . "\n";
 		}
 
-		print '        <table>' . "\n";
+		print '        <table class="actions">' . "\n";
 		foreach ($this->actions as $action)
 		{
 			print "          <tr><td valign=\"top\"><b>$action->field</b>:</td><td valign=\"top\">$action->description</td></tr>\n";
