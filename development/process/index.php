@@ -30,12 +30,12 @@ $stateReleased =	$process->addState("released", "435,488,571,543");
 $stateClosed =	$process->addState("closed", "645,488,782,542");
 
 $t1 = $stateStart->addTransition("Submit new bugzilla", $stateNew);
-$t1->addAction("<b>Project</b> = EMF");
+$t1->addAction("<b>Product</b> = EMF");
 $t1->addAction("<b>Component</b> = CDO");
 $t1->addAction("<b>Description</b> = ");
 
 $t2 = $stateNew->addTransition("Get feedback from reporter", $stateFeedbackN);
-$t2->addAction("<b>Project</b> = EMF");
+$t2->addAction("<b>Product</b> = EMF");
 $t2->addAction("<b>Component</b> = CDO");
 $t2->addAction("<b>Description</b> = ");
 
@@ -168,9 +168,13 @@ class Transition
 		print '<img src="images/transition.png"/>';
 		print '<a href="#' . $this->result->name . '"><img src="images/' . $this->result->name . '.png"/></a>' . "\n";
 		print '      </td>' . "\n";
-		print '      <td valign="top"><br>' . "\n";
+		print '      <td valign="top">' . "\n";
 		print '        <h3 class="transname">' . $this->name . '</h3>' . "\n";
-		print '        <p class="transdesc">' . $this->description . '</p>' . "\n";
+		if ($this->description != "")
+		{
+			print '        <p class="transdesc">' . $this->description . '</p>' . "\n";
+		}
+
 		print '        <ul>' . "\n";
 		foreach ($this->actions as $action)
 		{
