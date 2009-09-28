@@ -112,7 +112,7 @@ $stateReviewed->addTransition("Resolve as FIXED", $stateFixed)
 ->addAction("Comment", "&quot;Committed to [branch name]&quot;");
 
 $stateFixed->addTransition("Release", $stateReleased)
-->addAction("Status", "<b>RESOLVED</b>")
+->addAction("Status", "<b>VERIFIED</b>")
 ->addAction("Comment", "&quot;Fix available in [build-ID]&quot;");
 
 $stateReleased->addTransition("Close", $stateClosed)
