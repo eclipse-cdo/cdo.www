@@ -1,3 +1,5 @@
-Persisting models in files is not always ideal. Often you値l need multi-user support or transactionality with fined-grained object-level locking, i.e., database-style persistence. I値l introduce the CDO Model Repository, which involves three tiers and is a general runtime platform for distributed shared models.
+Modeling on an Enterprise Scale
 
-This talk will not dive into too many implementation details of CDO but rather provide you with a functional overview and explain the benefits in the context of some typical enterprise scenarios. After attending this talk you will never want to miss the CDO Model Repository in your future modeling projects.
+Persisting models in files is not always straightforward. Often you値l need multi-user support or transactionality with fined-grained object-level locking, i.e., database-style persistence. I値l introduce the CDO Model Repository, which comprises three tiers and is a general runtime platform for distributed shared models.
+
+We'll not dive into too many implementation details of CDO. I'll rather provide you with a functional overview and explain the benefits in the context of some typical enterprise scenarios. After attending this talk you'll never want to live without the CDO Model Repository in your modeling projects.
