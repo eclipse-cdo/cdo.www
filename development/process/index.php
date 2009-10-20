@@ -45,7 +45,7 @@ $stateNew->addTransition("Get feedback from reporter", $stateFeedbackN)
 
 $stateNew->addTransition("Confirm", $stateTriaged)
 ->addAction("QA&nbsp;Contact", "User ID of the reviewer.")
-->addAction("Flags", "One of <b>galileo+</b> or <b>helios+</b> to indicate where the changes are supposed to be applied. Is not really related to <b>Version</b>!");
+->addAction("Version", "One of <b>2.x</b> or <b>3.0</b> to indicate where the changes are supposed to be applied.");
 
 $stateNew->addTransition("Resolve as DUPLICATE", $stateDuplicate)
 ->addAction("Status", "<b>RESOLVED</b>")
@@ -109,7 +109,7 @@ $stateFeedbackR->addTransition("Return to team", $stateReview)
 $stateReviewed->addTransition("Resolve as FIXED", $stateFixed)
 ->addAction("Status", "<b>RESOLVED</b>")
 ->addAction("Resolution", "<b>FIXED</b>")
-->addAction("Target&nbsp;Milestone", "M1..M7 or RC1..RC5 (for helios+),<br>SR1..SR2 (for galileo+)")
+->addAction("Target&nbsp;Milestone", "M1..M7 or RC1..RC5 (for 3.0),<br>SR1..SR2 (for 2.x)")
 ->addAction("Comment", "&quot;Committed to [branch name]&quot;");
 
 $stateFixed->addTransition("Release", $stateReleased)
