@@ -36,7 +36,7 @@ $stateStart->addTransition("Submit new bugzilla", $stateNew)
 ->addAction("Quick&nbsp;Links", "<a href=\"https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=2.0&bug_severity=normal&short_desc=[XYZ]+NullPointerException+in+CDOObjectImpl.cdoState()&comment=Build-ID:\" target=\"Bugzilla\">Report a problem</a>,<br><a href=\"https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=3.0&bug_severity=enhancement&short_desc=[XYZ]+Provide+particular+functionality\" target=\"Bugzilla\">Request a new feature</a>")
 ->addAction("Product", "<b>EMF</b>")
 ->addAction("Component", "<b>CDO</b>")
-->addAction("Version", "<b>3.0</b> for features or bugs in HEAD,<br><b>2.0</b> for bugs in maintenance.")
+->addAction("Version", "<b>3.0</b> for features or bugs in HEAD,<br><b>2.x</b> for bugs in maintenance.")
 ->addAction("Summary", "Short description of the bugzilla.")
 ->addAction("Description", "Exhaustive description of the observed misbehaviour (for bugs) or the desired functionality (for features).");
 
