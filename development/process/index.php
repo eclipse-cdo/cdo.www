@@ -36,8 +36,8 @@ $stateStart->addTransition("Submit new bugzilla", $stateNew)
 ->addAction("Quick&nbsp;Links", "<a href=\"https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=2.0&bug_severity=normal&short_desc=[XYZ]+NullPointerException+in+CDOObjectImpl.cdoState()&comment=Build-ID:\" target=\"Bugzilla\">Report a problem</a>,<br><a href=\"https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=3.0&bug_severity=enhancement&short_desc=[XYZ]+Provide+particular+functionality\" target=\"Bugzilla\">Request a new feature</a>")
 ->addAction("Product", "<b>EMF</b>")
 ->addAction("Component", "<b>CDO</b>")
-->addAction("Version", "<b>3.0</b> for features or bugs in HEAD,<br><b>2.x</b> for bugs in maintenance.")
-->addAction("Summary", "Short description of the bugzilla.")
+->addAction("Version", "<b>3.0</b> for features or bugs in HEAD,<br><b>2.0.x</b> for bugs in maintenance.")
+->addAction("Summary", "Short description of the bugzilla. Synonym for title.")
 ->addAction("Description", "Exhaustive description of the observed misbehaviour (for bugs) or the desired functionality (for features).");
 
 $stateNew->addTransition("Get feedback from reporter", $stateFeedbackN)
@@ -45,7 +45,7 @@ $stateNew->addTransition("Get feedback from reporter", $stateFeedbackN)
 
 $stateNew->addTransition("Confirm", $stateTriaged)
 ->addAction("QA&nbsp;Contact", "User ID of the reviewer.")
-->addAction("Version", "One of <b>2.x</b> or <b>3.0</b> to indicate where the changes are supposed to be applied.");
+->addAction("Version", "One of <b>2.0.x</b> or <b>3.0</b> to indicate where the changes are supposed to be applied.");
 
 $stateNew->addTransition("Resolve as DUPLICATE", $stateDuplicate)
 ->addAction("Status", "<b>RESOLVED</b>")
@@ -109,7 +109,7 @@ $stateFeedbackR->addTransition("Return to team", $stateReview)
 $stateReviewed->addTransition("Resolve as FIXED", $stateFixed)
 ->addAction("Status", "<b>RESOLVED</b>")
 ->addAction("Resolution", "<b>FIXED</b>")
-->addAction("Target&nbsp;Milestone", "M1..M7 or RC1..RC5 (for 3.0),<br>SR1..SR2 (for 2.x)")
+->addAction("Target&nbsp;Milestone", "M1..M7 or RC1..RC5 (for 3.0),<br>SR1..SR2 (for 2.0.x)")
 ->addAction("Comment", "&quot;Committed to [branch name]&quot;");
 
 $stateFixed->addTransition("Release", $stateReleased)
