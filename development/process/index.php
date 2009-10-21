@@ -3,9 +3,9 @@
 
 require_once "process.php";
 
-$pageTitle 		= "Bugzilla Process";
+$pageTitle = "Bugzilla Process";
 //$pageKeywords	= "";
-$pageAuthor		= "Eike Stepper";
+$pageAuthor	= "Eike Stepper";
 
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
 
@@ -16,21 +16,21 @@ print "<p>(Work in progress)</p>\n";
 $process = new Process("CDO-Process");
 
 $stateStart = $process->addState("start", "263,13,13", "circle");
-$stateNew   =	$process->addState("new", "195,60,331,115");
-$stateFeedbackN =	$process->addState("feedback-n", "1,60,136,114");
-$stateDuplicate =	$process->addState("duplicate", "435,60,571,115");
-$stateWorks =	$process->addState("works", "435,143,572,197");
-$stateNotEclipse =	$process->addState("noteclipse", "435,225,571,279");
-$stateTriaged =	$process->addState("triaged", "196,143,331,197");
-$stateFeedbackT =	$process->addState("feedback-t", "1,143,136,197");
-$stateDevelop =	$process->addState("develop", "195,225,331,279");
-$stateFeedbackD =	$process->addState("feedback-d", "0,225,137,279");
-$stateReview =	$process->addState("review", "195,308,331,361");
-$stateFeedbackR =	$process->addState("feedback-r", "0,308,136,362");
-$stateReviewed =	$process->addState("reviewed", "196,391,331,444");
-$stateFixed =	$process->addState("fixed", "435,391,572,445");
-$stateReleased =	$process->addState("released", "435,488,571,543");
-$stateClosed =	$process->addState("closed", "645,488,782,542");
+$stateNew   = $process->addState("new", "195,60,331,115");
+$stateFeedbackN = $process->addState("feedback-n", "1,60,136,114");
+$stateDuplicate = $process->addState("duplicate", "435,60,571,115");
+$stateWorks = $process->addState("works", "435,143,572,197");
+$stateNotEclipse = $process->addState("noteclipse", "435,225,571,279");
+$stateTriaged = $process->addState("triaged", "196,143,331,197");
+$stateFeedbackT = $process->addState("feedback-t", "1,143,136,197");
+$stateDevelop = $process->addState("develop", "195,225,331,279");
+$stateFeedbackD = $process->addState("feedback-d", "0,225,137,279");
+$stateReview = $process->addState("review", "195,308,331,361");
+$stateFeedbackR = $process->addState("feedback-r", "0,308,136,362");
+$stateReviewed = $process->addState("reviewed", "196,391,331,444");
+$stateFixed = $process->addState("fixed", "435,391,572,445");
+$stateReleased = $process->addState("released", "435,488,571,543");
+$stateClosed = $process->addState("closed", "645,488,782,542");
 
 $stateStart->addTransition("Submit new bugzilla", $stateNew)
 ->addAction("Quick&nbsp;Links", "<a href=\"https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=2.0&bug_severity=normal&short_desc=[XYZ]+NullPointerException+in+CDOObjectImpl.cdoState()&comment=Build-ID:\" target=\"Bugzilla\">Report a problem</a>,<br><a href=\"https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF&component=CDO&version=3.0&bug_severity=enhancement&short_desc=[XYZ]+Provide+particular+functionality\" target=\"Bugzilla\">Request a new feature</a>")
