@@ -11,7 +11,7 @@ print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
 printPresentation("EclipseCon_2010/CDO_EclipseCon_2010",
-									"Share and Store your Models with CDO",
+									"Scale, Share and Store your Models with CDO 3.0",
 									"Long talk: <b>New slides</b>",
 									"Eike Stepper",
 									"March 2010");
