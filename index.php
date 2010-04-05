@@ -75,6 +75,10 @@ $pageAuthor		= "Eike Stepper";
 			<h6>Related Links</h6>
 			<ul class="relatedLinks">
 				<li>
+					<a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo"><img src="http://www.eclipse.org/cdo/images/Logo-CDO-32x32.png"/></a>
+					<a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo">About This Project</a>
+				</li>
+				<li>
 					<a href="http://portal.eclipse.org/"><img src="http://dev.eclipse.org/large_icons/apps/preferences-system-network-proxy.png"/></a>
 					<a href="http://portal.eclipse.org/">MyFoundation Portal</a>
 				</li>

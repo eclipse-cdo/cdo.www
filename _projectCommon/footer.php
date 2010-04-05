@@ -4,8 +4,8 @@
 if ($Nav != NULL)
 {
 	$Nav->addNavSeparator("Related Links", "");
-	$Nav->addCustomNav("Bla", "$projectPath/team", "", 1);
-	$Nav->addCustomNav("Blub", "$projectPath/team", "", 1);
+	$Nav->addCustomNav("CDO Wiki", "http://wiki.eclipse.org/CDO", "", 1);
+	$Nav->addCustomNav("Net4j Wiki", "http://wiki.eclipse.org/Net4j", "", 1);
 }
 
 ########################################################################
