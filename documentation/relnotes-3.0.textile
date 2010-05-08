@@ -23,7 +23,7 @@ The legacy mode has to be enabled explicitely for new transactions/views:
     CDOView view = session.openView();
     System.out.println("Legacy model support: " + view.isLegacyModeEnabled());
 </pre>
-
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=247226 247226].
 
 === The transient modifier of an EStructuralFeature can now be overridden by annotation ===
@@ -33,11 +33,10 @@ CDO repositories that differ from the normal (XML) behaviour. The following anno
 been added to EMFUtil:
 
 <pre>
-
       public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
       public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
 </pre>
-
+<br>
 Their literals can be used in an Ecore model definition as follows:
 
 <pre>
@@ -49,7 +48,7 @@ Their literals can be used in an Ecore model definition as follows:
         </eStructuralFeatures>
       </eClassifiers>
 </pre>
-
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990 290990].
 
 === The session API to determine or wait for remote updates ===
@@ -69,13 +68,14 @@ in CDOSession you can, e.g., synchronize local views and transactions.
       }
     }.start();
 </pre>
-
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947 283947].
 
 === New session option for receiving more detailed commit infos ===
 
 A session can now be configured to receive full revision deltas instead of just invalidation keys.
 
+<pre>
     session.options().setPassiveUpdateMode(PassiveUpdateMode.CHANGES);
     session.addListener(new IListener()
     {
@@ -92,10 +92,11 @@ A session can now be configured to receive full revision deltas instead of just 
         }
       }
     });
-
-
+</pre>
+<br>
 A session can now be configured to receive full new revisions instead of only keys.
 
+<pre>
     session.options().setPassiveUpdateMode(PassiveUpdateMode.ADDITIONS);
     session.addListener(new IListener()
     {
@@ -112,9 +113,11 @@ A session can now be configured to receive full new revisions instead of only ke
         }
       }
     });
-
-
-PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES. The default option is PassiveUpdateMode.INVALIDATIONS. Note that the CDOSessionInvalidationEvent interface extends CDOCommitInfo.
+</pre>
+<br>
+PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES.<br>
+The default option is PassiveUpdateMode.INVALIDATIONS.<br>
+Note that the CDOSessionInvalidationEvent interface extends CDOCommitInfo.
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528 294528].
 
