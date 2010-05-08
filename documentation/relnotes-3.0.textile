@@ -63,7 +63,7 @@ in CDOSession you can, e.g., synchronize local views and transactions.
         session.waitForUpdate(commitInfo.getTimeStamp());
       }
     }.start();
-<br>
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947 283947].
 
@@ -87,7 +87,7 @@ A session can now be configured to receive full revision deltas instead of just 
         }
       }
     });
-<br>
+    <br>
 
 A session can now be configured to receive full new revisions instead of only keys.
 
@@ -107,7 +107,7 @@ A session can now be configured to receive full new revisions instead of only ke
         }
       }
     });
-<br>
+    <br>
 
 PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES. The default option is PassiveUpdateMode.INVALIDATIONS. Note that the CDOSessionInvalidationEvent interface extends CDOCommitInfo.
 
@@ -142,7 +142,7 @@ The new push transactions support commits to local files. Later the changes can 
     // Push changes to the repository
     transaction2.push();
     transaction2.close();
-<br>
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967 297967].
 
@@ -160,6 +160,7 @@ The method exportChanges() has been added to CDOTransaction.
     {
       IOUtil.close(fos);
     }
+    <br>
 
 The method importChanges() has been added to CDOTransaction.
 
@@ -173,6 +174,7 @@ The method importChanges() has been added to CDOTransaction.
     {
       IOUtil.close(fis);
     }
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=298334 298334].
 
