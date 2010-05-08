@@ -1,31 +1,38 @@
 <?xml version='1.0' encoding='utf-8' ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head><body><h1 id="Release_Notes_CDO_3.0">Release Notes CDO 3.0</h1><p>This document elaborates on the <b>new and noteworthy</b> enhancements in CDO 3.0.<br/>
 Alternatively you can query Bugzilla directly to list</p><ul><li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?field0-0-0=flagtypes.name;bug_severity=enhancement;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;type0-0-0=notequals;value0-0-0=documentation%2B;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC">Enhancements not described in this document</a></li><li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_severity=enhancement;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC">All enhancements</a></li><li><a href="https://bugs.eclipse.org/bugs/buglist.cgi?bug_severity=blocker;bug_severity=critical;bug_severity=major;bug_severity=normal;bug_severity=minor;bug_severity=trivial;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC">All bugs</a></li></ul><h2 id="User_Interface">User Interface</h2><h2 id="Core_Framework">Core Framework</h2><h3 id="Legacy_models_are_now_supported">Legacy models are now supported</h3><p>Legacy models from a CDO perspective are those that have not been regenerated to support all CDO features natively.
 These models are now supported by CDO, although they do not support lazy loading and unloading of their instances.
-The legacy mode has to be enabled explicitely for new transactions/views:</p><pre>   // Enable legacy support from now on for all views that will be opened by this thread
-   CDOUtil.setLegacyModeDefault(true);
-</pre><pre>   CDOView view = session.openView();
-   System.out.println("Legacy model support: " + view.isLegacyModeEnabled());
+The legacy mode has to be enabled explicitely for new transactions/views:</p><pre>
+    // Enable legacy support from now on for all views that will be opened by this thread
+    CDOUtil.setLegacyModeDefault(true);
+
+    CDOView view = session.openView();
+    System.out.println("Legacy model support: " + view.isLegacyModeEnabled());
 </pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=247226">247226</a>.</p><h3 id="The_transient_modifier_of_an_EStructuralFeature_can_now_be_overridden_by_annotation">The transient modifier of an EStructuralFeature can now be overridden by annotation</h3><p>Sometimes you want to use transient/persistent modifiers for particular structural features in
 CDO repositories that differ from the normal (XML) behaviour. The following annotation constants have
-been added to EMFUtil:</p><pre>     public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
-     public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
-</pre><p>Their literals can be used in an Ecore model definition as follows:</p><pre>     &lt;eClassifiers xsi:type="ecore:EClass" name="Product1"&gt;
-       &lt;eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="..." transient="true"&gt;
-         &lt;eAnnotations source="http://www.eclipse.org/emf/CDO"&gt;
-           &lt;details key="persistent" value="true"/&gt;
-         &lt;/eAnnotations&gt;
-       &lt;/eStructuralFeatures&gt;
-     &lt;/eClassifiers&gt;
+been added to EMFUtil:</p><pre>
+
+      public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
+      public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
+</pre><p>Their literals can be used in an Ecore model definition as follows:</p><pre>
+      &lt;eClassifiers xsi:type="ecore:EClass" name="Product1"&gt;
+        &lt;eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="..." transient="true"&gt;
+          &lt;eAnnotations source="http://www.eclipse.org/emf/CDO"&gt;
+            &lt;details key="persistent" value="true"/&gt;
+          &lt;/eAnnotations&gt;
+        &lt;/eStructuralFeatures&gt;
+      &lt;/eClassifiers&gt;
 </pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990">290990</a>.</p><h3 id="The_session_API_to_determine_or_wait_for_remote_updates">The session API to determine or wait for remote updates</h3><p>A getLastUpdateTime() method has been added to CDOSession. With the new waitForUpdate() methods
-in CDOSession you can, e.g., synchronize local views and transactions.</p><pre>   final CDOCommitInfo commitInfo = transaction.commit();
-</pre><pre>   new Thread()
-   {
-     @Override
-     public void run()
-     {
-       session.waitForUpdate(commitInfo.getTimeStamp());
-     }
-   }.start();
+in CDOSession you can, e.g., synchronize local views and transactions.</p><pre>
+    final CDOCommitInfo commitInfo = transaction.commit();
+
+    new Thread()
+    {
+      @Override
+      public void run()
+      {
+        session.waitForUpdate(commitInfo.getTimeStamp());
+      }
+    }.start();
 </pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947">283947</a>.</p><h3 id="New_session_option_for_receiving_more_detailed_commit_infos">New session option for receiving more detailed commit infos</h3><p>A session can now be configured to receive full revision deltas instead of just invalidation keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.CHANGES);
    session.addListener(new IListener()
    {
