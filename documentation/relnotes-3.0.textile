@@ -356,7 +356,8 @@ The following new annotations are now recognized by the DBStore:
 In CDO a structural feature can have multiple annotation with the same source, like:
 
 <pre>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="value"
+                eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http://www.eclipse.org/CDO/DBStore">
         <details key="columnName" value="HOLY"/>
       </eAnnotations>
