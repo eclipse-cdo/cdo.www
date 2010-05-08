@@ -227,7 +227,8 @@ See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566">2815
     }
 </pre><p><br/>
 In CDO a structural feature can have multiple annotation with the same source, like:</p><pre>
-    &lt;eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"&gt;
+    &lt;eStructuralFeatures xsi:type="ecore:EAttribute" name="value"
+                eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"&gt;
       &lt;eAnnotations source="http://www.eclipse.org/CDO/DBStore"&gt;
         &lt;details key="columnName" value="HOLY"/&gt;
       &lt;/eAnnotations&gt;

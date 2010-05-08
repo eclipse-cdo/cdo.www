@@ -16,13 +16,13 @@ Legacy models from a CDO perspective are those that have not been regenerated to
 These models are now supported by CDO, although they do not support lazy loading and unloading of their instances.
 The legacy mode has to be enabled explicitely for new transactions/views:
 
-<code lang="java">
+<pre>
     // Enable legacy support from now on for all views that will be opened by this thread
     CDOUtil.setLegacyModeDefault(true);
 
     CDOView view = session.openView();
     System.out.println("Legacy model support: " + view.isLegacyModeEnabled());
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=247226 247226].
 
@@ -32,14 +32,14 @@ Sometimes you want to use transient/persistent modifiers for particular structur
 CDO repositories that differ from the normal (XML) behaviour. The following annotation constants have
 been added to EMFUtil:
 
-<code lang="java">
+<pre>
       public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
       public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
-</code>
+</pre>
 <br>
 Their literals can be used in an Ecore model definition as follows:
 
-<code lang="xml">
+<pre>
       <eClassifiers xsi:type="ecore:EClass" name="Product1">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="..." transient="true">
           <eAnnotations source="http://www.eclipse.org/emf/CDO">
@@ -47,7 +47,7 @@ Their literals can be used in an Ecore model definition as follows:
           </eAnnotations>
         </eStructuralFeatures>
       </eClassifiers>
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990 290990].
 
@@ -56,7 +56,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990 290990].
 A getLastUpdateTime() method has been added to CDOSession. With the new waitForUpdate() methods
 in CDOSession you can, e.g., synchronize local views and transactions.
 
-<code lang="java">
+<pre>
     final CDOCommitInfo commitInfo = transaction.commit();
 
     new Thread()
@@ -67,7 +67,7 @@ in CDOSession you can, e.g., synchronize local views and transactions.
         session.waitForUpdate(commitInfo.getTimeStamp());
       }
     }.start();
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947 283947].
 
@@ -75,7 +75,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947 283947].
 
 A session can now be configured to receive full revision deltas instead of just invalidation keys.
 
-<code lang="java">
+<pre>
     session.options().setPassiveUpdateMode(PassiveUpdateMode.CHANGES);
     session.addListener(new IListener()
     {
@@ -92,11 +92,11 @@ A session can now be configured to receive full revision deltas instead of just 
         }
       }
     });
-</code>
+</pre>
 <br>
 A session can now be configured to receive full new revisions instead of only keys.
 
-<code lang="java">
+<pre>
     session.options().setPassiveUpdateMode(PassiveUpdateMode.ADDITIONS);
     session.addListener(new IListener()
     {
@@ -113,7 +113,7 @@ A session can now be configured to receive full new revisions instead of only ke
         }
       }
     });
-</code>
+</pre>
 <br>
 PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES.<br>
 The default option is PassiveUpdateMode.INVALIDATIONS.<br>
@@ -134,7 +134,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528 294528].
 
 The new push transactions support commits to local files. Later the changes can be read from this local file and pushed to a repository.
 
-<code lang="java">
+<pre>
     File file = new File("changes.bin");
     file.delete();
 
@@ -151,7 +151,7 @@ The new push transactions support commits to local files. Later the changes can 
     // Push changes to the repository
     transaction2.push();
     transaction2.close();
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967 297967].
 
@@ -159,7 +159,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967 297967].
 
 The method exportChanges() has been added to CDOTransaction.
 
-<code lang="java">
+<pre>
     OutputStream fos = new FileOutputStream("changes.bin");
 
     try
@@ -170,11 +170,11 @@ The method exportChanges() has been added to CDOTransaction.
     {
       IOUtil.close(fos);
     }
-</code>
+</pre>
 <br>
 The method importChanges() has been added to CDOTransaction.
 
-<code lang="java">
+<pre>
     InputStream fis = new FileInputStream("changes.bin");
 
     try
@@ -185,7 +185,7 @@ The method importChanges() has been added to CDOTransaction.
     {
       IOUtil.close(fis);
     }
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=298334 298334].
 
@@ -193,7 +193,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=298334 298334].
 
 The concept of ''successful commits'' has been made explicit and queriable through CDOCommitInfoManager.
 
-<code lang="java">
+<pre>
     CDOBranchManager branchManager = session.getBranchManager();
     CDOBranch mainBranch = branchManager.getMainBranch();
 
@@ -209,7 +209,7 @@ The concept of ''successful commits'' has been made explicit and queriable throu
             System.out.println("Commit comment: " + commitInfo.getComment());
           }
         });
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=256649 256649].
 
@@ -225,7 +225,7 @@ Several small enhancements have been applied to query and query result transport
 
 Provides a way of being notified about state changes of objects.
 
-<code lang="java">
+<pre>
     CDOView view = session.openView();
     view.addObjectHandler(new CDOObjectHandler()
     {
@@ -234,7 +234,7 @@ Provides a way of being notified about state changes of objects.
         System.out.println("Object transitioned to " + newState);
       }
     });
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=292733 292733].
 
@@ -242,7 +242,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=292733 292733].
 
 Provides a way of being notified about target changes of views.
 
-<code lang="java">
+<pre>
     CDOView view = session.openView();
     view.addListener(new IListener()
     {
@@ -259,7 +259,7 @@ Provides a way of being notified about target changes of views.
     view.setBranch(view.getSession().getBranchManager().getMainBranch());
     view.setTimeStamp(CDOBranchPoint.UNSPECIFIED_DATE);
     view.setBranchPoint(anotherView);
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
@@ -269,7 +269,7 @@ Since adapter notification can cause side effects and the order of the
 notifications is unpredictable a new event is emitted by views to indicate the end of a
 notification series.
 
-<code lang="java">
+<pre>
     CDOView view = session.openView();
     view.addListener(new IListener()
     {
@@ -282,7 +282,7 @@ notification series.
         }
       }
     });
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
@@ -290,7 +290,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
 Provides a way to handle transactions after they have been committed to the backend store.
 
-<code lang="java">
+<pre>
     IRepository repository = CDOServerUtil.createRepository("myrepo", store, props);
 
     repository.addHandler(new IRepository.WriteAccessHandler()
@@ -307,7 +307,7 @@ Provides a way to handle transactions after they have been committed to the back
         System.out.println("Committed " + transaction);
       }
     });
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=304959 304959].
 
@@ -315,7 +315,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=304959 304959].
 
 An isRemote() method has been added to CDOSessionInvalidationEvent.
 
-<code lang="java">
+<pre>
     session.addListener(new IListener()
     {
       public void notifyEvent(IEvent event)
@@ -330,7 +330,7 @@ An isRemote() method has been added to CDOSessionInvalidationEvent.
         }
       }
     });
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566 281566].
 
@@ -340,7 +340,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566 281566].
 
 The following new annotations are now recognized by the DBStore:
 
-<code lang="java">
+<pre>
     public enum DBAnnotation
     {
       TABLE_MAPPING("tableMapping"),
@@ -351,11 +351,11 @@ The following new annotations are now recognized by the DBStore:
 
       public final static String SOURCE_URI = "http://www.eclipse.org/CDO/DBStore";
     }
-</code>
+</pre>
 <br>
 In CDO a structural feature can have multiple annotation with the same source, like:
 
-<code lang="xml">
+<pre>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http://www.eclipse.org/CDO/DBStore">
         <details key="columnName" value="HOLY"/>
@@ -364,7 +364,7 @@ In CDO a structural feature can have multiple annotation with the same source, l
         <details key="columnType" value="CLOB"/>
       </eAnnotations>
     </eStructuralFeatures>
-</code>
+</pre>
 <br>
 See bugzillas [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284701 284701], [https://bugs.eclipse.org/bugs/show_bug.cgi?id=282976 282976], [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284680 284680].
 
@@ -389,10 +389,10 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=254455 254455].
 If you are aware of the structure and meaning of a DBStore created mapping schema you can now
 use SQL to query the backend efficiently. Note that might need to consider version and/or branch information to prevent duplicate results from being returned.
 
-<code lang="java">
+<pre>
     CDOQuery query = view.createQuery("sql", "SELECT CDO_ID FROM CUSTOMER ORDER BY NAME");
     List<Customer> customers = query.getResult(Customer.class);
-</code>
+</pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=248933 248933].
 
