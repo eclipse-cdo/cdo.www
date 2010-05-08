@@ -33,7 +33,7 @@ been added to EMFUtil:
 
       public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
       public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
-      <br>
+<br>
 
 Their literals can be used in an Ecore model definition as follows:
 
@@ -44,7 +44,7 @@ Their literals can be used in an Ecore model definition as follows:
           </eAnnotations>
         </eStructuralFeatures>
       </eClassifiers>
-      <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990 290990].
 
@@ -54,7 +54,7 @@ A getLastUpdateTime() method has been added to CDOSession. With the new waitForU
 in CDOSession you can, e.g., synchronize local views and transactions.
 
     final CDOCommitInfo commitInfo = transaction.commit();
-    <br>
+<br>
     new Thread()
     {
       @Override
@@ -63,7 +63,7 @@ in CDOSession you can, e.g., synchronize local views and transactions.
         session.waitForUpdate(commitInfo.getTimeStamp());
       }
     }.start();
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947 283947].
 
@@ -87,7 +87,7 @@ A session can now be configured to receive full revision deltas instead of just 
         }
       }
     });
-    <br>
+<br>
 
 A session can now be configured to receive full new revisions instead of only keys.
 
@@ -107,7 +107,7 @@ A session can now be configured to receive full new revisions instead of only ke
         }
       }
     });
-    <br>
+<br>
 
 PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES. The default option is PassiveUpdateMode.INVALIDATIONS. Note that the CDOSessionInvalidationEvent interface extends CDOCommitInfo.
 
@@ -128,21 +128,21 @@ The new push transactions support commits to local files. Later the changes can 
 
     File file = new File("changes.bin");
     file.delete();
-    <br>
+<br>
     // Open a new transaction and wrap it in a push transaction
     CDOPushTransaction transaction1 = new CDOPushTransaction(session.openTransaction(), file);
-    <br>
+<br>
     // Commit to local file
     transaction1.commit();
     transaction1.close();
-    <br>
+<br>
     // Open a new push transaction and load changes from local file
     CDOPushTransaction transaction2 = new CDOPushTransaction(session.openTransaction(), file);
-    <br>
+<br>
     // Push changes to the repository
     transaction2.push();
     transaction2.close();
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967 297967].
 
@@ -151,7 +151,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967 297967].
 The method exportChanges() has been added to CDOTransaction.
 
     OutputStream fos = new FileOutputStream("changes.bin");
-    <br>
+<br>
     try
     {
       CDOSavepoint[] savepoints = transaction1.exportChanges(fos);
@@ -160,12 +160,12 @@ The method exportChanges() has been added to CDOTransaction.
     {
       IOUtil.close(fos);
     }
-    <br>
+<br>
 
 The method importChanges() has been added to CDOTransaction.
 
     InputStream fis = new FileInputStream("changes.bin");
-    <br>
+<br>
     try
     {
       CDOSavepoint[] savepoints = transaction2.importChanges(fis, true);
@@ -174,7 +174,7 @@ The method importChanges() has been added to CDOTransaction.
     {
       IOUtil.close(fis);
     }
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=298334 298334].
 
@@ -184,7 +184,7 @@ The concept of ''successful commits'' has been made explicit and queriable throu
 
     CDOBranchManager branchManager = session.getBranchManager();
     CDOBranch mainBranch = branchManager.getMainBranch();
-    <br>
+<br>
     CDOCommitInfoManager commitInfoManager = session.getCommitInfoManager();
     commitInfoManager.getCommitInfos(
         mainBranch,
@@ -197,7 +197,7 @@ The concept of ''successful commits'' has been made explicit and queriable throu
             System.out.println("Commit comment: " + commitInfo.getComment());
           }
         });
-        <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=256649 256649].
 
@@ -221,7 +221,7 @@ Provides a way of being notified about state changes of objects.
         System.out.println("Object transitioned to " + newState);
       }
     });
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=292733 292733].
 
@@ -240,11 +240,11 @@ Provides a way of being notified about target changes of views.
         }
       }
     });
-    <br>
+<br>
     view.setBranch(view.getSession().getBranchManager().getMainBranch());
     view.setTimeStamp(CDOBranchPoint.UNSPECIFIED_DATE);
     view.setBranchPoint(anotherView);
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
@@ -265,7 +265,7 @@ notification series.
         }
       }
     });
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
@@ -274,7 +274,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 Provides a way to handle transactions after they have been committed to the backend store.
 
     IRepository repository = CDOServerUtil.createRepository("myrepo", store, props);
-    <br>
+<br>
     repository.addHandler(new IRepository.WriteAccessHandler()
     {
       public void handleTransactionBeforeCommitting(ITransaction transaction,
@@ -282,14 +282,14 @@ Provides a way to handle transactions after they have been committed to the back
       {
         System.out.println("About to commit " + transaction);
       }
-      <br>
+<br>
       public void handleTransactionAfterCommitted(ITransaction transaction,
           IStoreAccessor.CommitContext commitContext, OMMonitor monitor)
       {
         System.out.println("Committed " + transaction);
       }
     });
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=304959 304959].
 
@@ -311,7 +311,7 @@ An isRemote() method has been added to CDOSessionInvalidationEvent.
         }
       }
     });
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566 281566].
 
@@ -328,10 +328,10 @@ The following new annotations are now recognized by the DBStore:
       COLUMN_NAME("columnName"),
       COLUMN_TYPE("columnType"),
       COLUMN_LENGTH("columnLength");
-      <br>
+<br>
       public final static String SOURCE_URI = "http://www.eclipse.org/CDO/DBStore";
     }
-    <br>
+<br>
 
 In CDO a structural feature can have multiple annotation with the same source, like:
 
@@ -343,7 +343,7 @@ In CDO a structural feature can have multiple annotation with the same source, l
         <details key="columnType" value="CLOB"/>
       </eAnnotations>
     </eStructuralFeatures>
-    <br>
+<br>
 
 See bugzillas [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284701 284701], [https://bugs.eclipse.org/bugs/show_bug.cgi?id=282976 282976], [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284680 284680].
 
@@ -370,7 +370,7 @@ use SQL to query the backend efficiently. Note that might need to consider versi
 
     CDOQuery query = view.createQuery("sql", "SELECT CDO_ID FROM CUSTOMER ORDER BY NAME");
     List<Customer> customers = query.getResult(Customer.class);
-    <br>
+<br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=248933 248933].
 
