@@ -1,5 +1,3 @@
-<wiki:toc />
-
 = Release Notes CDO 3.0 =
 
 This document elaborates on the '''new and noteworthy''' enhancements in CDO 3.0.<br>
