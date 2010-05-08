@@ -5,7 +5,8 @@ The legacy mode has to be enabled explicitely for new transactions/views:</p><pr
    CDOUtil.setLegacyModeDefault(true);
 </pre><pre>   CDOView view = session.openView();
    System.out.println("Legacy model support: " + view.isLegacyModeEnabled());
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=247226">247226</a>.</p><h3 id="The_transient_modifier_of_an_EStructuralFeature_can_now_be_overridden_by_annotation">The transient modifier of an EStructuralFeature can now be overridden by annotation</h3><p>Sometimes you want to use transient/persistent modifiers for particular structural features in
+</pre><p><br/>
+See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=247226">247226</a>.</p><h3 id="The_transient_modifier_of_an_EStructuralFeature_can_now_be_overridden_by_annotation">The transient modifier of an EStructuralFeature can now be overridden by annotation</h3><p>Sometimes you want to use transient/persistent modifiers for particular structural features in
 CDO repositories that differ from the normal (XML) behaviour. The following annotation constants have
 been added to EMFUtil:</p><pre> public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
  public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
@@ -16,7 +17,8 @@ been added to EMFUtil:</p><pre> public static final String CDO_ANNOTATION_SOURCE
      &lt;/eAnnotations&gt;
    &lt;/eStructuralFeatures&gt;
  &lt;/eClassifiers&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990">290990</a>.</p><h3 id="The_session_API_to_determine_or_wait_for_remote_updates">The session API to determine or wait for remote updates</h3><p>A getLastUpdateTime() method has been added to CDOSession. With the new waitForUpdate() methods
+</pre><p><br/>
+See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990">290990</a>.</p><h3 id="The_session_API_to_determine_or_wait_for_remote_updates">The session API to determine or wait for remote updates</h3><p>A getLastUpdateTime() method has been added to CDOSession. With the new waitForUpdate() methods
 in CDOSession you can, e.g., synchronize local views and transactions.</p><pre>   final CDOCommitInfo commitInfo = transaction.commit();
 </pre><pre>   new Thread()
    {
@@ -26,7 +28,8 @@ in CDOSession you can, e.g., synchronize local views and transactions.</p><pre> 
        session.waitForUpdate(commitInfo.getTimeStamp());
      }
    }.start();
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947">283947</a>.</p><h3 id="New_session_option_for_receiving_more_detailed_commit_infos">New session option for receiving more detailed commit infos</h3><p>A session can now be configured to receive full revision deltas instead of just invalidation keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.CHANGES);
+</pre><p><br/>
+See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947">283947</a>.</p><h3 id="New_session_option_for_receiving_more_detailed_commit_infos">New session option for receiving more detailed commit infos</h3><p>A session can now be configured to receive full revision deltas instead of just invalidation keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.CHANGES);
    session.addListener(new IListener()
    {
      public void notifyEvent(IEvent event)
@@ -42,7 +45,8 @@ in CDOSession you can, e.g., synchronize local views and transactions.</p><pre> 
        }
      }
    });
-</pre><p>A session can now be configured to receive full new revisions instead of only keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.ADDITIONS);
+</pre><p><br/>
+A session can now be configured to receive full new revisions instead of only keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.ADDITIONS);
    session.addListener(new IListener()
    {
      public void notifyEvent(IEvent event)
@@ -58,7 +62,8 @@ in CDOSession you can, e.g., synchronize local views and transactions.</p><pre> 
        }
      }
    });
-</pre><p>PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES. The default option is PassiveUpdateMode.INVALIDATIONS. Note that the CDOSessionInvalidationEvent interface extends CDOCommitInfo.</p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528">294528</a>.</p><h3 id="Reattached_objects_now_keep_their_original_identity">Reattached objects now keep their original identity</h3><p>Formerly objects that were first being detached from a transaction and then
+</pre><p><br/>
+PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES. The default option is PassiveUpdateMode.INVALIDATIONS. Note that the CDOSessionInvalidationEvent interface extends CDOCommitInfo.</p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528">294528</a>.</p><h3 id="Reattached_objects_now_keep_their_original_identity">Reattached objects now keep their original identity</h3><p>Formerly objects that were first being detached from a transaction and then
 being reattached to the same transaction were assigned a new identitiy.
 That was annoying in use cases like drag and drop in a user interface.
 Now the transaction remembers identities of detached objects and reassigns them if needed.</p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528">294528</a>.</p><h3 id="Push_transactions_have_been_introduced">Push transactions have been introduced</h3><p>The new push transactions support commits to local files. Later the changes can be read from this local file and pushed to a repository.</p><pre>   File file = new File("changes.bin");
