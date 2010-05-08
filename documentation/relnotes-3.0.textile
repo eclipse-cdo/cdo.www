@@ -197,6 +197,7 @@ The concept of ''successful commits'' has been made explicit and queriable throu
             System.out.println("Commit comment: " + commitInfo.getComment());
           }
         });
+        <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=256649 256649].
 
@@ -220,6 +221,7 @@ Provides a way of being notified about state changes of objects.
         System.out.println("Object transitioned to " + newState);
       }
     });
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=292733 292733].
 
@@ -242,7 +244,7 @@ Provides a way of being notified about target changes of views.
     view.setBranch(view.getSession().getBranchManager().getMainBranch());
     view.setTimeStamp(CDOBranchPoint.UNSPECIFIED_DATE);
     view.setBranchPoint(anotherView);
-
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
@@ -263,6 +265,7 @@ notification series.
         }
       }
     });
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
@@ -285,6 +288,7 @@ Provides a way to handle transactions after they have been committed to the back
         System.out.println("Committed " + transaction);
       }
     });
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=304959 304959].
 
@@ -306,6 +310,7 @@ An isRemote() method has been added to CDOSessionInvalidationEvent.
         }
       }
     });
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566 281566].
 
@@ -325,6 +330,7 @@ The following new annotations are now recognized by the DBStore:
 
       public final static String SOURCE_URI = "http://www.eclipse.org/CDO/DBStore";
     }
+    <br>
 
 In CDO a structural feature can have multiple annotation with the same source, like:
 
@@ -336,6 +342,7 @@ In CDO a structural feature can have multiple annotation with the same source, l
         <details key="columnType" value="CLOB"/>
       </eAnnotations>
     </eStructuralFeatures>
+    <br>
 
 See bugzillas [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284701 284701], [https://bugs.eclipse.org/bugs/show_bug.cgi?id=282976 282976], [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284680 284680].
 
@@ -362,6 +369,7 @@ use SQL to query the backend efficiently. Note that might need to consider versi
 
     CDOQuery query = view.createQuery("sql", "SELECT CDO_ID FROM CUSTOMER ORDER BY NAME");
     List<Customer> customers = query.getResult(Customer.class);
+    <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=248933 248933].
 
