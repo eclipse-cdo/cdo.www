@@ -1,7 +1,7 @@
 <?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
-require_once "$areaRoot/relnotes/relnotes.php";
+require_once "$areaRoot/relnotes.php";
 
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/modeling/includes/common.css"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/modeling/includes/downloads.css"/>' . "\n\t");
@@ -12,7 +12,7 @@ $pageTitle 		= "Release Notes CDO 3.0";
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-printReleaseNotes("http://www.eclipse.org/cdo/documentation/relnotes/3.0/relnotes-3.0.html");
+printReleaseNotes("http://www.eclipse.org/cdo/documentation/relnotes-3.0.html");
 print '</div>';
 
 
