@@ -134,6 +134,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528 294528].
 
 The new push transactions support commits to local files. Later the changes can be read from this local file and pushed to a repository.
 
+<pre>
     File file = new File("changes.bin");
     file.delete();
 
@@ -150,14 +151,15 @@ The new push transactions support commits to local files. Later the changes can 
     // Push changes to the repository
     transaction2.push();
     transaction2.close();
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967 297967].
 
 === Changes in a local transaction can be exported and imported ===
 
 The method exportChanges() has been added to CDOTransaction.
 
+<pre>
     OutputStream fos = new FileOutputStream("changes.bin");
 
     try
@@ -168,10 +170,11 @@ The method exportChanges() has been added to CDOTransaction.
     {
       IOUtil.close(fos);
     }
-
-
+</pre>
+<br>
 The method importChanges() has been added to CDOTransaction.
 
+<pre>
     InputStream fis = new FileInputStream("changes.bin");
 
     try
@@ -182,14 +185,15 @@ The method importChanges() has been added to CDOTransaction.
     {
       IOUtil.close(fis);
     }
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=298334 298334].
 
 === Successful commits can now be queried ===
 
 The concept of ''successful commits'' has been made explicit and queriable through CDOCommitInfoManager.
 
+<pre>
     CDOBranchManager branchManager = session.getBranchManager();
     CDOBranch mainBranch = branchManager.getMainBranch();
 
@@ -205,8 +209,8 @@ The concept of ''successful commits'' has been made explicit and queriable throu
             System.out.println("Commit comment: " + commitInfo.getComment());
           }
         });
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=256649 256649].
 
 === Better type support for queries ===
@@ -221,6 +225,7 @@ Several small enhancements have been applied to query and query result transport
 
 Provides a way of being notified about state changes of objects.
 
+<pre>
     CDOView view = session.openView();
     view.addObjectHandler(new CDOObjectHandler()
     {
@@ -229,14 +234,16 @@ Provides a way of being notified about state changes of objects.
         System.out.println("Object transitioned to " + newState);
       }
     });
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=292733 292733].
 
 === New call-back hook after branch point changes of a view ===
 
 Provides a way of being notified about target changes of views.
 
+<pre>
+    CDOView view = session.openView();
     view.addListener(new IListener()
     {
       public void notifyEvent(IEvent event)
@@ -252,8 +259,8 @@ Provides a way of being notified about target changes of views.
     view.setBranch(view.getSession().getBranchManager().getMainBranch());
     view.setTimeStamp(CDOBranchPoint.UNSPECIFIED_DATE);
     view.setBranchPoint(anotherView);
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
 === New call-back hook after adapter notification ===
@@ -262,6 +269,8 @@ Since adapter notification can cause side effects and the order of the
 notifications is unpredictable a new event is emitted by views to indicate the end of a
 notification series.
 
+<pre>
+    CDOView view = session.openView();
     view.addListener(new IListener()
     {
       public void notifyEvent(IEvent event)
@@ -273,14 +282,15 @@ notification series.
         }
       }
     });
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 
 === New call-back hook after successful commits ===
 
 Provides a way to handle transactions after they have been committed to the backend store.
 
+<pre>
     IRepository repository = CDOServerUtil.createRepository("myrepo", store, props);
 
     repository.addHandler(new IRepository.WriteAccessHandler()
@@ -297,14 +307,15 @@ Provides a way to handle transactions after they have been committed to the back
         System.out.println("Committed " + transaction);
       }
     });
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=304959 304959].
 
 === New API to distinguish local commits from remote commits ===
 
 An isRemote() method has been added to CDOSessionInvalidationEvent.
 
+<pre>
     session.addListener(new IListener()
     {
       public void notifyEvent(IEvent event)
@@ -319,8 +330,8 @@ An isRemote() method has been added to CDOSessionInvalidationEvent.
         }
       }
     });
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566 281566].
 
 == DB Store ==
@@ -329,6 +340,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566 281566].
 
 The following new annotations are now recognized by the DBStore:
 
+<pre>
     public enum DBAnnotation
     {
       TABLE_MAPPING("tableMapping"),
@@ -339,10 +351,11 @@ The following new annotations are now recognized by the DBStore:
 
       public final static String SOURCE_URI = "http://www.eclipse.org/CDO/DBStore";
     }
-
-
+</pre>
+<br>
 In CDO a structural feature can have multiple annotation with the same source, like:
 
+<pre>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
       <eAnnotations source="http://www.eclipse.org/CDO/DBStore">
         <details key="columnName" value="HOLY"/>
@@ -351,8 +364,8 @@ In CDO a structural feature can have multiple annotation with the same source, l
         <details key="columnType" value="CLOB"/>
       </eAnnotations>
     </eStructuralFeatures>
-
-
+</pre>
+<br>
 See bugzillas [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284701 284701], [https://bugs.eclipse.org/bugs/show_bug.cgi?id=282976 282976], [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284680 284680].
 
 === External references are now supported ===
@@ -376,9 +389,10 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=254455 254455].
 If you are aware of the structure and meaning of a DBStore created mapping schema you can now
 use SQL to query the backend efficiently. Note that might need to consider version and/or branch information to prevent duplicate results from being returned.
 
+<pre>
     CDOQuery query = view.createQuery("sql", "SELECT CDO_ID FROM CUSTOMER ORDER BY NAME");
     List<Customer> customers = query.getResult(Customer.class);
-
-
+</pre>
+<br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=248933 248933].
 
