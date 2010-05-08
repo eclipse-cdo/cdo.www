@@ -1,4 +1,12 @@
+<wiki:toc />
+
 = Release Notes CDO 3.0 =
+
+This document elaborates on the '''new and noteworthy''' enhancements in CDO 3.0.<br>
+Alternatively you can query Bugzilla directly to list
+* [https://bugs.eclipse.org/bugs/buglist.cgi?field0-0-0=flagtypes.name;bug_severity=enhancement;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;type0-0-0=notequals;value0-0-0=documentation%2B;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC Enhancements not described in this document]
+* [https://bugs.eclipse.org/bugs/buglist.cgi?bug_severity=enhancement;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC All enhancements]
+* [https://bugs.eclipse.org/bugs/buglist.cgi?bug_severity=blocker;bug_severity=critical;bug_severity=major;bug_severity=normal;bug_severity=minor;bug_severity=trivial;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC All bugs]
 
 == User Interface ==
 
