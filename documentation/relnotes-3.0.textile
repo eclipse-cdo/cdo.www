@@ -128,17 +128,17 @@ The new push transactions support commits to local files. Later the changes can 
 
     File file = new File("changes.bin");
     file.delete();
-
+    <br>
     // Open a new transaction and wrap it in a push transaction
     CDOPushTransaction transaction1 = new CDOPushTransaction(session.openTransaction(), file);
-
+    <br>
     // Commit to local file
     transaction1.commit();
     transaction1.close();
-
+    <br>
     // Open a new push transaction and load changes from local file
     CDOPushTransaction transaction2 = new CDOPushTransaction(session.openTransaction(), file);
-
+    <br>
     // Push changes to the repository
     transaction2.push();
     transaction2.close();
@@ -151,7 +151,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967 297967].
 The method exportChanges() has been added to CDOTransaction.
 
     OutputStream fos = new FileOutputStream("changes.bin");
-
+    <br>
     try
     {
       CDOSavepoint[] savepoints = transaction1.exportChanges(fos);
@@ -165,7 +165,7 @@ The method exportChanges() has been added to CDOTransaction.
 The method importChanges() has been added to CDOTransaction.
 
     InputStream fis = new FileInputStream("changes.bin");
-
+    <br>
     try
     {
       CDOSavepoint[] savepoints = transaction2.importChanges(fis, true);
@@ -184,7 +184,7 @@ The concept of ''successful commits'' has been made explicit and queriable throu
 
     CDOBranchManager branchManager = session.getBranchManager();
     CDOBranch mainBranch = branchManager.getMainBranch();
-
+    <br>
     CDOCommitInfoManager commitInfoManager = session.getCommitInfoManager();
     commitInfoManager.getCommitInfos(
         mainBranch,
@@ -240,7 +240,7 @@ Provides a way of being notified about target changes of views.
         }
       }
     });
-
+    <br>
     view.setBranch(view.getSession().getBranchManager().getMainBranch());
     view.setTimeStamp(CDOBranchPoint.UNSPECIFIED_DATE);
     view.setBranchPoint(anotherView);
@@ -274,6 +274,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880 289880].
 Provides a way to handle transactions after they have been committed to the backend store.
 
     IRepository repository = CDOServerUtil.createRepository("myrepo", store, props);
+    <br>
     repository.addHandler(new IRepository.WriteAccessHandler()
     {
       public void handleTransactionBeforeCommitting(ITransaction transaction,
@@ -281,7 +282,7 @@ Provides a way to handle transactions after they have been committed to the back
       {
         System.out.println("About to commit " + transaction);
       }
-
+      <br>
       public void handleTransactionAfterCommitted(ITransaction transaction,
           IStoreAccessor.CommitContext commitContext, OMMonitor monitor)
       {
@@ -327,7 +328,7 @@ The following new annotations are now recognized by the DBStore:
       COLUMN_NAME("columnName"),
       COLUMN_TYPE("columnType"),
       COLUMN_LENGTH("columnLength");
-
+      <br>
       public final static String SOURCE_URI = "http://www.eclipse.org/CDO/DBStore";
     }
     <br>
