@@ -2,10 +2,10 @@
 
 function printReleaseNotes($url)
 {
-	$region = 0;
 	$content = file_get_contents($url);
+	array $matches;
 	preg_match('/<body>(.*)<\/body>/i', $content, $matches);
-	print "1: $matches[0]\n";
+	print "2: $matches[0]\n";
 }
 
 ?>
