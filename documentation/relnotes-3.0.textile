@@ -16,13 +16,13 @@ Legacy models from a CDO perspective are those that have not been regenerated to
 These models are now supported by CDO, although they do not support lazy loading and unloading of their instances.
 The legacy mode has to be enabled explicitely for new transactions/views:
 
-<code source="java">
+<source lang="java">
     // Enable legacy support from now on for all views that will be opened by this thread
     CDOUtil.setLegacyModeDefault(true);
 
     CDOView view = session.openView();
     System.out.println("Legacy model support: " + view.isLegacyModeEnabled());
-</code>
+</source>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=247226 247226].
 
