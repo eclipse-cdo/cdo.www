@@ -16,12 +16,13 @@ Legacy models from a CDO perspective are those that have not been regenerated to
 These models are now supported by CDO, although they do not support lazy loading and unloading of their instances.
 The legacy mode has to be enabled explicitely for new transactions/views:
 
+<pre>
     // Enable legacy support from now on for all views that will be opened by this thread
     CDOUtil.setLegacyModeDefault(true);
 
     CDOView view = session.openView();
     System.out.println("Legacy model support: " + view.isLegacyModeEnabled());
-
+</pre>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=247226 247226].
 
@@ -31,12 +32,15 @@ Sometimes you want to use transient/persistent modifiers for particular structur
 CDO repositories that differ from the normal (XML) behaviour. The following annotation constants have
 been added to EMFUtil:
 
+<pre>
+
       public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
       public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
-
+</pre>
 
 Their literals can be used in an Ecore model definition as follows:
 
+<pre>
       <eClassifiers xsi:type="ecore:EClass" name="Product1">
         <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="..." transient="true">
           <eAnnotations source="http://www.eclipse.org/emf/CDO">
@@ -44,7 +48,7 @@ Their literals can be used in an Ecore model definition as follows:
           </eAnnotations>
         </eStructuralFeatures>
       </eClassifiers>
-
+</pre>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990 290990].
 
@@ -53,6 +57,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990 290990].
 A getLastUpdateTime() method has been added to CDOSession. With the new waitForUpdate() methods
 in CDOSession you can, e.g., synchronize local views and transactions.
 
+<pre>
     final CDOCommitInfo commitInfo = transaction.commit();
 
     new Thread()
@@ -63,7 +68,7 @@ in CDOSession you can, e.g., synchronize local views and transactions.
         session.waitForUpdate(commitInfo.getTimeStamp());
       }
     }.start();
-
+</pre>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947 283947].
 
