@@ -9,19 +9,16 @@ The legacy mode has to be enabled explicitely for new transactions/views:</p><pr
 CDO repositories that differ from the normal (XML) behaviour. The following annotation constants have
 been added to EMFUtil:</p><pre>     public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
      public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
-     &lt;br&gt;
-</pre><p>Their literals can be used in an Ecore model definition as follows:</p><pre>     &lt;eClassifiers xsi:type="ecore:EClass" name="Product1"&gt;
+</pre><p><br/></p><p>Their literals can be used in an Ecore model definition as follows:</p><pre>     &lt;eClassifiers xsi:type="ecore:EClass" name="Product1"&gt;
        &lt;eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="..." transient="true"&gt;
          &lt;eAnnotations source="http://www.eclipse.org/emf/CDO"&gt;
            &lt;details key="persistent" value="true"/&gt;
          &lt;/eAnnotations&gt;
        &lt;/eStructuralFeatures&gt;
      &lt;/eClassifiers&gt;
-     &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990">290990</a>.</p><h3 id="The_session_API_to_determine_or_wait_for_remote_updates">The session API to determine or wait for remote updates</h3><p>A getLastUpdateTime() method has been added to CDOSession. With the new waitForUpdate() methods
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990">290990</a>.</p><h3 id="The_session_API_to_determine_or_wait_for_remote_updates">The session API to determine or wait for remote updates</h3><p>A getLastUpdateTime() method has been added to CDOSession. With the new waitForUpdate() methods
 in CDOSession you can, e.g., synchronize local views and transactions.</p><pre>   final CDOCommitInfo commitInfo = transaction.commit();
-   &lt;br&gt;
-   new Thread()
+</pre><p><br/></p><pre>   new Thread()
    {
      @Override
      public void run()
@@ -29,8 +26,7 @@ in CDOSession you can, e.g., synchronize local views and transactions.</p><pre> 
        session.waitForUpdate(commitInfo.getTimeStamp());
      }
    }.start();
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947">283947</a>.</p><h3 id="New_session_option_for_receiving_more_detailed_commit_infos">New session option for receiving more detailed commit infos</h3><p>A session can now be configured to receive full revision deltas instead of just invalidation keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.CHANGES);
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283947">283947</a>.</p><h3 id="New_session_option_for_receiving_more_detailed_commit_infos">New session option for receiving more detailed commit infos</h3><p>A session can now be configured to receive full revision deltas instead of just invalidation keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.CHANGES);
    session.addListener(new IListener()
    {
      public void notifyEvent(IEvent event)
@@ -46,8 +42,7 @@ in CDOSession you can, e.g., synchronize local views and transactions.</p><pre> 
        }
      }
    });
-   &lt;br&gt;
-</pre><p>A session can now be configured to receive full new revisions instead of only keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.ADDITIONS);
+</pre><p><br/></p><p>A session can now be configured to receive full new revisions instead of only keys.</p><pre>   session.options().setPassiveUpdateMode(PassiveUpdateMode.ADDITIONS);
    session.addListener(new IListener()
    {
      public void notifyEvent(IEvent event)
@@ -63,30 +58,23 @@ in CDOSession you can, e.g., synchronize local views and transactions.</p><pre> 
        }
      }
    });
-   &lt;br&gt;
-</pre><p>PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES. The default option is PassiveUpdateMode.INVALIDATIONS. Note that the CDOSessionInvalidationEvent interface extends CDOCommitInfo.</p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528">294528</a>.</p><h3 id="Reattached_objects_now_keep_their_original_identity">Reattached objects now keep their original identity</h3><p>Formerly objects that were first being detached from a transaction and then
+</pre><p><br/></p><p>PassiveUpdateMode.ADDITIONS includes PassiveUpdateMode.CHANGES. The default option is PassiveUpdateMode.INVALIDATIONS. Note that the CDOSessionInvalidationEvent interface extends CDOCommitInfo.</p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528">294528</a>.</p><h3 id="Reattached_objects_now_keep_their_original_identity">Reattached objects now keep their original identity</h3><p>Formerly objects that were first being detached from a transaction and then
 being reattached to the same transaction were assigned a new identitiy.
 That was annoying in use cases like drag and drop in a user interface.
 Now the transaction remembers identities of detached objects and reassigns them if needed.</p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=294528">294528</a>.</p><h3 id="Push_transactions_have_been_introduced">Push transactions have been introduced</h3><p>The new push transactions support commits to local files. Later the changes can be read from this local file and pushed to a repository.</p><pre>   File file = new File("changes.bin");
    file.delete();
-   &lt;br&gt;
-   // Open a new transaction and wrap it in a push transaction
+</pre><p><br/></p><pre>   // Open a new transaction and wrap it in a push transaction
    CDOPushTransaction transaction1 = new CDOPushTransaction(session.openTransaction(), file);
-   &lt;br&gt;
-   // Commit to local file
+</pre><p><br/></p><pre>   // Commit to local file
    transaction1.commit();
    transaction1.close();
-   &lt;br&gt;
-   // Open a new push transaction and load changes from local file
+</pre><p><br/></p><pre>   // Open a new push transaction and load changes from local file
    CDOPushTransaction transaction2 = new CDOPushTransaction(session.openTransaction(), file);
-   &lt;br&gt;
-   // Push changes to the repository
+</pre><p><br/></p><pre>   // Push changes to the repository
    transaction2.push();
    transaction2.close();
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967">297967</a>.</p><h3 id="Changes_in_a_local_transaction_can_be_exported_and_imported">Changes in a local transaction can be exported and imported</h3><p>The method exportChanges() has been added to CDOTransaction.</p><pre>   OutputStream fos = new FileOutputStream("changes.bin");
-   &lt;br&gt;
-   try
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=297967">297967</a>.</p><h3 id="Changes_in_a_local_transaction_can_be_exported_and_imported">Changes in a local transaction can be exported and imported</h3><p>The method exportChanges() has been added to CDOTransaction.</p><pre>   OutputStream fos = new FileOutputStream("changes.bin");
+</pre><p><br/></p><pre>   try
    {
      CDOSavepoint[] savepoints = transaction1.exportChanges(fos);
    }
@@ -94,10 +82,8 @@ Now the transaction remembers identities of detached objects and reassigns them 
    {
      IOUtil.close(fos);
    }
-   &lt;br&gt;
-</pre><p>The method importChanges() has been added to CDOTransaction.</p><pre>   InputStream fis = new FileInputStream("changes.bin");
-   &lt;br&gt;
-   try
+</pre><p><br/></p><p>The method importChanges() has been added to CDOTransaction.</p><pre>   InputStream fis = new FileInputStream("changes.bin");
+</pre><p><br/></p><pre>   try
    {
      CDOSavepoint[] savepoints = transaction2.importChanges(fis, true);
    }
@@ -105,11 +91,9 @@ Now the transaction remembers identities of detached objects and reassigns them 
    {
      IOUtil.close(fis);
    }
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=298334">298334</a>.</p><h3 id="Successful_commits_can_now_be_queried">Successful commits can now be queried</h3><p>The concept of <i>successful commits</i> has been made explicit and queriable through CDOCommitInfoManager.</p><pre>   CDOBranchManager branchManager = session.getBranchManager();
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=298334">298334</a>.</p><h3 id="Successful_commits_can_now_be_queried">Successful commits can now be queried</h3><p>The concept of <i>successful commits</i> has been made explicit and queriable through CDOCommitInfoManager.</p><pre>   CDOBranchManager branchManager = session.getBranchManager();
    CDOBranch mainBranch = branchManager.getMainBranch();
-   &lt;br&gt;
-   CDOCommitInfoManager commitInfoManager = session.getCommitInfoManager();
+</pre><p><br/></p><pre>   CDOCommitInfoManager commitInfoManager = session.getCommitInfoManager();
    commitInfoManager.getCommitInfos(
        mainBranch,
        CDOBranchPoint.UNSPECIFIED_DATE,
@@ -121,8 +105,7 @@ Now the transaction remembers identities of detached objects and reassigns them 
            System.out.println("Commit comment: " + commitInfo.getComment());
          }
        });
-       &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=256649">256649</a>.</p><h3 id="Better_type_support_for_queries">Better type support for queries</h3><p>Several small enhancements have been applied to query and query result transport:</p><ul><li>Query parameters can carry enum values instead of integer numbers, see bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282610">282610</a>.</li><li>Query results carry enum values instead of integer numbers, see bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283117">283117</a>.</li><li>Query results can carry arrays of primitive types, see bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282612">282612</a>.</li></ul><h3 id="New_call-back_hook_after_object_state_changes">New call-back hook after object state changes</h3><p>Provides a way of being notified about state changes of objects.</p><pre>   CDOView view = session.openView();
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=256649">256649</a>.</p><h3 id="Better_type_support_for_queries">Better type support for queries</h3><p>Several small enhancements have been applied to query and query result transport:</p><ul><li>Query parameters can carry enum values instead of integer numbers, see bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282610">282610</a>.</li><li>Query results carry enum values instead of integer numbers, see bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=283117">283117</a>.</li><li>Query results can carry arrays of primitive types, see bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282612">282612</a>.</li></ul><h3 id="New_call-back_hook_after_object_state_changes">New call-back hook after object state changes</h3><p>Provides a way of being notified about state changes of objects.</p><pre>   CDOView view = session.openView();
    view.addObjectHandler(new CDOObjectHandler()
    {
      public void objectStateChanged(CDOView view, CDOObject object, CDOState oldState, CDOState newState)
@@ -130,8 +113,7 @@ Now the transaction remembers identities of detached objects and reassigns them 
        System.out.println("Object transitioned to " + newState);
      }
    });
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=292733">292733</a>.</p><h3 id="New_call-back_hook_after_branch_point_changes_of_a_view">New call-back hook after branch point changes of a view</h3><p>Provides a way of being notified about target changes of views.</p><pre>   view.addListener(new IListener()
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=292733">292733</a>.</p><h3 id="New_call-back_hook_after_branch_point_changes_of_a_view">New call-back hook after branch point changes of a view</h3><p>Provides a way of being notified about target changes of views.</p><pre>   view.addListener(new IListener()
    {
      public void notifyEvent(IEvent event)
      {
@@ -142,12 +124,10 @@ Now the transaction remembers identities of detached objects and reassigns them 
        }
      }
    });
-   &lt;br&gt;
-   view.setBranch(view.getSession().getBranchManager().getMainBranch());
+</pre><p><br/></p><pre>   view.setBranch(view.getSession().getBranchManager().getMainBranch());
    view.setTimeStamp(CDOBranchPoint.UNSPECIFIED_DATE);
    view.setBranchPoint(anotherView);
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880">289880</a>.</p><h3 id="New_call-back_hook_after_adapter_notification">New call-back hook after adapter notification</h3><p>Since adapter notification can cause side effects and the order of the
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880">289880</a>.</p><h3 id="New_call-back_hook_after_adapter_notification">New call-back hook after adapter notification</h3><p>Since adapter notification can cause side effects and the order of the
 notifications is unpredictable a new event is emitted by views to indicate the end of a
 notification series.</p><pre>   view.addListener(new IListener()
    {
@@ -160,25 +140,21 @@ notification series.</p><pre>   view.addListener(new IListener()
        }
      }
    });
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880">289880</a>.</p><h3 id="New_call-back_hook_after_successful_commits">New call-back hook after successful commits</h3><p>Provides a way to handle transactions after they have been committed to the backend store.</p><pre>   IRepository repository = CDOServerUtil.createRepository("myrepo", store, props);
-   &lt;br&gt;
-   repository.addHandler(new IRepository.WriteAccessHandler()
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=289880">289880</a>.</p><h3 id="New_call-back_hook_after_successful_commits">New call-back hook after successful commits</h3><p>Provides a way to handle transactions after they have been committed to the backend store.</p><pre>   IRepository repository = CDOServerUtil.createRepository("myrepo", store, props);
+</pre><p><br/></p><pre>   repository.addHandler(new IRepository.WriteAccessHandler()
    {
      public void handleTransactionBeforeCommitting(ITransaction transaction,
          IStoreAccessor.CommitContext commitContext, OMMonitor monitor) throws RuntimeException
      {
        System.out.println("About to commit " + transaction);
      }
-     &lt;br&gt;
-     public void handleTransactionAfterCommitted(ITransaction transaction,
+</pre><p><br/></p><pre>     public void handleTransactionAfterCommitted(ITransaction transaction,
          IStoreAccessor.CommitContext commitContext, OMMonitor monitor)
      {
        System.out.println("Committed " + transaction);
      }
    });
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=304959">304959</a>.</p><h3 id="New_API_to_distinguish_local_commits_from_remote_commits">New API to distinguish local commits from remote commits</h3><p>An isRemote() method has been added to CDOSessionInvalidationEvent.</p><pre>   session.addListener(new IListener()
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=304959">304959</a>.</p><h3 id="New_API_to_distinguish_local_commits_from_remote_commits">New API to distinguish local commits from remote commits</h3><p>An isRemote() method has been added to CDOSessionInvalidationEvent.</p><pre>   session.addListener(new IListener()
    {
      public void notifyEvent(IEvent event)
      {
@@ -192,19 +168,16 @@ notification series.</p><pre>   view.addListener(new IListener()
        }
      }
    });
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566">281566</a>.</p><h2 id="DB_Store">DB Store</h2><h3 id="New_model_annotations_are_available_to_override_mapping_defaults">New model annotations are available to override mapping defaults</h3><p>The following new annotations are now recognized by the DBStore:</p><pre>   public enum DBAnnotation
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566">281566</a>.</p><h2 id="DB_Store">DB Store</h2><h3 id="New_model_annotations_are_available_to_override_mapping_defaults">New model annotations are available to override mapping defaults</h3><p>The following new annotations are now recognized by the DBStore:</p><pre>   public enum DBAnnotation
    {
      TABLE_MAPPING("tableMapping"),
      TABLE_NAME("tableName"),
      COLUMN_NAME("columnName"),
      COLUMN_TYPE("columnType"),
      COLUMN_LENGTH("columnLength");
-     &lt;br&gt;
-     public final static String SOURCE_URI = "http://www.eclipse.org/CDO/DBStore";
+</pre><p><br/></p><pre>     public final static String SOURCE_URI = "http://www.eclipse.org/CDO/DBStore";
    }
-   &lt;br&gt;
-</pre><p>In CDO a structural feature can have multiple annotation with the same source, like:</p><pre>   &lt;eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"&gt;
+</pre><p><br/></p><p>In CDO a structural feature can have multiple annotation with the same source, like:</p><pre>   &lt;eStructuralFeatures xsi:type="ecore:EAttribute" name="value" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"&gt;
      &lt;eAnnotations source="http://www.eclipse.org/CDO/DBStore"&gt;
        &lt;details key="columnName" value="HOLY"/&gt;
      &lt;/eAnnotations&gt;
@@ -212,13 +185,11 @@ notification series.</p><pre>   view.addListener(new IListener()
        &lt;details key="columnType" value="CLOB"/&gt;
      &lt;/eAnnotations&gt;
    &lt;/eStructuralFeatures&gt;
-   &lt;br&gt;
-</pre><p>See bugzillas <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284701">284701</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282976">282976</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284680">284680</a>.</p><h3 id="External_references_are_now_supported">External references are now supported</h3><p>External references are created if an object managed by a transaction refers to an object
+</pre><p><br/></p><p>See bugzillas <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284701">284701</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=282976">282976</a>, <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=284680">284680</a>.</p><h3 id="External_references_are_now_supported">External references are now supported</h3><p>External references are created if an object managed by a transaction refers to an object
 that is either not managed by a view or is managed by a view to a different repository.
 Internally such references are represented by instances of CDOIDExternal and their
 CDOID.isExternal() method always returns true. In the database they appear as negative long values,
 indicating that the URI of the target object can be looked up in a separate table.</p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=249610">249610</a>.</p><h3 id="Feature_maps_are_now_supported">Feature maps are now supported</h3><p>If your model contains feature maps you can now use the DBStore to persist them.</p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=254455">254455</a>.</p><h3 id="SQL_is_now_supported_as_a_query_language">SQL is now supported as a query language</h3><p>If you are aware of the structure and meaning of a DBStore created mapping schema you can now
 use SQL to query the backend efficiently. Note that might need to consider version and/or branch information to prevent duplicate results from being returned.</p><pre>   CDOQuery query = view.createQuery("sql", "SELECT CDO_ID FROM CUSTOMER ORDER BY NAME");
    List&lt;Customer&gt; customers = query.getResult(Customer.class);
-   &lt;br&gt;
-</pre><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=248933">248933</a>.</p></body></html>
+</pre><p><br/></p><p>See bugzilla <a href="https://bugs.eclipse.org/bugs/show_bug.cgi?id=248933">248933</a>.</p></body></html>
