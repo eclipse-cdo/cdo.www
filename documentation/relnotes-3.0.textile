@@ -33,6 +33,7 @@ been added to EMFUtil:
 
   public static final String CDO_ANNOTATION_SOURCE = "http://www.eclipse.org/emf/CDO";
   public static final String CDO_ANNOTATION_KEY_PERSISTENT = "persistent";
+  <br>
 
 Their literals can be used in an Ecore model definition as follows:
 
@@ -43,7 +44,7 @@ Their literals can be used in an Ecore model definition as follows:
       </eAnnotations>
     </eStructuralFeatures>
   </eClassifiers>
-<br>
+  <br>
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=290990 290990].
 
