@@ -10,7 +10,7 @@ Alternatively you can query Bugzilla directly to list
 
 == Core Framework ==
 
-=== Branching is now supported ===
+=== Branching and merging is now supported ===
 
 Branches form an explicit, navigable tree in CDO. It is managed by a session's CDOBranchManager, which also emits CDOBranchCreatedEvent for local and remote branch creation.
 <pre>
@@ -22,11 +22,17 @@ Branches form an explicit, navigable tree in CDO. It is managed by a session's C
     view.setBranchPoint(mainBranch.getHead());
 </pre>
 <br>
+Merging is also supported through the new merge(CDOBranchPoint source, CDOMerger merger) method in CDOTransaction. There are several default implementations of the CDOMerger interface provided. An interactive merger will be provided soon.
+
+[[Image:images/MergeConcepts.png|480px]]
+
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=270716 270716].
 
 === Offline clones are now supported ===
 
 You need to setup a normal repository as the master. Then you setup a second one via CDOServerUtil.createOfflineClone(String, IStore, Map<String, String>, IRepositorySynchronizer). Depending on the configuration of the synchronizer that you have to pass in  there are certain restrictions on the store type of the clone repo. The clone is a repository by itself and can be embedded it into a client or made available via TCP transport to many clients. So, it can also be used the clone like a "group server" to serve a subset of the overall clients. That speeds up reads but slows down writes a little bit, as commits are "write-through".
+
+[[Image:images/OfflineOverview.png|480px]]
 
 For the clone creation you need a repository synchronizer. Use CDOServerUtil.createRepositorySynchronizer(CDOSessionConfigurationFactory). The synchronizer maintains a session to the master and tries to re-establish that session if the connection breaks down. See: IRepositorySynchronizer.setRetryInterval(int)
 
