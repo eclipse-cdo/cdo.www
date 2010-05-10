@@ -1,4 +1,4 @@
-<?php $areaRelative = "relnotes_30"; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
+<?php $areaRelative = ".."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
 require_once "$areaRoot/relnotes.php";
