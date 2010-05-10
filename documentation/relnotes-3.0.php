@@ -12,7 +12,7 @@ $pageTitle 		= "Release Notes CDO 3.0";
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-printReleaseNotes("http://www.eclipse.org/cdo/documentation/relnotes-3.0.html");
+printReleaseNotes("http://www.eclipse.org/cdo/documentation/relnotes_30/relnotes-3.0.html");
 print '</div>';
 
 
