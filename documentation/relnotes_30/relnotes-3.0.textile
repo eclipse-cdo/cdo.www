@@ -1,6 +1,9 @@
 = Release Notes CDO 3.0 =
 
 This document elaborates on the '''new and noteworthy''' enhancements in CDO 3.0.<br>
+
+__TOC__
+
 Alternatively you can query Bugzilla directly to list
 * [https://bugs.eclipse.org/bugs/buglist.cgi?field0-0-0=flagtypes.name;bug_severity=enhancement;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;type0-0-0=notequals;value0-0-0=documentation%2B;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC Enhancements not described in this document]
 * [https://bugs.eclipse.org/bugs/buglist.cgi?bug_severity=enhancement;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC All enhancements]
@@ -374,6 +377,31 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=281566 281566].
 
 == DB Store ==
 
+=== New alternative mapping strategy for increased performance for particular list operations ===
+
+The default mapping strategy for the audit-aware DBStore usually writes value lists (for many-valued
+features) completely for each revision. The new mapping strategy type <code>horizontalAuditWithRanges</code>
+uses a different approch: each list value is associated with a start and end revision indicating its
+lifetime. For applications in which lists are mostly extended by adding elements to the end of the lists,
+using this mapping strategy can lead to increased performance.
+
+However, in cases where lists are rearranged, of if list entries in the middle of the list are removed regularly,
+the default mapping should still be the better choice. Also, as of now, this strategy can not be used together
+with the new branching feature.
+
+To activate the alternative mapping strategy, use the following configuration setting in the server's configuration.xml:
+
+<pre>
+<store type="db">
+  <mappingStrategy type="horizontalAuditWithRanges">
+    <property name="qualifiedNames" value="false"/>
+  </mappingStrategy>
+  ...
+</store>
+</pre>
+<br>
+See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=296440 296440].
+
 === New model annotations are available to override mapping defaults ===
 
 The following new annotations are now recognized by the DBStore:
@@ -422,6 +450,15 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=249610 249610].
 If your model contains feature maps you can now use the DBStore to persist them.
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=254455 254455].
+
+=== Unsettable Features are now supported properly ===
+
+For EStructuralFeatures which have the <code>unsettable</code> property set to <code>true</code>,
+an additional boolean column is created in the corresponding database table which indicates if
+the feature is set. If an unset feature is stored, <code>false</code> is stored in the additional
+column and the feature's default value is stored in the feature's value field.
+
+See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=284110 284110].
 
 === SQL is now supported as a query language ===
 
