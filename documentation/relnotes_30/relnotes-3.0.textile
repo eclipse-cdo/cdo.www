@@ -9,6 +9,10 @@ Alternatively you can query Bugzilla directly to list
 * [https://bugs.eclipse.org/bugs/buglist.cgi?bug_severity=enhancement;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC All enhancements]
 * [https://bugs.eclipse.org/bugs/buglist.cgi?bug_severity=blocker;bug_severity=critical;bug_severity=major;bug_severity=normal;bug_severity=minor;bug_severity=trivial;resolution=FIXED;classification=Modeling;query_based_on=NEEDS_DOC;query_format=advanced;bug_status=RESOLVED;version=3.0;component=CDO;component=Net4j;product=EMF;known_name=NEEDS_DOC All bugs]
 
+To get a complete overview about all API changes since version 2.0, breaking or compatible, you can
+* browse the [api-report.html HTML report of the API comparison]
+* use the [api-report.xml XML report of the API comparison]
+
 == User Interface ==
 
 === Dawn - Rise of the collaborative UI ===
