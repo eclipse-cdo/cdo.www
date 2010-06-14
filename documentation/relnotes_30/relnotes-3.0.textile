@@ -581,3 +581,9 @@ By using special the special @External annotation it is now possible to persist 
 === Feature Map support has been added ===
 
 Feature maps are now supported out-of-the-box. See [http://wiki.eclipse.org/Teneo/Hibernate/XMLSchema/FeatureMap this Teneo documentation] for a general discussion on featuremap support, the CDO Hibernate store supports a similar mechanism.
+
+== Objectivity Store ==
+
+=== Databases from Objectivity Inc. are now supported ===
+
+See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=277420 277420].
