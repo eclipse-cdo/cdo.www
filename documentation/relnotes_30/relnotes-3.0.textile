@@ -417,6 +417,18 @@ Provides a way to handle transactions after they have been committed to the back
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=304959 304959].
 
+=== New call-back hook after repository state change ===
+
+The repository state can change in an offline clone or in the backup repository of a fail-over scenario. The possible states are: INITIAL, OFFLINE, SYNCING and ONLINE.
+
+See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=256936 256936].
+
+=== New call-back hook after repository type change ===
+
+The repository type can change in the master and the backup repository of a fail-over scenario. The possible states are: INITIAL, OFFLINE, SYNCING and ONLINE.
+
+See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=203167 203167].
+
 === New API to distinguish local commits from remote commits ===
 
 An isRemote() method has been added to CDOSessionInvalidationEvent.
