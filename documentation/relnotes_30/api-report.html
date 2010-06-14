@@ -1,0 +1,2334 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+<meta name="copyright" content="Copyright (c) IBM Corporation and others 2009. This page is made available under license. For full details see the LEGAL in the documentation book that contains this page."/>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"/>
+<meta http-equiv="Content-Style-Type" content="text/css"/>
+<title>API Compare Details (v2.0/v3.0)</title>
+<style type="text/css">
+			.main{		font-family:Arial;
+						Helvetica, sans-serif;
+						text-align: left;}
+			.main h3 {	font-family:Arial, Helvetica, sans-serif;
+						background-color:#FFFFFF;
+						font-size:16px;
+						margin:0.1em;}
+			.main h4 { 	background-color:#CCCCCC;
+						margin:0.15em;}
+			a.typeslnk{	font-family:Arial, Helvetica, sans-serif;
+					   	text-decoration:none;}
+			a.typeslnk:hover{text-decoration:underline;}
+			.types{	display:none;
+					margin-bottom:0.25em;
+					margin-top:0.25em;
+					margin-right:0.25em;
+				   	margin-left:0.75em;}
+			thead.head{background-color:#CC9933}
+		</style>
+<script type="text/javascript">
+			function expand(location){
+			   if(document.getElementById){
+				  var childhtml = location.firstChild;
+				  if(!childhtml.innerHTML) {
+				  	childhtml = childhtml.nextSibling;
+				  }
+				  childhtml.innerHTML = childhtml.innerHTML == '[+] ' ? '[-] ' : '[+] ';
+				  var parent = location.parentNode;
+				  childhtml = parent.nextSibling.style ? parent.nextSibling : parent.nextSibling.nextSibling;
+				  childhtml.style.display = childhtml.style.display == 'block' ? 'none' : 'block';
+				}
+			}
+		</script>
+</head>
+<body>
+<noscript>
+<style type="text/css">
+				.types{display:block;}
+				.kinds{display:block;}
+			</style>
+</noscript>
+<h1>API Compare Details (v2.0/v3.0)</h1>
+<div class="main">
+<table border="0" width="60%">
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)">
+<span>[+] </span> List of breaking changes
+								</a>
+</h3>
+<div class="types">
+<table border="1" width="100%" style="line">
+<thead class="head">
+<tr>
+<td>
+<b>Changes</b>
+</td>
+</tr>
+</thead>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.getRevisions() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.delta.CDORevisionDelta.getOriginVersion() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.CDOCommonSession.Options.getPassiveUpdateMode() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.io.CDODataOutput has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.branch.CDOBranchPoint adds method getBranch() to org.eclipse.emf.cdo.common.CDOCommonView that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.branch.CDOBranchVersion adds method getBranch() to org.eclipse.emf.cdo.common.revision.CDORevision that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.size(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevisionFactory.createRevision(CDODataInput) has been removed</td>
+</tr>
+<tr>
+<td>The super interfaces set has been reduced for type org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageRegistry</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevisionFactory.createRevision(EClass) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The constant value 17 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_COMMIT_NOTIFICATION has been changed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOPackageRegistry.getPackageUnit(String) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.RequestWithMonitoring has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.InternalChannelMultiplexer has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.isSupportingBranches() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent.getRevision() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageInfo.write(CDODataOutput) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.id.CDOIDUtil.createExternalTemp(String) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.basicGet(EStructuralFeature, int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.Channel has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setValue(int, Object) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setResourceID(CDOID) has been removed</td>
+</tr>
+<tr>
+<td>The interface java.lang.Comparable adds method compareTo(T) to org.eclipse.emf.cdo.common.CDOCommonView that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageRegistry.getAllKeys() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionDelta.setOriginVersion(int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.channel.ChannelException has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.delta.CDORevisionDelta.getDirtyVersion() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.getCurrentRevisions() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.indexOf(EStructuralFeature, Object) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.connector.ConnectorException has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The member type org.eclipse.emf.cdo.common.CDOCommonView.Type in org.eclipse.emf.cdo.common_3.0.0 has been removed</td>
+</tr>
+<tr>
+<td>The super interfaces set has been reduced for type org.eclipse.emf.cdo.common.model.CDOPackageRegistryPopulator</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageUnit.write(CDODataOutput, boolean) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.channel.ChannelInputStream has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.branch.CDOBranchVersion adds method getBranch() to org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.Connector has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getContainingFeatureID() has been removed</td>
+</tr>
+<tr>
+<td>The type parameter INFRA_STRUCTURE has been removed for org.eclipse.emf.cdo.common.protocol.CDOProtocol</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.InternalBuffer has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent.getSource() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The constant value 29 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_UNSUBSCRIBE_REMOTE_SESSIONS has been changed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setRevised(long) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevisionFactory.createRevision(EClass, CDOID) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.connector.IConnectorEvent has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.failover.RetryFailOverStrategy has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.basicSet(EStructuralFeature, Object) has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.ERROR_REPOSITORY_NOT_FOUND has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.RemoteException has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.hashCode(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.add(EStructuralFeature, int, Object) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.wrapping.GZIPStreamWrapperInjector has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setContainerID(Object) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.setCreated(long) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.Request has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.basicSet(EStructuralFeature, int, Object) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.SignalActor has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setUntransactional() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.EMFUtil.createEPackage(String, byte[], boolean, EPackage.Registry) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.remapID(Object, Map<CDOIDTemp,CDOID>) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.write(CDODataOutput, int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.TransportInjector has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The constructor org.eclipse.emf.cdo.spi.common.AbstractQueryResult.AbstractQueryResult(CDOCommonView, CDOQueryInfo, int) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.setUntransactional() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageRegistry.getWithDelegation(String, boolean) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getVersion() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getResourceID() has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.Signal has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.id.CDOIDLongFactoryImpl has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheUtil.createDefaultCache() has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.VIEW_CLOSED has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.buffer.IBufferProvider has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.id.CDOIDProvider.NOOP in an interface that is intended to be implemented or extended has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageRegistry.getPackageUnits(long, long) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.move(EStructuralFeature, int, int) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.getRevisionByTime(CDOID, long) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.failover.IFailOverStrategy has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.id.AbstractCDOID.isExternal() has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.ITransportConfigAware has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.common.util.EList adds method move(int, E) to org.eclipse.emf.cdo.spi.common.revision.InternalCDOList that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.util.CDOQueryQueue.drainTo(Collection, int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.InternalAcceptor has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_SYNC_REVISIONS has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.ISignalProtocol has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.id.AbstractCDOID.isMeta() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOClassifierRef.write(CDODataOutput) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setList(EStructuralFeature, InternalCDOList) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.basicSet(EStructuralFeature, int, Object) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.convertEObjects(CDOIDProvider) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_COMMIT_TRANSACTION_PHASE2 has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getList(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageRegistry.getPackageUnit(String) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.channel.ChannelOutputStream has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.IndicationWithResponse has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.compare(CDORevision) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The constant value 30 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REMOTE_SESSION_NOTIFICATION has been changed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.ERROR_NO_SESSION has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.toArray(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.failover.NOOPFailOverStrategy has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent.getRevision() has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.wrapping.StreamWrapperInjector has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.addRevision(InternalCDORevision) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setContainingFeatureID(int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.ILocationAware has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.id.CDOIDLibraryProviderImpl has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.id.AbstractCDOID.isObject() has been removed</td>
+</tr>
+<tr>
+<td>The constructor org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.AbstractCDORevision(EClass, CDOID) has been removed</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.branch.CDOBranchPoint adds method getBranch() to org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.id.CDOIDLibraryDescriptorImpl has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.VIEW_AUDIT has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.id.CDOIDObjectFactory has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_VIEWS_CHANGED has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getContainerID() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageInfo.write(CDODataOutput) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.connector.IConnectorStateEvent has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.CDOCommonView.getViewType() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.write(CDODataOutput, int) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.getRevisionByVersion(CDOID, CDOBranchVersion) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevision.isTransactional() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.id.AbstractCDOID.isTemporary() has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.CDORevision.DEPTH_NONE in an interface that is intended to be implemented or extended has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getValue(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.util.CDOQueryQueue.drainTo(Collection) has been removed</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.common.util.EList adds method move(int, E) to org.eclipse.emf.cdo.common.revision.CDOList that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.wrapping.XORStreamWrapperInjector has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.CDOCommonSession.Options.setPassiveUpdateEnabled(boolean) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageUnit.read(CDODataInput, ResourceSet) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.id.CDOIDUtil.readLibraryDescriptor(ExtendedDataInput) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.AbstractQueryResult.getQueryInfo() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getRevised() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.get(EStructuralFeature, int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.SignalReactor has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.adjustForCommit(CDOBranch, long) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.lastIndexOf(EStructuralFeature, Object) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageInfo.read(CDODataInput) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOModelUtil.readPackage(ExtendedDataInput, EPackage.Registry) has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_COMMIT_TRANSACTION_PHASE1 has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.Indication has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.ClientProtocolFactory has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.failover.IFailOverEvent has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The constructor org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.AbstractCDORevision(AbstractCDORevision) has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.CDORevision.DEPTH_INFINITE in an interface that is intended to be implemented or extended has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.channel.IChannelMultiplexer has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.Protocol has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.RequestWithConfirmation has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.basicGet(EStructuralFeature, int) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setID(CDOID) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.remapID(Object, Map<CDOIDTemp,CDOID>) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOType.writeValue(CDODataOutput, Object) has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_COMMIT_TRANSACTION_CANCEL has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.VIEW_READONLY has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_LIBRARIES has been removed</td>
+</tr>
+<tr>
+<td>The constant value 24 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REPOSITORY_TIME has been changed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getID() has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.CDOFetchRule has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.Acceptor has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.CDORevisionFactory.DEFAULT in an interface that is intended to be implemented or extended has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.isTransactional() has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_VERIFY_REVISION has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.id.CDOIDLibraryProvider has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_REVISION_BY_TIME has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.ContainerProtocolProvider has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.io.CDOXORStreamWrapperInjector has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOType.readValue(CDODataInput) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.contains(EStructuralFeature, Object) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.AcceptorFactory has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.ConnectorFactory has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.InternalChannel has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.setBranchPoint(CDOBranchPoint) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The interface java.lang.Comparable adds method compareTo(T) to org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.ServerProtocolFactory has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageInfo.read(CDODataInput) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.set(EStructuralFeature, int, Object) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.Net4jUtil has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.compare(CDORevision) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevision.getCreated() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.isEmpty(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.read(CDODataInput) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.unset(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The constructor org.eclipse.emf.cdo.common.model.CDOClassifierRef.CDOClassifierRef(CDODataInput) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.getClassInfo() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.buffer.BufferInputStream has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.protocol.IProtocolProvider has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.revision.CDORevisionResolver has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.buffer.IBufferHandler has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.acceptor.IAcceptor has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOPackageRegistry.getPackageUnits(long, long) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.clear() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevision.isCurrent() has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_SET_AUDIT has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.io.CDODataInput has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.CDOCommonView.isReadOnly() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The interface java.lang.Comparable adds method compareTo(T) to org.eclipse.emf.cdo.common.revision.CDORevision that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.id.AbstractCDOID.isNull() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.getRevision(CDOID, CDOBranchPoint) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.buffer.BufferState has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The constant value 25 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOCK_OBJECTS has been changed</td>
+</tr>
+<tr>
+<td>The constructor org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.AbstractCDORevision(CDODataInput) has been removed</td>
+</tr>
+<tr>
+<td>The constant value 9 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_REVISION_BY_VERSION has been changed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.CDOCommonSession.Options.setPassiveUpdateMode(CDOCommonSession.Options.PassiveUpdateMode) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The super interfaces set has been reduced for type org.eclipse.emf.cdo.common.protocol.CDOProtocol</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.connector.ConnectorState has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.io.CDOGZIPStreamWrapperInjector has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.VIEW_TRANSACTION has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.InternalConnector has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.heartbeat.HeartBeatProtocol has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The constant value 18 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_QUERY has been changed</td>
+</tr>
+<tr>
+<td>The constant value 26 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_UNLOCK_OBJECTS has been changed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageUnit.read(CDODataInput, InternalCDOPackageRegistry) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.id.CDOIDUtil.read(String, CDOIDObjectFactory) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.basicGet(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.TransportConfigurator has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.ITransportConfig has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevision.isHistorical() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.setTransactional() has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.CDOQueryInfo has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The constant value 10 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_CHUNK has been changed</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.branch.CDOBranchPoint adds method getBranch() to org.eclipse.emf.cdo.common.revision.CDORevision that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.NOOP in an interface that is intended to be implemented or extended has been added</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.id.CDOIDAndVersion adds method getID() to org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionDelta.setDirtyVersion(int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.IndicationWithMonitoring has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.getResourceID(CDOID, String, long) has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.CDORevision.MAIN_BRANCH_ID in an interface that is intended to be implemented or extended has been added</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.model.CDOType.ENUM has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent.getCache() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setListSize(EStructuralFeature, int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.buffer.IBufferPool has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The constant value 19 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_QUERY_CANCEL has been changed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setTransactional() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.merge(CDORevisionDelta) has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_COMMIT_TRANSACTION_PHASE3 has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_RESOURCE_ID has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.adjustReferences(CDOReferenceAdjuster) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.isCurrent() has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.connector.IConnector has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.connector.ConnectorCredentialsInjector has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.remove(EStructuralFeature, int) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.checkNoFeatureMap(EStructuralFeature) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.protocol.IProtocol has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setVersion(int) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.createRevision(EClass, CDOID) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.signal.SignalProtocol has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.channel.IChannel has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.revision.CDORevisionKey adds method getID() to org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.model.InternalCDOPackageUnit.write(CDODataOutput, boolean) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.CDORevision.FIRST_VERSION in an interface that is intended to be implemented or extended has been added</td>
+</tr>
+<tr>
+<td>The constant value 27 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_OBJECT_LOCKED has been changed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.buffer.IBuffer has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The super interfaces set has been reduced for type org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.branch.CDOBranchVersion adds method getBranch() to org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent that is not tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The constant value 12 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_COMMIT_TRANSACTION has been changed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.FactoriesProtocolProvider has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.buffer.BufferOutputStream has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_PASSIVE_UPDATE has been removed</td>
+</tr>
+<tr>
+<td>The constant value 28 of the field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_GET_REMOTE_SESSIONS has been changed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.write(CDODataOutput, int) in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.getRevisionByVersion(CDOID, int) has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.id.CDOIDLibraryDescriptor has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.convertValue(EStructuralFeature, Object) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.initValues(EStructuralFeature[]) has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.id.CDOIDLongImpl has been removed from org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.copy() in an interface that is intended to be implemented has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.removeRevision(CDOID, int) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setCreated(long) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getList(EStructuralFeature, int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.spi.net4j.ChannelMultiplexer has been removed from org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.toArray(EStructuralFeature, T[]) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.setListSize(EStructuralFeature, int) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getValue(int) has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_REVISION has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getCreated() has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setValue(EStructuralFeature, Object) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.getRevision(CDOID) has been removed</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.clear(EStructuralFeature) has been removed</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<table border="0" width="60%">
+<tr>
+<td>
+<h3>
+<a href="javascript:void(0)" class="typeslnk" onclick="expand(this)">
+<span>[+] </span> List of compatible changes
+							</a>
+</h3>
+<div class="types">
+<table border="1" width="100%" style="line">
+<thead class="head">
+<tr>
+<td>
+<b>Changes</b>
+</td>
+</tr>
+</thead>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.transaction.ITransaction has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.delta.CDORevisionDeltaUtil.createChangeSetData(Set<CDOID>, CDORevisionProvider, CDORevisionProvider) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.registry.UnmodifiableRegistry has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.CachedFileMap has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_SUB_BRANCHES has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.IContainerBlockingQueue has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.ContainerSortedSet has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.revision.CDOIDMapper.isAllowUnmappedTempIDs() has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.log.OSGiLoggingBridge has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REFRESH_SESSION has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.branch.CDOBranchUtil has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.IHistoryElement has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ImplementationError has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.emf.ecore.util.BasicInvocationDelegate has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.revised has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.DetachedCDORevision has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.INegotiationContext has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.CDORevision.UNSPECIFIED_DATE has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.registry.HashMapDelegatingRegistry has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.StringUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_XA_COMMIT_TRANSACTION_PHASE2 has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionDelta.setBranch(CDOBranch) has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>A superclass has been added for type org.eclipse.emf.cdo.spi.common.revision.CDORevisionMerger</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.WrappedException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The constructor org.eclipse.emf.cdo.common.model.CDOClassifierRef.CDOClassifierRef(CDODataInput) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.commit.CDOCommitInfo has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.IUserManager has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ref.ReferenceQueueWorker has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.id.AbstractCDOIDString has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.IRandomizer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.PerfTracer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.IOFilter has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_CHANGE_SETS has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.CacheRegistration has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.INegotiator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.ConcurrentValue has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.AdapterUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.branch.CDOBranch has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.REFRESH_CHANGED_OBJECT has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.CDOReplicationInfo has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ref.ReferenceValueMap has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.QueueWorkerWorkSerializer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ResponseNegotiatorInjector has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.factory.FactoryKey has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.IPasswordCredentialsProvider has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.log.EclipseLoggingBridge has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The constructor org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.AbstractCDORevision(EClass) has been added</td>
+</tr>
+<tr>
+<td>The non-visible method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.writeValues(CDODataOutput, int) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.MoveableList has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.emf.ecore.util.BasicSettingDelegate has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.createCDOIDObject(CDOID.ObjectType) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.OSGiApplication has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.branch.CDOBranchHandler has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.HashBag has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.CDORevisionData.NIL has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_XA_COMMIT_TRANSACTION_PHASE1 has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.MapEntry has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.pref.OMPreferences has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOType.readValue(CDODataInput) has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.InternalCDOFeatureDelta has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.OMPlatform has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.padTimeRange(String, int, long, long) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.CDOReplicationContext has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.factory.Factory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.createTempObjectExternal(String) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.IHistoryChangeEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.log.AbstractLogHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.ArrayIterator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.commit.CDOCommitInfoUtil has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.IUserAware has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.OSGiActivator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheUtil.createDefaultCache(boolean) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.PasswordCredentials has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.OnePendingExecutor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REMOTE_MESSAGE has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.model.EMFUtil.safeResolve(EObject, ResourceSet) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.OMBundle has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.commit.CDOCommitInfoHandler has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The non-visible method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getValueAsList(int) has been removed</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.commit.CDORevisionAvailabilityInfo has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.event.INotifier has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.util.CDOTimeProvider has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.HexUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_BRANCH_NOTIFICATION has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.emf.ecore.impl.ValidationDelegateRegistryImpl has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REMOTE_MESSAGE_NOTIFICATION has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.REMOTE_SESSION_CUSTOM_DATA has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.createRevisionKey(CDORevisionKey) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.CDORawReplicationContext has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ref.KeyedSoftReference has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_COMMIT_INFOS has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_XA_COMMIT_TRANSACTION_PHASE3 has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getAllPersistentFeatures() has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.CDORevision.getID() has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.TMPUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.delta.CDORevisionDelta.getID() has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.remapID(Object, Map<CDOID,CDOID>, boolean) has been added</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.model.EMFUtil.createEPackage(String, byte[], boolean, ResourceSet, boolean) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.commit.CDOChangeSet has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.createIDAndBranch(CDOID, CDOBranch) has been added</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for interface org.eclipse.emf.cdo.common.revision.CDORevision</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheUtil.createBranchDispatcher(CDORevisionCache) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.History has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.commit.InternalCDOCommitInfoManager has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.lifecycle.LifecycleState has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.delta.CDOFeatureDelta.UNKNOWN_VALUE has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.IOTimeoutException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.IErrorHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionCache has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedIOUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.util.RepositoryTypeChangedEvent has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.IORuntimeException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.ContainerEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.commit.CDOChangeSetSegment has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.commit.CDOChangeSetData has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.model.EMFUtil.isPersistent(EStructuralFeature) has been added</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheUtil.createBranchRevisionCache() has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.branch.InternalCDOBranchManager has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.IRWLockManager has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.QueueWorker has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ref.KeyedPhantomReference has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.Sleeper has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.branch.CDOBranchVersion adds method getBranch() to org.eclipse.emf.cdo.common.revision.delta.CDORevisionDelta that is tagged as @noimplement</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.ICacheRegistration has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ref.ReferenceType has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REPLICATE_REPOSITORY_RAW has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.IElementProcessor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.IContainerSet has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.ManagedContainer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.CDOCommonView.UNSPECIFIED_DATE has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.transaction.Transaction has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.revision.CDORevisionHandler has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent.getVersion() has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.branch.InternalCDOBranch has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.event.Notifier has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.IPasswordCredentials has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.IManagedContainer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.IContainerSortedSet has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.ICacheMonitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.IContainerQueue has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.lifecycle.LifecycleUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.RandomizerFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ResponseNegotiatorFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.read(String) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.FileUserManager has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.options.IOptionsContainer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.ContainerEventAdapter has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.id.CDOID.isDangling() has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent.getID() has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.branch.CDOBranchVersion has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The enum constant DANGLING_OBJECT has been added in DANGLING_OBJECT</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.equals(Object) has been added, overriding a method from a superclass</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.XORStreamWrapper has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.registry.RegistryUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.log.OMLogger has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible method org.eclipse.emf.cdo.common.model.EMFUtil.createEcoreResource(String, EPackage.Registry) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.ThresholdConditionPolicy has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.CredentialsProviderFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.IContainerDelta has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.model.EMFUtil.safeResolveAll(ResourceSet) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.FileUserManagerFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_BRANCH has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.OMTracer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The deprecation modifiers has been added to org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheUtil</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_SET_PASSIVE_UPDATE_MODE has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.DataInputExtender has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.containingFeatureID has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.factory.IFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.event.EventUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for interface org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.AsynchronousWorkSerializer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_XA_COMMIT_TRANSACTION_CANCEL has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The static field org.eclipse.emf.cdo.common.model.EMFUtil.CDO_ANNOTATION_SOURCE has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.factory.FactoryCreationException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.REFRESH_DETACHED_OBJECT has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.transaction.ITransactionalOperation has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.MultiMap has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.pref.OMPreferencesChangeEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.EclipseMonitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.lifecycle.ILifecycle has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.factory.ProductCreationException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.setClassInfo(CDOClassInfo) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.ConcurrencyUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.IHistory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.version has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.event.IListener has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheUtil.createBranchDispatcher(CDORevisionCacheFactory) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.RevisionInfo has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.REPLICATE_COMMIT has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.log.OMLogHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.Timeouter has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.options.IOptions has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.SortedFileMap has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>A static initializer has been added to type org.eclipse.emf.cdo.common.model.EMFUtil</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.CloseableIterator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.model.CDOType.ENUM_LITERAL has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedIOHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_COMMIT_DATA has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.lifecycle.LifecycleEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.CompletionWorkSerializer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.DelegatingCDORevision has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.SingleDeltaContainerEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.QUERY_LANGUAGE_XREFS has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.util.RepositoryStateChangedEvent has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_CREATE_BRANCH has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.delta.CDORevisionDeltaUtil.createChangeSetData(Set<CDOID>, CDOBranchPoint, CDOBranchPoint, CDORevisionManager) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.NegotiatorFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.READING has been removed</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REPLICATE_REPOSITORY has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.lifecycle.LifecycleEventAdapter has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.TimerLifecycle has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.IPluginContainer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.Worker has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.HistoryUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_REVISIONS has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.CDOCommonView.getTimeStamp() has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.TimeoutRuntimeException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.RWLockManager has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The static field org.eclipse.emf.cdo.common.model.EMFUtil.ECLASS_ESUPER_TYPES has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.log.FileLogHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.IStreamWrapper has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.IContainerCollection has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_COMMIT_DELEGATION has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.Closeable has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.id has been removed</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.id.CDOIDAndVersion adds method getVersion() to org.eclipse.emf.cdo.common.revision.delta.CDORevisionDelta that is tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.MoveableArrayList has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.INegotiatorAware has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.Pair has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.readValues(CDODataInput) has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.lifecycle.LifecycleException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.isHistorical() has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.event.Event has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The static field org.eclipse.emf.cdo.common.model.EMFUtil.ETYPED_ELEMENT_ETYPE has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.branch.CDOBranchPointRange has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.ContainerBlockingQueue has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.Monitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.revision.CDORevisionProvider has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.dumpAllRevisions(Map<CDOBranch,List<CDORevision>>, PrintStream) has been added</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for interface org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionDelta</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.pref.OMPreference has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.createCDOFeatureMapEntry() has been added</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.createLongWithClassifier(CDOClassifierRef, long) has been added</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.readCDOIDObject(String) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ref.KeyedWeakReference has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.ContextTracer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.IWorkSerializer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.REFRESH_FINISHED has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.PrintTraceHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedDataInput has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.transaction.TransactionException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.AbstractQueryResult.getQueryInfo() has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.util.CDOQueryInfo has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The member type PassiveUpdateEvent has been added</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.createStringWithClassifier(CDOClassifierRef, String) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.DelegatingOutputStream has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.ContainerList has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.ICache has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.NonBlockingIntCounter has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.HysteresisConditionPolicy has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ICredentials has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOClassifierRef.hashCode() has been added, overriding a method from a superclass</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.StubCDORevision has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_CLOSE_VIEW has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.StringCompressor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The constructor org.eclipse.emf.cdo.spi.common.AbstractQueryResult.AbstractQueryResult(CDOCommonView, CDOQueryInfo, int) has been added</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.delta.CDORevisionDelta.getEClass() has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.StreamWrapperChain has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.QueueRunner has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.ICorrelator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.ExecutorServiceFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.ICacheProbe has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.HistoryElement has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.CDOFeatureMapEntry has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.transaction.TransactionUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The member type ObjectType has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.PasswordCredentialsProvider has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.ResultSynchronizer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.revision.CDOIDMapper.setAllowUnmappedTempIDs(boolean) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.DelegatingCDORevisionManager has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.AbstractMonitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.BidiMapper has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.branch.CDOBranchCreatedEvent has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The member type Nil has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.options.OptionsEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.Cache has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.registry.HashMapRegistry has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.IOVisitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.NegotiationContext has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_CHANGE_VIEW has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The member type PassiveUpdateMode has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.OMTraceHandlerEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOType.writeValue(CDODataOutput, Object) has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.Tracer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.OMTraceHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.ProgressDistributor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.branch.CDOBranchManager has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.DataOutputExtender has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.containerID has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.log.PrintLogHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.NegotiationException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.IContainerMap has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.delta.CDORemoveFeatureDelta.getValue() has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionManager has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.DelegatingMonitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.SyntheticCDORevision has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The static field org.eclipse.emf.cdo.common.model.EMFUtil.EOPERATION_EEXCEPTIONS has been added</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.TRACER has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.IndexedList has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ResponseNegotiator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedDataInputStream has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.ICacheMonitorEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.TimeoutMonitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for interface org.eclipse.emf.cdo.common.revision.CDOList</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ChallengeNegotiator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.hashCode() has been added, overriding a method from a superclass</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ObjectUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.ContainerSet has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.WRITING has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.SynchronizingCorrelator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.lifecycle.ILifecycleEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ZIPUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedIOAdapter has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.PreferenceHistory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.factory.FactoryDescriptor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ICredentialsProvider has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.created has been removed</td>
+</tr>
+<tr>
+<td>The static field org.eclipse.emf.cdo.common.model.EMFUtil.CDO_ANNOTATION_KEY_PERSISTENT has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ChallengeNegotiatorConfigurer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.IORunnable has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.FactoryNotFoundException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.FastList has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ChallengeResponseNegotiator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.fsm.FiniteStateMachine has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedDataOutput has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.UserManager has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.LifecycleEventConverter has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ref.KeyedReference has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.DelegatingStreamWrapper has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.registry.Registry has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.revision.CDOAllRevisionsProvider has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.ISynchronizer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedDataOutputStream has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.model.CDOType.ENUM_ORDINAL has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.IContainer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.ContainerUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.XORInputStream has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.CheckUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.registry.DelegatingRegistry has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.RemoteTraceServer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.REPLICATE_BRANCH has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The type of the non-visible field org.eclipse.emf.cdo.spi.common.AbstractQueryResult.queryInfo has been changed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.DynamicArray has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.revision.CDORevisionManager has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The deprecation modifiers has been added to org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheUtil</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.ContainerCollection has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheAdder has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.NonBlockingLongCounter has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.model.CDOClassifierRef.equals(Object) has been added, overriding a method from a superclass</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.model.CDOModelUtil.readPackage(ExtendedDataInput, ResourceSet, boolean) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.commit.CDOCommitData has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.TraceHandlerEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.REPLICATE_FINISHED has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.protocol.CDODataOutput has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.factory.IFactoryKey has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REPOSITORY_TYPE_NOTIFICATION has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.IChallengeResponse has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.Randomizer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedInputHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.commit.CDOCommitInfoManager has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionDelta.getFeatureDeltaMap() has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.UserManagerFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>Message not found for id: 0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.model.CDOClassifierRef.write(CDODataOutput) has been added</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for interface org.eclipse.emf.cdo.spi.common.revision.InternalCDOList</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.IContainerEventVisitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.registry.IRegistry has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.MonitoredThread has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.CDOFeatureDeltaVisitorImpl has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.AbstractDelegator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.resourceID has been removed</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.Negotiator has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.branch.CDOBranchTag has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.cache.CacheMonitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.Container has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.model.CDOType.OBJECT_ARRAY has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.OMMonitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.ContainerQueue has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.revision.CDORevisionKey has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.MonitorCanceledException has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.SecurityUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for class org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ref.KeyedStrongReference has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.delta.CDOFeatureDelta.copy() has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.lifecycle.Lifecycle has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.ContainerDelta has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.IOUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.BaseCDORevision has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.collection.Triplet has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.Credentials has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_DISABLE_PASSIVE_UPDATE has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getClassInfo() has been added</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.adjustForCommit(CDOBranch, long) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.security.ChallengeNegotiatorFactory has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.GZIPStreamWrapper has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.fsm.ITransition has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.branch.CDOBranchPoint has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.RoundRobinList has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_BRANCHES has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.IContainerEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.protocol.CDODataInput has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.revision.PointerCDORevision has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.log.Logger has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.util.CDOFetchRule has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The member type Provider has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.LegacyUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.IContainerList has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.event.IEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for interface org.eclipse.emf.cdo.common.revision.cache.CDORevisionCache.EvictionEvent</td>
+</tr>
+<tr>
+<td>The static initializer has been removed from org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.spi.common.revision.AbstractCDORevision.getFeatureIndex(EStructuralFeature) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.trace.RemoteTraceHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.getClassifierRef(CDOID) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.util.CDOCommonUtil has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_REPOSITORY_STATE_NOTIFICATION has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.revision.CDORevision.UNSPECIFIED_VERSION has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for interface org.eclipse.emf.cdo.common.revision.delta.CDORevisionDelta</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.revision.cache.CDORevisionCacheFactory has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.ProgressDistributable has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.om.monitor.NestedMonitor has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.model.CDOModelUtil.checkCrossResourceURIs(EPackage) has been added</td>
+</tr>
+<tr>
+<td>The non-visible field org.eclipse.emf.cdo.spi.common.revision.CDOIDMapper.allowUnmappedTempIDs has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.CDOCommonRepository has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.branch.CDOBranchVersion adds method getBranch() to org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionDelta that is tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.ExtendedOutputHandler has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.createRevisionKey(CDOID, CDOBranch, int) has been added</td>
+</tr>
+<tr>
+<td>The interface org.eclipse.emf.cdo.common.id.CDOIDAndVersion adds method getVersion() to org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionDelta that is tagged as @noimplement</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.StringIO has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.spi.common.id.InternalCDOIDObject has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.spi.common.revision.InternalCDORevision.NIL has been moved up in the hierarchy</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.SynchronousWorkSerializer has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.revision.CDORevisionUtil.dumpAllRevisions(Map<CDOBranch,List<CDORevision>>) has been added</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.concurrent.RWLock has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.QUERY_LANGUAGE_XREFS_SOURCE_REFERENCES has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.ReflectUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The superinterfaces set has been expanded for interface org.eclipse.emf.cdo.common.CDOCommonView</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.options.IOptionsEvent has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.DelegatingInputStream has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.NIOUtil has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.util.CDOCommonEventAdapter has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.common.revision.delta.CDORevisionDelta.isEmpty() has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_OPEN_VIEW has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.REFRESH_PACKAGE_UNIT has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.io.XOROutputStream has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.event.ExecutorServiceNotifier has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The re-exported type org.eclipse.net4j.util.container.delegate.ContainerMap has been added to org.eclipse.emf.cdo.common_2.0.0</td>
+</tr>
+<tr>
+<td>The non-abstract method org.eclipse.emf.cdo.common.id.CDOIDUtil.createIDAndVersion(CDOIDAndVersion) has been added</td>
+</tr>
+<tr>
+<td>The type org.eclipse.emf.cdo.common.id.CDOIDAndBranch has been added to org.eclipse.emf.cdo.common_3.0.0</td>
+</tr>
+<tr>
+<td>The field org.eclipse.emf.cdo.common.protocol.CDOProtocolConstants.SIGNAL_LOAD_MERGE_DATA has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+<tr>
+<td>The method org.eclipse.emf.cdo.spi.common.revision.InternalCDORevisionDelta.setVersion(int) has been added in an interface that is tagged with '@noimplement'</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<p>
+<a href="http://validator.w3.org/check?uri=referer">
+<img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Strict" height="31" width="88"/>
+</a>
+</p>
+</body>
+</html>
