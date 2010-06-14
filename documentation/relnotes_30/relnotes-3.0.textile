@@ -11,6 +11,16 @@ Alternatively you can query Bugzilla directly to list
 
 == User Interface ==
 
+=== Dawn - Rise of the collaborative UI ===
+
+CDO now provides collaborative support for GMF editors over a CDO model repository with a new sub-component called ''Dawn''. Dawn allows the storage of a GMF editor’s model data using CDO. It enables GMF editors to be used in a real-time shared editing scenario.
+
+With a generated OSGi fragment an existing GMF editor can be connected to the Dawn runtime which provides the automatic synchronization of the editor as well as conflict detection and conflict handling mechanisms. More information about Dawn is provided on [http://wiki.eclipse.org/Dawn website].
+
+[[Image:Dawn_collaborative_work_conflict.png|800px]]
+
+See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=308232 308232].
+
 == Core Framework ==
 
 === Branching and merging is now supported ===
@@ -66,6 +76,12 @@ The legacy mode has to be enabled explicitely for new transactions/views:
 </pre>
 <br>
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=247226 247226].
+
+=== EMaps are now supported for DynamicCDOObject ===
+
+Using EMaps on DynamicCDOObjects is now supported.
+
+See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=305723 305723].
 
 === The transient modifier of an EStructuralFeature can now be overridden by annotation ===
 
