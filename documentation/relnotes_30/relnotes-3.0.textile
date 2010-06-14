@@ -26,7 +26,7 @@ It serves as an entry point to experiment with the main concepts of the framewor
 
 This view allows browsing active sessions in an specific repository and even perform communication with those.
 
-[[Image:remote_sessions_1.png|600px]]
+[[Image:remote_sessions_1.png]]
 
 === Common Navigator Framework Integration ===
 
@@ -36,23 +36,23 @@ Now you may use a CDO model repository through a workspace project, allowing you
 * Manage registered packages: Visualize packages registered in the repository, explore the ecore model, and add new packages.
 * Manage branches: Create new branches, and switch your visualization and switch branches, import or export resources.
 
-[[Image:cnf_integration_1.png|600px]]
+[[Image:cnf_integration_1.png]]
 
-[[Image:cnf_integration_2.png|600px]]
+[[Image:cnf_integration_2.png]]
 
 === Legacy Mode Support ===
 
 You enable the new legacy model support through the CDO Sessions view, by enabling it
 in an opened session. Any view/transaction opened thereafter will be able to deal with EPackages that do not extend CDOObject.
 
-[[Image:legacy_support.png|600px]]
+[[Image:legacy_support.png]]
 
 === Branching Support ===
 
 CDO Sessions view now allows the user to switch the target branch of a CDOView. This way you can
 explore the state of a repository in certain branch.
 
-[[Image:branch_support.png|600px]]
+[[Image:branch_support.png]]
 
 === Dawn - Rise of the collaborative UI ===
 
