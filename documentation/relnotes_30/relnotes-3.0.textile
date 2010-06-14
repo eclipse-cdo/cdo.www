@@ -104,6 +104,12 @@ There are 2 different replication mechanisms in the synchronizer:
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=256936 256936].
 
+=== Increased server reliability though backup repositories ===
+
+Reusing the basic mechanism of clone repositories there is now support for operating several backup repositories. In this scenario both master server and backup server(s) must be started as FailoverParticipants.
+
+See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=203167 203167].
+
 === Legacy models are now supported ===
 
 Legacy models from a CDO perspective are those that have not been regenerated to support all CDO features natively.
