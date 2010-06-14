@@ -20,7 +20,7 @@ To get a complete overview about all API changes since version 2.0, breaking or 
 A new perspective has been added to let the user have a overall picture of the UI features the framework provides.
 It serves as an entry point to experiment with the main concepts of the framework.
 
-[[Image:cdo_explorer_perspective.png.png|600px]]
+[[Image:cdo_explorer_perspective.png|600px]]
 
 === CDO Remote Sessions View has been added ===
 
