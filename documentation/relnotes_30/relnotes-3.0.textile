@@ -20,13 +20,13 @@ To get a complete overview about all API changes since version 2.0, breaking or 
 A new perspective has been added to let the user have a overall picture of the UI features the framework provides.
 It serves as an entry point to experiment with the main concepts of the framework.
 
-[[Image:images/cdo_explorer_perspective.png.png|600px]]
+[[Image:cdo_explorer_perspective.png.png|600px]]
 
 === CDO Remote Sessions View has been added ===
 
 This view allows browsing active sessions in an specific repository and even perform communication with those.
 
-[[Image:images/remote_sessions_1.png|600px]]
+[[Image:remote_sessions_1.png|600px]]
 
 === Common Navigator Framework Integration ===
 
@@ -36,23 +36,23 @@ Now you may use a CDO model repository through a workspace project, allowing you
 * Manage registered packages: Visualize packages registered in the repository, explore the ecore model, and add new packages.
 * Manage branches: Create new branches, and switch your visualization and switch branches, import or export resources.
 
-[[Image:images/cnf_integration_1.png|600px]]
+[[Image:cnf_integration_1.png|600px]]
 
-[[Image:images/cnf_integration_2.png|600px]]
+[[Image:cnf_integration_2.png|600px]]
 
 === Legacy Mode Support ===
 
 You enable the new legacy model support through the CDO Sessions view, by enabling it
 in an opened session. Any view/transaction opened thereafter will be able to deal with EPackages that do not extend CDOObject.
 
-[[Image:images/legacy_support.png|600px]]
+[[Image:legacy_support.png|600px]]
 
 === Branching Support ===
 
 CDO Sessions view now allows the user to switch the target branch of a CDOView. This way you can
 explore the state of a repository in certain branch.
 
-[[Image:images/branch_support.png|600px]]
+[[Image:branch_support.png|600px]]
 
 === Dawn - Rise of the collaborative UI ===
 
@@ -60,7 +60,7 @@ CDO now provides collaborative support for GMF editors over a CDO model reposito
 
 With a generated OSGi fragment an existing GMF editor can be connected to the Dawn runtime which provides the automatic synchronization of the editor as well as conflict detection and conflict handling mechanisms. More information about Dawn is provided on [http://wiki.eclipse.org/Dawn website].
 
-[[Image:images/Dawn_collaborative_work_conflict.png|800px]]
+[[Image:Dawn_collaborative_work_conflict.png|800px]]
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=308232 308232].
 
@@ -80,7 +80,7 @@ Branches form an explicit, navigable tree in CDO. It is managed by a session's C
 <br>
 Merging is also supported through the new merge(CDOBranchPoint source, CDOMerger merger) method in CDOTransaction. There are several default implementations of the CDOMerger interface provided. An interactive merger will be provided soon.
 
-[[Image:images/MergeConcepts.png|480px]]
+[[Image:MergeConcepts.png|480px]]
 
 See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=270716 270716].
 
@@ -88,7 +88,7 @@ See bugzilla [https://bugs.eclipse.org/bugs/show_bug.cgi?id=270716 270716].
 
 You need to setup a normal repository as the master. Then you setup a second one via CDOServerUtil.createOfflineClone(String, IStore, Map<String, String>, IRepositorySynchronizer). Depending on the configuration of the synchronizer that you have to pass in  there are certain restrictions on the store type of the clone repo. The clone is a repository by itself and can be embedded it into a client or made available via TCP transport to many clients. So, it can also be used the clone like a "group server" to serve a subset of the overall clients. That speeds up reads but slows down writes a little bit, as commits are "write-through".
 
-[[Image:images/OfflineOverview.png|480px]]
+[[Image:OfflineOverview.png|480px]]
 
 For the clone creation you need a repository synchronizer. Use CDOServerUtil.createRepositorySynchronizer(CDOSessionConfigurationFactory). The synchronizer maintains a session to the master and tries to re-establish that session if the connection breaks down. See: IRepositorySynchronizer.setRetryInterval(int)
 
