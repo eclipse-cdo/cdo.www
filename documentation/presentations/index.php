@@ -10,6 +10,18 @@ $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $page
 print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
+printPresentation("BankingDayCopenhagen_2010/BankingDayCopenhagen_2010",
+									"Scale, Share and Store your Models with CDO 3.0 (Eclipse Banking Day))",
+									"Long talk (IBM, Copenhagen)",
+									"Eike Stepper",
+									"June 2010");
+
+printPresentation("JAX_2010/CDO_JAX2010",
+									"Scale, Share and Store your Models with CDO 3.0 (JAX 2010)",
+									"Long talk",
+									"Eike Stepper",
+									"May 2010");
+
 printPresentation("EclipseCon_2010/CDO_EclipseCon_2010",
 									"Scale, Share and Store your Models with CDO 3.0 (EclipseCon 2010)",
 									"Long talk: <b>New slides</b>",
