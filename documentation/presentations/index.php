@@ -11,7 +11,7 @@ print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
 printPresentation("BankingDayCopenhagen_2010/BankingDayCopenhagen_2010",
-									"Scale, Share and Store your Models with CDO 3.0 (Eclipse Banking Day))",
+									"Scale, Share and Store your Models with CDO 3.0 (Eclipse Banking Day)",
 									"Long talk (IBM, Copenhagen)",
 									"Eike Stepper",
 									"June 2010");
