@@ -24,7 +24,7 @@ printPresentation("JAX_2010/CDO_JAX2010",
 
 printPresentation("Webinar_2010_04/Webinar_2010_04",
 									"<b>Scale, Share and Store your Models with CDO 3.0 (Webinar)</b>",
-									"Webinar: Eclipse Live",
+									"Webinar Recording: Eclipse Live",
 									"Eike Stepper",
 									"April 2010");
 
