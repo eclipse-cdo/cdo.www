@@ -22,6 +22,12 @@ printPresentation("JAX_2010/CDO_JAX2010",
 									"Eike Stepper",
 									"May 2010");
 
+printPresentation("Webinar_2010_04/Webinar_2010_04",
+									"<b>Scale, Share and Store your Models with CDO 3.0 (Webinar)</b>",
+									"Webinar: Eclipse Live",
+									"Eike Stepper",
+									"April 2010");
+
 printPresentation("EclipseCon_2010/CDO_EclipseCon_2010",
 									"Scale, Share and Store your Models with CDO 3.0 (EclipseCon 2010)",
 									"Long talk: <b>New slides</b>",
@@ -29,7 +35,7 @@ printPresentation("EclipseCon_2010/CDO_EclipseCon_2010",
 									"March 2010");
 
 printPresentation("SAP_2010/CDOModelRepository",
-									"CDO Model Repository - Where Models Live",
+									"CDO Model Repository - Where Models Live (SAP Modeling Meeting)",
 									"Short overview, features list and API usage example",
 									"Eike Stepper",
 									"January 2010");
