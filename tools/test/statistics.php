@@ -13,6 +13,8 @@ if ($result && mysql_num_rows($result) > 0)
 {
 	$row = mysql_fetch_row($result);
 	$author = $row[0];
+	echo $author;
+	
 	$pageTitle = 'Statistics For ' . $row[2];
 
 	print '<h1>' . $pageTitle . '</h1>';
@@ -42,6 +44,9 @@ if ($result && mysql_num_rows($result) > 0)
 		"WHERE Author = '" . $author . "' AND commits.fid = cvsfiles.fid AND cvsfiles.component = 'org.eclipse.emf.cdo' " . 
 		"GROUP BY Branch " . 
 		"ORDER BY UntilDate DESC");
+
+
+echo $branches;
 
 	if ($branches && mysql_num_rows($branches) > 0)
 	{
