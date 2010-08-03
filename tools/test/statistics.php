@@ -102,7 +102,7 @@ if ($result && mysql_num_rows($result) > 0)
 			"Title, " . 
 			"MAX(date) AS UntilDate " . 
 			"FROM commits JOIN bugs JOIN bugdescs JOIN cvsfiles " . 
-			"WHERE Author = '" . $author . "' AND commits.fid = bugs.fid AND commits.revision = bugs.revision AND bugs.bugid = bugdescs.bugid AND commits.fid = cvsfiles.fid AND cvsfiles.component = 'org.eclipse.emf.cdo' " . 
+			"WHERE Author = '" . $author . "' AND commits.fid = bugs.fid AND commits.revision = bugs.revision AND bugs.bugid = bugdescs.bugid AND commits.fid = cvsfiles.fid AND (cvsfiles.component = 'org.eclipse.emf.cdo' OR cvsfiles.component = 'org.eclipse.emf.cdo.core' OR cvsfiles.component = 'org.eclipse.emf.cdo.dawn' OR cvsfiles.component = 'org.eclipse.emf.cdo.db' OR cvsfiles.component = 'org.eclipse.emf.cdo.docs' OR cvsfiles.component = 'org.eclipse.emf.cdo.hibernate' OR cvsfiles.component = 'org.eclipse.emf.cdo.net4j' OR cvsfiles.component = 'org.eclipse.emf.cdo.net4j.db' OR cvsfiles.component = 'org.eclipse.emf.cdo.net4j.ui' OR cvsfiles.component = 'org.eclipse.emf.cdo.objy' OR cvsfiles.component = 'org.eclipse.emf.cdo.releng'OR cvsfiles.component = 'org.eclipse.emf.cdo.ui') " . 
 			"GROUP BY BugID " . 
 			"ORDER BY UntilDate DESC");
 
