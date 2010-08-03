@@ -13,7 +13,7 @@ if ($result && mysql_num_rows($result) > 0)
 {
 	$row = mysql_fetch_row($result);
 	$author = $row[0];
-	echo $author;
+	echo "Name: ".$author;
 	
 	$pageTitle = 'Statistics For ' . $row[2];
 
@@ -104,7 +104,7 @@ if ($result && mysql_num_rows($result) > 0)
 			"Title, " . 
 			"MAX(date) AS UntilDate " . 
 			"FROM commits JOIN bugs JOIN bugdescs JOIN cvsfiles " . 
-			"WHERE Author = '" . $author . "' AND commits.fid = bugs.fid AND commits.revision = bugs.revision AND bugs.bugid = bugdescs.bugid AND commits.fid = cvsfiles.fid " . 
+			"WHERE Author = '" . $author . "' " . 
 			"GROUP BY BugID " . 
 			"ORDER BY UntilDate DESC");
 
