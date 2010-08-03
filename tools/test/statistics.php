@@ -104,8 +104,7 @@ if ($result && mysql_num_rows($result) > 0)
 			"Title, " . 
 			"MAX(date) AS UntilDate " . 
 			"FROM commits JOIN bugs JOIN bugdescs JOIN cvsfiles " . 
-			"WHERE Author = '" . $author . "' AND commits.fid = bugs.fid AND commits.revision = bugs.revision AND bugs.bugid = bugdescs.bugid AND commits.fid = cvsfiles.fid AND ".
-				"cvsfiles.component LIKE '%cdo%' " . 
+			"WHERE Author = '" . $author . "' AND commits.fid = bugs.fid AND commits.revision = bugs.revision AND bugs.bugid = bugdescs.bugid AND commits.fid = cvsfiles.fid " . 
 			"GROUP BY BugID " . 
 			"ORDER BY UntilDate DESC");
 
