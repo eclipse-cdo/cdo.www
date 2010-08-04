@@ -10,7 +10,7 @@ print '<div id="midcolumn">';
 
 
 <form action="query.php" method="POST">
-  <p>Welche HTML-Elemente fallen Ihnen ein, und was bewirken sie:<br>
+  <p><br>
     <textarea name="user_eingabe" cols="100" rows="20"></textarea>
   </p>
   <input type="submit" value="send">
