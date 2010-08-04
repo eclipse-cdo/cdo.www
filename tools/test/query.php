@@ -25,18 +25,18 @@ echo "Query: <b>".$query."</b><br/><br/>";
 
 if($query!="")
 {
-$num_fields = mysql_num_fields($result);
 
 $result = wmysql_query($query);
-	$rows = mysql_num_rows($result);
+$num_fields = mysql_num_fields($result);
+$rows = mysql_num_rows($result);
 		
 echo "<table";
 		while ($row = mysql_fetch_row($result))
 		{
-		echo "<tr>";
+		 echo "<tr>";
 		  for($i=0; $i<$num_fields; $i++)
 		  {
-		  echo "<td>";
+		   echo "<td>";
 		   echo $row[$i]+" ";
 		   echo "</td>";
 		  }
