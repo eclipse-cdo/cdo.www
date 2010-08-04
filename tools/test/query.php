@@ -8,14 +8,14 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-
+?>
 <form action="query.php" method="POST">
   <p><br>
     <textarea name="user_eingabe" cols="100" rows="20"></textarea>
   </p>
   <input type="submit" value="send">
 </form>
-
+<?
 
 /*
 $query=$_POST["query"];
