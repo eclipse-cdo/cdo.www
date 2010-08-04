@@ -21,7 +21,7 @@ $query=stripslashes($_POST["query"]);
 
 
 
-echo "Query: ".$query;
+echo "Query: <b>".$query."</b><br/><br/>";
 
 if($query!="")
 {
