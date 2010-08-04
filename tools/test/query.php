@@ -17,7 +17,7 @@ print '<div id="midcolumn">';
 </form>
 
 
-
+/*
 $query=$_POST["query"];
 
 echo $query;
@@ -39,7 +39,7 @@ $result = wmysql_query($query);
 		}
 }
 
-
+*/
 print '</div>';
 
 ########################################################################
