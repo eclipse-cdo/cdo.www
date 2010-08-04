@@ -7,7 +7,7 @@ $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-$query=$_POST["query"];
+$query=stripslashes($_POST["query"]);
 
 ?>
 <form action="query.php" method="POST">
