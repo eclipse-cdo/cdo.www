@@ -11,13 +11,13 @@ print '<div id="midcolumn">';
 ?>
 <form action="query.php" method="POST">
   <p><br>
-    <textarea name="user_eingabe" cols="100" rows="20"></textarea>
+    <textarea name="user_eingabe" cols="100" rows="10"></textarea>
   </p>
   <input type="submit" value="send">
 </form>
 <?
 
-/*
+
 $query=$_POST["query"];
 
 echo $query;
@@ -39,7 +39,7 @@ $result = wmysql_query($query);
 		}
 }
 
-*/
+
 print '</div>';
 
 ########################################################################
