@@ -37,7 +37,7 @@ echo "<table";
 		  for($i=0; $i<$num_fields; $i++)
 		  {
 		   echo "<td>";
-		   echo $row[$i]+" ";
+		   echo $row[$i]." ";
 		   echo "</td>";
 		  }
 		  echo "</tr>";
