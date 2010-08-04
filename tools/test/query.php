@@ -21,7 +21,7 @@ $query=$_POST["query"];
 
 
 
-echo $query;
+echo "Query: ".$query;
 
 if($query!="")
 {
