@@ -7,18 +7,19 @@ $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
+$query=$_POST["query"];
 
 ?>
 <form action="query.php" method="POST">
   <p><br>
-    <textarea name="user_eingabe" cols="100" rows="10"></textarea>
+    <textarea name="query" cols="100" rows="10"><?$query?></textarea>
   </p>
   <input type="submit" value="send">
 </form>
 <?
 
 
-$query=$_POST["query"];
+
 
 echo $query;
 
