@@ -4,14 +4,14 @@
 require_once "$docRoot/modeling/includes/db.php";
 
 $pageKeywords	= "";
-$pageAuthor		= "Eike Stepper";
+$pageAuthor		= "Martin Fluegge";
 
 print '<div id="midcolumn">';
 $query=stripslashes($_POST["query"]);
 
 ?>
 
-<b>Insert query:</b>
+<b>Insert query:</b><br/>
 <form action="query.php" method="POST">
   <p><br>
     <textarea name="query" cols="100" rows="10"><?echo $query;?></textarea>
