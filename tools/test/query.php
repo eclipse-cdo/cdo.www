@@ -10,9 +10,11 @@ print '<div id="midcolumn">';
 $query=stripslashes($_POST["query"]);
 
 ?>
+
+<b>Insert query:</b>
 <form action="query.php" method="POST">
   <p><br>
-    <textarea name="query" cols="100" rows="10"><?$query?></textarea>
+    <textarea name="query" cols="100" rows="10"><?echo $query;?></textarea>
   </p>
   <input type="submit" value="send">
 </form>
