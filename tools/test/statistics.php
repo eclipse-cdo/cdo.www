@@ -8,6 +8,8 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
+echo "Test";
+
 $result = wmysql_query("SELECT CommitterID, PhotoURL, Name, Company, Location, Role, Website, EMail FROM developers WHERE CommitterID = '" . $_GET["committerid"] . "'");
 if ($result && mysql_num_rows($result) > 0)
 {
@@ -96,6 +98,8 @@ if ($result && mysql_num_rows($result) > 0)
 		print '</div>';
 	}
 
+	/**-----------Committed Bugzillas section------------------------------*/
+	
 	$bugs = wmysql_query("SELECT " .
 			"bugdescs.bugid, " .
 			"SUM(LinesPlus) AS Added, " . 
@@ -109,9 +113,11 @@ if ($result && mysql_num_rows($result) > 0)
 			"GROUP BY BugID " . 
 			"ORDER BY UntilDate DESC");
 
-	if ($bugs && mysql_num_rows($bugs) > 0)
+	
+	$rows = mysql_num_rows($bugs);
+	
+	if ($bugs && $rows > 0)
 	{
-		$rows = mysql_num_rows($bugs);
 		$totalSum = 0;
 		$totalLPF = 0;
 
