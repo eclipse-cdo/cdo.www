@@ -23,7 +23,7 @@ $query=stripslashes($_POST["query"]);
 
 echo "Query: <b>".$query."</b><br/><br/>";
 
-$query="";
+//$query="";
 
 if($query!="")
 {
@@ -32,7 +32,7 @@ $result = wmysql_query($query);
 $num_fields = mysql_num_fields($result);
 $rows = mysql_num_rows($result);
 		
-echo "<table";
+echo "<table>";
 		while ($row = mysql_fetch_row($result))
 		{
 		 echo "<tr>";
@@ -45,7 +45,7 @@ echo "<table";
 		  echo "</tr>";
 		}
 		
-echo "</table";
+echo "</table>";
 }
 
 
