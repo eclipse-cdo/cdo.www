@@ -12,6 +12,7 @@ $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="te
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
+print '<h2>Available downloads for CDO</h2>';
 printDownloads("http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5");
 print '</div>';
 

@@ -2,9 +2,12 @@
 
 function printDownloads($url)
 {
+	print $url;
 	$region = 0;
 	$content = file_get_contents($url);
 	$lines = explode("\n", $content);
+	
+	print count($lines);
 	
 	if(count($lines)<=0)
 	{
