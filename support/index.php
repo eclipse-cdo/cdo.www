@@ -39,7 +39,7 @@ function printSuppportEntries($groupName,  $entries)
 
 	for($i=0; $i<count($entries); $i++)
 	{
-		print "<p><b>".$entries[$i]['name']."</b></p>";
+		print "<h4>".$entries[$i]['name']."</h4>";
 		print "<p>".$entries[$i]['description']."  <a href='".$entries[$i]['url']."'>go to</a></p>";
 	}
 }
