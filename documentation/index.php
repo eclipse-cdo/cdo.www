@@ -9,7 +9,7 @@ print '<div id="midcolumn">';
 
 print '<h2>'.$areaTitle.'</h2>';
 
-print 'This section contains the documentaion for the CDO project.';
+print 'This section contains the documentaion for the CDO project.<br>';
 
 /*############################# Manuals ###########################################*/
 $entries=array(

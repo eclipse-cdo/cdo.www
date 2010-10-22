@@ -40,11 +40,11 @@ include "$areaRoot/_footer.php"; ?>
 
 function printP2Repositories($branchName,  $entries)
 {
-	print "<h1>P2 repositories for ".$branchName."</h1>";
+	print "<h2>P2 repositories for ".$branchName."</h2>";
 
 	for($i=0; $i<count($entries); $i++)
 	{
-		print "<h2>".$entries[$i]['name']."</h2>";
+		print "<h4>".$entries[$i]['name']."</h4>";
 		print "<a href='".$entries[$i]['url']."'>".$entries[$i]['url']."</a>";
 	}
 	print '<br><br>';
