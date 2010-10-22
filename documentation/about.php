@@ -1,3 +1,5 @@
+
+
 <?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
@@ -13,12 +15,21 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-print '<h2>Available P" repositories for CDO</h2>';
+?>
+<p>The CDO (Connected Data Objects) Model Repository is a distributed
+shared model framework for EMF models and meta models. CDO is also a
+model runtime environment with a focus on orthogonal aspects like model
+scalability, transactionality, persistence, distribution, queries and
+more.</p>
 
-print 'For available P2 repositories have a look at the <a href="$areaPath/updatemanager.php">Update Manager</a> section.';
+<p>CDO has a 3-tier architecture supporting EMF-based client
+applications, featuring a central model repository server and leveraging
+different types of pluggable data storage back-ends like relational
+databases, object databases and file systems. The default client/server
+communication protocol is implemented with the Net4j Signalling
+Platform.</p>
 
-print '<h2>Available downloads for CDO</h2>';
-printDownloads("http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5");
+<?php
 print '</div>';
 
 

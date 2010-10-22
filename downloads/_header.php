@@ -3,7 +3,7 @@
 
 $navIconURL = "http://dev.eclipse.org/huge_icons/actions/go-down.png";
 $Nav->addNavSeparator($areaTitle, "");
-$Nav->addCustomNav("Update Manager", "$areaPath/#updates", "", 1);
+$Nav->addCustomNav("Update Manager", "$areaPath/updatemanager.php", "", 1);
 $Nav->addCustomNav("Preview 2.0", "$areaPath/#version2", "", 1);
 $Nav->addCustomNav("Release 1.0", "$areaPath/#version1", "", 1);
 $Nav->addCustomNav("Release Notes", "$areaPath/#relnotes", "", 1);
