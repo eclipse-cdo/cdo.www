@@ -9,11 +9,7 @@ function printDownloads($url)
 	
 	print count($lines);
 	
-	if(count($lines)<=0)
-	{
-		print "<b>There are currently no downloads available.</b>";
-		return;
-	}
+
 	
 	for($i = 0; $i < count($lines); $i++)
 	{
@@ -47,6 +43,8 @@ function printDownloads($url)
 		}
 	}
 
+	$availableLines=count($lines);
+	
 	for($i = 0; $i < count($lines); $i++)
 	{
 		$line = $lines[$i];
@@ -54,6 +52,16 @@ function printDownloads($url)
 		{
 			print "$line\n";
 		}
+		else 
+		{
+			$availableLines--;
+		}
+	}
+	
+	if($availableLines==0)
+	{
+		print "<b>There are currently no downloads available.</b>";
+		return;
 	}
 }
 
