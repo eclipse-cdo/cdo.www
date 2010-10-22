@@ -5,6 +5,13 @@ function printDownloads($url)
 	$region = 0;
 	$content = file_get_contents($url);
 	$lines = explode("\n", $content);
+	
+	if(count($lines)<=0)
+	{
+		print "<b>There are currently no downloads available.</b>";
+		return;
+	}
+	
 	for($i = 0; $i < count($lines); $i++)
 	{
 		$line = $lines[$i];
