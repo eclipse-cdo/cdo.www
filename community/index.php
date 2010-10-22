@@ -7,7 +7,7 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-print '<p>You are encouraged to participate in the development of CDO. You might want to help us fixing bug, develop new feature or increase our documentation. In any case it is best to visit our wiki pages which provide information about how to join our community.</p>';
+print '<p>You are encouraged to participate in the development of CDO. You might want to help us fixing bug, develop new features or extend our documentation. In any case it is best to visit our wiki pages which provide information about how to join our community.</p>';
 
 $entries=array(
 array("name" => "CDO Wiki", "url" => "http://wiki.eclipse.org/CDO"),
