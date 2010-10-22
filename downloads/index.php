@@ -13,9 +13,9 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-print '<h2>Available P" repositories for CDO</h2>';
+print '<h2>Available P2 repositories for CDO</h2>';
 
-print 'For available P2 repositories have a look at the <a href="$areaPath/updatemanager.php">Update Manager</a> section.';
+print 'For available P2 repositories have a look at the <a href="updatemanager.php">Update Manager</a> section.';
 
 print '<h2>Available downloads for CDO</h2>';
 printDownloads("http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5");

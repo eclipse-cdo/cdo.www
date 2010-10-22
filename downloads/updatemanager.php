@@ -47,5 +47,6 @@ function printP2Repositories($branchName,  $entries)
 		print "<h2>".$entries[$i]['name']."</h2>";
 		print "<a href='".$entries[$i]['url']."'>".$entries[$i]['url']."</a>";
 	}
+	print '<br><br>';
 }
 ?>

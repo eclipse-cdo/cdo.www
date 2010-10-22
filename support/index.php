@@ -37,15 +37,11 @@ function printSuppportEntries($groupName,  $entries)
 {
 	print "<h2>".$groupName."</h2>";
 
-	print "<ul>";
 	for($i=0; $i<count($entries); $i++)
 	{
 		print "<p><b>".$entries[$i]['name']."</b></p>";
-		print "<p>".$entries[$i]['description']."</p>";
-		print "<a href='".$entries[$i]['url']."'>go to</a><br>";
+		print "<p>".$entries[$i]['description']."<a href='".$entries[$i]['url']."'>go to</a></p>";
 	}
-
-	print "</ul>";
 }
 ?>
 ?>
