@@ -7,7 +7,7 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-print '<h1>'.$areaTitle.'</h1>';
+print '<h2>'.$areaTitle.'</h2>';
 
 print 'This section contains the documentaion for the CDO project.';
 
@@ -53,7 +53,7 @@ include "$areaRoot/_footer.php"; ?>
 
 function printDocumentationEntries($groupName,  $entries)
 {
-	print "<h2>".$groupName."</h2>";
+	print "<h3>".$groupName."</h3>";
 
 	print "<ul>";
 	for($i=0; $i<count($entries); $i++)

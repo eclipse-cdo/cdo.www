@@ -27,7 +27,7 @@ include "$areaRoot/_footer.php"; ?>
 
 function printDocumentationEntries($groupName,  $entries)
 {
-	print "<h3>".$groupName."</h3>";
+	print "<p><b>".$groupName."</b></p>";
 
 	print "<ul>";
 	for($i=0; $i<count($entries); $i++)

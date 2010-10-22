@@ -13,11 +13,13 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-print '<h2>Available P2 repositories for CDO</h2>';
+print '<h2>'.$areaTitle.'</h2>';
+
+print '<h3>Available P2 repositories for CDO</h3>';
 
 print 'For available P2 repositories have a look at the <a href="updatemanager.php">Update Manager</a> section.';
 
-print '<h2>Available downloads for CDO</h2>';
+print '<h3>Available downloads for CDO</h3>';
 printDownloads("http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5");
 print '</div>';
 
