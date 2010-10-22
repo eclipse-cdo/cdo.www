@@ -7,6 +7,8 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
+print '<h2>'.$areaTitle.'</h2>';
+
 print '<p>You are encouraged to participate in the development of CDO. You might want to help us fixing bug, develop new features or extend our documentation. In any case it is best to visit our wiki pages which provide information about how to join our community.</p>';
 
 $entries=array(
@@ -25,7 +27,7 @@ include "$areaRoot/_footer.php"; ?>
 
 function printDocumentationEntries($groupName,  $entries)
 {
-	print "<h2>".$groupName."</h2>";
+	print "<h3>".$groupName."</h3>";
 
 	print "<ul>";
 	for($i=0; $i<count($entries); $i++)
