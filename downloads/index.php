@@ -15,11 +15,11 @@ print '<div id="midcolumn">';
 
 print '<h2>'.$areaTitle.'</h2>';
 
-print '<p><b>Available P2 repositories for CDO</b></p>';
+print '<h4>Available P2 repositories for CDO</h4>';
 
 print 'For available P2 repositories have a look at the <a href="updatemanager.php">Update Manager</a> section.';
 
-print '<p><b>Available downloads for CDO</b></p>';
+print '<h4>Available downloads for CDO</h4>';
 printDownloads("http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5");
 print '</div>';
 

@@ -53,7 +53,7 @@ include "$areaRoot/_footer.php"; ?>
 
 function printDocumentationEntries($groupName,  $entries)
 {
-	print "<p><b>".$groupName."</b></p>";
+	print "<h4>".$groupName."</h4>";
 
 	print "<ul>";
 	for($i=0; $i<count($entries); $i++)
