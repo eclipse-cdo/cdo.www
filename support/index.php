@@ -10,11 +10,11 @@ print '<div id="midcolumn">';
 
 $entries=array(
 array(
-		"name" => "EMF Community Forum",
+		"name" => "Community Forum",
 		"url" => "http://www.eclipse.org/forums/index.php?t=thread&frm_id=108",
 		 "description" => "If you have questions about CDO please ask them in the forum. Please always prefix your posts with <b>[CDO]</b> and indicate what version of CDO you're using. Provide us with any information that may help us to help you as fast as possible (e.g. console outputs, stacktraces etc.)."),
 array(
-		"name" => "Bugzilla",
+		"name" => "Issue Management",
 		"url" => "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF",
 		"description" => "If you encounter trouble with CDO or would like to request an enhancement please write a bugzilla against Modeling/EMF and select one of the sub components of CDO (e.g. cdo.core, cdo.dawn, etc.). Describe your problem as detailed as possible and don't forget to tell us the CDO version you're using.")
 array(
