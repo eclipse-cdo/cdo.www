@@ -10,7 +10,7 @@ print '<div id="midcolumn">';
 
 $entries=array(
 array(
-		"name" => "EMF Newsgroup/Community Forum",
+		"name" => "EMF Community Forum",
 		"url" => "http://www.eclipse.org/forums/index.php?t=thread&frm_id=108",
 		 "description" => "If you have questions about CDO please ask them in the forum. Please always prefix your posts with <b>[CDO]</b> and indicate what version of CDO you're using. Provide us with any information that may help us to help you as fast as possible (e.g. console outputs, stacktraces etc.)."),
 array(
