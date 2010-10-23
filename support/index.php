@@ -12,7 +12,7 @@ $entries=array(
 array(
 		"name" => "EMF Newsgroup/Community Forum",
 		"url" => "http://www.eclipse.org/forums/index.php?t=thread&frm_id=108",
-		 "description" => "If you have questions about CDO please ask them in the forum.<p>Please describe your problem as detailed as possible.<p>Please indicate what version of CDO you're using.<p>Provide us with any information that may help us to help you as fast as possible (e.g. console outputs, stacktraces etc.).<p>Please always prefix your posts with <b>[CDO]</b>!"),
+		 "description" => "If you have questions about CDO please ask them in the forum.<p>Please indicate what version of CDO you're using.<p>Provide us with any information that may help us to help you as fast as possible (e.g. console outputs, stacktraces etc.).<p>Please always prefix your posts with <b>[CDO]</b>!"),
 array(
 		"name" => "Bugzilla",
 		"url" => "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF",
