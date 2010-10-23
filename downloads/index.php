@@ -17,7 +17,7 @@ print '<h2>'.$areaTitle.'</h2>';
 
 print '<h4>Available P2 repositories for CDO</h4>';
 
-print 'For available P2 repositories have a look at the <a href="updatemanager.php">Updates</a> section.';
+print 'For available P2 repositories have a look at the <a href="updates.php">Updates</a> section.';
 print '<br><br>';
 
 print '<h4>Available downloads for CDO</h4>';
