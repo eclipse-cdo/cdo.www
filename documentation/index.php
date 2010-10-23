@@ -31,7 +31,7 @@ $entries=array(
 array("name" => "Presentations", "url" => "$areaPath/presentations")
 );
 
-printDocumentationEntries("Wikis",  $entries);
+printDocumentationEntries("Presentations",  $entries);
 
 /*############################# Wikis ###########################################*/
 $entries=array(
