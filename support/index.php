@@ -16,7 +16,7 @@ array(
 array(
 		"name" => "Bugzilla",
 		"url" => "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF",
-		"description" => "If you encounter trouble with CDO or would like to request an enhancement please write a bugzilla against Modeling/EMF/CDO. As component select one of the sub components of CDO (e.g. cdo.core, cdo.dawn, etc.) and describe your problem as detailed as possible. Do not forget to tell us the CDO version you're using.")
+		"description" => "If you encounter trouble with CDO or would like to request an enhancement please write a bugzilla against Modeling/EMF and select one of the sub components of CDO (e.g. cdo.core, cdo.dawn, etc.) and describe your problem as detailed as possible. Do not forget to tell us the CDO version you're using.")
 );
 
  printSuppportEntries("Support",  $entries);
