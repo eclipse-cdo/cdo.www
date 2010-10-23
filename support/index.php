@@ -17,9 +17,13 @@ array(
 		"name" => "Bugzilla",
 		"url" => "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF",
 		"description" => "If you encounter trouble with CDO or would like to request an enhancement please write a bugzilla against Modeling/EMF and select one of the sub components of CDO (e.g. cdo.core, cdo.dawn, etc.). Describe your problem as detailed as possible and don't forget to tell us the CDO version you're using.")
+array(
+		"name" => "Commercial Support",
+		"url" => "mailto:stepper@esc-net.de?subject=Please help us to make the best use of CDO in our application",
+		"description" => "The CDO team is happy to provide you with prompt and free support in the public forum. If, for some reason, you feel uncomfortable with that, would like more private attention or require specific consulting services around CDO and its best usage in your application there will certainly be an opportunity for professional and dedicated collaboration. Please just drop us a note and we will find the best expert for your specific needs.")
 );
 
- printSuppportEntries("Support",  $entries);
+printSuppportEntries("Support",  $entries);
 //include "$projectRoot/tools/placeholder.html";
 print '</div>';
 
