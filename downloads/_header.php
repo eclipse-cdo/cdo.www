@@ -6,7 +6,7 @@ $Nav->addNavSeparator($areaTitle, "");
 $Nav->addCustomNav("Updates", "$areaPath/updates.php", "", 1);
 $Nav->addCustomNav("Preview 4.0", "$areaPath/#version2", "", 1);
 $Nav->addCustomNav("Release 3.0", "$areaPath/#version1", "", 1);
-$Nav->addCustomNav("Release Notes", "$areaPath/#relnotes", "", 1);
+$Nav->addCustomNav("Release Notes", "$areaPath/../documentation/relnotes_30/index.php", "", 1);
 $Nav->addCustomNav("License", "$areaPath/#license", "", 1);
 
 ########################################################################

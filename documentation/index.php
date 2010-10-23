@@ -20,7 +20,7 @@ printDocumentationEntries("Manuals",  $entries);
 
 /*############################# Release Notes ###########################################*/
 $entries=array(
-array("name" => "Release Notes 3.0", "url" => "$areaPath/#relnotes")
+array("name" => "Release Notes 3.0", "url" => "$areaPath/relnotes_30/index.php")
 );
 
 printDocumentationEntries("Release Notes",  $entries);
