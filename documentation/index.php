@@ -13,8 +13,7 @@ print 'This section contains the documentation for the CDO project.<br>';
 
 /*############################# Manuals ###########################################*/
 $entries=array(
-array("name" => "Manual 1.0", "url" => "$areaPath/manual_10.php"),
-array("name" => "Manual 2.0", "url" => "$areaPath/manual_20.php")
+array("name" => "Manual 3.0 (work in progress)", "url" => "$areaPath/manual_30.php")
 );
 
 printDocumentationEntries("Manuals",  $entries);
