@@ -55,7 +55,7 @@ function printDownloads($url)
 
 	if($availableLines==0)
 	{
-		print '<b>There are currently no ZIPs available for download.</b><p>Please have a look at the <a href="updates.php">Updates</a> section.';
+		print 'There are currently no ZIPs available for download.<p>Please have a look at the <a href="updates.php">Updates</a> section.';
 		return;
 	}
 }
