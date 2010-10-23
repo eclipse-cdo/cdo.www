@@ -10,17 +10,13 @@ print '<div id="midcolumn">';
 
 $entries=array(
 array(
-		"name" => "Newsgroup/Community Forum", 
-		"url" => "http://www.eclipse.org/forums/index.php?t=thread&frm_id=108", 
-		 "description" => "If you have questions about CDO it is best you ask in the forum. Please describe your problem as detailed as possible. Provide any useful information that helps us to solve your concern as fast as possible (e.g. console outputs, stacktrace etc.). To make it easeier for use to filter out any CDO related request, please prefix your port with <i>[CDO]</i>."),
+		"name" => "EMF Newsgroup/Community Forum",
+		"url" => "http://www.eclipse.org/forums/index.php?t=thread&frm_id=108",
+		 "description" => "If you have questions about CDO please ask them in the forum. Please describe your problem as detailed as possible and <b>always</b> indicate what version of CDO you're using. Provide any information that may help us to help you as fast as possible (e.g. console outputs, stacktraces etc.). Please always prefix your posts with <b>[CDO]</b>."),
 array(
-		"name" => "Bugzilla", 
-		"url" => "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF",  
-		"description" => "For any bug report or enhancement request please write a bugzilla against CDO. As componente select one of the sub components of cdo (e.g. cdo.core) and describe your problem as detailed as possible. Do not forget to set version where the bug appeared."),
-array(
-		"name" => "Mailing List", 
-		"url" => "https://dev.eclipse.org/mailman/listinfo/emf-dev",  
-		"description" => "You can subscribe to the emf-dev mailing list for information about CDO. But please use the community forum/newsgroup for questions. The mailing list is mostly used for internal communication of the EMF project.")
+		"name" => "Bugzilla",
+		"url" => "https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EMF",
+		"description" => "If you encounter trouble with CDO or would like to request an enhancement please write a bugzilla against Modeling/EMF/CDO. As component select one of the sub components of CDO (e.g. cdo.core, cdo.dawn, etc.) and describe your problem as detailed as possible. Do not forget to tell us the CDO version you're using.")
 );
 
  printSuppportEntries("Support",  $entries);
