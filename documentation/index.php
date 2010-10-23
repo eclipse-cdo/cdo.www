@@ -24,7 +24,7 @@ $entries=array(
 array("name" => "Release Notes 3.0", "url" => "$areaPath/#relnotes")
 );
 
-printDocumentationEntries("Manuals",  $entries);
+printDocumentationEntries("Release Notes",  $entries);
 
 /*############################# Presentations ###########################################*/
 $entries=array(
