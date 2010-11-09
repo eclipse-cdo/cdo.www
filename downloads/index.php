@@ -12,16 +12,16 @@ $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="te
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-
 print '<h2>'.$areaTitle.'</h2>';
 
 print '<h4>Available P2 repositories for CDO</h4>';
-
 print 'For available P2 repositories have a look at the <a href="updates.php">Updates</a> section.';
 print '<br><br>';
 
 print '<h4>Available downloads for CDO</h4>';
-printDownloads("http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5");
+print 'There are currently no ZIPs available for download.<p>';
+print 'Please have a look at the <a href="updates.php">Updates</a> section.';
+//printDownloads("http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5");
 print '<br><br>';
 print '</div>';
 
