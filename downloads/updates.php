@@ -26,8 +26,8 @@ printP2Repositories("CDO 3.0",  $entries);
 $entries=array(
 array("name" => "4.0 milestone builds", "url" => "http://download.eclipse.org/modeling/emf/cdo/updates/4.0-milestones"),
 array("name" => "4.0 integration builds", "url" => "http://download.eclipse.org/modeling/emf/cdo/updates/4.0-integration"),
-array("name" => "Latest stable build (<a href=\"https://hudson.eclipse.org/hudson/job/emf-cdo-integration\">continuous integration</a>)", "url" => "https://hudson.eclipse.org/hudson/job/emf-cdo-integration/lastStableBuild/artifact/result/site.p2"),
-array("name" => "Latest successful build (<a href=\"https://hudson.eclipse.org/hudson/job/emf-cdo-integration\">continuous integration</a>)", "url" => "https://hudson.eclipse.org/hudson/job/emf-cdo-integration/lastSuccessfulBuild/artifact/result/site.p2")
+array("name" => "Latest stable build (<a href=\"https://hudson.eclipse.org/hudson/job/emf-cdo-integration\">continuous integration</a>)", "url" => "https://hudson.eclipse.org/hudson/job/emf-cdo-integration/lastStableBuild/artifact/site.p2"),
+array("name" => "Latest successful build (<a href=\"https://hudson.eclipse.org/hudson/job/emf-cdo-integration\">continuous integration</a>)", "url" => "https://hudson.eclipse.org/hudson/job/emf-cdo-integration/lastSuccessfulBuild/artifact/site.p2")
 );
 
 printP2Repositories("CDO 4.0 Preview",  $entries);
