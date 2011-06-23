@@ -19,17 +19,17 @@ print '<div id="midcolumn">';
 <ul>
 <li><b><a href="releases">Composite Update Site</a></b></li>
 </ul>
-<h2>4.0</h2>
+<h3>4.0</h3>
 <ul>
 <li><b><a href="releases/4.0">Composite Update Site</a></b></li>
 <li><b>R20110608-1407</b>&nbsp;-&nbsp;<a href="../drops/R20110608-1407">Contents</a>&nbsp;-&nbsp;<a href="../drops/R20110608-1407">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/R20110608-1407/zips/emf-cdo-R20110608-1407-Site.zip&amp;protocol=http&amp;format=xml">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/R20110608-1407/zips/emf-cdo-R20110608-1407-All.zip&amp;protocol=http&amp;format=xml">Dropins Archive</a></li>
 
 </ul>
-<h2>3.0</h2>
+<h3>3.0</h3>
 <ul>
 <li><b><a href="releases/3.0">Composite Update Site</a></b></li>
 </ul>
-<h2>2.0</h2>
+<h3>2.0</h3>
 <ul>
 <li><b><a href="releases/2.0">Composite Update Site</a></b></li>
 </ul>
@@ -38,11 +38,11 @@ print '<div id="midcolumn">';
 <li><b><a href="integration">Composite Update Site</a></b></li>
 
 </ul>
-<h2>Stable Builds</h2>
+<h3>Stable Builds</h3>
 <ul>
 <li><b><a href="integration/stable">Composite Update Site</a></b></li>
 </ul>
-<h2>Weekly Builds</h2>
+<h3>Weekly Builds</h3>
 <ul>
 <li><b><a href="integration/weekly">Composite Update Site</a></b></li>
 <li><b>I20110622-0357</b>&nbsp;-&nbsp;<a href="../drops/I20110622-0357">Contents</a>&nbsp;-&nbsp;<a href="../drops/I20110622-0357">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0357/zips/emf-cdo-I20110622-0357-Site.zip&amp;protocol=http&amp;format=xml">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0357/zips/emf-cdo-I20110622-0357-All.zip&amp;protocol=http&amp;format=xml">Dropins Archive</a></li>
@@ -57,11 +57,11 @@ print '<div id="midcolumn">';
 <li><b><a href="maintenance">Composite Update Site</a></b></li>
 </ul>
 
-<h2>Stable Builds</h2>
+<h3>Stable Builds</h3>
 <ul>
 <li><b><a href="maintenance/stable">Composite Update Site</a></b></li>
 </ul>
-<h2>Weekly Builds</h2>
+<h3>Weekly Builds</h3>
 <ul>
 <li><b><a href="maintenance/weekly">Composite Update Site</a></b></li>
 <li><b>M20110623-1122</b>&nbsp;-&nbsp;<a href="../drops/M20110623-1122">Contents</a>&nbsp;-&nbsp;<a href="../drops/M20110623-1122">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/M20110623-1122/zips/emf-cdo-M20110623-1122-Site.zip&amp;protocol=http&amp;format=xml">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/M20110623-1122/zips/emf-cdo-M20110623-1122-All.zip&amp;protocol=http&amp;format=xml">Dropins Archive</a></li>
