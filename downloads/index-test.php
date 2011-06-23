@@ -13,7 +13,9 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-include "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/downloads.php";
+url="http://download.eclipse.org/modeling/emf/cdo/updates/downloads.php";
+$content = file_get_contents($url);
+echo $content;
 
 print '</div>';
 

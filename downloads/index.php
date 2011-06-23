@@ -1,8 +1,6 @@
 <?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
-require_once "$areaRoot/downloads.php";
-
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/modeling/includes/common.css"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/modeling/includes/downloads.css"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="text/javascript"></script>' . "\n\t");
@@ -10,6 +8,20 @@ $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="te
 //$pageTitle 		= "";
 //$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
+
+
+function printP2Repositories($branchName,  $entries)
+{
+	print "<h2>P2 repositories for ".$branchName."</h2>";
+
+	for($i=0; $i<count($entries); $i++)
+	{
+		print "<h4>".$entries[$i]['name']."</h4>";
+		print "<a href='".$entries[$i]['url']."'>".$entries[$i]['url']."</a><br><br>";
+	}
+	print '<br><br>';
+}
+
 
 print '<div id="midcolumn">';
 
