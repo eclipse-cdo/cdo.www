@@ -12,7 +12,7 @@ $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="te
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-readfile("http://download.eclipse.org/modeling/emf/cdo/updates/downloads.html");
+readfile("http://download.eclipse.org/modeling/emf/cdo/updates/test.php");
 print '</div>';
 
 

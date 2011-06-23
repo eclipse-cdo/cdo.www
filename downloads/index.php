@@ -12,7 +12,6 @@ $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="te
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-//include("http://download.eclipse.org/modeling/emf/cdo/updates/downloads.html");
 ?>
 
 <h2>Releases</h2>
@@ -22,7 +21,7 @@ print '<div id="midcolumn">';
 <h3>4.0</h3>
 <ul>
 <li><b><a href="http://download.eclipse.org/modeling/emf/cdo/updates/releases/4.0">Composite Update Site</a></b></li>
-<li><b>R20110608-1407</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/R20110608-1407">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/R20110608-1407">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/R20110608-1407/zips/emf-cdo-R20110608-1407-Site.zip&amp;protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/R20110608-1407/zips/emf-cdo-R20110608-1407-All.zip&amp;protocol=http">Dropins Archive</a></li>
+<li><b>R20110608-1407</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/R20110608-1407">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/R20110608-1407">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/R20110608-1407/zips/emf-cdo-R20110608-1407-Site.zip&protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/R20110608-1407/zips/emf-cdo-R20110608-1407-All.zip&protocol=http">Dropins Archive</a></li>
 
 </ul>
 <h3>3.0</h3>
@@ -45,12 +44,12 @@ print '<div id="midcolumn">';
 <h3>Weekly Builds</h3>
 <ul>
 <li><b><a href="http://download.eclipse.org/modeling/emf/cdo/updates/integration/weekly">Composite Update Site</a></b></li>
-<li><b>I20110622-0357</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0357">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0357">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0357/zips/emf-cdo-I20110622-0357-Site.zip&amp;protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0357/zips/emf-cdo-I20110622-0357-All.zip&amp;protocol=http">Dropins Archive</a></li>
+<li><b>I20110622-0357</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0357">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0357">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0357/zips/emf-cdo-I20110622-0357-Site.zip&protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0357/zips/emf-cdo-I20110622-0357-All.zip&protocol=http">Dropins Archive</a></li>
 
-<li><b>I20110622-0512</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0512">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0512">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0512/zips/emf-cdo-I20110622-0512-Site.zip&amp;protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0512/zips/emf-cdo-I20110622-0512-All.zip&amp;protocol=http">Dropins Archive</a></li>
-<li><b>I20110622-0601</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0601">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0601">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0601/zips/emf-cdo-I20110622-0601-Site.zip&amp;protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0601/zips/emf-cdo-I20110622-0601-All.zip&amp;protocol=http">Dropins Archive</a></li>
+<li><b>I20110622-0512</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0512">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0512">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0512/zips/emf-cdo-I20110622-0512-Site.zip&protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0512/zips/emf-cdo-I20110622-0512-All.zip&protocol=http">Dropins Archive</a></li>
+<li><b>I20110622-0601</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0601">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110622-0601">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0601/zips/emf-cdo-I20110622-0601-Site.zip&protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110622-0601/zips/emf-cdo-I20110622-0601-All.zip&protocol=http">Dropins Archive</a></li>
 
-<li><b>I20110623-1120</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110623-1120">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110623-1120">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110623-1120/zips/emf-cdo-I20110623-1120-Site.zip&amp;protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110623-1120/zips/emf-cdo-I20110623-1120-All.zip&amp;protocol=http">Dropins Archive</a></li>
+<li><b>I20110623-1120</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110623-1120">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110623-1120">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110623-1120/zips/emf-cdo-I20110623-1120-Site.zip&protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110623-1120/zips/emf-cdo-I20110623-1120-All.zip&protocol=http">Dropins Archive</a></li>
 </ul>
 <h2>4.0 Maintenance</h2>
 <ul>
@@ -64,7 +63,7 @@ print '<div id="midcolumn">';
 <h3>Weekly Builds</h3>
 <ul>
 <li><b><a href="http://download.eclipse.org/modeling/emf/cdo/updates/maintenance/weekly">Composite Update Site</a></b></li>
-<li><b>M20110623-1122</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/M20110623-1122">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/M20110623-1122">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/M20110623-1122/zips/emf-cdo-M20110623-1122-Site.zip&amp;protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/M20110623-1122/zips/emf-cdo-M20110623-1122-All.zip&amp;protocol=http">Dropins Archive</a></li>
+<li><b>M20110623-1122</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/M20110623-1122">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/M20110623-1122">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/M20110623-1122/zips/emf-cdo-M20110623-1122-Site.zip&protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/M20110623-1122/zips/emf-cdo-M20110623-1122-All.zip&protocol=http">Dropins Archive</a></li>
 
 </ul>
 
