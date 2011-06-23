@@ -12,7 +12,7 @@ $pageAuthor		= "Eike Stepper";
 print '<div id="midcolumn">';
 ?>
 
-<h2>Releases</h2>
+<h2>Releases</h2><a name="releases"/>
 <ul>
 <li><b><a href="http://download.eclipse.org/modeling/emf/cdo/updates/releases">Composite Update Site</a></b></li>
 </ul>
@@ -30,7 +30,7 @@ print '<div id="midcolumn">';
 <ul>
 <li><b><a href="http://download.eclipse.org/modeling/emf/cdo/updates/releases/2.0">Composite Update Site</a></b></li>
 </ul>
-<h2>4.1 Integration</h2>
+<h2>4.1 Integration</h2><a name="integration"/>
 <ul>
 <li><b><a href="http://download.eclipse.org/modeling/emf/cdo/updates/integration">Composite Update Site</a></b></li>
 
@@ -49,7 +49,7 @@ print '<div id="midcolumn">';
 
 <li><b>I20110623-1120</b>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110623-1120">Contents</a>&nbsp;-&nbsp;<a href="http://download.eclipse.org/modeling/emf/cdo/drops/I20110623-1120">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110623-1120/zips/emf-cdo-I20110623-1120-Site.zip&protocol=http">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110623-1120/zips/emf-cdo-I20110623-1120-All.zip&protocol=http">Dropins Archive</a></li>
 </ul>
-<h2>4.0 Maintenance</h2>
+<h2>4.0 Maintenance</h2><a name="maintenance"/>
 <ul>
 <li><b><a href="http://download.eclipse.org/modeling/emf/cdo/updates/maintenance">Composite Update Site</a></b></li>
 </ul>
