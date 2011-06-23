@@ -15,7 +15,7 @@ print '<div id="midcolumn">';
 //include("http://download.eclipse.org/modeling/emf/cdo/updates/downloads.html");
 ?>
 
-<h1>Releases</h1>
+<h2>Releases</h2>
 <ul>
 <li><b><a href="releases">Composite Update Site</a></b></li>
 </ul>
@@ -33,7 +33,7 @@ print '<div id="midcolumn">';
 <ul>
 <li><b><a href="releases/2.0">Composite Update Site</a></b></li>
 </ul>
-<h1>4.1 Integration</h1>
+<h2>4.1 Integration</h2>
 <ul>
 <li><b><a href="integration">Composite Update Site</a></b></li>
 
@@ -52,7 +52,7 @@ print '<div id="midcolumn">';
 
 <li><b>I20110623-1120</b>&nbsp;-&nbsp;<a href="../drops/I20110623-1120">Contents</a>&nbsp;-&nbsp;<a href="../drops/I20110623-1120">Update Site</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110623-1120/zips/emf-cdo-I20110623-1120-Site.zip&amp;protocol=http&amp;format=xml">Update Site Archive</a>&nbsp;-&nbsp;<a href="http://www.eclipse.org/downloads/download.php?file=/modeling/emf/cdo/drops/I20110623-1120/zips/emf-cdo-I20110623-1120-All.zip&amp;protocol=http&amp;format=xml">Dropins Archive</a></li>
 </ul>
-<h1>4.0 Maintenance</h1>
+<h2>4.0 Maintenance</h2>
 <ul>
 <li><b><a href="maintenance">Composite Update Site</a></b></li>
 </ul>
