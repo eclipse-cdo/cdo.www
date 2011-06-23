@@ -12,11 +12,7 @@ $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="te
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-
-//$content = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/updates/downloads.php");
-$content = "Hello World.";
-echo $content;
-
+include("http://download.eclipse.org/modeling/emf/cdo/updates/downloads.php");
 print '</div>';
 
 
