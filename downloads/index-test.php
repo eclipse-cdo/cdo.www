@@ -13,8 +13,8 @@ $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
 
-url="http://download.eclipse.org/modeling/emf/cdo/updates/downloads.php";
-$content = file_get_contents($url);
+//$content = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/updates/downloads.php");
+$content = "Hello World.";
 echo $content;
 
 print '</div>';
