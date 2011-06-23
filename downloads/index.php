@@ -12,17 +12,33 @@ $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="te
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">';
-print '<h2>'.$areaTitle.'</h2>';
 
-print '<h4>Available P2 repositories for CDO</h4>';
-print 'For available P2 repositories have a look at the <a href="updates.php">Updates</a> section.';
-print '<br><br>';
+/*################################### 4.0 ##############################################*/
+$entries=array(
+array("name" => "4.0 release builds", "url" => "http://download.eclipse.org/modeling/emf/cdo/updates/releases/4.0"),
+array("name" => "Latest stable build (<a href=\"https://hudson.eclipse.org/hudson/job/emf-cdo-maintenance\">continuous integration</a>)", "url" => "https://hudson.eclipse.org/hudson/job/emf-cdo-maintenance/lastStableBuild/artifact/result/site.p2"),
+array("name" => "Latest successful build (<a href=\"https://hudson.eclipse.org/hudson/job/emf-cdo-maintenance\">continuous integration</a>)", "url" => "https://hudson.eclipse.org/hudson/job/emf-cdo-maintenance/lastSuccessfulBuild/artifact/result/site.p2")
+);
 
-print '<h4>Available downloads for CDO</h4>';
-print 'There are currently no ZIPs available for download.<p>';
-print 'Please have a look at the <a href="updates.php">Updates</a> section.';
-//printDownloads("http://www.eclipse.org/modeling/emf/downloads/index.php?project=cdo&showAll=0&showMax=5");
-print '<br><br>';
+printP2Repositories("CDO 4.0",  $entries);
+
+/*################################### 3.0 ##############################################*/
+$entries=array(
+array("name" => "3.0 release builds", "url" => "http://download.eclipse.org/modeling/emf/cdo/updates/releases/3.0"),
+);
+
+printP2Repositories("CDO 3.0",  $entries);
+
+/*################################### HEAD #######################################################*/
+$entries=array(
+array("name" => "4.1 milestone builds", "url" => "http://download.eclipse.org/modeling/emf/cdo/updates/integration/stable"),
+array("name" => "4.1 integration builds", "url" => "http://download.eclipse.org/modeling/emf/cdo/updates/integration/weekly"),
+array("name" => "Latest stable build (<a href=\"https://hudson.eclipse.org/hudson/job/emf-cdo-integration\">continuous integration</a>)", "url" => "https://hudson.eclipse.org/hudson/job/emf-cdo-integration/lastStableBuild/artifact/site.p2"),
+array("name" => "Latest successful build (<a href=\"https://hudson.eclipse.org/hudson/job/emf-cdo-integration\">continuous integration</a>)", "url" => "https://hudson.eclipse.org/hudson/job/emf-cdo-integration/lastSuccessfulBuild/artifact/site.p2")
+);
+
+printP2Repositories("CDO 4.1 Preview",  $entries);
+
 print '</div>';
 
 
