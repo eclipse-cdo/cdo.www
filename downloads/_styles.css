@@ -4,22 +4,24 @@
 
 .repo-label1 { 
   font-size: 18pt;
-  width: 100%;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #D4D4DD;
+}
+
+.repo1 {
+	padding: 5px 5px 5px 0;
+  border-bottom: 3px solid #D4D4DD;
 }
 
 .repo-label2 { 
   font-size: 14pt;
 }
 
+.repo2 {
+	padding: 5px 5px 5px 0;
+}
+
 .drop-label { 
   font-size: 12pt;
   font-weight: bold;
-}
-
-.repo {
-	padding: 5px 5px 5px 0;
 }
 
 .drop {
