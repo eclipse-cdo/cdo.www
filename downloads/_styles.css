@@ -1,5 +1,7 @@
 #midcolumn {
 	background: url('background.jpg') top left repeat-x;
+	margin: 0pt;
+	padding: 5px 5px 5px 5px;
 }
 
 .repo-label1 { 
@@ -13,6 +15,7 @@
 .repo {
  padding-top: 10px;
 }
+
 .drop {
  padding-top: 10px;
 }
