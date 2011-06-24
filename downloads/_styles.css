@@ -2,3 +2,17 @@
 	background: url('background.jpg') top left repeat-x;
 }
 
+.repo-label1 { 
+ font-size: 16pt;
+}
+
+.repo-label2 { 
+ font-size: 14pt;
+}
+
+.repo {
+ padding-top: 10px;
+}
+.drop {
+ padding-top: 10px;
+}
