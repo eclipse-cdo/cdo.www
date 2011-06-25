@@ -39,6 +39,6 @@
 	padding-top: 3px;
 }
 
-.filesize {
-	align: right;
+.file-size {
+	text-align: right;
 }
