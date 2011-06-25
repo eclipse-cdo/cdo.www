@@ -38,3 +38,7 @@
 .drop-info {
 	padding-top: 3px;
 }
+
+.filesize {
+	align: right;
+}
