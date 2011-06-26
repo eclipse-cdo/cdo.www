@@ -40,8 +40,8 @@
 }
 
 .drop-separator {
-	background-color: transparent;
-	border-bottom: 2px dashed #D4D4DD;}
+	border-bottom: 2px dashed #D4D4DD;
+}
 
 .file-size {
 	text-align: right;
