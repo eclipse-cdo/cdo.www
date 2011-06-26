@@ -2,7 +2,7 @@
 	background: url('background.jpg') top left repeat-x;
 }
 
-li#midcolumn {
+.repo-item {
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
