@@ -40,7 +40,8 @@
 }
 
 .drop-separator {
-	border-bottom: 2px dashed #D4D4DD;
+	border: none;
+	border-bottom: 2px solid #D4D4DD;
 }
 
 .file-size {
