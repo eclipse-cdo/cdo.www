@@ -54,3 +54,12 @@
 .file-size {
 	text-align: right;
 }
+
+.level1 {
+	padding-right: 32px;
+}
+
+.level2 {
+	padding-right: 25px;
+}
+
