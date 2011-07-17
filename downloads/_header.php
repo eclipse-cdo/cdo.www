@@ -4,6 +4,7 @@
 $navIconURL = "http://dev.eclipse.org/huge_icons/actions/go-down.png";
 $Nav->addNavSeparator($areaTitle, "");
 $Nav->addCustomNav("Releases", "$areaPath/index.php", "", 1);
+$Nav->addCustomNav("4.0 Releases", "$areaPath/index.php#releases_4_0", "", 2);
 $Nav->addCustomNav("4.1 Integration", "$areaPath/index.php#integration", "", 1);
 $Nav->addCustomNav("4.0 Maintenance", "$areaPath/index.php#maintenance", "", 1);
 $Nav->addCustomNav("License", "http://www.eclipse.org/org/documents/epl-v10.php", "", 1);
