@@ -7,8 +7,8 @@ $pageAuthor		= "Eike Stepper";
 
 
 $contents = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/updates/latest.properties");
-$props = parse_ini_string($contents, false);
-$latest = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $props["integration"] . "/help/org.eclipse.emf.cdo/html";
+//$props = parse_ini_string($contents, false);
+//$latest = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $props["integration"] . "/help/org.eclipse.emf.cdo/html";
 
 //$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest/help/org.eclipse.emf.cdo/html";
 //$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest";
@@ -23,7 +23,8 @@ if ($App != NULL)
 
 print '<div id="midcolumn">';
 print "<h1>CDO Model Repository Overview</h1>\n";
-print "Latest: " . $latest;
+print "Contents: " . $contents;
+//print "Latest: " . $latest;
 //print_r($props);
 
 /*
