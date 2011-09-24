@@ -5,7 +5,7 @@ $pageTitle 		= "CDO Model Repository Overview";
 $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-global $latestIntegration; // Comes from _header.php
+global $latestIntegration; // Defined in _header.php
 $latest = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latestIntegration . "/help/org.eclipse.emf.cdo.doc/html";
 
 global $App;
