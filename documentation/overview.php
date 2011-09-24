@@ -18,12 +18,17 @@ if ($App != NULL)
 print '<div id="midcolumn">' . "\n\n";
 print "<h1>CDO Model Repository Overview</h1>\n";
 
+// Fetch Overview.html
 $overview = file_get_contents($latest . "/Overview.html");
-preg_match('@</table>(.*)</BODY>@s', $overview, $match);
 
+// Cut our relevant body
+preg_match('@</table>(.*)<p align="right">@s', $overview, $match);
+
+// Protect absolute URLs
 $overview = str_replace('<a href="http://', '<a HREF="http://', $overview);
 $overview = str_replace('<img src="http://', '<img SRC="http://', $overview);
 
+// Rewrite relative URLs
 $overview = str_replace('<a href="', '<a href="' . $latest . '/', $overview);
 $overview = str_replace('<img src="', '<img src="' . $latest . '/', $overview);
 
