@@ -24,15 +24,16 @@ if (preg_match('@releases_3_0 = (.*)@', $qualifiers, $match))
 if (preg_match('@integration = (.*)@', $qualifiers, $match))
 {
 	$latestIntegration = $match[1];
-	$Nav->addCustomNav("Integration Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latestIntegration . "/help", "", 1);
+	$Nav->addCustomNav("4.1 Preview Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latestIntegration . "/help", "", 1);
 }
 
+/*
 if (preg_match('@maintenance = (.*)@', $qualifiers, $match))
 {
 	$latestMaintenance = $match[1];
 	$Nav->addCustomNav("Maintenance Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latestMaintenance . "/help", "", 1);
 }
-
+*/
 $Nav->addCustomNav("Presentations", "$areaPath/presentations", "", 1);
 
 ########################################################################
