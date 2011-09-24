@@ -13,7 +13,7 @@ $latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/drops/I2011092
 global $App;
 if ($App != NULL)
 {
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $latest . '/book.css" media="screen"/>' . "\n\t");
+//	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $latest . '/book.css" media="screen"/>' . "\n\t");
 }
 
 print '<div id="midcolumn">';
