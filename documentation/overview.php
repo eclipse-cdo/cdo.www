@@ -18,30 +18,8 @@ if ($App != NULL)
 print '<div id="midcolumn">';
 print "<h1>CDO Model Repository Overview</h1>\n";
 
-//$overview = file_get_contents($latest . "/Overview.html");
-
-$inbody = false;
-
-$lines = file($latest . "/Overview.html");
-foreach ($lines as $line)
-{
-	if (inbody)
-	{
-		if (strpos($line, "</body>") != FALSE)
-		{
-			break;
-		}
-		
-		print $line . '\n';
-	}
-	else
-	{
-		if (strpos($line, "</table>") != FALSE)
-		{
-			inbody = true;
-		}
-	}
-}
+$overview = file_get_contents($latest . "/Overview.html");
+print $overview;
 
 print '</div>';
 
