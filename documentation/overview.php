@@ -17,7 +17,6 @@ if ($App != NULL)
 
 print '<div id="midcolumn">';
 print "<h1>CDO Model Repository Overview</h1>\n";
-print "<br>Latest: " . $latest;
 
 //$overview = file_get_contents($latest . "/Overview.html");
 
