@@ -7,7 +7,7 @@ $pageAuthor		= "Eike Stepper";
 
 
 $qualifier = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/updates/integration/latest.qualifier");
-$latest = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $qualifier . "/help/org.eclipse.emf.cdo/html";
+$latest = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $qualifier . "/help/org.eclipse.emf.cdo.doc/html";
 
 global $App;
 if ($App != NULL)
@@ -16,12 +16,10 @@ if ($App != NULL)
 }
 
 print '<div id="midcolumn">';
-print "<h1>CDO Model Repository Overview 3</h1>\n";
-
-print $latest . "/Overview.html";
+print "<h1>CDO Model Repository Overview 4</h1>\n";
 
 $overview = file_get_contents($latest . "/Overview.html");
-//$overview = preg_replace('/.*?</table>(.*)</BODY>.*?/i', '\\1', $overview);
+$overview = preg_replace('/.*?</table>(.*)</BODY>.*?/i', '\\1', $overview);
 
 print $overview;
 print '</div>';
