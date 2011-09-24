@@ -5,6 +5,8 @@ $pageTitle 		= "Overview";
 $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
+error_reporting(E_ALL);
+
 //$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest/help/org.eclipse.emf.cdo/html";
 $latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/drops/I20110923-0228/help/org.eclipse.emf.cdo/html";
 
