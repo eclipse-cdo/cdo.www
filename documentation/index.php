@@ -1,65 +1,39 @@
 <?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
-//$pageTitle 		= "";
-//$pageKeywords	= "";
+$pageTitle 		= "CDO Model Repository Overview";
+$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-print '<div id="midcolumn">';
+$qualifier = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/updates/integration/latest.qualifier");
+$latest = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $qualifier . "/help/org.eclipse.emf.cdo.doc/html";
 
-print '<h2>'.$areaTitle.'</h2>';
+global $App;
+if ($App != NULL)
+{
+	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $latest . '/book.css" media="screen"/>' . "\n\t");
+}
 
-print 'This section contains the documentation for the CDO project.<br>';
+print '<div id="midcolumn">' . "\n\n";
+print "<h1>CDO Model Repository Overview</h1>\n";
 
-/*############################# Manuals ###########################################*/
-$entries=array(
-array("name" => "Manual 3.0 (work in progress)", "url" => "$areaPath/manual_30.php")
-);
+// Fetch Overview.html
+$overview = file_get_contents($latest . "/Overview.html");
 
-printDocumentationEntries("Manuals",  $entries);
+// Cut our relevant body
+preg_match('@</table>(.*)<p align="right">@s', $overview, $match);
+$overview = $match[1];
 
-/*############################# Release Notes ###########################################*/
-$entries=array(
-array("name" => "Release Notes 3.0", "url" => "$areaPath/relnotes_30/index.php")
-);
+// Protect absolute URLs
+$overview = str_replace('<a href="http://', '<a HREF="http://', $overview);
+$overview = str_replace('<img src="http://', '<img SRC="http://', $overview);
 
-printDocumentationEntries("Release Notes",  $entries);
+// Rewrite relative URLs
+$overview = str_replace('<a href="', '<a href="' . $latest . '/', $overview);
+$overview = str_replace('<img src="', '<img src="' . $latest . '/', $overview);
 
-/*############################# Presentations ###########################################*/
-$entries=array(
-array("name" => "Presentations", "url" => "$areaPath/presentations")
-);
-
-printDocumentationEntries("Presentations",  $entries);
-
-/*############################# Wikis ###########################################*/
-$entries=array(
-array("name" => "CDO Wiki", "url" => "http://wiki.eclipse.org/CDO"),
-array("name" => "Net4J Wiki", "url" => "http://wiki.eclipse.org/Net4j"),
-array("name" => "Dawn Wiki", "url" => "http://wiki.eclipse.org/Dawn")
-);
-
-printDocumentationEntries("Wikis",  $entries);
-
-
-//include "$projectRoot/tools/placeholder.html";
-print '</div>';
+print $overview;
+print "\n\n</div>";
 
 ########################################################################
 include "$areaRoot/_footer.php"; ?>
-
-<?php
-
-function printDocumentationEntries($groupName,  $entries)
-{
-	print "<h4>".$groupName."</h4>";
-
-	print "<ul>";
-	for($i=0; $i<count($entries); $i++)
-	{
-		print "<li><a href='".$entries[$i]['url']."'>".$entries[$i]['name']."</a></li>";
-	}
-
-	print "</ul>";
-}
-?>
