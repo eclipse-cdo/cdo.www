@@ -5,7 +5,8 @@ $pageTitle 		= "Overview";
 $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest/help/org.eclipse.emf.cdo/html";
+//$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest/help/org.eclipse.emf.cdo/html";
+$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/drops/I20110923-0228/help/org.eclipse.emf.cdo/html";
 
 global $App;
 if ($App != NULL)
