@@ -8,7 +8,7 @@ $pageAuthor		= "Eike Stepper";
 global $latestIntegration; // Defined in _header.php
 $help = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latestIntegration . "/help";
 $latest = $help . "/org.eclipse.emf.cdo.doc/html";
-$others = "<p><i>This overview is an extract from the <a href=\"$help\">Integration Help</a>. For other versions of the full help centers please select from the menu bar at the left side.</i></p>\n\n";
+$others = "<p align=\"center\"><i>This overview is an extract from the <a href=\"$help\">Integration Help</a>.<br>\nFor other versions of the full help centers please select from the menu bar at the left side.</i></p>\n\n";
 
 global $App;
 if ($App != NULL)
@@ -17,7 +17,7 @@ if ($App != NULL)
 }
 
 print '<div id="midcolumn">' . "\n\n";
-print "<h1>CDO Model Repository Overview</h1>\n";
+print "<h1 align=\"center\">CDO Model Repository Overview</h1>\n";
 print $others;
 
 // Fetch Overview.html

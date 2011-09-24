@@ -9,3 +9,7 @@ b {
 em {
   font-style:italic;
 }
+
+.middle {
+  text-align: center;
+}
