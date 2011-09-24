@@ -10,13 +10,13 @@ $qualifiers = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/up
 if (preg_match('@releases_4_0 = (.*)@', $qualifiers, $match))
 {
 	$latest40 = $match[1];
-	$Nav->addCustomNav("4.0 Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latest40 . "/help", "", 1);
+	$Nav->addCustomNav("4.0 Release Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latest40 . "/help", "", 1);
 }
 
 if (preg_match('@releases_3_0 = (.*)@', $qualifiers, $match))
 {
 	$latest30 = $match[1];
-	$Nav->addCustomNav("3.0 Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latest30 . "/help", "", 1);
+	$Nav->addCustomNav("3.0 Release Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latest30 . "/help", "", 1);
 }
 
 if (preg_match('@integration = (.*)@', $qualifiers, $match))
