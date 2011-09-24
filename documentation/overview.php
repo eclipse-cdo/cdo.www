@@ -5,10 +5,11 @@ $pageTitle 		= "Overview";
 $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-error_reporting(E_ALL);
-
 //$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest/help/org.eclipse.emf.cdo/html";
-$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/drops/I20110923-0228/help/org.eclipse.emf.cdo/html";
+$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest";
+$latest = readlink($latest);
+print $latest;
+//$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/drops/I20110923-0228/help/org.eclipse.emf.cdo/html";
 
 global $App;
 if ($App != NULL)
@@ -18,8 +19,6 @@ if ($App != NULL)
 
 print '<div id="midcolumn">';
 print '<h1>CDO Model Repository Overview</h1>';
-
-$inbody = false;
 
 
 print '</div>';
