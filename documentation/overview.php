@@ -15,15 +15,20 @@ if ($App != NULL)
 	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $latest . '/book.css" media="screen"/>' . "\n\t");
 }
 
-print '<div id="midcolumn">';
-print "<h1>CDO Model Repository Overview 9</h1>\n";
+print '<div id="midcolumn">' . "\n\n";
+print "<h1>CDO Model Repository Overview</h1>\n";
 
 $overview = file_get_contents($latest . "/Overview.html");
 preg_match('@</table>(.*)</BODY>@s', $overview, $match);
-$overview = $match[1];
+
+$overview = preg_replace('@<a href="http://@', '<a HREF="http://'. $overview);
+$overview = preg_replace('@<img src="http://@', '<img SRC="http://'. $overview);
+
+$overview = preg_replace('@<a href="@', '<a href="' . $latest . '/'. $overview);
+$overview = preg_replace('@<img src="@', '<img src="' . $latest . '/'. $overview);
 
 print $overview;
-print '</div>';
+print "\n\n</div>";
 
 ########################################################################
 include "$areaRoot/_footer.php"; ?>
