@@ -5,7 +5,7 @@ $pageTitle 		= "CDO Model Repository Overview";
 $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-$qualifier = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/updates/integration/latest.qualifier");
+$qualifier = $latestIntegration // Comes from _header.php
 $latest = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $qualifier . "/help/org.eclipse.emf.cdo.doc/html";
 
 global $App;
