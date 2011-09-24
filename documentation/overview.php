@@ -23,6 +23,7 @@ $overview = file_get_contents($latest . "/Overview.html");
 
 // Cut our relevant body
 preg_match('@</table>(.*)<p align="right">@s', $overview, $match);
+$overview = $match[1];
 
 // Protect absolute URLs
 $overview = str_replace('<a href="http://', '<a HREF="http://', $overview);
