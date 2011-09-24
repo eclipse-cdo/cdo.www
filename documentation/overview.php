@@ -8,7 +8,7 @@ $pageAuthor		= "Eike Stepper";
 
 $contents = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/updates/latest.properties");
 $props = parse_ini_string($contents, false);
-$latest = $props["integration.url"] . "/help/org.eclipse.emf.cdo/html";
+$latest = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $props["integration"] . "/help/org.eclipse.emf.cdo/html";
 
 //$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest/help/org.eclipse.emf.cdo/html";
 //$latest = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/updates/integration/latest";
