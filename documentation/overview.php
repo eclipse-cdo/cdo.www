@@ -16,10 +16,11 @@ if ($App != NULL)
 }
 
 print '<div id="midcolumn">';
-print "<h1>CDO Model Repository Overview 6</h1>\n";
+print "<h1>CDO Model Repository Overview 7</h1>\n";
 
 $overview = file_get_contents($latest . "/Overview.html");
-$overview = preg_replace('/.*</table>(.*)</BODY>.*/i', '\\1', $overview);
+preg_match('/</table>(.*)</BODY>/', $overview, $match);
+$overview = $match[1];
 
 print $overview;
 print '</div>';
