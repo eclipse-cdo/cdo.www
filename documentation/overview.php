@@ -22,6 +22,7 @@ if ($App != NULL)
 print '<div id="midcolumn">';
 print "<h1>CDO Model Repository Overview</h1>\n";
 print "Latest: " . $latest;
+print_r($props);
 
 /*
 $inbody = false;
