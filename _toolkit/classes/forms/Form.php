@@ -20,7 +20,7 @@ class Form
 
 	function getName()
 	{
-		return $this->action;
+		return $this->name;
 	}
 
 	function getAction()
