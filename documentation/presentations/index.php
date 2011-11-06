@@ -10,6 +10,12 @@ $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $page
 print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
+printPresentation("Dawn_EclipseConEurope_2011/Dawn_EclipseConEurope_2011",
+									"Let the sunshine in! News from the Dawn side of life",
+									"Short talk (Eclipse Con Europe 2011, Ludwigsburg/Germany)",
+									"Martin Flügge",
+									"November 2011");
+
 printPresentation("Dawn_EclipseCon_2011/Dawn_EclipseCon_2011",
 									"Dawn - Rise of the Collaborative UI",
 									"Short talk (Eclipse Con 2011, Santa Clara/CA)",
@@ -18,7 +24,7 @@ printPresentation("Dawn_EclipseCon_2011/Dawn_EclipseCon_2011",
 
 printPresentation("EclipseSummit2010/CDO_EclipseSummit_2010",
 									"Scale, Share and Store your Models with CDO / Dawn",
-									"Long talk (Eclipse Summit Europe 2010, Ludwigsburg)",
+									"Long talk (Eclipse Summit Europe 2010, Ludwigsburg/Germany)",
 									"Eike Stepper, Martin Flügge",
 									"November 2010");
 
