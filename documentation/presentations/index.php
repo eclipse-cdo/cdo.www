@@ -10,6 +10,12 @@ $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $page
 print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">Presentations</h1>' . "\n";
 
+printPresentation("EclipseSummit_2011/CDO_Ignite",
+									"CDO - Orthogonal Aspects of Models",
+									"Five Minutes (Eclipse Con Europe 2011, Ludwigsburg/Germany)",
+									"Eike Stepper",
+									"November 2011");
+
 printPresentation("Dawn_EclipseConEurope_2011/Dawn_EclipseConEurope_2011",
 									"Let the sunshine in! News from the Dawn side of life",
 									"Short talk (Eclipse Con Europe 2011, Ludwigsburg/Germany)",
@@ -22,7 +28,7 @@ printPresentation("Dawn_EclipseCon_2011/Dawn_EclipseCon_2011",
 									"Martin Flügge",
 									"March 2011");
 
-printPresentation("EclipseSummit2010/CDO_EclipseSummit_2010",
+printPresentation("EclipseSummit_2010/CDO_EclipseSummit_2010",
 									"Scale, Share and Store your Models with CDO / Dawn",
 									"Long talk (Eclipse Summit Europe 2010, Ludwigsburg/Germany)",
 									"Eike Stepper, Martin Flügge",
@@ -169,6 +175,7 @@ function printPresentation($basePath, $title, $subtitle, $presenters, $month, $l
 		array("pdf", "Adobe Acrobat Document (.pdf)"),
 		array("pptx", "Microsoft Office PowerPoint-Presentation (.pptx)"),
 		array("ppt", "Microsoft Office PowerPoint 97-2003-Presentation (.ppt)"),
+		array("zip", "Compressed Archive (.zip)"),
 		array("http", "External Link"));
 
 		foreach ($types as $type)
