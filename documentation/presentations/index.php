@@ -17,7 +17,7 @@ printPresentation("EclipseSummit_2011/CDO_Ignite",
 									"November 2011");
 
 printPresentation("Dawn_EclipseConEurope_2011/Dawn_EclipseConEurope_2011",
-									"Let the sunshine in! News from the Dawn side of life",
+									"Let the Sunshine in! News from the Dawn Side of Life",
 									"Short talk (Eclipse Con Europe 2011, Ludwigsburg/Germany)",
 									"Martin Flügge",
 									"November 2011");
