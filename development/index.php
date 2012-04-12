@@ -9,7 +9,7 @@ print '<div id="midcolumn">';
 
 print '<h2>'.$areaTitle.'</h2>';
 
-print "<p>If you want join in the development of CDO please have a look at the <a href='$areaPath/process'>CDO Development Proccess</a></p>";
+print "<p>If you would like to contribute to CDO please have a look at the <a href='$areaPath/process'>CDO Development Proccess</a></p>";
 
 print "<br><br><br><br><br><br><br><br><br>\n";
 //include "$projectRoot/tools/placeholder.html";
