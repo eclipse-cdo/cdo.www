@@ -6,7 +6,7 @@ $Nav->addNavSeparator($areaTitle, "");
 $Nav->addCustomNav("Releases", "$areaPath/index.php#releases", "", 1);
 $Nav->addCustomNav("Integration", "$areaPath/index.php#integration", "", 1);
 $Nav->addCustomNav("Maintenance", "$areaPath/index.php#maintenance", "", 1);
-$Nav->addCustomNav("Browse Sources", "http://dev.eclipse.org/svnroot/modeling/org.eclipse.emf.cdo", "", 1);
+$Nav->addCustomNav("Browse Sources", "http://git.eclipse.org/c/cdo/cdo.git", "", 1);
 $Nav->addCustomNav("Install Sources", "http://wiki.eclipse.org/CDO_Source_Installation", "", 1);
 $Nav->addCustomNav("License", "http://www.eclipse.org/org/documents/epl-v10.php", "", 1);
 
