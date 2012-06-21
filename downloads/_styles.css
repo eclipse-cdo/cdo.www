@@ -2,13 +2,17 @@
 	background: url('background.jpg') top left repeat-x;
 }
 
+#midcolumn img {
+ padding-top: 1px;
+}
+
 .repo-item {
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
 
 .repo-info td {
-	padding: -1px;
+	padding-bottom: -1px;
 }
 
 .repo-label1 {
