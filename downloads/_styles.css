@@ -9,7 +9,7 @@
 #midcolumn li {
 	list-style-image: url('separator.png');
 	margin-right: 0px;
-	padding-right: 0px;
+	padding: 0px;
 }
 
 #midcolumn img {
@@ -57,7 +57,7 @@
 .drop {
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding: 10px 0px 5px 0px;
+	padding: 10px 0px 0px 0px;
 }
 
 .drop-info {
