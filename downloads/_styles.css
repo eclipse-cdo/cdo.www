@@ -7,7 +7,11 @@
 	margin-bottom: 2px;
 }
 
-.repo-label1 { 
+.repo-info {
+	padding: 0px;
+}
+
+.repo-label1 {
   color: #000000;
   font-size: 18pt;
 }
@@ -17,7 +21,7 @@
   border-bottom: 3px solid #D4D4DD;
 }
 
-.repo-label2 { 
+.repo-label2 {
   color: #000000;
   font-size: 14pt;
 }
@@ -26,7 +30,7 @@
 	padding: 5px 5px 5px 0;
 }
 
-.drop-label { 
+.drop-label {
   color: #000000;
   font-size: 12pt;
   font-weight: bold;
