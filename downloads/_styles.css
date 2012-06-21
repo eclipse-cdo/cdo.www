@@ -25,6 +25,10 @@
 	padding-right: 0px;
 }
 
+.repo-item table {
+	margin-bottom: 0px;
+}
+
 .repo-label1 {
   color: #000000;
   font-size: 18pt;
