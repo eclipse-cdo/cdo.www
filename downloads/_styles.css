@@ -3,7 +3,7 @@
 }
 
 #midcolumn img {
- padding-top: 1px;
+ padding-top: 2px;
 }
 
 .repo-item {
@@ -12,7 +12,7 @@
 }
 
 .repo-info td {
-	padding-bottom: -1px;
+	padding: 0px;
 }
 
 .repo-label1 {
