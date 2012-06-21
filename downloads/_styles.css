@@ -8,6 +8,7 @@
 
 #midcolumn li {
 	list-style-image: url('separator.png');
+	list-style-position:inside;
 	margin-right: 0px;
 	padding-right: 0px;
 }
