@@ -1,5 +1,6 @@
 #midcolumn {
 	background: url('background.jpg') top left repeat-x;
+	line-height: 12px;
 }
 
 #midcolumn img {
