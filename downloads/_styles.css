@@ -7,6 +7,7 @@
 }
 
 #midcolumn li {
+	list-style-image: url('/eclipse.org-common/themes/Nova/images/separator.png');
 	margin-right: 0px;
 	padding-right: 0px;
 }
