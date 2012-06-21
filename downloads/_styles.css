@@ -21,12 +21,12 @@
 }
 
 .repo-item li {
+	margin-top: 10px;
 	margin-right: 0px;
 	padding-right: 0px;
 }
 
 .repo-item table {
-	margin-top: 10px;
 	margin-bottom: 0px;
 }
 
