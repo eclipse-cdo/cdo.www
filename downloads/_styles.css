@@ -1,6 +1,9 @@
 #midcolumn {
 	background: url('background.jpg') top left repeat-x;
-	line-height: 12px;
+}
+
+#midcolumn div,span,p,blockquote,pre,code,em,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,legend,table,caption,tbody,tfoot,thead,tr,th,td {
+    line-height: 12px;
 }
 
 #midcolumn img {
