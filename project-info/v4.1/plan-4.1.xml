@@ -2,12 +2,12 @@
 <?xml-stylesheet type="text/xsl" href="http://www.eclipse.org/projects/project-plan.xsl"?>
 <plan plan-format="1.0" xmlns="http://www.eclipse.org/project/plan" xmlns:html="http://www.w3.org/1999/xhtml"
       name="CDO Model Repository">
-   <release projectid="modeling.emf.cdo" version="4.2"/>
+   <release projectid="modeling.emf.cdo" version="4.1"/>
    <introduction>
      <html:div>
 This document lays out the feature and API set for the
 third release of the CDO Model Repository
-Project (CDO), version 4.2. This project plan inherits from the Modeling
+Project (CDO), version 4.1. This project plan inherits from the Modeling
 Project Plan, which should be referenced when consulting this
 individual project plan.
      </html:div>
@@ -26,52 +26,45 @@ The release deliverables have the same form as is found in most Eclipse projects
   <html:li><html:b>CDO Dawn Runtime</html:b> (Contains the runtime aspects for graphical collaboration support over CDO.)</html:li>
   <html:li><html:b>CDO Dawn SDK</html:b> (Includes Runtime, Codegen, Tools, Examples, Documentation and Source.)</html:li>
   <html:li><html:b>CDO Dawn Tests</html:b> (Contains the CDO Dawn test plugins and sources. Ensure that SWTBot is already installed! Visit http://download.eclipse.org/technology/swtbot/helios/dev-build/update-site for a p2 repository that contains SWTBot.)</html:li>
-  <html:li><html:b>CDO Electronic Restaurant Example</html:b> (Contains the CDO Gastro RCP plugins, models and sources.)</html:li>
-  <html:li><html:b>CDO Model Repository Client (Compare Integration)</html:b> (Contains the core and user interface plugins of the CDO / EMF Compare integration. This feature is optional and requires EMF Compare 2.1 or higher.)</html:li>
+  <html:li><html:b>CDO Gastro Example</html:b> (Contains the CDO Gastro RCP plugins, models and sources.)</html:li>
   <html:li><html:b>CDO Model Repository Client</html:b> (Contains the CDO client core and user interface plugins.)</html:li>
   <html:li><html:b>CDO Model Repository Definitions</html:b> (Contains the EMF-based definition and wiring plugins for CDO.)</html:li>
   <html:li><html:b>CDO Model Repository Documentation</html:b> (Contains the documentation of the CDO Model Repository.)</html:li>
   <html:li><html:b>CDO Model Repository EPP</html:b> (Contains a minimum CDO client and server environment for the Eclipse Modeling package.)</html:li>
   <html:li><html:b>CDO Model Repository Examples Hibernate</html:b> (Contains the CDO Hibernate example plugin and sources. Ensure that Hibernate is already installed! Visit http://www.elver.org/eclipse/2.0.0/update for a p2 repository that contains Hibernate.)</html:li>
-  <html:li><html:b>CDO Model Repository Examples Installer</html:b> (Contains a New Wizard that creates CDO example projects in the workspace.)</html:li>
   <html:li><html:b>CDO Model Repository Examples</html:b> (Contains the CDO example plugin, models and sources.)</html:li>
   <html:li><html:b>CDO Model Repository Explorer Product</html:b> (Contains the product definition of an installable CDO explorer.)</html:li>
   <html:li><html:b>CDO Model Repository Migrator Tool</html:b> (Contains the CDO Genmodel migrator/importer plugin.)</html:li>
   <html:li><html:b>CDO Model Repository SDK</html:b> (Includes Client, Server, Tools, Examples, Documentation and Source.)</html:li>
-  <html:li><html:b>CDO Model Repository Server DB Store</html:b> (Contains the DBStore plugins.)</html:li>
-  <html:li><html:b>CDO Model Repository Server DB4O Store</html:b> (Contains the DB4O Store bundle. Ensure that DB4O Driver is already installed! Visit http://www.elver.org/eclipse/2.0.0/update for a p2 repository that contains DB4O Driver.)</html:li>
-  <html:li><html:b>CDO Model Repository Server Hibernate Store</html:b> (Contains the HibernateStore and Teneo integration plugins. Ensure that Hibernate is already installed! Visit http://www.elver.org/eclipse/2.0.0/update for a p2 repository that contains Hibernate.)</html:li>
-  <html:li><html:b>CDO Model Repository Server Lissome Store</html:b> (Contains the LissomeStore plugins.)</html:li>
-  <html:li><html:b>CDO Model Repository Server MongoDB Store</html:b> (Contains the MongoDBStore plugins. Ensure that a MongoDB Java driver is already installed! Visit http://www.elver.org/eclipse/2.0.0/update for a p2 repository that contains a MongoDB Java driver.)</html:li>
-  <html:li><html:b>CDO Model Repository Server Objectivity Store</html:b> (Contains the Objectivity Store and stubbed jar file bundle. For runtime, ensure that you have Objectivity /DB installed!)</html:li>
+  <html:li><html:b>CDO Model Repository Server DB4O</html:b> (Contains the DB4O Store bundle. Ensure that DB4O Driver is already installed! Visit http://net4j.sourceforge.net/update for a p2 repository that contains DB4O Driver.)</html:li>
+  <html:li><html:b>CDO Model Repository Server DB</html:b> (Contains the DBStore plugins.)</html:li>
+  <html:li><html:b>CDO Model Repository Server Hibernate</html:b> (Contains the HibernateStore and Teneo integration plugins. Ensure that Hibernate is already installed! Visit http://www.elver.org/eclipse/2.0.0/update for a p2 repository that contains Hibernate.)</html:li>
+  <html:li><html:b>CDO Model Repository Server MongoDB</html:b> (Contains the MongoDBStore plugins. Ensure that a MongoDB Java driver is already installed! Visit http://net4j.sourceforge.net/update for a p2 repository that contains a MongoDB Java driver.)</html:li>
+  <html:li><html:b>CDO Model Repository Server Objectivity</html:b> (Contains the Objectivity Store and stubbed jar file bundle. For runtime, ensure that you have Objectivity /DB installed!)</html:li>
   <html:li><html:b>CDO Model Repository Server Product</html:b> (Contains the product definition of an installable CDO server.)</html:li>
   <html:li><html:b>CDO Model Repository Server</html:b> (Contains the CDO server plugins.)</html:li>
   <html:li><html:b>CDO Model Repository Tests Hibernate</html:b> (Contains the CDO Hibernate test plugins and sources. Ensure that Hibernate is already installed! Visit http://www.elver.org/eclipse/2.0.0/update for a p2 repository that contains Hibernate.)</html:li>
   <html:li><html:b>CDO Model Repository Tests</html:b> (Contains the CDO test plugins, models and sources.)</html:li>
-  <html:li><html:b>CDO Release Engineering API Reports</html:b> (Contains a Buckminster actor that produces API evolution reports by comparing the workspace API to an API baseline.)</html:li>
-  <html:li><html:b>CDO Release Engineering Build Stamp</html:b> (Contains a build listener that writes the timestamp of successful builds to a file (can be used with Hudson CI).)</html:li>
   <html:li><html:b>CDO Release Engineering Documentation</html:b> (Contains the documentation of the CDO release engineering infrastructure.)</html:li>
   <html:li><html:b>CDO Release Engineering Dynamic Working Sets</html:b> (Contains a set of CDO-specific working sets that are automatically populated with the appropriate workspace projects.)</html:li>
-  <html:li><html:b>CDO Release Engineering Git Bash</html:b> (Contains a popup action that starts a Git bash and some other actions on the selected Git repository.)</html:li>
   <html:li><html:b>CDO Release Engineering Launch Decorator</html:b> (Contains a label decorator that highlights unshared launch configurations to ease their removal.)</html:li>
   <html:li><html:b>CDO Release Engineering Manifest Opener</html:b> (Contains context-sensitive openers for plugin manifests (F6) and project properties (Shift+F6).)</html:li>
-  <html:li><html:b>CDO Release Engineering Project Copy</html:b> (Contains a popup action that copies projects and adjusts their fundamental artifacts.)</html:li>
   <html:li><html:b>CDO Release Engineering Relative Paths</html:b> (Contains a popup action that copies the relative path between two workspace resources into the clipboard.)</html:li>
   <html:li><html:b>CDO Release Engineering Tasks</html:b> (Contains a decorator that appends the name of the assignee to a task label.)</html:li>
+  <html:li><html:b>CDO Release Engineering Version Tool</html:b> (Contains an incremental builder that validates the micro versions of plugins against an implementation baseline using source digests.)</html:li>
   <html:li><html:b>CDO Release Engineering Window Title Setter</html:b> (Contains a plugin that sets the IDE window title to the name of the workspace location directory.)</html:li>
   <html:li><html:b>CDO Release Engineering Windows Explorer</html:b> (Contains a popup action that starts the Windows Explorer on the selected workspace resource.)</html:li>
-  <html:li><html:b>Net4j DB Framework DB2 Adapter</html:b> (Net4j DB Framework DB2 Adapter contains the DB2 Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for DB2. This needs to be installed separately.)</html:li>
+  <html:li><html:b>CDO Release Engineering Windows Git</html:b> (Contains a popup action that starts a Git bash on the selected Git repository.)</html:li>
+  <html:li><html:b>Net4j DB Framework DB2 Adapter</html:b> (Net4j DB Framework DB2 Adapter contains the DB2 Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for DB2. This needs to be installed separately, for example from http://net4j.sourceforge.net/update)</html:li>
   <html:li><html:b>Net4j DB Framework Derby Adapter</html:b> (Contains the Derby Adapter matching the Net4j DB Framework and the database driver bundle for Derby.)</html:li>
   <html:li><html:b>Net4j DB Framework Documentation</html:b> (Contains the documentation of the Net4j DB Framework.)</html:li>
   <html:li><html:b>Net4j DB Framework H2 Adapter</html:b> (Contains the H2 Adapter matching the Net4j DB Framework and the database driver bundle for H2.)</html:li>
-  <html:li><html:b>Net4j DB Framework HSQLDB Adapter</html:b> (Contains the HSQLDB Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for HSQLDB. This needs to be installed separately, for example from http://www.elver.org/eclipse/2.0.0/update)</html:li>
-  <html:li><html:b>Net4j DB Framework MYSQL Adapter</html:b> (Contains the MYSQL Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for MYSQL. This needs to be installed separately, for example from http://www.elver.org/eclipse/2.0.0/update)</html:li>
-  <html:li><html:b>Net4j DB Framework Oracle Adapter</html:b> (Contains the Oracle Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for Oracle. This needs to be installed separately, for example from http://download.oracle.com/otn_software/oepe/juno)</html:li>
-  <html:li><html:b>Net4j DB Framework PostgreSQL Adapter</html:b> (Contains the PostgreSQL Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for PostgreSQL. This needs to be installed separately, for example from http://www.elver.org/eclipse/2.0.0/update)</html:li>
-  <html:li><html:b>Net4j DB Framework</html:b> (Contains the database core framework and database adapter plugins for Derby, Mysql, HSQLDB and PostgreSQL. Additional database drivers are available via http://www.elver.org/eclipse/2.0.0/update (read the license informations).)</html:li>
+  <html:li><html:b>Net4j DB Framework HSQLDB Adapter</html:b> (Contains the HSQLDB Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for HSQLDB. This needs to be installed separately, for example from http://net4j.sourceforge.net/update)</html:li>
+  <html:li><html:b>Net4j DB Framework MYSQL Adapter</html:b> (Contains the MYSQL Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for MYSQL. This needs to be installed separately, for example from http://net4j.sourceforge.net/update)</html:li>
+  <html:li><html:b>Net4j DB Framework PostgreSQL Adapter</html:b> (Contains the PostgreSQL Adapter matching the Net4j DB Framework BUT NOT the database driver bundle for PostgreSQL. This needs to be installed separately, for example from http://net4j.sourceforge.net/update)</html:li>
+  <html:li><html:b>Net4j DB Framework</html:b> (Contains the database core framework and database adapter plugins for Derby, Mysql, HSQLDB and PostgreSQL. Additional database drivers are available via http://net4j.sourceforge.net/update (read the license informations).)</html:li>
   <html:li><html:b>Net4j Signalling Platform Definitions</html:b> (Contains the EMF-based definition and wiring plugins for Net4j.)</html:li>
   <html:li><html:b>Net4j Signalling Platform Documentation</html:b> (Contains the documentation of the Net4j Signalling Platform.)</html:li>
-  <html:li><html:b>Net4j Signalling Platform Examples Installer</html:b> (Contains a New Wizard that creates Net4j example projects in the workspace.)</html:li>
   <html:li><html:b>Net4j Signalling Platform Examples</html:b> (Contains the general Net4j examples, the buddies collaboration + chat examples and the experimental JMS provider implementation plugins, as well as all sources.)</html:li>
   <html:li><html:b>Net4j Signalling Platform Runtime</html:b> (Contains the Net4j core and transport provider plugins (tcp, jvm and http).)</html:li>
   <html:li><html:b>Net4j Signalling Platform SDK</html:b> (Includes Runtime, UI, DB, Examples, Documentation and Source.)</html:li>
@@ -80,11 +73,6 @@ The release deliverables have the same form as is found in most Eclipse projects
   <html:li><html:b>Net4j Utilities Documentation</html:b> (Contains the documentation of the Net4j Utilities.)</html:li>
   <html:li><html:b>Net4j Utilities UI</html:b> (Contains the Net4j utilities user interface plugins.)</html:li>
   <html:li><html:b>Net4j Utilities</html:b> (Contains the Net4j utilities plugin.)</html:li>
-  <html:li><html:b>Version Management Tool Documentation</html:b> (Contains the documentation of the Version Management Tool.)</html:li>
-  <html:li><html:b>Version Management Tool Headless</html:b> (Contains an incremental builder that performs version validation on plug-ins and features. Does not contain the documentation or the user interface.)</html:li>
-  <html:li><html:b>Version Management Tool SDK</html:b> (Includes the runtime, the sources and the documentation.)</html:li>
-  <html:li><html:b>Version Management Tool Tests</html:b> (Contains the Version Management Tool test plugins and their sources.)</html:li>
-  <html:li><html:b>Version Management Tool</html:b> (Contains an incremental builder that performs version validation on plug-ins and features. Also contains the documentation and the user interface.)</html:li>
 </html:ul>
 
 			</html:div>
