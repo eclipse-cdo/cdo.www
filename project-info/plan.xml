@@ -173,7 +173,7 @@ control over the behaviour and performance of their repositories and sessions.
                 </html:div>
             </description>
             <committed
-                bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?status_whiteboard_type=allwordssubstr&amp;query_format=advanced&amp;status_whiteboard=Power%20to%20the%20People&amp;bug_status=RESOLVED&amp;version=4.2&amp;component=cdo.core&amp;component=cdo.dawn&amp;component=cdo.db&amp;component=cdo.docs&amp;component=cdo.hibernate&amp;component=cdo.net4j&amp;component=cdo.net4j.db&amp;component=cdo.net4j.ui&amp;component=cdo.objy&amp;component=cdo.releng&amp;component=cdo.ui&amp;resolution=FIXED&amp;product=EMF&amp;classification=Modeling">
+                bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?status_whiteboard_type=allwordssubstr&amp;query_format=advanced&amp;status_whiteboard=Power%20to%20the%20People&amp;bug_status=RESOLVED&amp;version=4.2&amp;component=cdo.core&component=cdo.dawn&component=cdo.db&component=cdo.docs&component=cdo.hibernate&component=cdo.legacy&component=cdo.net4j&component=cdo.net4j.db&component=cdo.net4j.ui&component=cdo.objy&component=cdo.releng&component=cdo.ui&amp;resolution=FIXED&amp;product=EMF&amp;classification=Modeling">
             </committed>
 			<!--
             <proposed
@@ -187,14 +187,12 @@ control over the behaviour and performance of their repositories and sessions.
         <theme name="Appealing to a Broader Community">
             <description>
                 <html:div>
-The CDO project has a proven record of robustness and flexibility.  However,
-in the past best results could only be achieved with EMF models specifically
-generated for the usage with CDO. The upcoming 3.0 release will be less invasive
-to the client models and applications by being better aligned with EMF and other standards.
+The CDO project has a proven record of robustness and flexibility.
+The upcoming 4.2 release will be even better aligned with EMF and other standards.
                 </html:div>
             </description>
             <committed
-                bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?status_whiteboard_type=allwordssubstr&amp;query_format=advanced&amp;status_whiteboard=Appealing%20to%20a%20Broader%20Community&amp;bug_status=RESOLVED&amp;version=4.2&amp;component=cdo.core&amp;component=cdo.dawn&amp;component=cdo.db&amp;component=cdo.docs&amp;component=cdo.hibernate&amp;component=cdo.net4j&amp;component=cdo.net4j.db&amp;component=cdo.net4j.ui&amp;component=cdo.objy&amp;component=cdo.releng&amp;component=cdo.ui&amp;resolution=FIXED&amp;product=EMF&amp;classification=Modeling">
+                bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?status_whiteboard_type=allwordssubstr&amp;query_format=advanced&amp;status_whiteboard=Appealing%20to%20a%20Broader%20Community&amp;bug_status=RESOLVED&amp;version=4.2&amp;component=cdo.core&component=cdo.dawn&component=cdo.db&component=cdo.docs&component=cdo.hibernate&component=cdo.legacy&component=cdo.net4j&component=cdo.net4j.db&component=cdo.net4j.ui&component=cdo.objy&component=cdo.releng&component=cdo.ui&amp;resolution=FIXED&amp;product=EMF&amp;classification=Modeling">
             </committed>
 			<!--
             <proposed
@@ -226,7 +224,7 @@ are seen as that by the development team itself!
                 </html:div>
             </description>
             <committed
-                bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?status_whiteboard_type=allwordssubstr&amp;query_format=advanced&amp;status_whiteboard=Lighter,%20Faster%20and%20Better&amp;bug_status=RESOLVED&amp;version=4.2&amp;component=cdo.core&amp;component=cdo.dawn&amp;component=cdo.db&amp;component=cdo.docs&amp;component=cdo.hibernate&amp;component=cdo.net4j&amp;component=cdo.net4j.db&amp;component=cdo.net4j.ui&amp;component=cdo.objy&amp;component=cdo.releng&amp;component=cdo.ui&amp;resolution=FIXED&amp;product=EMF&amp;classification=Modeling">
+                bugzilla="https://bugs.eclipse.org/bugs/buglist.cgi?status_whiteboard_type=allwordssubstr&amp;query_format=advanced&amp;status_whiteboard=Lighter,%20Faster%20and%20Better&amp;bug_status=RESOLVED&amp;version=4.2&amp;component=cdo.core&component=cdo.dawn&component=cdo.db&component=cdo.docs&component=cdo.hibernate&component=cdo.legacy&component=cdo.net4j&component=cdo.net4j.db&component=cdo.net4j.ui&component=cdo.objy&component=cdo.releng&component=cdo.ui&amp;resolution=FIXED&amp;product=EMF&amp;classification=Modeling">
             </committed>
 			<!--
             <proposed
