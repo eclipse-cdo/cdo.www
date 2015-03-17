@@ -12,10 +12,6 @@ $latest = $help . "/org.eclipse.emf.cdo.doc/html";
 $others = "<p class=\"middle\"><i>This overview is an extract from the <a href=\"$help\">4.1 Release Help</a>.<br>\nFor other versions select from the menu bar at the left side.</i></p>\n\n";
 
 global $App;
-if ($App != NULL)
-{
-	$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $latest . '/book.css" media="screen"/>' . "\n\t");
-}
 
 print '<div id="midcolumn">' . "\n\n";
 print "<h1 class=\"middle\">CDO Model Repository Overview</h1>\n";

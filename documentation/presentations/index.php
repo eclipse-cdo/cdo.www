@@ -5,7 +5,6 @@ $pageTitle 		= "Presentations";
 //$pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
 
 print '<div id="midcolumn">' . "\n";
 print '<h1 id="pagetitle">Presentations</h1>' . "\n";

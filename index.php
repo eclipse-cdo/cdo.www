@@ -6,44 +6,75 @@ $pageTitle 		= "";
 $pageKeywords	= "";
 $pageAuthor		= "Eike Stepper";
 
+  // Initialize $variables.
+  $variables = array();
+  $links = array();
+
+  $links[] = array(
+    'icon' => 'fa-download', // Required
+    'url' => '/cdo/downloads/', // Required
+    'title' => 'Download', // Required
+    //'target' => '_blank', // Optional
+    'text' => 'Looking for the latest build?<br/>Milestones, maintenance builds, and more...' // Optional
+  );
+
+  $links[] = array(
+    'icon' => 'fa-book', // Required
+    'url' => '/cdo/documentation', // Required
+    'title' => 'Documentation', // Required
+    //'target' => '_blank', // Optional
+    'text' => 'Browse through the product documentation, tutorials, presentations and the JavaDocs...' // Optional
+  );
+
+  $links[] = array(
+    'icon' => 'fa-support', // Required
+    'url' => '/cdo/support/', // Required
+    'title' => 'Support', // Required
+    //'target' => '_blank', // Optional
+    'text' => 'You have problems or questions not answered in the documentation? Look here for help...' // Optional
+  );
+
+
+  $links[] = array(
+    'icon' => 'fa-globe', // Required
+    'url' => '/cdo/community/', // Required
+    'title' => 'Community', // Required
+    //'target' => '_blank', // Optional
+    'text' => 'Visit the community pages for information about various product and development topics...' // Optional
+  );
+
+  $links[] = array(
+    'icon' => 'fa-code', // Required
+    'url' => '/cdo/development/', // Required
+    'title' => 'Development', // Required
+    //'target' => '_blank', // Optional
+    'text' => 'Get the sources and find out more about the CDO project and its development process...' // Optional
+  );
+
+
+  $links[] = array(
+    'icon' => 'fa fa-users', // Required
+    'url' => '/cdo/team/', // Required
+    'title' => 'Team', // Required
+    //'target' => '_blank', // Optional
+    'text' => 'About us and our activity...' // Optional
+  );
+
+
+  $variables['header_nav'] = array(
+    'links' =>  $links, // Required
+    'logo' => array( // Required
+      'src' => '/cdo/images/Logo-CDO.png', // Required
+      'alt' => 'The Eclipse Foundation', // Optional
+      'url' => 'http://www.eclipse.org', // Optional
+      //'target' => '_blank' // Optional
+     ),
+  );
+
+  // Set Solstice theme variables (Array)
+  $App->setThemeVariables($variables);
+
 ?>
-
-	<div class="linkBlock">
-		<div class="link">
-			<a href="downloads"><img src="http://dev.eclipse.org/huge_icons/actions/go-down.png" alt="Downloads"/></a>
-			<a class="heading" href="downloads">Downloads</a>
-			<p class="subText">Looking for the latest build?<br/>Milestones, maintenance builds, and more...</p>
-		</div>
-		<div class="link">
-			<a href="documentation"><img src="http://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png" alt="Documentation"/></a>
-			<a class="heading" href="documentation">Documentation</a>
-			<p class="subText">Browse through the product documentation, tutorials, presentations and the JavaDocs...</p>
-		</div>
-		<div class="link">
-			<a href="support"><img src="http://dev.eclipse.org/huge_icons/apps/help-browser.png" alt="Support"/></a>
-			<a class="heading" href="support">Support</a>
-			<p class="subText">You have problems or questions not answered in the documentation? Look here for help...</p>
-		</div>
-	</div>
-
-	<div class="linkBlock">
-		<div class="link">
-			<a href="community"><img src="http://dev.eclipse.org/huge_icons/categories/applications-internet.png" alt="Community"/></a>
-			<a class="heading" href="community">Community</a>
-			<p class="subText">Visit the community pages for information about various product and development topics...</p>
-		</div>
-		<div class="link">
-			<a href="development"><img src="http://dev.eclipse.org/huge_icons/actions/edit-clear.png" alt="Development"/></a>
-			<a class="heading" href="development">Development</a>
-			<p class="subText">Get the sources and find out more about the CDO project and its development process...</p>
-		</div>
-		<div class="link">
-			<a href="team"><img src="http://dev.eclipse.org/huge_icons/apps/system-users.png" alt="Team"/></a>
-			<a class="heading" href="team">Team</a>
-			<p class="subText">About us and our activity...</p>
-		</div>
-	</div>
-
 
 	<div id="midcolumn">
 		<div class="sideitem">
@@ -73,7 +104,7 @@ $pageAuthor		= "Eike Stepper";
 	<div id="rightcolumn">
 		<div class="sideitem">
 			<h6>Related Links</h6>
-			<ul class="relatedLinks">
+			<ul class="relatedLinks fa-ul" style="margin-left:20px;">
 				<li>
 					<a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo"><img src="http://www.eclipse.org/cdo/images/Logo-CDO-32x32-bottom.png"/></a>
 					<a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo">About This Project</a>
