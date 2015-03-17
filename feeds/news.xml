@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <doc>
+<news date="March 17, 2015" showOn="whatsnew">
+	A preview of the new UI that comes with Mars is available now. Watch this <a href="http://www.youtube.com/watch?v=iU21I4-ZxiQ">screen cast</a>.
+</news>
 <news date="January 30, 2009" showOn="docs,whatsnew">
 	<a href="http://live.eclipse.org/node/635">Scale, Share and Store your Models with CDO 2.0 (Webinar)</a> is available.
 </news>
