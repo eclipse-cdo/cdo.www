@@ -1,6 +1,8 @@
 <?php include "$toolkitRoot/includes/header.php";
 ########################################################################
 
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
+
 if ($Nav != NULL)
 {
 	$Nav->addNavSeparator($projectTitle, "$projectPath/");
