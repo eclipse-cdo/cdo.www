@@ -7,19 +7,19 @@ td.file-size {
 }
 
 .repo-label1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
-  padding-bottom: 3px;
+  border-bottom: 3px;
 }
 
 .repo-label2 {
   font-size: 16px;
   font-weight: bold;
-  padding-bottom: 3px;
+  border-bottom: 3px;
 }
 
 .drop-label {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: bold;
-  padding-bottom: 1px;
+  border-bottom: 3px;
 }
