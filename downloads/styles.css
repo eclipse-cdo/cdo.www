@@ -1,3 +1,7 @@
 td {
 	padding: 1px;
 }
+
+td.file-size {
+  text-align: right;
+}
