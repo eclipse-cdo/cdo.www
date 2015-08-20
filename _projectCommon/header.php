@@ -1,7 +1,7 @@
 <?php include "$toolkitRoot/includes/header.php";
 ########################################################################
 
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $projectPath . '/styles.css" media="screen"/>' . "\n\t");
 
 if ($Nav != NULL)
 {
