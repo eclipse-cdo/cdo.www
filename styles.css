@@ -12,7 +12,8 @@ p, table {
 
 #leftnav li.separatorNolink {
   font-weight: bold;
-  margin-top: 2em;
+  margin-top: 20px;
+  margin-left: -20px;
   list-style-type: none;
   list-style-image: url('https://www.eclipse.org/cdo/images/empty.gif');
 }
