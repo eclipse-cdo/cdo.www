@@ -30,7 +30,7 @@ $pageAuthor		= "Eike Stepper";
          <tr>
            <td width="44px"/>
            <td><a href="/cdo/downloads/"><img src="https://dev.eclipse.org/huge_icons/actions/go-down.png"></img></a>&nbsp;&nbsp;&nbsp;</td>
-           <td valign="top"><h3><a href="/cdo/downloads/">Download</a></h3><p><i>Looking for the latest build? Milestones, maintenance builds, and more...</i></p></td>
+           <td valign="top"><h3><a href="/cdo/downloads/">Downloads</a></h3><p><i>Looking for the latest build? Milestones, maintenance builds, and more...</i></p></td>
          </tr>
          <tr><td colspan="3"></td></tr>
          <tr>

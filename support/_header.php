@@ -1,7 +1,7 @@
 <?php include "$projectRoot/_projectCommon/header.php";
 ########################################################################
 
-$navIconURL = "http://dev.eclipse.org/huge_icons/apps/help-browser.png";
+$navIconURL = "https://dev.eclipse.org/huge_icons/actions/mail-reply-all.png";
 $Nav->addNavSeparator($areaTitle, "");
 $Nav->addCustomNav("Newsgroup", "$areaPath/#newsgroup", "", 1);
 $Nav->addCustomNav("Bugzilla", "$areaPath/#bugzilla", "", 1);
