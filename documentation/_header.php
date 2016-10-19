@@ -10,7 +10,7 @@ $qualifiers = file_get_contents("http://download.eclipse.org/modeling/emf/cdo/up
 if (preg_match('@integration = (.*)@', $qualifiers, $match))
 {
 	$latestIntegration = $match[1];
-	$Nav->addCustomNav("Latest Preview Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latestIntegration . "/help", "", 1);
+	$Nav->addCustomNav("Latest Help", "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latestIntegration . "/help", "", 1);
 }
 
 if (preg_match('@releases_4_5 = (.*)@', $qualifiers, $match))

@@ -9,7 +9,7 @@ global $latestIntegration; // Defined in _header.php
 
 $help = "http://download.eclipse.org/modeling/emf/cdo/drops/" . $latestIntegration . "/help";
 $latest = $help . "/org.eclipse.emf.cdo.doc/html";
-$others = "<p class=\"middle\"><i>This overview is an extract from the <a href=\"$help\">Latest Integration Help</a>.<br>\nFor other versions select from the menu bar at the left side.</i></p>\n\n";
+$others = "<p class=\"middle\"><i>This overview is an extract from the <a href=\"$help\">Latest Help</a>.<br>\nFor other versions select from the menu bar at the left side.</i></p>\n\n";
 
 global $App;
 
