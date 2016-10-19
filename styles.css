@@ -2,6 +2,10 @@
 	width: 700px;
 }
 
+p#blurb {
+  margin-bottom: 6px;
+}
+
 p, table {
   margin-bottom: 2px;
 }
