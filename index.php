@@ -47,21 +47,10 @@ $pageAuthor		= "Eike Stepper";
          <tr><td colspan="3"></td></tr>
          <tr>
            <td width="44px"/>
-           <td><a href="/cdo/development/"><img src="https://dev.eclipse.org/huge_icons/categories/applications-development.png"></img></a>&nbsp;&nbsp;&nbsp;</td>
-           <td valign="top"><h3><a href="/cdo/development/">Development</a></h3><p><i>Get the sources and find out more about the CDO project and its development process...</i></p></td>
-         </tr>
-         <tr><td colspan="3"></td></tr>
-         <tr>
-           <td width="44px"/>
            <td><a href="/cdo/support/"><img src="https://dev.eclipse.org/huge_icons/actions/mail-reply-all.png"></img></a>&nbsp;&nbsp;&nbsp;</td>
            <td valign="top"><h3><a href="/cdo/support/">Support</a></h3><p><i>You have problems or questions not answered in the documentation? Look here for help...</i></p></td>
          </tr>
          <tr><td colspan="3"></td></tr>
-         <tr>
-           <td width="44px"/>
-           <td><a href="/cdo/team/"><img src="https://dev.eclipse.org/huge_icons/apps/system-users.png"></img></a>&nbsp;&nbsp;&nbsp;</td>
-           <td valign="top"><h3><a href="/cdo/team/">Team</a></h3><p><i>About us and our activity...</i></p></td>
-         </tr>
        </table>
 	   </td></tr>
 	 </table>
