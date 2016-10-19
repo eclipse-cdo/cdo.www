@@ -13,4 +13,5 @@ p, table {
 li.separatorNolink {
   font-weight: bold;
   margin-top: 1em;
+  list-style-type: none;
 }
