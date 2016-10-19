@@ -19,7 +19,8 @@ $pageAuthor		= "Eike Stepper";
           CDO is both a development-time model repository and a run-time persistence framework.
           Being highly optimized it supports object graphs of arbitrary size.<br>
           CDO offers transactions with save points, explicit locking, change notifications, 
-          queries, transparent temporality, branching, merging, offline and fail-over modes, ...
+          queries, transparent temporality, time travel, branching, merging, offline clones,
+          fail-over clusters, automatic memory management, and more...
        </td>
        <td width="32px"/>
 	   </tr>
