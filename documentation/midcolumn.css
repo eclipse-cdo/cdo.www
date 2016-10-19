@@ -3,6 +3,11 @@
   margin-bottom: 6px;
 }
 
+#midcolumn dt {
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+
 #midcolumn p.author {
   margin-bottom: 6px;
   font-style: italic;
