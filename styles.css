@@ -10,11 +10,6 @@ p, table {
   margin-bottom: 10px;
 }
 
-#leftnav li {
-  margin-top: 0px;
-  margin-left: 0px;
-}
-
 #leftnav li.separatorNolink {
   margin-top: 20px;
   margin-left: 10px;
