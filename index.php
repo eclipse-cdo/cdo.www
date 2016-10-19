@@ -77,6 +77,10 @@ $pageAuthor		= "Eike Stepper";
 ?>
 
 	<div id="midcolumn">
+	 <div>
+	   <img src="/cdo/images/Logo-CDO.png"></img>
+	 </div>
+	 
 		<div class="sideitem">
 			<h6><a href="<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;
 					<a href="/<?=$PR?>/news-whatsnew.php">What's New</a></h6>
