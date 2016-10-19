@@ -3,7 +3,7 @@
 
 $navIconURL = "http://dev.eclipse.org/huge_icons/actions/go-down.png";
 $Nav->addNavSeparator($areaTitle, "");
-$Nav->addCustomNav("Releases", "$areaPath/index.php#releases", "", 2);
+$Nav->addCustomNav("Releases!", "$areaPath/index.php#releases", "", 2);
 $Nav->addCustomNav("Integration", "$areaPath/index.php#integration", "", 2);
 $Nav->addCustomNav("Maintenance", "$areaPath/index.php#maintenance", "", 2);
 $Nav->addCustomNav("Browse Sources", "http://git.eclipse.org/c/cdo/cdo.git", "", 1);
