@@ -13,14 +13,16 @@ $pageAuthor		= "Eike Stepper";
 	 <table border="0" cellspacing="20" cellpadding="20">
 	   <tr>
 	     <td><img src="/cdo/images/Logo-CDO.png" width="160" height="100"></img></td>
+       <td width="32px"/>
 	     <td>
           CDO is both a development-time model repository and a run-time persistence framework.
           Being highly optimized it supports object graphs of arbitrary size.<br>
           CDO offers transactions with save points, explicit locking, change notifications, 
           queries, transparent temporality, branching, merging, offline and fail-over modes, ...
        </td>
+       <td width="32px"/>
 	   </tr>
-	   <tr><td colspan="2">
+	   <tr><td colspan="4">
        <br/>
        <table border="0" cellspacing="20" cellpadding="20">
          <tr>
