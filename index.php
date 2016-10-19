@@ -77,17 +77,47 @@ $pageAuthor		= "Eike Stepper";
 ?>
 
 	<div id="midcolumn">
-	 <table border="0" cellspacing="10">
+	 <table border="0" cellspacing="20" cellpadding="20">
 	   <tr>
-	     <td padding="20px"><img src="/cdo/images/Logo-CDO.png" width="160" height="100"></img></td>
-	     <td padding="20px" valign="bottom">
+	     <td><img src="/cdo/images/Logo-CDO.png" width="160" height="100"></img></td>
+	     <td>
           CDO is both a development-time model repository and a run-time persistence framework.
           Being highly optimized it supports object graphs of arbitrary size.
           CDO offers transactions with save points, explicit locking, change notifications, 
           queries, transparent temporality, branching, merging, offline and fail-over modes, ...
        </td>
 	   </tr>
-	   <tr><td colspan="2"><hr></td></tr>
+	   <tr><td colspan="2">
+       <table border="0" cellspacing="20" cellpadding="20">
+    	   <tr>
+    	     <td colspan="2"><hr></td>
+    	   </tr>
+         <tr>
+           <td><img src="fa-download"></img></td>
+           <td><a href="/cdo/downloads/">Download</a><p><i>Looking for the latest build? Milestones, maintenance builds, and more...</i></p></td>
+         </tr>
+         <tr>
+           <td><img src="fa-book"></img></td>
+           <td><a href="/cdo/documentation/">Documentation</a><p><i>Browse through the product documentation, tutorials, presentations and the JavaDocs...</i></p></td>
+         </tr>
+         <tr>
+           <td><img src="fa-support"></img></td>
+           <td><a href="/cdo/support/">Support</a><p><i>You have problems or questions not answered in the documentation? Look here for help...</i></p></td>
+         </tr>
+         <tr>
+           <td><img src="fa-globe"></img></td>
+           <td><a href="/cdo/community/">Community</a><p><i>Visit the community pages for information about various product and development topics...</i></p></td>
+         </tr>
+         <tr>
+           <td><img src="fa-code"></img></td>
+           <td><a href="/cdo/development/">Development</a><p><i>Get the sources and find out more about the CDO project and its development process...</i></p></td>
+         </tr>
+         <tr>
+           <td><img src="fa-users"></img></td>
+           <td><a href="/cdo/team/">Team</a><p><i>About us and our activity...</i></p></td>
+         </tr>
+       </table>
+	   </td></tr>
 	 </table>
 	</div>
 
