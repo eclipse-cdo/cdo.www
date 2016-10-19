@@ -77,10 +77,10 @@ $pageAuthor		= "Eike Stepper";
 ?>
 
 	<div id="midcolumn">
-	 <table border=0" padding="20px">
+	 <table border=0">
 	   <tr>
-	     <td><img src="/cdo/images/Logo-CDO.png" height="50%" width="50%"></img></td>
-	     <td>
+	     <td padding="20px"><img src="/cdo/images/Logo-CDO.png" width="160" height="100"></img></td>
+	     <td padding="20px">
           CDO is both a development-time model repository and a run-time persistence framework.
           Being highly optimized it supports object graphs of arbitrary size.
           CDO offers transactions with save points, explicit locking, change notification, 
@@ -88,7 +88,17 @@ $pageAuthor		= "Eike Stepper";
        </td>
 	   </tr>
 	 </table>
-	 
+	</div>
+
+	<div id="rightcolumn">
+		<div class="sideitem">
+			<h6>Related Links</h6>
+			<ul class="relatedLinks fa-ul" style="margin-left:20px;">
+				<li><a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo">About This Project</a></li>
+				<li><a href="http://www.ohloh.net/projects/8908?p=CDO">View Ohloh statistics</a></li>
+				<li><a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a></li>
+			</ul>
+		</div>
 		<div class="sideitem">
 			<h6><a href="<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;
 					<a href="/<?=$PR?>/news-whatsnew.php">What's New</a></h6>
@@ -110,44 +120,6 @@ $pageAuthor		= "Eike Stepper";
 			<?php
 				getNews(3, "docs", $xml);
 			?>
-		</div>
-	</div>
-
-	<div id="rightcolumn">
-		<div class="sideitem">
-			<h6>Related Links</h6>
-			<ul class="relatedLinks fa-ul" style="margin-left:20px;">
-				<li>
-					<a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo"><img src="http://www.eclipse.org/cdo/images/Logo-CDO-32x32-bottom.png"/></a>
-					<a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo">About This Project</a>
-				</li>
-				<li>
-					<a href="http://portal.eclipse.org/"><img src="http://dev.eclipse.org/large_icons/apps/preferences-system-network-proxy.png"/></a>
-					<a href="http://portal.eclipse.org/">MyFoundation Portal</a>
-				</li>
-				<li>
-					<a href="/mail/"><img src="http://dev.eclipse.org/large_icons/actions/mail-reply-all.png"/></a>
-					<a href="/mail/">Mailing Lists</a>
-				</li>
-				<li>
-					<a href="/newsgroups/"><img src="http://dev.eclipse.org/large_icons/apps/internet-news-reader.png"/></a>
-					<a href="/newsgroups/">Newsgroups</a>
-				</li>
-				<li>
-					<a href="http://www.ohloh.net/projects/8908?p=CDO"><img src="http://dev.eclipse.org/large_icons/apps/utilities-terminal.png"></a>
-					<a href="http://www.ohloh.net/projects/8908?p=CDO">View Ohloh statistics</a>
-				</li>
-				<li>
-					<a href="http://wiki.eclipse.org/Development_Resources"><img src="http://dev.eclipse.org/large_icons/apps/preferences-desktop-theme.png"/></a>
-					<a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a>
-				</li>
-				<?if ($serverName=="localhost") {?>
-				<li>
-					<a href="http://wiki.eclipse.org/Development_Resources"><img src="http://dev.eclipse.org/large_icons/apps/preferences-desktop-theme.png"/></a>
-					<a href="tools">Committer Tools</a>
-				</li>
-				<?}?>
-			</ul>
 		</div>
 	</div>
 
