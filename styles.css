@@ -10,7 +10,7 @@ p, table {
   margin-bottom: 10px;
 }
 
-li.separatorNolink {
+#leftnav li.separatorNolink {
   font-weight: bold;
   margin-top: 2em;
   list-style-type: none;
