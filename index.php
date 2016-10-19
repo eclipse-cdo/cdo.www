@@ -77,9 +77,25 @@ $pageAuthor		= "Eike Stepper";
 ?>
 
 	<div id="midcolumn">
-	 <div>
-	   <img src="/cdo/images/Logo-CDO.png"></img>
-	 </div>
+	 <table border=0" padding="10px">
+	   <tr>
+	     <td><img src="/cdo/images/Logo-CDO.png" size="50%"></img></td>
+	     <td>
+          <p>
+            CDO is both a development-time model repository and a run-time persistence framework.
+            Being highly optimized it supports object graphs of arbitrary size.
+          </p>
+          <p>
+            CDO offers transactions with save points, explicit locking, change notification, 
+            queries, temporality, branching, merging, offline and fail-over modes, ...
+          </p>
+          <p>
+            The storage back-end is pluggable and migrations between direct JDBC, Hibernate, 
+            Objectivity/DB, MongoDB or DB4O are seamless for CDO applications.
+          </p>
+       </td>
+	   </tr>
+	 </table>
 	 
 		<div class="sideitem">
 			<h6><a href="<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;
