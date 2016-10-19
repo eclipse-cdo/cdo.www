@@ -1,3 +1,7 @@
 #midcolumn {
 	width: 700px;
 }
+
+p, table {
+  margin-bottom: 8px;
+}
