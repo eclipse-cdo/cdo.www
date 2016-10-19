@@ -29,37 +29,37 @@ $pageAuthor		= "Eike Stepper";
        <table border="0" cellspacing="20" cellpadding="20">
          <tr>
            <td width="44px"/>
-           <td><a href="/cdo/downloads/"><img src="https://dev.eclipse.org/huge_icons/actions/go-down.png"></img></a></td>
+           <td><a href="/cdo/downloads/"><img src="https://dev.eclipse.org/huge_icons/actions/go-down.png"></img></a>&nbsp;</td>
            <td valign="top"><h3><a href="/cdo/downloads/">Download</a></h3><p><i>Looking for the latest build? Milestones, maintenance builds, and more...</i></p></td>
          </tr>
          <tr><td colspan="3"></td></tr>
          <tr>
            <td width="44px"/>
-           <td><a href="/cdo/documentation/"><img src="https://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png"></img></a></td>
+           <td><a href="/cdo/documentation/"><img src="https://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png"></img></a>&nbsp;</td>
            <td valign="top"><h3><a href="/cdo/documentation/">Documentation</a></h3><p><i>Browse through the product documentation, tutorials, presentations and the JavaDocs...</i></p></td>
          </tr>
          <tr><td colspan="3"></td></tr>
          <tr>
            <td width="44px"/>
-           <td><a href="/cdo/community/"><img src="https://dev.eclipse.org/huge_icons/categories/applications-internet.png"></img></a></td>
+           <td><a href="/cdo/community/"><img src="https://dev.eclipse.org/huge_icons/categories/applications-internet.png"></img></a>&nbsp;</td>
            <td valign="top"><h3><a href="/cdo/community/">Community</a></h3><p><i>Visit the community pages for information about various product and development topics...</i></p></td>
          </tr>
          <tr><td colspan="3"></td></tr>
          <tr>
            <td width="44px"/>
-           <td><a href="/cdo/development/"><img src="https://dev.eclipse.org/huge_icons/categories/applications-development.png"></img></a></td>
+           <td><a href="/cdo/development/"><img src="https://dev.eclipse.org/huge_icons/categories/applications-development.png"></img></a>&nbsp;</td>
            <td valign="top"><h3><a href="/cdo/development/">Development</a></h3><p><i>Get the sources and find out more about the CDO project and its development process...</i></p></td>
          </tr>
          <tr><td colspan="3"></td></tr>
          <tr>
            <td width="44px"/>
-           <td><a href="/cdo/support/"><img src="https://dev.eclipse.org/huge_icons/actions/mail-reply-all.png"></img></a></td>
+           <td><a href="/cdo/support/"><img src="https://dev.eclipse.org/huge_icons/actions/mail-reply-all.png"></img></a>&nbsp;</td>
            <td valign="top"><h3><a href="/cdo/support/">Support</a></h3><p><i>You have problems or questions not answered in the documentation? Look here for help...</i></p></td>
          </tr>
          <tr><td colspan="3"></td></tr>
          <tr>
            <td width="44px"/>
-           <td><a href="/cdo/team/"><img src="https://dev.eclipse.org/huge_icons/apps/system-users.png"></img></a></td>
+           <td><a href="/cdo/team/"><img src="https://dev.eclipse.org/huge_icons/apps/system-users.png"></img></a>&nbsp;</td>
            <td valign="top"><h3><a href="/cdo/team/">Team</a></h3><p><i>About us and our activity...</i></p></td>
          </tr>
        </table>
