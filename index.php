@@ -81,12 +81,13 @@ $pageAuthor		= "Eike Stepper";
 	   <tr>
 	     <td padding="20px"><img src="/cdo/images/Logo-CDO.png" width="160" height="100"></img></td>
 	     <td padding="20px" valign="bottom">
-          <h3>CDO is both a development-time model repository and a run-time persistence framework.
+          CDO is both a development-time model repository and a run-time persistence framework.
           Being highly optimized it supports object graphs of arbitrary size.
           CDO offers transactions with save points, explicit locking, change notifications, 
-          queries, transparent temporality, branching, merging, offline and fail-over modes, ...</h3>
+          queries, transparent temporality, branching, merging, offline and fail-over modes, ...
        </td>
 	   </tr>
+	   <tr><td colspan="2"><hr></td></tr>
 	 </table>
 	</div>
 
