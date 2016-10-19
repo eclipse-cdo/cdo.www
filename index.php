@@ -28,18 +28,13 @@ $pageAuthor		= "Eike Stepper";
        <table border="0" cellspacing="20" cellpadding="20">
          <tr>
            <td width="44px"/>
-           <td><img src="https://dev.eclipse.org/huge_icons/actions/go-bottom.png"></img></td>
+           <td><img src="https://dev.eclipse.org/huge_icons/actions/go-down.png"></img></td>
            <td><h3><a href="/cdo/downloads/">Download</a></h3><p><i>Looking for the latest build? Milestones, maintenance builds, and more...</i></p></td>
          </tr>
          <tr>
            <td width="44px"/>
            <td><img src="https://dev.eclipse.org/huge_icons/mimetypes/x-office-book.png"></img></td>
            <td><h3><a href="/cdo/documentation/">Documentation</a></h3><p><i>Browse through the product documentation, tutorials, presentations and the JavaDocs...</i></p></td>
-         </tr>
-         <tr>
-           <td width="44px"/>
-           <td><img src="https://dev.eclipse.org/huge_icons/actions/mail-reply-all.png"></img></td>
-           <td><h3><a href="/cdo/support/">Support</a></h3><p><i>You have problems or questions not answered in the documentation? Look here for help...</i></p></td>
          </tr>
          <tr>
            <td width="44px"/>
@@ -50,6 +45,11 @@ $pageAuthor		= "Eike Stepper";
            <td width="44px"/>
            <td><img src="https://dev.eclipse.org/huge_icons/categories/applications-development.png"></img></td>
            <td><h3><a href="/cdo/development/">Development</a></h3><p><i>Get the sources and find out more about the CDO project and its development process...</i></p></td>
+         </tr>
+         <tr>
+           <td width="44px"/>
+           <td><img src="https://dev.eclipse.org/huge_icons/actions/mail-reply-all.png"></img></td>
+           <td><h3><a href="/cdo/support/">Support</a></h3><p><i>You have problems or questions not answered in the documentation? Look here for help...</i></p></td>
          </tr>
          <tr>
            <td width="44px"/>
