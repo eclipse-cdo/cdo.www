@@ -12,6 +12,7 @@ p, table {
 
 li.separatorNolink {
   font-weight: bold;
-  margin-top: 1em;
+  margin-top: 2em;
   list-style-type: none;
+  list-style-image: none;
 }
