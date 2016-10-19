@@ -1,0 +1,8 @@
+#midcolumn p {
+  margin-bottom: 6px;
+}
+
+#midcolumn p.author {
+  margin-bottom: 6px;
+  font-style: italic;
+}
