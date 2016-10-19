@@ -1,7 +1,7 @@
 <?php $areaRelative = "."; require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="book.css"/>' . "\n\t");
+// $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="book.css"/>' . "\n\t");
 
 $pageTitle 		= "CDO Model Repository Overview";
 $pageKeywords	= "";
