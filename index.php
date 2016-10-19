@@ -16,11 +16,11 @@ $pageAuthor		= "Eike Stepper";
 	     <td><img src="/cdo/images/Logo-CDO.png" width="160" height="100"></img></td>
        <td width="32px"/>
 	     <td>
-          <p class="blurb">CDO is both a development-time model repository and a run-time persistence framework.
-          Being highly optimized it supports object graphs of arbitrary size.
-          <p class="blurb">CDO offers transactions with save points, explicit locking, change notifications, 
+          <div class="blurb">CDO is both a development-time model repository and a run-time persistence framework.
+          Being highly optimized it supports object graphs of arbitrary size.</div>
+          <div class="blurb">CDO offers transactions with save points, explicit locking, change notifications, 
           queries, transparent temporality, time travel, branching, merging, offline clones,
-          fail-over clusters, automatic memory management, and more...
+          fail-over clusters, automatic memory management, and more...</div>
        </td>
        <td width="32px"/>
 	   </tr>
