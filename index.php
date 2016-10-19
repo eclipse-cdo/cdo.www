@@ -81,17 +81,15 @@ $pageAuthor		= "Eike Stepper";
 	   <tr>
 	     <td><img src="/cdo/images/Logo-CDO.png" width="160" height="100"></img></td>
 	     <td>
-          CDO is both a development-time model repository and a run-time persistence framework.
+          <p>CDO is both a development-time model repository and a run-time persistence framework.
           Being highly optimized it supports object graphs of arbitrary size.
-          CDO offers transactions with save points, explicit locking, change notifications, 
+          <p>CDO offers transactions with save points, explicit locking, change notifications, 
           queries, transparent temporality, branching, merging, offline and fail-over modes, ...
        </td>
 	   </tr>
 	   <tr><td colspan="2">
+	     <center>
        <table border="0" cellspacing="20" cellpadding="20">
-    	   <tr>
-    	     <td colspan="2"><hr></td>
-    	   </tr>
          <tr>
            <td><img src="https://dev.eclipse.org/huge_icons/actions/go-bottom.png"></img></td>
            <td><h3><a href="/cdo/downloads/">Download</a></h3><p><i>Looking for the latest build? Milestones, maintenance builds, and more...</i></p></td>
@@ -117,18 +115,18 @@ $pageAuthor		= "Eike Stepper";
            <td><h3><a href="/cdo/team/">Team</a></h3><p><i>About us and our activity...</i></p></td>
          </tr>
        </table>
+	     </center>
 	   </td></tr>
 	 </table>
 	</div>
 
 	<div id="rightcolumn">
+	  <br/>
 		<div class="sideitem">
 			<h6>Related Links</h6>
-			<ul class="relatedLinks fa-ul" style="margin-left:20px;">
-				<li><a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo">About This Project</a></li>
-				<li><a href="http://www.ohloh.net/projects/8908?p=CDO">View Ohloh statistics</a></li>
-				<li><a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a></li>
-			</ul>
+			<p><a href="http://www.eclipse.org/projects/project_summary.php?projectid=modeling.emf.cdo">About This Project</a></p>
+			<p><a href="http://www.ohloh.net/projects/8908?p=CDO">View Ohloh statistics</a></p>
+			<p><a href="http://wiki.eclipse.org/Development_Resources">Becoming a Committer</a></p>
 		</div>
 		<div class="sideitem">
 			<h6><a href="<?=$PR?>/news-whatsnew.php"><img alt="RSS Feed" src="http://www.eclipse.org/images/rss2.gif"/></a>&nbsp;&nbsp;
