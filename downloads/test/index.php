@@ -3,8 +3,6 @@
 
 header( 'Cache-control: no cache' );
 
-//$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/modeling/includes/common.css"/>' . "\n\t");
-//$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="/modeling/includes/downloads.css"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
 $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="text/javascript"></script>' . "\n\t");
 
@@ -13,8 +11,7 @@ $App->AddExtraHtmlHeader('<script src="/modeling/includes/downloads.js" type="te
 $pageAuthor		= "Eike Stepper";
 
 print '<div id="midcolumn">' . "\n";
-print '<h1>Downloads</h1>';
-readfile("http://download.eclipse.org/modeling/emf/cdo/updates/index.html");
+print '<h1>Test</h1>';
 print '</div>';
 
 
