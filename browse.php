@@ -1,5 +1,5 @@
 <?php
-//error_reporting(E_ERROR | E_PARSE);
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
 $os = strtoupper(php_uname('s'));
 $windows = strpos($os, "WIN") !== false;
@@ -8,7 +8,7 @@ $default_dir = $windows ? "c:" : "/home/data/httpd";
 $path = isset($_GET['path']) ? $_GET['path'] : $default_dir;
 if (is_dir($path)) {
     echo "<h2>$path</h2>\n";
-    
+
     $file = scandir($path);
     natcasesort($file);
     // Make directories first
@@ -23,7 +23,9 @@ if (is_dir($path)) {
     $file = array_merge($dirs, $files);
 
     echo "<table border=\"0\">\n";
-    echo "<tr><th>Name</th><th align=\"right\">Size</th><th>&nbsp;</th><th>Date</th><th>User</th><th>Group</th></tr>\n";
+    echo "<tr><th>Name</th><th align=\"right\">Size</th><th>&nbsp;</th><th>Date</th><th>User</th><th>Group</th><th>Permissions</th></tr>\n";
+
+    $ts = array(0140000 => 's', 0120000 => 'l', 0100000 => '-', 0060000 => 'b', 0040000 => 'd', 0020000 => 'c', 0010000 => 'p');
 
     foreach ($file as $this_file) {
         $link = "$path/$this_file";
@@ -48,6 +50,7 @@ if (is_dir($path)) {
         $mtime = $stat['mtime'];
         $uid = $stat['uid'];
         $gid = $stat['gid'];
+        $p = $stat['mode'];
 
         $unit = "B";
         if ($size >= 1024) {
@@ -68,16 +71,28 @@ if (is_dir($path)) {
         $size = round($size);
 
         date_default_timezone_set('UTC');
-        $date = date("Y-m-d G-i-s", $mtime);
+        $date = date("Y-m-d G:i:s", $mtime);
 
         if (function_exists('posix_getpwuid')) {
             $uid = posix_getpwuid($uid);
-            $gid = posix_getpwuid($gid);
         }
+
+        if (function_exists('posix_getgrgid')) {
+            $gid = posix_getgrgid($gid);
+        }
+
+        $t = decoct($p & 0170000);
+        $perms = (array_key_exists(octdec($t), $ts)) ? $ts[octdec($t)] : 'u';
+        $perms .= (($p & 0x0100) ? 'r' : '-') . (($p & 0x0080) ? 'w' : '-');
+        $perms .= (($p & 0x0040) ? (($p & 0x0800) ? 's' : 'x') : (($p & 0x0800) ? 'S' : '-'));
+        $perms .= (($p & 0x0020) ? 'r' : '-') . (($p & 0x0010) ? 'w' : '-');
+        $perms .= (($p & 0x0008) ? (($p & 0x0400) ? 's' : 'x') : (($p & 0x0400) ? 'S' : '-'));
+        $perms .= (($p & 0x0004) ? 'r' : '-') . (($p & 0x0002) ? 'w' : '-');
+        $perms .= (($p & 0x0001) ? (($p & 0x0200) ? 't' : 'x') : (($p & 0x0200) ? 'T' : '-'));
 
         echo "<tr>";
         echo "<td><img src=\"https://dev.eclipse.org/icons/$icon\">&nbsp;<a href=\"?path=$link\">" . htmlspecialchars($this_file) . "</a></td>";
-        echo "<td align=\"right\">$size</td><td>$unit</td><td>$date</td><td>$uid</td><td>$gid</td>";
+        echo "<td align=\"right\">$size</td><td>$unit</td><td>$date</td><td>$uid</td><td>$gid</td><td>$perms</td>";
         echo "</tr>\n";
     }
 
