@@ -1,5 +1,5 @@
 <?php
-error_reporting(E_ERROR | E_PARSE);
+//error_reporting(E_ERROR | E_PARSE);
 
 $os = strtoupper(php_uname('s'));
 $windows = strpos($os, "WIN") !== false;
