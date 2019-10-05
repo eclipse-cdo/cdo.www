@@ -7,6 +7,8 @@ $default_dir = $windows ? "c:" : "/home/data/httpd";
 
 $path = isset($_GET['path']) ? $_GET['path'] : $default_dir;
 if (is_dir($path)) {
+    echo "<h2>$path</h2>\n";
+    
     $file = scandir($path);
     natcasesort($file);
     // Make directories first
