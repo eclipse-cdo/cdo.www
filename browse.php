@@ -7,7 +7,7 @@ $default_dir = $windows ? "c:" : "/home/data/httpd";
 
 $path = isset($_GET['path']) ? $_GET['path'] : $default_dir;
 if (is_dir($path)) {
-    echo "<h2>$path</h2>\n";
+    echo "<h2>$path</h2><hr>\n";
 
     $file = scandir($path);
     natcasesort($file);
