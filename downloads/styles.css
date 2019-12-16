@@ -23,3 +23,8 @@ td.file-size {
   font-weight: bold;
   border-bottom: 3px;
 }
+
+.drop-separator {
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
