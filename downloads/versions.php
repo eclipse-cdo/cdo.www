@@ -4,7 +4,7 @@ require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 
 header( 'Cache-control: no cache' );
 
-$local = true;
+$local = false;
 if ($local)
 {
   $drops = "C:/develop/git/cdo.www/downloads/drops";
