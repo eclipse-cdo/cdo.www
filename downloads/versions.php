@@ -4,6 +4,8 @@ require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 
 header( 'Cache-control: no cache' );
 
+$debug = true;
+
 $local = false;
 if ($local)
 {
@@ -21,7 +23,7 @@ else
 $pageAuthor   = "Eike Stepper";
 
 print '<div id="midcolumn">' . "\n";
-print '<h1>Versions</h1>';
+print '<h1>Version Comparison</h1>';
 
 $releases = [];
 $bundles = [];
@@ -32,6 +34,7 @@ if ($handle = opendir($drops))
   {
     if (startsWith($drop, "R"))
     {
+      if ($debug) print "$drop<br>";
       $folder = $drops;
       
       $webPropertiesFile = "$folder/$drop/web.properties";
@@ -51,46 +54,46 @@ if ($handle = opendir($drops))
         }
       }
       
+      if ($debug) print "$drop<br>";
+      
+      $webProperties = parse_ini_file($webPropertiesFile);
+      $release = $webProperties['web.label'];
+            
+      $buildInfoXml = simplexml_load_file("$folder/$drop/build-info.xml");
+      $train = (string) $buildInfoXml['train'];
+      $eclipse = (string) $buildInfoXml['eclipse'];
+      $emf = (string) $buildInfoXml['emf'];
+      $commit = (string) $buildInfoXml['revision'];
+      $versions = [];
+      
+      $indexXml = simplexml_load_file("$folder/$drop/index.xml");
+      foreach ($indexXml->element as $element)
       {
-        $webProperties = parse_ini_file($webPropertiesFile);
-        $release = $webProperties['web.label'];
-              
-        $buildInfoXml = simplexml_load_file("$folder/$drop/build-info.xml");
-        $train = (string) $buildInfoXml['train'];
-        $eclipse = (string) $buildInfoXml['eclipse'];
-        $emf = (string) $buildInfoXml['emf'];
-        $commit = (string) $buildInfoXml['revision'];
-        $versions = [];
-        
-        $indexXml = simplexml_load_file("$folder/$drop/index.xml");
-        foreach ($indexXml->element as $element)
+        if ($element['type'] == "osgi.bundle")
         {
-          if ($element['type'] == "osgi.bundle")
+          $bundle = $element['name'];
+          if (startsWith($bundle, "org.eclipse.") &&
+              !endsWith($bundle, ".source") &&
+              !contains($bundle, ".examples") &&
+              !contains($bundle, ".buddies") &&
+              !contains($bundle, ".jms") &&
+              !contains($bundle, ".tests"))
           {
-            $bundle = $element['name'];
-            if (startsWith($bundle, "org.eclipse.") &&
-                !endsWith($bundle, ".source") &&
-                !contains($bundle, ".examples") &&
-                !contains($bundle, ".buddies") &&
-                !contains($bundle, ".jms") &&
-                !contains($bundle, ".tests"))
-            {
-              $version = (string) $element['version'];
-              $versions += ["$bundle" => $version];
-            }
+            $version = (string) $element['version'];
+            $versions += ["$bundle" => $version];
           }
         }
-        
-        $releases += ["$release" => array(
-          "drop" => $drop,
-          "commit" => $commit,
-          "train" => $train,
-          "eclipse" => $eclipse,
-          "emf" => $emf,
-          "versions" => $versions)];
-          
-        $bundles = array_merge($bundles, $versions);
       }
+      
+      $releases += ["$release" => array(
+        "drop" => $drop,
+        "commit" => $commit,
+        "train" => $train,
+        "eclipse" => $eclipse,
+        "emf" => $emf,
+        "versions" => $versions)];
+        
+      $bundles = array_merge($bundles, $versions);
     }
   }
 
