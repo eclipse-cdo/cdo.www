@@ -1,17 +1,9 @@
-<?php $areaRelative = "."; 
-require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
-########################################################################
-
+<?php
 header( 'Cache-control: no cache' );
-$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
-//set_time_limit(300);
 
 $drops = "http://download.eclipse.org/modeling/emf/cdo/drops";
 $oldDrops = "R20060925-1359 R20061002-1452 R20061027-1316 R20080624-1000 R20081013-1635 R20081016-1605 R20081103-0639 R20081121-1613 R20090223-0320 R20090223-0436 R20090223-1216 R20090228-0039 R20090622-1520";
 
-$pageAuthor   = "Eike Stepper";
-
-print '<div id="midcolumn">' . "\n";
 print '<h1>Version Comparison</h1>';
 
 $releases = [];
@@ -170,6 +162,4 @@ function endsWith($haystack, $needle)
   return substr($haystack, -$length) === $needle;
 }
 
-
-########################################################################
-include "$areaRoot/_footer.php"; ?>
+?>
