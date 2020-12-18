@@ -1,16 +1,25 @@
+<html>
+
+<head>
+<title>CDO Model Repository - Downloads | Version Comparison</title>
+<link rel="stylesheet" type="text/css" href="/cdo/styles.css" media="screen"/>
+</head>
+
+<body>
+<h1>Version Comparison</h1>
+
 <?php
 header( 'Cache-control: no cache' );
 
 $drops = "http://download.eclipse.org/modeling/emf/cdo/drops";
 $oldDrops = "R20060925-1359 R20061002-1452 R20061027-1316 R20080624-1000 R20081013-1635 R20081016-1605 R20081103-0639 R20081121-1613 R20090223-0320 R20090223-0436 R20090223-1216 R20090228-0039 R20090622-1520";
 
-print '<h1>Version Comparison</h1>';
-
 $releases = [];
 $bundles = [];
 
 $lines = explode("\n", file_get_contents("$drops/drops.txt"));
 sort($lines);
+
 foreach ($lines as $drop)
 {
   if (startsWith($drop, "R") && !contains($oldDrops, $drop))
@@ -137,9 +146,14 @@ function headLine($releases, $label, $field)
   print "  </tr>\n";
 }
 
+function versionSegments($version)
+{
+  return explode(".", $version);
+}
+
 function simpleVersion($version)
 {
-  $segments = explode(".", $version);
+  $segments = versionSegments($version);
   return "$segments[0].$segments[1].$segments[2]";
 }
 
@@ -166,3 +180,5 @@ function endsWith($haystack, $needle)
 }
 
 ?>
+</body>
+</html>
