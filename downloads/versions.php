@@ -3,19 +3,11 @@ require_once "$areaRelative/_defs.php";  include "$areaRoot/_header.php";
 ########################################################################
 
 header( 'Cache-control: no cache' );
+$App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
+//set_time_limit(300);
 
-$debug = true;
-
-$local = false;
-if ($local)
-{
-  $drops = "C:/develop/git/cdo.www/downloads/drops";
-}
-else
-{
-  $drops = "http://download.eclipse.org/modeling/emf/cdo/drops";
-  $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
-}
+$drops = "http://download.eclipse.org/modeling/emf/cdo/drops";
+$oldDrops = "R20060925-1359 R20061002-1452 R20061027-1316 R20080624-1000 R20081013-1635 R20081016-1605 R20081103-0639 R20081121-1613 R20090223-0320 R20090223-0436 R20090223-1216 R20090228-0039 R20090622-1520";
 
 $pageAuthor   = "Eike Stepper";
 
@@ -25,67 +17,57 @@ print '<h1>Version Comparison</h1>';
 $releases = [];
 $bundles = [];
 
-if ($debug) print "A<br>";
-if ($handle = opendir($drops))
+$lines = explode("\n", file_get_contents("$drops/drops.txt"));
+sort($lines);
+foreach ($lines as $drop)
 {
-  if ($debug) print "B<br>";
-  while (false !== ($drop = readdir($handle)))
+  if (startsWith($drop, "R") && !contains($oldDrops, $drop))
   {
-    if ($debug) print "C<br>";
-    if (startsWith($drop, "R"))
+    $indexString = file_get_contents("$drops/$drop/index.xml");
+    if ($indexString === false)
     {
-      if ($debug) print "$drop<br>";
-      
-      $webPropertiesFile = "$drops/$drop/web.properties";
-      if (!file_exists($webPropertiesFile))
+      continue;
+    }
+    
+    $webProperties = parse_ini_string(file_get_contents("$drops/$drop/web.properties"));
+    $release = $webProperties['web.label'];
+          
+    $buildInfoXml = simplexml_load_string(file_get_contents("$drops/$drop/build-info.xml"));
+    $train = (string) $buildInfoXml['train'];
+    $eclipse = (string) $buildInfoXml['eclipse'];
+    $emf = (string) $buildInfoXml['emf'];
+    $commit = (string) $buildInfoXml['revision'];
+    $versions = [];
+    
+    $indexXml = simplexml_load_string($indexString);
+    foreach ($indexXml->element as $element)
+    {
+      if ($element['type'] == "osgi.bundle")
       {
-          continue;
-      }
-      
-      if ($debug) print "$drop<br>";
-      
-      $webProperties = parse_ini_file($webPropertiesFile);
-      $release = $webProperties['web.label'];
-            
-      $buildInfoXml = simplexml_load_file("$drops/$drop/build-info.xml");
-      $train = (string) $buildInfoXml['train'];
-      $eclipse = (string) $buildInfoXml['eclipse'];
-      $emf = (string) $buildInfoXml['emf'];
-      $commit = (string) $buildInfoXml['revision'];
-      $versions = [];
-      
-      $indexXml = simplexml_load_file("$drops/$drop/index.xml");
-      foreach ($indexXml->element as $element)
-      {
-        if ($element['type'] == "osgi.bundle")
+        $bundle = $element['name'];
+        if ((startsWith($bundle, "org.eclipse.emf.cdo") || startsWith($bundle, "org.eclipse.net4j")) &&
+            !endsWith($bundle, ".source") &&
+            !contains($bundle, ".examples") &&
+            !contains($bundle, ".buddies") &&
+            !contains($bundle, ".jms") &&
+            !contains($bundle, ".tests"))
         {
-          $bundle = $element['name'];
-          if (startsWith($bundle, "org.eclipse.") &&
-              !endsWith($bundle, ".source") &&
-              !contains($bundle, ".examples") &&
-              !contains($bundle, ".buddies") &&
-              !contains($bundle, ".jms") &&
-              !contains($bundle, ".tests"))
-          {
-            $version = (string) $element['version'];
-            $versions += ["$bundle" => $version];
-          }
+          $version = (string) $element['version'];
+          $versions += ["$bundle" => $version];
         }
       }
-      
-      $releases += ["$release" => array(
-        "drop" => $drop,
-        "commit" => $commit,
-        "train" => $train,
-        "eclipse" => $eclipse,
-        "emf" => $emf,
-        "versions" => $versions)];
-        
-      $bundles = array_merge($bundles, $versions);
     }
+    
+    $releases += ["$release" => array(
+      "drop" => $drop,
+      "commit" => $commit,
+      "train" => $train,
+      "eclipse" => $eclipse,
+      "emf" => $emf,
+      "versions" => $versions)];
+      
+    $bundles = array_merge($bundles, $versions);
   }
-
-  closedir($handle);
 }
 
 $releases = array_reverse($releases);
