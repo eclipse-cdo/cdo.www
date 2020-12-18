@@ -28,10 +28,13 @@ print '<h1>Version Comparison</h1>';
 $releases = [];
 $bundles = [];
 
+if ($debug) print "A<br>";
 if ($handle = opendir($drops))
 {
+  if ($debug) print "B<br>";
   while (false !== ($drop = readdir($handle)))
   {
+    if ($debug) print "C<br>";
     if (startsWith($drop, "R"))
     {
       if ($debug) print "$drop<br>";
