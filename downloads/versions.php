@@ -10,13 +10,10 @@ $local = false;
 if ($local)
 {
   $drops = "C:/develop/git/cdo.www/downloads/drops";
-  $archive = null;
 }
 else
 {
-  $drops = "/home/data/httpd/download.eclipse.org/modeling/emf/cdo/drops";
-  $archive = "/home/data/httpd/archive.eclipse.org/modeling/emf/cdo/drops";
-  
+  $drops = "http://download.eclipse.org/modeling/emf/cdo/drops";
   $App->AddExtraHtmlHeader('<link rel="stylesheet" type="text/css" href="' . $pageFolderPath . '/styles.css" media="screen"/>' . "\n\t");
 }
 
@@ -38,23 +35,11 @@ if ($handle = opendir($drops))
     if (startsWith($drop, "R"))
     {
       if ($debug) print "$drop<br>";
-      $folder = $drops;
       
-      $webPropertiesFile = "$folder/$drop/web.properties";
+      $webPropertiesFile = "$drops/$drop/web.properties";
       if (!file_exists($webPropertiesFile))
       {
-        if ($archive == null)
-        {
           continue;
-        }
-        
-        $folder = $archive;
-        
-        $webPropertiesFile = "$folder/$drop/web.properties";
-        if (!file_exists($webPropertiesFile))
-        {
-          continue;
-        }
       }
       
       if ($debug) print "$drop<br>";
@@ -62,14 +47,14 @@ if ($handle = opendir($drops))
       $webProperties = parse_ini_file($webPropertiesFile);
       $release = $webProperties['web.label'];
             
-      $buildInfoXml = simplexml_load_file("$folder/$drop/build-info.xml");
+      $buildInfoXml = simplexml_load_file("$drops/$drop/build-info.xml");
       $train = (string) $buildInfoXml['train'];
       $eclipse = (string) $buildInfoXml['eclipse'];
       $emf = (string) $buildInfoXml['emf'];
       $commit = (string) $buildInfoXml['revision'];
       $versions = [];
       
-      $indexXml = simplexml_load_file("$folder/$drop/index.xml");
+      $indexXml = simplexml_load_file("$drops/$drop/index.xml");
       foreach ($indexXml->element as $element)
       {
         if ($element['type'] == "osgi.bundle")
