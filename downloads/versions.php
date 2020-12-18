@@ -39,6 +39,9 @@ foreach ($lines as $drop)
         $bundle = $element['name'];
         if ((startsWith($bundle, "org.eclipse.emf.cdo") || startsWith($bundle, "org.eclipse.net4j")) &&
             !endsWith($bundle, ".source") &&
+            !endsWith($bundle, ".defs") &&
+            !endsWith($bundle, ".doc") &&
+            !contains($bundle, ".releng") &&
             !contains($bundle, ".examples") &&
             !contains($bundle, ".buddies") &&
             !contains($bundle, ".jms") &&
