@@ -88,7 +88,7 @@ print "    <th>&nbsp;</th>\n";
 foreach ($releases as $release => $info)
 {
   $drop = $info["drop"];
-  $label = str_replace($release, "-", " ");
+  $label = str_replace("-", " ", $release);
   print "    <th><h3>CDO $label</h3></th>\n";
 }
 
