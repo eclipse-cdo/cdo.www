@@ -88,14 +88,15 @@ print "    <th>&nbsp;</th>\n";
 foreach ($releases as $release => $info)
 {
   $drop = $info["drop"];
-  print "    <th><h3><a href=\"http://download.eclipse.org/modeling/emf/cdo/drops/$drop\">CDO $release</a></h3></th>\n";
+  $label = str_replace($release, "-", " ");
+  print "    <th><h3><a href=\"http://download.eclipse.org/modeling/emf/cdo/drops/$drop\">CDO $label</a></h3></th>\n";
 }
 
 print "  </tr>\n";
 
 headLine($releases, "Drop", "drop");
 headLine($releases, "Commit", "commit", function($v) { $l = substr($v, 0, 7); return "<a href=\"https://git.eclipse.org/c/cdo/cdo.git/commit/?id=$v\">$l</a>"; });
-headLine($releases, "Simrel", "train");
+headLine($releases, "Simrel", "train", function($v) { return "<a href=\"https://www.eclipse.org/downloads/packages/release/$v\">$v</a>"; });
 headLine($releases, "Eclipse", "eclipse");
 headLine($releases, "EMF", "emf");
 
