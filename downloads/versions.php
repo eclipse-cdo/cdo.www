@@ -94,7 +94,7 @@ foreach ($releases as $release => $info)
 print "  </tr>\n";
 
 headLine($releases, "Drop", "drop");
-headLine($releases, "Commit", "commit");
+headLine($releases, "Commit", "commit", function($v) { $l = substr($v, 0, 7); return "<a href=\"https://git.eclipse.org/c/cdo/cdo.git/commit/?id=$v\">$l</a>"; });
 headLine($releases, "Simrel", "train");
 headLine($releases, "Eclipse", "eclipse");
 headLine($releases, "EMF", "emf");
@@ -126,7 +126,7 @@ print "</table>\n";
 print '</div>';
 
 
-function headLine($releases, $label, $field)
+function headLine($releases, $label, $field, callable $formatter = null)
 {
   print "  <tr>\n";
   print "    <th>$label</th>\n";
@@ -135,9 +135,9 @@ function headLine($releases, $label, $field)
   {
     $value = $info[$field];
     
-    if ($field === "commit")
+    if ($formatter)
     {
-     $value = substr($value, 0, 7);
+      $value = $formatter($value);
     }
     
     print "    <th>$value</th>\n";
