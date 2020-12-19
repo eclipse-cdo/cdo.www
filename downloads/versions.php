@@ -94,7 +94,7 @@ foreach ($releases as $release => $info)
 
 print "  </tr>\n";
 
-headLine($releases, "Date", "drop", function($v) { $l = simpleDate($v); return "<a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$v\">$l</a>"; });
+headLine($releases, "Build", "drop", function($v) { $l = simpleDate($v); return "<a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$v\">$l</a>"; });
 headLine($releases, "Commit", "commit", function($v) { $l = substr($v, 0, 7); return "<a href=\"https://git.eclipse.org/c/cdo/cdo.git/commit/?id=$v\">$l</a>"; });
 headLine($releases, "Simrel", "train", function($v) { return "<a href=\"https://www.eclipse.org/downloads/packages/release/$v\">$v</a>"; });
 headLine($releases, "Eclipse", "eclipse");
