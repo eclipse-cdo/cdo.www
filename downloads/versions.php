@@ -2,7 +2,7 @@
 
 <head>
 <title>CDO Model Repository - Downloads | Version Comparison</title>
-<link rel="stylesheet" type="text/css" href="/cdo/styles.css" media="screen"/>
+<link rel="stylesheet" type="text/css" href="versions.css" media="screen"/>
 </head>
 
 <body>
@@ -94,7 +94,7 @@ foreach ($releases as $release => $info)
 
 print "  </tr>\n";
 
-headLine($releases, "Drop", "drop", function($v) { return "<a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$v\">$v</a>"; });
+headLine($releases, "Date", "drop", function($v) { $l = simpleDate($v); return "<a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$v\">$l</a>"; });
 headLine($releases, "Commit", "commit", function($v) { $l = substr($v, 0, 7); return "<a href=\"https://git.eclipse.org/c/cdo/cdo.git/commit/?id=$v\">$l</a>"; });
 headLine($releases, "Simrel", "train", function($v) { return "<a href=\"https://www.eclipse.org/downloads/packages/release/$v\">$v</a>"; });
 headLine($releases, "Eclipse", "eclipse");
@@ -156,6 +156,14 @@ function simpleVersion($version)
 {
   $segments = versionSegments($version);
   return "$segments[0].$segments[1].$segments[2]";
+}
+
+function simpleDate($drop)
+{
+  $y = substr($v, 1, 4);
+  $m = substr($v, 5, 2);
+  $d = substr($v, 7, 2);
+  return "$y&#8209;$m&#8209;$d";
 }
 
 function contains($haystack, $needle)
