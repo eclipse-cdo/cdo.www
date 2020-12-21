@@ -19,11 +19,16 @@ $bundles = [];
 
 $lines = explode("\n", file_get_contents("$drops/drops.txt"));
 sort($lines);
+$lines = array_reverse($lines);
 
+
+$max = 4;
 foreach ($lines as $drop)
 {
   if (startsWith($drop, "R") && !contains($oldDrops, $drop))
   {
+    //if (--$max == 0) break;
+    
     $indexString = file_get_contents("$drops/$drop/index.xml");
     if ($indexString === false)
     {
@@ -74,14 +79,12 @@ foreach ($lines as $drop)
   }
 }
 
-$releases = array_reverse($releases);
-
 $bundles = array_keys($bundles);
 natsort($bundles);
 $bundles = array_values($bundles);
 
 
-print "<table border='1'>\n";
+print "<table>\n";
 print "  <thead>\n";
 print "    <tr>\n";
 print "      <th>&nbsp;</th>\n";
@@ -95,7 +98,7 @@ foreach ($releases as $release => $info)
 
 print "    </tr>\n";
 
-headLine($releases, "Build", "drop", function($v) { $l = simpleDate($v); return "<a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$v\">$l</a>"; });
+headLine($releases, "Build", "drop", function($v) { $l = simpleDate($v); return "<a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$v\" title=\"CDO $v Downloads\">$l</a>"; });
 headLine($releases, "Commit", "commit", function($v) { $l = substr($v, 0, 7); return "<a href=\"https://git.eclipse.org/c/cdo/cdo.git/commit/?id=$v\">$l</a>"; });
 headLine($releases, "Simrel", "train", function($v) { return "<a href=\"https://www.eclipse.org/downloads/packages/release/$v\">$v</a>"; });
 headLine($releases, "Eclipse", "eclipse");
@@ -116,7 +119,7 @@ foreach ($bundles as $bundle)
     {
       $version = $versions[$bundle];
       $file = $bundle . "_" . $version . ".jar";
-      print "      <td align='center'><a href=\"http://download.eclipse.org/modeling/emf/cdo/drops/$drop/plugins/$file\" title=\"CDO $release &rarr; $file\">" . simpleVersion($version) . "</a></td>\n";
+      print "      <td><a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$drop/plugins/$file\" title=\"CDO $release &rarr; $file\">" . simpleVersion($version) . "</a></td>\n";
     }
     else
     {
@@ -135,7 +138,7 @@ print '</div>';
 function headLine($releases, $label, $field, callable $formatter = null)
 {
   print "    <tr>\n";
-  print "      <th>$label</th>\n";
+  print "      <th scope=\"row\">$label</th>\n";
   
   foreach ($releases as $release => $info)
   {
@@ -146,7 +149,7 @@ function headLine($releases, $label, $field, callable $formatter = null)
       $value = $formatter($value);
     }
     
-    print "      <th>$value</th>\n";
+    print "      <td>$value</td>\n";
   }
   
   print "    </tr>\n";
@@ -165,9 +168,9 @@ function simpleVersion($version)
 
 function simpleDate($drop)
 {
-  $y = substr($v, 1, 4);
-  $m = substr($v, 5, 2);
-  $d = substr($v, 7, 2);
+  $y = substr($drop, 1, 4);
+  $m = substr($drop, 5, 2);
+  $d = substr($drop, 7, 2);
   return "$y&#8209;$m&#8209;$d";
 }
 
