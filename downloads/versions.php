@@ -17,6 +17,9 @@ $oldDrops = "R20060925-1359 R20061002-1452 R20061027-1316 R20080624-1000 R200810
 $releases = [];
 $bundles = [];
 
+$selectedRelease = isset($_GET["sr"]) ? $_GET["sr"] : null;
+$selectedBundle = isset($_GET["sb"]) ? $_GET["sb"] : null;
+
 $lines = explode("\n", file_get_contents("$drops/drops.txt"));
 sort($lines);
 $lines = array_reverse($lines);
@@ -93,37 +96,53 @@ foreach ($releases as $release => $info)
 {
   $drop = $info["drop"];
   $label = str_replace("-", " ", $release);
-  print "      <th><h3>CDO $label</h3></th>\n";
+  $href = "?sr=$release";
+  if ($selectedBundle)
+  {
+    $href .= "&sb=$selectedBundle";
+  }
+  
+  print "      <th><h3><a href=\"$href\">CDO $label</a></h3></th>\n";
 }
 
 print "    </tr>\n";
 
-headLine($releases, "Build", "drop", function($v) { $l = simpleDate($v); return "<a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$v\" title=\"CDO $v Downloads\">$l</a>"; });
-headLine($releases, "Commit", "commit", function($v) { $l = substr($v, 0, 7); return "<a href=\"https://git.eclipse.org/c/cdo/cdo.git/commit/?id=$v\">$l</a>"; });
-headLine($releases, "Simrel", "train", function($v) { return "<a href=\"https://www.eclipse.org/downloads/packages/release/$v\">$v</a>"; });
-headLine($releases, "Eclipse", "eclipse");
-headLine($releases, "EMF", "emf");
+headLine("Build", "drop", function($v) { $l = simpleDate($v); return "<a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$v\" title=\"CDO $v Downloads\">$l</a>"; });
+headLine("Commit", "commit", function($v) { $l = substr($v, 0, 7); return "<a href=\"https://git.eclipse.org/c/cdo/cdo.git/commit/?id=$v\">$l</a>"; });
+headLine("Simrel", "train", function($v) { return "<a href=\"https://www.eclipse.org/downloads/packages/release/$v\">$v</a>"; });
+headLine("Eclipse", "eclipse");
+headLine("EMF", "emf");
 
 print "  </thead>\n";
 print "  <tbody>\n";
 
 foreach ($bundles as $bundle)
 {
+  $clazz = $bundle == $selectedBundle ? " class=\"hl\"" : "";
+  
+  $href = "?sb=$bundle";
+  if ($selectedRelease)
+  {
+    $href .= "&sr=$selectedRelease";
+  }
+  
   print "    <tr>\n";
-  print "      <th scope=\"row\">$bundle</th>\n";
+  print "      <th scope=\"row\"$clazz><a href=\"$href\">$bundle</a></th>\n";
 
   foreach ($releases as $release => $info)
   {
+    $clazz = $release == $selectedRelease || $bundle == $selectedBundle ? " class=\"hl\"" : "";
+  
     $versions = $info["versions"];
     if (isset($versions[$bundle]))
     {
       $version = $versions[$bundle];
       $file = $bundle . "_" . $version . ".jar";
-      print "      <td><a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$drop/plugins/$file\" title=\"CDO $release &rarr; $file\">" . simpleVersion($version) . "</a></td>\n";
+      print "      <td$clazz><a href=\"https://download.eclipse.org/modeling/emf/cdo/drops/$drop/plugins/$file\" title=\"CDO $release &rarr; $file\">" . simpleVersion($version) . "</a></td>\n";
     }
     else
     {
-      print "      <td>&nbsp;</td>\n";
+      print "      <td$clazz>&nbsp;</td>\n";
     }
   }
   
@@ -135,13 +154,17 @@ print "</table>\n";
 print '</div>';
 
 
-function headLine($releases, $label, $field, callable $formatter = null)
+function headLine($label, $field, callable $formatter = null)
 {
+  global $releases, $selectedRelease;
+  
   print "    <tr>\n";
   print "      <th scope=\"row\">$label</th>\n";
   
   foreach ($releases as $release => $info)
   {
+    $clazz = $release == $selectedRelease ? " class=\"hl\"" : "";
+  
     $value = $info[$field];
     
     if ($formatter)
@@ -149,7 +172,7 @@ function headLine($releases, $label, $field, callable $formatter = null)
       $value = $formatter($value);
     }
     
-    print "      <td>$value</td>\n";
+    print "      <td$clazz>$value</td>\n";
   }
   
   print "    </tr>\n";

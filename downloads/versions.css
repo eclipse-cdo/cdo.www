@@ -44,3 +44,11 @@ td {
   text-align: center;
 }
 
+td.hl {
+  background-color: #C0C0FF;
+}
+
+th.hl {
+  background-color: #C0C0FF;
+}
+
