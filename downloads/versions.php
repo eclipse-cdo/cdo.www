@@ -102,7 +102,7 @@ foreach ($releases as $release => $info)
     $href .= "&sb=$selectedBundle";
   }
   
-  print "      <th><h3><a href=\"$href\">CDO $label</a></h3></th>\n";
+  print "      <th><h3><a href=\"$href\" title=\"Highlight\">CDO $label</a></h3></th>\n";
 }
 
 print "    </tr>\n";
@@ -127,7 +127,7 @@ foreach ($bundles as $bundle)
   }
   
   print "    <tr>\n";
-  print "      <th scope=\"row\"$clazz><a href=\"$href\">$bundle</a></th>\n";
+  print "      <th scope=\"row\"$clazz><a href=\"$href\" title=\"Highlight\">$bundle</a></th>\n";
 
   foreach ($releases as $release => $info)
   {
