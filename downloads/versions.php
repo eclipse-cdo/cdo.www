@@ -19,18 +19,18 @@ $bundles = [];
 
 $selectedRelease = isset($_GET["sr"]) ? $_GET["sr"] : null;
 $selectedBundle = isset($_GET["sb"]) ? $_GET["sb"] : null;
+$max = isset($_GET["max"]) ? $_GET["max"] : 1000;
 
 $lines = explode("\n", file_get_contents("$drops/drops.txt"));
 sort($lines);
 $lines = array_reverse($lines);
 
 
-$max = 4;
 foreach ($lines as $drop)
 {
   if (startsWith($drop, "R") && !contains($oldDrops, $drop))
   {
-    //if (--$max == 0) break;
+    if (--$max == 0) break;
     
     $indexString = file_get_contents("$drops/$drop/index.xml");
     if ($indexString === false)
