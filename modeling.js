@@ -215,9 +215,9 @@ function generateDefaults(element) {
   if (!hasElement('aside')) {
     parts.push(generateDefaultAside(document.createElement('div')));
   }
-  if (!hasElement('nav')) {
+  /*if (!hasElement('nav')) {
     parts.push(generateDefaultNav(document.createElement('div')));
-  }
+  }*/
   element.prepend(...parts);
 }
 

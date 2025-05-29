@@ -1,15 +1,16 @@
 const base = new URL(".", document.currentScript.src).href;
 
-logo = `${base}images/Logo-CDO.png`;
+logo = `${base}images/banner.jpg`;
 home = `${base}index.html`;
 
 defaultBreadcrumb = toElements(`
-  <a href="https://eclipseide.org/">Home</a>
+  <a href="https://eclipseide.org/">Eclipse</a>
   <a href="https://eclipseide.org/projects/">Projects</a>
-  <a href="${modelingBase}index.html">Modeling</a>
+  <a href="https://eclipse.dev/modeling/">Modeling</a>
+  <a href="https://eclipse.dev/emf/">EMF</a>
 `);
 
-defaultNav = toElements(`
+/*defaultNav = toElements(`
 <a class="fa-download" target="_out" href="https://download.eclipse.org/modeling/emf/emf/builds/"
   title="Downloads">
   Downloads<p>Update Sites</p>
@@ -19,16 +20,18 @@ defaultNav = toElements(`
   GitHub<p>Organization</p>
 </a>
 `);
+*/
 
 defaultAside = toElements(`
 <a href="${base}index.html" class="separator"><i class='fa fa-cube'></i> Home</a>
-<a href="${base}docs.html">Documentation</a>
-<a target="_out" href="https://github.com/eclipse-emf/org.eclipse.emf/discussions">Ask a Question</a>
-<a target="_out" href="https://github.com/eclipse-emf/org.eclipse.emf/issues">Report a Problem</a>
-<a class="separator" href="${modelingBase}support.html"><i class="fa fa-address-book-o"></i> Support</a>
+<a href="${base}downloads.html">Downloads</a>
+<a href="${base}documentation.html">Documentation</a>
+<a target="_out" href="https://github.com/eclipse-cdo/cdo/discussions">Ask a Question</a>
+<a target="_out" href="https://github.com/eclipse-cdo/cdo/issues">Report a Problem</a>
+<a href="mailto:ES-Computersysteme <stepper@esc-net.de>?subject=Please help us to make the best use of CDO in our application">Get Professional Support</a>
 `);
 
-additionalAside = `
+/*additionalAside = `
 <div class="col-md-6">
   <aside>
     <ul class="ul-left-nav">
@@ -45,3 +48,4 @@ additionalAside = `
     </ul>
   </aside>
 </div>`;
+*/
