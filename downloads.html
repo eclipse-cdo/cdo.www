@@ -28,15 +28,32 @@
     <h1>Downloads</h1>
 
 
-    <iframe src="https://download.eclipse.org/modeling/emf/cdo/updates/index.html" style="border:none;" title="CDO Downloads">
+    <!--<iframe src="https://download.eclipse.org/modeling/emf/cdo/updates/index.html" style="border:none;" title="CDO Downloads">
+      <p>Unfortunately, your browser cannot display embedded frames.
+        You can access the embedded page via the following link:
+        <a href="https://download.eclipse.org/modeling/emf/cdo/updates/index.html">CDO Downloads</a>
+      </p>
+    </iframe>-->
 
-    </iframe>
-
+    <div id="generated-list">
+      <p>Loading...</p>
+    </div>
+    
   </main>
 </body>
 
 <script>
-  generate(); 
+  generate();
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('GET', 'https://download.eclipse.org/modeling/emf/cdo/updates/index.html', true);
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      document.getElementById('generated-list').innerHTML = xhr.responseText;
+    }
+  };
+  xhr.send();
+
 </script>
 
 </html>
