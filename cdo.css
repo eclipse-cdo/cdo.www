@@ -10,8 +10,9 @@
   padding-bottom: 5px;
 }
 
-.logo {
-  margin-top: 1em;
+.banner {
+  margin-top: -5px;
+  margin-bottom: 20px;
   padding-right: 1em;
-  width: 10em;
+  width: 800px;
 }

@@ -5,55 +5,32 @@
   <title>CDO Model Repository</title>
   <meta name="keywords" content="modeling,emf,cdo,model,repository,database" />
   <link rel="preconnect stylesheet" href="modeling.css" />
+  <link rel="preconnect stylesheet" href="cdo.css" />
   <script src="modeling.js"></script>
-  <script src="project.js"></script>
-  <style>
-    /* <![CDATA[*/
-    /*]]>*/
-  </style>
+  <script src="cdo.js"></script>
 </head>
 
 <body>
-
   <div data-generate="generateDefaultBreadcrumb(this)">
-    <span>CDO Downloads</span>
+    <span><!-- <BREADCRUMB> -->CDO Downloads<!-- </BREADCRUMB> --></span>
   </div>
 
   <div data-generate="generateDefaults(this)">
   </div>
 
   <main>
-    <p><img src="images/banner.jpg" width="800" /></p>
+    <img src="images/banner.jpg" class="banner" />
 
     <h1>Downloads</h1>
 
-
-    <!--<iframe src="https://download.eclipse.org/modeling/emf/cdo/updates/index.html" style="border:none;" title="CDO Downloads">
-      <p>Unfortunately, your browser cannot display embedded frames.
-        You can access the embedded page via the following link:
-        <a href="https://download.eclipse.org/modeling/emf/cdo/updates/index.html">CDO Downloads</a>
-      </p>
-    </iframe>-->
-
-    <div id="generated-list">
-      <p>Loading...</p>
-    </div>
-    
+    <!-- <GENERATED_BODY> -->
+    <p>Please go to <a href="https://download.eclipse.org/modeling/emf/cdo/updates/index.html">download.eclipse.org</a></p>
+    <!-- </GENERATED_BODY> -->
   </main>
 </body>
 
 <script>
   generate();
-
-  const xhr = new XMLHttpRequest();
-  xhr.open('GET', 'https://download.eclipse.org/modeling/emf/cdo/updates/index.html', true);
-  xhr.onload = function () {
-    if (xhr.status === 200) {
-      document.getElementById('generated-list').innerHTML = xhr.responseText;
-    }
-  };
-  xhr.send();
-
 </script>
 
 </html>
