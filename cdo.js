@@ -10,18 +10,6 @@ defaultBreadcrumb = toElements(`
   <a href="https://eclipse.dev/emf/">EMF</a>
 `);
 
-/*defaultNav = toElements(`
-<a class="fa-download" target="_out" href="https://download.eclipse.org/modeling/emf/emf/builds/"
-  title="Downloads">
-  Downloads<p>Update Sites</p>
-</a>
-<a class="fa-github" target="_out" href="https://github.com/eclipse-emf/"
-  title="GitHub: Organization">
-  GitHub<p>Organization</p>
-</a>
-`);
-*/
-
 defaultAside = toElements(`
 <a href="${base}index.html" class="separator"><i class='fa fa-cube'></i> Home</a>
 <a href="https://download.eclipse.org/modeling/emf/cdo/updates/index.html">Downloads</a>
