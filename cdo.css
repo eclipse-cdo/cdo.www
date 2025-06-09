@@ -16,3 +16,47 @@
   width: 100%;
   object-fit: contain;
 }
+
+.indent {
+  margin-left: 20px;
+}
+
+.indent h4 {
+  margin-bottom: 0px;
+}
+
+.button,
+.button:link,
+.button:visited {
+  border: none;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 2.5em;
+  text-decoration: none;
+}
+
+.button-neutral,
+.button-neutral:link,
+.button-neutral:visited {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.button-neutral:hover,
+.button-neutral:active {
+  background-color: #cccccc;
+}
+
+.button-download,
+.button-download:link,
+.button-download:visited {
+  background-color: #f06c00;
+  color: white;
+}
+
+.button-download:hover,
+.button-download:active {
+  background-color: #bd5500;
+}
