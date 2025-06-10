@@ -1,9 +1,20 @@
 td {
-	padding: 1px;
+  padding: 1px;
 }
 
 td.file-size {
   text-align: right;
+}
+
+.repo-item a,
+.repo-item span {
+  vertical-align: top;
+}
+
+.repo1,
+.repo2,
+.drop {
+  margin-left: 22px;
 }
 
 .repo-label1 {
