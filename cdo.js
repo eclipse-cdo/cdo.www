@@ -39,10 +39,13 @@ defaultAside = toElements(`
 */
 
 function toggle(elementId) {
-  var x = document.getElementById(elementId);
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+  var element = document.getElementById(elementId);
+  if (element !== null) {
+    var wasCollapsed = element.style.display === 'none';
+    element.style.display = wasCollapsed ? 'block' : 'none';
+    var image = document.getElementById('img_' + elementId);
+    if (image !== null) {
+      image.src = wasCollapsed ? 'https://eclipse.dev/cdo/images/collapse.gif' : 'https://eclipse.dev/cdo/images/expand.gif';
+    }
   }
 }
