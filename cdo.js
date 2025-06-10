@@ -11,7 +11,7 @@ defaultBreadcrumb = toElements(`
 `);
 
 defaultAside = toElements(`
-<a href="${base}index.html" class="separator"><i class='fa fa-cube'></i> Home</a>
+<a href="${base}" class="separator"><i class='fa fa-cube'></i> Home</a>
 <a href="https://download.eclipse.org/modeling/emf/cdo/updates/downloads.html">Downloads</a>
 <a href="${base}documentation/index.html">Documentation</a>
 <a target="_out" href="https://github.com/eclipse-cdo/cdo/discussions">Ask a Question</a>
