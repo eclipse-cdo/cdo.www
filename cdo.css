@@ -17,6 +17,10 @@
   object-fit: contain;
 }
 
+.center {
+  text-align: center;
+}
+
 .indent {
   margin-left: 20px;
 }
