@@ -17,6 +17,11 @@
   object-fit: contain;
 }
 
+.image-block {
+  width: 80%;
+  object-fit: contain;
+}
+
 .center {
   text-align: center;
 }
