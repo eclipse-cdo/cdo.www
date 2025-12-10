@@ -15,6 +15,7 @@ defaultAside = toElements(`
 <a href="https://download.eclipse.org/modeling/emf/cdo/updates/documentation.html">Documentation</a>
 <a href="https://download.eclipse.org/modeling/emf/cdo/updates/downloads.html">Downloads</a>
 <a href="https://download.eclipse.org/modeling/emf/cdo/updates/all-relnotes.html">Release Notes</a>
+<a href="https://projects.eclipse.org/projects/modeling.cdo">Project Info</a>
 <a target="_out" href="https://github.com/eclipse-cdo/cdo/discussions">Ask a Question</a>
 <a target="_out" href="https://github.com/eclipse-cdo/cdo/issues">Report a Problem</a>
 <a href="mailto:ES-Computersysteme <stepper@esc-net.de>?subject=Please help us to make the best use of CDO in our application">Get Professional Support</a>
