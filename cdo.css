@@ -34,6 +34,11 @@
   margin-bottom: 0px;
 }
 
+.sideitem {
+   margin-bottom: 20px;
+   background-color: rgb(236, 254, 235);
+ }
+
 .button,
 .button:link,
 .button:visited {

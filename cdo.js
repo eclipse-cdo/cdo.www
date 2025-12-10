@@ -21,16 +21,18 @@ defaultAside = toElements(`
 <a href="mailto:ES-Computersysteme <stepper@esc-net.de>?subject=Please help us to make the best use of CDO in our application">Get Professional Support</a>
 `);
 
-/*additionalAside = `
+additionalAside = `
 <div class="col-md-6">
   <aside>
     <ul class="ul-left-nav">
       <div style="padding-top: 1.5em; padding-left: 1.5em;">
         <div class="sideitem">
-          <h6>Buy the Book</h6>
+          <h6>Brand New:</h6>
           <p align="center">
-            <a target="_out" href="http://www.informit.com/title/9780321331885">
-              <img src="${base}images/EMF-2nd-Ed-Cover-Small.jpg" />
+            <h4>Model Evolution Support</h4>
+            <h5>Santa came early this year!</h5>
+            <a target="_out" href="https://thegordian.blogspot.com/2025/12/model-evolution-support-santa-came.html">
+              <img src="${base}images/campaign/ModelEvolutionBlog.png" width="160" />
             </a>
           </p>
         </div>
@@ -38,7 +40,6 @@ defaultAside = toElements(`
     </ul>
   </aside>
 </div>`;
-*/
 
 function toggle(elementId) {
   var element = document.getElementById(elementId);
