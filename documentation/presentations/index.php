@@ -76,7 +76,7 @@ printPresentation("SAP_2010/CDOModelRepository",
 									"January 2010");
 
 printPresentation("DemoCampBerlin_2009/Net4j-Presentation",
-									"The Net4j Signalling Platform - Developing Pluggable Client/Server Applications",
+									"The Net4j Signaling Platform - Developing Pluggable Client/Server Applications",
 									"Short talk, examples and demo",
 									"Eike Stepper",
 									"June 2009");
