@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Net4j Signaling Platform</title>
+  <meta name="keywords" content="network,messaging,signaling,database" />
+  <link rel="preconnect stylesheet" href="../cdo.css" />
+  <script src="../modeling.js"></script>
+  <script src="../cdo.js"></script>
+</head>
+
+<body>
+  <div data-generate="generateDefaultBreadcrumb(this)">
+    <a href="https://eclipse.dev/cdo">CDO</a>
+    <span>Net4j</span>
+  </div>
+
+  <div data-generate="generateDefaults(this)">
+  </div>
+
+  <main>
+    <img class="banner" src="../images/banner.jpg" />
+
+    <!-- Net4j Logo and Introduction -->
+    <h1><center>Net4j Signaling Platform</center></h1>
+    <center><img src="net4j.svg" alt="Net4j Logo" class="net4j-logo" style="height:64px; margin:1em 0 1.5em 0;" /></center>
+    <p>
+      Net4j is a robust, extensible client/server communications framework that empowers developers to build high-performance, scalable, and maintainable distributed applications. By abstracting the underlying transport medium, Net4j enables the creation of custom application protocols that are independent of network details. Originally a standalone project, Net4j is now fully integrated into the <a href="../cdo/index.html">CDO Model Repository</a>, benefiting from the synergy of both platforms.
+    </p>
+    <p>
+      The platform is designed for flexibility and efficiency, supporting a wide range of use cases from enterprise messaging to collaborative tools. Its modular architecture and pluggable protocol support make it suitable for both simple and complex distributed systems, whether running within Eclipse, OSGi, or as a stand-alone Java application.
+    </p>
+
+    <!-- Main Features -->
+    <section class="net4j-features">
+      <h2>Main Features</h2>
+      <ul>
+        <li><strong>Modular Architecture:</strong> Highly extensible signaling and transport frameworks, allowing developers to add or replace components as needed.</li>
+        <li><strong>Transport Protocols:</strong> Pluggable support for TCP, SSL, HTTP(S), WebSocket (WS/WSS), and JVM in-process, ensuring broad compatibility and deployment flexibility.</li>
+        <li><strong>Application Protocols:</strong> Built-in support for CDO, experimental JMS, Buddies, Chat, and the ability to define custom protocols for specialized needs.</li>
+        <li><strong>Multiplexing:</strong> Efficiently multiplexes multiple application protocols over a single connection, reducing resource usage and simplifying network management.</li>
+        <li><strong>Scalability & Performance:</strong> Asynchronous, non-blocking buffering kernel delivers high throughput and low latency, even under heavy load.</li>
+        <li><strong>Extensibility:</strong> Open APIs and extension points make it easy to integrate new protocols, transports, and utilities.</li>
+        <li><strong>Security:</strong> Extensible security framework with support for secure transports (SSL, HTTPS, WSS) and authentication mechanisms.</li>
+        <li><strong>Cross-Platform Compatibility:</strong> Operates seamlessly on OSGi, Eclipse, and stand-alone Java environments, supporting diverse deployment scenarios.</li>
+        <li><strong>Integration with Eclipse:</strong> Deep integration with Eclipse Modeling tools, including UI extensions for monitoring, debugging, and management.</li>
+        <li><strong>Stand-alone Operation:</strong> Can be used outside Eclipse/OSGi as a pure Java library, making it suitable for headless or embedded applications.</li>
+        <li><strong>Interoperability:</strong> Designed for integration with a wide range of systems and protocols, facilitating communication across heterogeneous environments.</li>
+        <li><strong>Reliability:</strong> Production-proven core with robust error handling, monitoring, and management tools to ensure stable operation.</li>
+        <li><strong>Monitoring & Management:</strong> Built-in monitoring, container management, and debugging tools, including remote tracing and Eclipse UI views.</li>
+        <li><strong>Licensing:</strong> Open Source under the Eclipse Public License (EPL), encouraging community contributions and commercial adoption.</li>
+        <li><strong>Developer Benefits:</strong> Simplifies protocol development with utilities for concurrency, caching, events, state machines, and more, accelerating time-to-market for new features.</li>
+      </ul>
+    </section>
+
+    <!-- Typical Use Cases -->
+    <section class="net4j-usecases">
+      <h2>Typical Use Cases</h2>
+      <ul>
+        <li>Building scalable client/server applications and distributed systems for enterprise and research.</li>
+        <li>Implementing custom application protocols for domain-specific communication needs.</li>
+        <li>Integrating with the CDO Model Repository for advanced model management and collaboration.</li>
+        <li>Developing collaborative platforms such as chat, buddies, and file sharing tools.</li>
+        <li>Providing secure, high-performance messaging and data transport for business-critical applications.</li>
+        <li>Embedding in Eclipse-based IDEs, OSGi containers, or stand-alone Java applications for maximum flexibility.</li>
+      </ul>
+      <p>
+        Net4j is ideal for organizations seeking a reliable, extensible, and high-performance communication backbone for distributed systems, whether in the cloud, on-premises, or hybrid environments.
+      </p>
+    </section>
+
+    <!-- Architecture Overview -->
+    <section class="net4j-architecture">
+      <h2>Architecture Overview</h2>
+      <img src="multiplexing.png" alt="Net4j Multiplexing Architecture" style="max-width:100%; margin:1em 0;" />
+      <p>
+        At its core, Net4j features a fast, asynchronous, and non-blocking multiplexing kernel. This enables multiple application protocols to share a single physical connection, maximizing efficiency and scalability. The architecture is modular, with clear separation between signaling, transport, and application layers. Developers can plug in new transports (such as TCP, HTTP, or custom protocols) and application-level protocols as needed, making Net4j adaptable to evolving requirements.
+      </p>
+      <p>
+        The platform also provides a comprehensive set of utilities for monitoring, debugging, and managing connections, including remote tracing and container management tools accessible from the Eclipse UI. This holistic approach ensures that both development and operations teams can maintain visibility and control over distributed systems built on Net4j.
+      </p>
+    </section>
+
+    <!-- Resources -->
+    <section class="net4j-resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="https://download.eclipse.org/modeling/emf/cdo/updates/downloads.html">Download</a> (bundled with CDO)</li>
+        <li><a href="https://download.eclipse.org/modeling/emf/cdo/updates/releases/help">Help Center</a> (see Net4j sections in CDO docs)</li>
+      </ul>
+      <p>
+        Net4j continues to evolve as part of the CDO ecosystem, offering a solid foundation for next-generation distributed applications.
+      </p>
+    </section>
+
+  </main>
+</body>
+
+<script>
+  generate(); 
+</script>
+
+</html>

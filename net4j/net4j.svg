@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="442" height="216" viewBox="272 241 442 216">
+  <text
+     id="text14"
+     y="0.000000"
+     x="0.000000"
+     transform="matrix(1.000000,-0.000000,0.000000,1.000000,656.108807,427.994326)"
+     style="font-size:236.000000px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:Normal;line-height:125.000000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Impact;text-align:start;text-anchor:start;"
+     xml:space="preserve"><tspan
+       id="tspan12"
+       y="0.000000"
+       x="0.000000"><tspan
+         id="tspan10"
+         style="fill:#4B406E;font-size:236.000000px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:Normal;font-family:Impact;"
+         dy="0.000000"
+         dx="0.000000">j</tspan></tspan></text>
+  <text
+     id="text20"
+     y="0.000000"
+     x="0.000000"
+     transform="matrix(1.000000,-0.000000,0.000000,1.000000,262.981392,411.790878)"
+     style="font-size:214.750000px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:Normal;line-height:125.000000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Impact;text-align:start;text-anchor:start;"
+     xml:space="preserve"><tspan
+       id="tspan18"
+       y="0.000000"
+       x="0.000000"><tspan
+         id="tspan16"
+         style="fill:#4B406E;font-size:214.750000px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:Normal;font-family:Impact;"
+         dy="0.000000"
+         dx="0.000000">Net4</tspan></tspan></text>
+  <text
+     id="text26"
+     y="0.000000"
+     x="0.000000"
+     transform="matrix(1.000000,-0.000000,0.000000,1.000000,271.422622,449.110421)"
+     style="font-size:32.000000px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:Normal;line-height:125.000000%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Segoe UI Black;text-align:start;text-anchor:start;"
+     xml:space="preserve"><tspan
+       id="tspan24"
+       y="0.000000"
+       x="0.000000"><tspan
+         id="tspan22"
+         style="fill:#F2911A;font-size:32.000000px;font-style:normal;font-variant:normal;font-weight:400;font-stretch:Normal;font-family:Segoe UI Black;"
+         dy="0.000000"
+         dx="0.000000">The Signaling Platform</tspan></tspan></text>
+  <path
+     id="path28"
+     d="  M 268.45863,321.4223   L 268.45863,329.70288   L 714.48958,329.70288   L 714.48958,321.4223   L 268.45863,321.4223   z "
+     style="fill:#ffffff;fill-rule:evenodd;fill-opacity:1;stroke:none;" />
+  <path
+     id="path30"
+     d="  M 268.45863,336.54335   L 268.45863,344.82393   L 714.48958,344.82393   L 714.48958,336.54335   L 268.45863,336.54335   z "
+     style="fill:#ffffff;fill-rule:evenodd;fill-opacity:1;stroke:none;" />
+  <path
+     id="path32"
+     d="  M 268.45863,351.6644   L 268.45863,359.94498   L 714.48958,359.94498   L 714.48958,351.6644   L 268.45863,351.6644   z "
+     style="fill:#ffffff;fill-rule:evenodd;fill-opacity:1;stroke:none;" />
+  <path
+     id="path34"
+     d="  M 268.45863,366.78545   L 268.45863,375.06602   L 714.48958,375.06602   L 714.48958,366.78545   L 268.45863,366.78545   z "
+     style="fill:#ffffff;fill-rule:evenodd;fill-opacity:1;stroke:none;" />
+</svg>

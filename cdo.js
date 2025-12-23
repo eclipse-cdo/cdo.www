@@ -19,6 +19,7 @@ defaultAside = toElements(`
 <a target="_out" href="https://github.com/eclipse-cdo/cdo/discussions">Ask a Question</a>
 <a target="_out" href="https://github.com/eclipse-cdo/cdo/issues">Report a Problem</a>
 <a target="_out" href="https://esc-net.de">Get Professional Support</a>
+<a href="net4j">Net4j Signaling Platform</a>
 `);
 
 additionalAside = `
